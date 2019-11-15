@@ -1,0 +1,77 @@
+# Synopsys Constraint Checker, version maplat, Build 1796R, built Aug  4 2017
+# Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+# Written on Thu Nov 14 11:01:41 2019
+
+
+##### DESIGN INFO #######################################################
+
+Top View:                "led_fsm_top"
+Constraint File(s):      (none)
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting             Ending               |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+led_fsm_top|iclk     led_fsm_top|iclk     |     3.534            |     No paths         |     No paths         |     No paths                         
+=====================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:irst_n
+p:owvled[0]
+p:owvled[1]
+p:owvled[2]
+p:owvled[3]
+p:owvled[4]
+p:owvled[5]
+p:owvled[6]
+p:owvled[7]
+p:owvrgbled1[0]
+p:owvrgbled1[1]
+p:owvrgbled1[2]
+p:owvrgbled2[0]
+p:owvrgbled2[1]
+p:owvrgbled2[2]
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

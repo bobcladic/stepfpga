@@ -1,0 +1,468 @@
+
+          Lattice Mapping Report File for Design Module 'pwm_rgbled'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     pwm_impl_pwm.ngd -o pwm_impl_pwm_map.ncd -pr pwm_impl_pwm.prf -mp
+     pwm_impl_pwm.mrp -lpf D:/Project/Verilog/STEP/series_courses/02_PWM/impl_pw
+     m/pwm_impl_pwm_synplify.lpf -lpf
+     D:/Project/Verilog/STEP/series_courses/02_PWM/pwm.lpf -c 0 -gui -msgset
+     D:/Project/Verilog/STEP/series_courses/02_PWM/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.0.111.2
+Mapped on:  11/15/19  11:02:55
+
+Design Summary
+--------------
+
+   Number of registers:    205 out of  4635 (4%)
+      PFU registers:          205 out of  4320 (5%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:       221 out of  2160 (10%)
+      SLICEs as Logic/ROM:    221 out of  2160 (10%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:        145 out of  2160 (7%)
+   Number of LUT4s:        442 out of  4320 (10%)
+      Number used as logic LUTs:        152
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      290
+      Number used as shift registers:     0
+   Number of PIO sites used: 16 + 4(JTAG) out of 105 (19%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net iclk_c: 117 loads, 117 rising, 0 falling (Driver: PIO iclk )
+   Number of Clock Enables:  1
+
+                                    Page 1
+
+
+
+
+Design:  pwm_rgbled                                    Date:  11/15/19  11:02:55
+
+Design Summary (cont)
+---------------------
+     Net rgbled_flash_r/N_6_i: 17 loads, 17 LSLICEs
+   Number of local set/reset loads for net irst_n_c merged into GSR:  205
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net rgbled_flash_r/rvcntnum_saw[26]: 36 loads
+     Net rgbled_flash_r/rvcntnum_tri27lt26: 33 loads
+     Net rgbled_flash_b/un1_rvcntnum_tri60f[1]: 31 loads
+     Net rgbled_flash_g/un1_rvcntnum_tri44f[1]: 31 loads
+     Net rgbled_flash_r/N_6_i: 17 loads
+     Net pwm/un1_rvcntnum_sawlto25: 16 loads
+     Net rgbled_flash_b/un1_rvcntnum_saw: 11 loads
+     Net rgbled_flash_g/un1_rvcntnum_saw: 11 loads
+     Net rgbled_flash_r/un1_rvcntnum_saw: 11 loads
+     Net VCC: 8 loads
+
+
+
+
+   Number of warnings:  1
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: Using local reset signal 'irst_n_c' to infer global GSR net.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| owvled[0]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| iclk                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| owvrgbled2[2]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| owvrgbled2[1]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| owvrgbled2[0]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| owvrgbled1[2]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| owvrgbled1[1]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| owvrgbled1[0]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| owvled[7]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| owvled[6]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| owvled[5]           | OUTPUT    | LVCMOS33  |            |
+
+                                    Page 2
+
+
+
+
+Design:  pwm_rgbled                                    Date:  11/15/19  11:02:55
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| owvled[4]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| owvled[3]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| owvled[2]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| owvled[1]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| irst_n              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block pwm/VCC undriven or does not drive anything - clipped.
+Signal irst_n_c_i was merged into signal irst_n_c
+Signal GND undriven or does not drive anything - clipped.
+Signal pwm/GND undriven or does not drive anything - clipped.
+Signal rgbled_flash_r/GND undriven or does not drive anything - clipped.
+Signal rgbled_flash_g/GND undriven or does not drive anything - clipped.
+Signal rgbled_flash_b/GND undriven or does not drive anything - clipped.
+Signal un15_owvrgbled1_cry_0_S1[1] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S0[1] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S1[3] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S0[3] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S1[5] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S0[5] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S1[7] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S0[7] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S1[9] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S0[9] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S1[11] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S0[11] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S1[13] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S0[13] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S1[15] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S0[15] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S1[18] undriven or does not drive anything -
+     clipped.
+
+                                    Page 3
+
+
+
+
+Design:  pwm_rgbled                                    Date:  11/15/19  11:02:55
+
+Removed logic (cont)
+--------------------
+Signal un15_owvrgbled1_cry_0_S0[18] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S1[22] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S0[22] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S1[26] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S0[26] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S0[30] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_COUT[30] undriven or does not drive anything -
+     clipped.
+Signal un7_owvrgbled1_cry_0_S1[0] undriven or does not drive anything - clipped.
+     
+Signal un7_owvrgbled1_cry_0_S0[0] undriven or does not drive anything - clipped.
+     
+Signal N_2 undriven or does not drive anything - clipped.
+Signal un7_owvrgbled1_cry_0_S1[1] undriven or does not drive anything - clipped.
+     
+Signal un7_owvrgbled1_cry_0_S0[1] undriven or does not drive anything - clipped.
+     
+Signal un7_owvrgbled1_cry_0_S1[3] undriven or does not drive anything - clipped.
+     
+Signal un7_owvrgbled1_cry_0_S0[3] undriven or does not drive anything - clipped.
+     
+Signal un7_owvrgbled1_cry_0_S1[5] undriven or does not drive anything - clipped.
+     
+Signal un7_owvrgbled1_cry_0_S0[5] undriven or does not drive anything - clipped.
+     
+Signal un7_owvrgbled1_cry_0_S1[7] undriven or does not drive anything - clipped.
+     
+Signal un7_owvrgbled1_cry_0_S0[7] undriven or does not drive anything - clipped.
+     
+Signal un7_owvrgbled1_cry_0_S1[9] undriven or does not drive anything - clipped.
+     
+Signal un7_owvrgbled1_cry_0_S0[9] undriven or does not drive anything - clipped.
+     
+Signal un7_owvrgbled1_cry_0_S1[11] undriven or does not drive anything -
+     clipped.
+Signal un7_owvrgbled1_cry_0_S0[11] undriven or does not drive anything -
+     clipped.
+Signal un7_owvrgbled1_cry_0_S1[13] undriven or does not drive anything -
+     clipped.
+Signal un7_owvrgbled1_cry_0_S0[13] undriven or does not drive anything -
+     clipped.
+Signal un7_owvrgbled1_cry_0_S1[15] undriven or does not drive anything -
+     clipped.
+Signal un7_owvrgbled1_cry_0_S0[15] undriven or does not drive anything -
+     clipped.
+Signal un7_owvrgbled1_cry_0_S1[18] undriven or does not drive anything -
+     clipped.
+Signal un7_owvrgbled1_cry_0_S0[18] undriven or does not drive anything -
+     clipped.
+Signal un7_owvrgbled1_cry_0_S1[22] undriven or does not drive anything -
+
+                                    Page 4
+
+
+
+
+Design:  pwm_rgbled                                    Date:  11/15/19  11:02:55
+
+Removed logic (cont)
+--------------------
+     clipped.
+Signal un7_owvrgbled1_cry_0_S0[22] undriven or does not drive anything -
+     clipped.
+Signal un7_owvrgbled1_cry_0_S1[26] undriven or does not drive anything -
+     clipped.
+Signal un7_owvrgbled1_cry_0_S0[26] undriven or does not drive anything -
+     clipped.
+Signal un7_owvrgbled1_cry_0_S0[30] undriven or does not drive anything -
+     clipped.
+Signal un7_owvrgbled1_cry_0_COUT[30] undriven or does not drive anything -
+     clipped.
+Signal owvrgbled1_1_cry_0_S1[0] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S0[0] undriven or does not drive anything - clipped.
+Signal N_3 undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S1[1] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S0[1] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S1[3] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S0[3] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S1[5] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S0[5] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S1[7] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S0[7] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S1[9] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S0[9] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S1[11] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S0[11] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S1[13] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S0[13] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S1[15] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S0[15] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S1[18] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S0[18] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S1[22] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S0[22] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S1[26] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S0[26] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_S0[30] undriven or does not drive anything - clipped.
+Signal owvrgbled1_1_cry_0_COUT[30] undriven or does not drive anything -
+     clipped.
+Signal pwm/un5_rvcntnum_saw_1_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal pwm/un5_rvcntnum_saw_1_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal pwm/N_1 undriven or does not drive anything - clipped.
+Signal pwm/un5_rvcntnum_saw_1_s_23_0_S1 undriven or does not drive anything -
+     clipped.
+Signal pwm/un5_rvcntnum_saw_1_s_23_0_COUT undriven or does not drive anything -
+     clipped.
+Signal rgbled_flash_r/rvcntnum_tri_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal rgbled_flash_r/N_1 undriven or does not drive anything - clipped.
+Signal rgbled_flash_r/rvcntnum_tri_s_0_S1[31] undriven or does not drive
+     anything - clipped.
+Signal rgbled_flash_r/rvcntnum_tri_s_0_COUT[31] undriven or does not drive
+     anything - clipped.
+Signal rgbled_flash_r/un20_rvcntnum_saw_cry_0_0_S1 undriven or does not drive
+
+                                    Page 5
+
+
+
+
+Design:  pwm_rgbled                                    Date:  11/15/19  11:02:55
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal rgbled_flash_r/un20_rvcntnum_saw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal rgbled_flash_r/N_2 undriven or does not drive anything - clipped.
+Signal rgbled_flash_r/un20_rvcntnum_saw_cry_25_0_COUT undriven or does not drive
+     anything - clipped.
+Signal rgbled_flash_g/un35_rvcntnum_saw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal rgbled_flash_g/un35_rvcntnum_saw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal rgbled_flash_g/N_1 undriven or does not drive anything - clipped.
+Signal rgbled_flash_g/un35_rvcntnum_saw_cry_25_0_COUT undriven or does not drive
+     anything - clipped.
+Signal rgbled_flash_g/un1_rvcntnum_tri_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal rgbled_flash_g/un1_rvcntnum_tri_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal rgbled_flash_g/N_2 undriven or does not drive anything - clipped.
+Signal rgbled_flash_g/un1_rvcntnum_tri_s_31_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal rgbled_flash_g/un1_rvcntnum_tri_s_31_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal rgbled_flash_b/un50_rvcntnum_saw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal rgbled_flash_b/un50_rvcntnum_saw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal rgbled_flash_b/N_1 undriven or does not drive anything - clipped.
+Signal rgbled_flash_b/un50_rvcntnum_saw_cry_25_0_COUT undriven or does not drive
+     anything - clipped.
+Signal rgbled_flash_b/un1_rvcntnum_tri_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal rgbled_flash_b/un1_rvcntnum_tri_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal rgbled_flash_b/N_2 undriven or does not drive anything - clipped.
+Signal rgbled_flash_b/un1_rvcntnum_tri_s_31_0_S1 undriven or does not drive
+     anything - clipped.
+Signal rgbled_flash_b/un1_rvcntnum_tri_s_31_0_COUT undriven or does not drive
+     anything - clipped.
+Signal un15_owvrgbled1_cry_0_S1[0] undriven or does not drive anything -
+     clipped.
+Signal un15_owvrgbled1_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal N_1 undriven or does not drive anything - clipped.
+Block irst_n_pad_RNI3G79 was optimized away.
+Block GND was optimized away.
+Block pwm/GND was optimized away.
+Block rgbled_flash_r/GND was optimized away.
+Block rgbled_flash_g/GND was optimized away.
+Block rgbled_flash_b/GND was optimized away.
+
+Memory Usage
+------------
+
+
+     
+
+
+                                    Page 6
+
+
+
+
+Design:  pwm_rgbled                                    Date:  11/15/19  11:02:55
+
+GSR Usage
+---------
+
+GSR Component:
+   The local reset signal 'irst_n_c' of the design has been inferred as Global
+        Set Reset (GSR). The reset signal used for GSR control is 'irst_n_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 52 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 7
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

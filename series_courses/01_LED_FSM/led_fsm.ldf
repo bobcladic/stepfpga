@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="led_fsm" device="LCMXO2-4000HC-6MG132C" default_implementation="impl_led_fsm">
+    <Options/>
+    <Implementation title="impl_led_fsm" dir="impl_led_fsm" description="impl_led_fsm" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="led_fsm_top"/>
+        <Source name="led_fsm_top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="led_fsm_top"/>
+        </Source>
+        <Source name="led_fsm_tb.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="impl_led_fsm/impl_led_fsm.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="led_fsm.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="led_fsm_tb/led_fsm_tb.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="led_fsm1.sty"/>
+</BaliProject>

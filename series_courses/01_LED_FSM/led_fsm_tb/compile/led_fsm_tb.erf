@@ -1,0 +1,25 @@
+MESSAGE "Pass 1. Scanning modules hierarchy."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+BEGINPROGRESS Compiling...
+UPDATEPROGRESS 35
+MESSAGE_SP VCP2113 "Module led_fsm_top found in current working library."
+MESSAGE "Pass 2. Processing instantiations."
+UPDATEPROGRESS 45
+WARNING VCP2597 "Some unconnected ports remain at instance: led_fsm_top. Module led_fsm_top has unconnected  port(s) : owvrgbled1, owvrgbled2." "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm_tb.v" 28  1
+MESSAGE "Pass 3. Processing behavioral statements."
+UPDATEPROGRESS 80
+MESSAGE "ELB/DAG code generating."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+UPDATEPROGRESS 82
+UPDATEPROGRESS 84
+UPDATEPROGRESS 86
+UPDATEPROGRESS 88
+UPDATEPROGRESS 91
+UPDATEPROGRESS 93
+UPDATEPROGRESS 95
+MESSAGE "Unit top modules: led_fsm_tb."
+MESSAGE "$root top modules: led_fsm_tb."
+UPDATEPROGRESS 100
+ENDPROGRESS Compiling...
+SUCCESS "Compile success 0 Errors 1 Warnings  Analysis time: 0[s]."
+MESSAGE "done"

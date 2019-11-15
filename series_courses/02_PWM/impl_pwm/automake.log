@@ -1,0 +1,1369 @@
+
+synpwrap -msg -prj "pwm_impl_pwm_synplify.tcl" -log "pwm_impl_pwm.srf"
+Copyright (C) 1992-2017 Lattice Semiconductor Corporation. All rights reserved.
+Lattice Diamond Version 3.10.0.111.2
+    <postMsg mid="2011000" type="Info"    dynamic="0" navigation="0"  />
+
+==contents of pwm_impl_pwm.srf
+#Build: Synplify Pro (R) M-2017.03L-SP1-1, Build 086R, Aug  4 2017
+#install: C:\Program Files\lscc\diamond\3.10_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-HAL5TRF
+
+# Fri Nov 15 11:02:49 2019
+
+#Implementation: impl_pwm
+
+Synopsys HDL Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\Program Files\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\Program Files\lscc\diamond\3.10_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\Program Files\lscc\diamond\3.10_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Program Files\lscc\diamond\3.10_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Program Files\lscc\diamond\3.10_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Program Files\lscc\diamond\3.10_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v" (library work)
+Verilog syntax check successful!
+File D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v changed - recompiling
+Selecting top level module pwm_rgbled
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":109:7:109:13|Synthesizing module counter in library work.
+
+	MODE=24'b011100110110000101110111
+	COUNTER_NUM=32'b00000011100100111000011100000000
+	INIT_NUM=32'b00000000000000000000000000000000
+	STEP=32'b00000000000000000000000111110100
+   Generated name = counter_saw_60000000s_0s_500s
+@W: CL169 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":135:4:135:9|Pruning unused register rvcntnum_tri[31:0]. Make sure that there are no unused intermediate registers.
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":109:7:109:13|Synthesizing module counter in library work.
+
+	MODE=24'b011101000111001001101001
+	COUNTER_NUM=32'b00000111001001110000111000000000
+	INIT_NUM=32'b00000000000000000000000000000000
+	STEP=32'b00000000000000000000000000000001
+   Generated name = counter_tri_120000000s_0s_1s
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":109:7:109:13|Synthesizing module counter in library work.
+
+	MODE=24'b011101000111001001101001
+	COUNTER_NUM=32'b00000111001001110000111000000000
+	INIT_NUM=32'b00000010011000100101101000000000
+	STEP=32'b00000000000000000000000000000001
+   Generated name = counter_tri_120000000s_40000000s_1s
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":109:7:109:13|Synthesizing module counter in library work.
+
+	MODE=24'b011101000111001001101001
+	COUNTER_NUM=32'b00000111001001110000111000000000
+	INIT_NUM=32'b00000100110001001011010000000000
+	STEP=32'b00000000000000000000000000000001
+   Generated name = counter_tri_120000000s_80000000s_1s
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":31:7:31:16|Synthesizing module pwm_rgbled in library work.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[31] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[30] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[29] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[28] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[27] is always 0.
+@W: CL279 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Pruning register bits 31 to 27 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[31] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[30] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[29] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[28] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[27] is always 0.
+@W: CL279 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Pruning register bits 31 to 27 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Pruning register bits 31 to 27 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Pruning register bits 31 to 26 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Pruning register bits 1 to 0 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 73MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Nov 15 11:02:49 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+File D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Nov 15 11:02:49 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Nov 15 11:02:49 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+File D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\synwork\pwm_impl_pwm_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Nov 15 11:02:51 2019
+
+###########################################################]
+# Fri Nov 15 11:02:51 2019
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version M-2017.03L-SP1-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\pwm_impl_pwm_scck.rpt 
+Printing clock  summary report in "D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\pwm_impl_pwm_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=10  set on top level netlist pwm_rgbled
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+
+Clock Summary
+******************
+
+          Start               Requested     Requested     Clock        Clock                   Clock
+Level     Clock               Frequency     Period        Type         Group                   Load 
+----------------------------------------------------------------------------------------------------
+0 -       pwm_rgbled|iclk     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0     201  
+====================================================================================================
+
+@W: MT529 :"d:\project\verilog\step\series_courses\02_pwm\pwm_rgbled.v":123:4:123:9|Found inferred clock pwm_rgbled|iclk which controls 201 sequential elements including pwm.rvcntnum_saw[25:2]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Nov 15 11:02:51 2019
+
+###########################################################]
+# Fri Nov 15 11:02:52 2019
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version M-2017.03L-SP1-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+@N: MO230 :"d:\project\verilog\step\series_courses\02_pwm\pwm_rgbled.v":135:4:135:9|Found up-down counter in view:work.pwm_rgbled(verilog) instance rgbled_flash_r.rvcntnum_tri[31:0]  
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 142MB)
+
+@N: FA113 :"d:\project\verilog\step\series_courses\02_pwm\pwm_rgbled.v":136:8:136:9|Pipelining module un1_rvcntnum_tri[31:0]. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"d:\project\verilog\step\series_courses\02_pwm\pwm_rgbled.v":135:4:135:9|Pushed in register rvcntnum_tri[31:0].
+@N: FA113 :"d:\project\verilog\step\series_courses\02_pwm\pwm_rgbled.v":136:8:136:9|Pipelining module un1_rvcntnum_tri[31:0]. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"d:\project\verilog\step\series_courses\02_pwm\pwm_rgbled.v":135:4:135:9|Pushed in register rvcntnum_tri[31:0].
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 145MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 146MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		   988.11ns		 152 /       205
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 146MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 146MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 205 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=================================== Non-Gated/Non-Generated Clocks ====================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                
+-------------------------------------------------------------------------------------------------------
+@K:CKID0001       iclk                port                   205        rgbled_flash_b.rvcntnum_saw[26]
+=======================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 109MB peak: 146MB)
+
+Writing Analyst data base D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\synwork\pwm_impl_pwm_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 146MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\pwm_impl_pwm.edi
+M-2017.03L-SP1-1
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 149MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 147MB peak: 149MB)
+
+@W: MT420 |Found inferred clock pwm_rgbled|iclk with period 1000.00ns. Please declare a user-defined clock on object "p:iclk"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Fri Nov 15 11:02:54 2019
+#
+
+
+Top view:               pwm_rgbled
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 985.940
+
+                    Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock      Frequency     Frequency     Period        Period        Slack       Type         Group              
+------------------------------------------------------------------------------------------------------------------------
+pwm_rgbled|iclk     1.0 MHz       71.1 MHz      1000.000      14.060        985.940     inferred     Inferred_clkgroup_0
+========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                            |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------------
+Starting         Ending           |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------------
+pwm_rgbled|iclk  pwm_rgbled|iclk  |  1000.000    985.940  |  No paths    -      |  No paths    -      |  No paths    -    
+==========================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: pwm_rgbled|iclk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                    Starting                                                     Arrival            
+Instance                            Reference           Type        Pin     Net                  Time        Slack  
+                                    Clock                                                                           
+--------------------------------------------------------------------------------------------------------------------
+rgbled_flash_r.rvcntnum_saw[0]      pwm_rgbled|iclk     FD1S3DX     Q       rvcntnum_saw[0]      1.108       985.940
+rgbled_flash_r.rvcntnum_saw[1]      pwm_rgbled|iclk     FD1S3DX     Q       rvcntnum_saw[1]      1.044       986.004
+rgbled_flash_r.rvcntnum_saw[2]      pwm_rgbled|iclk     FD1S3DX     Q       rvcntnum_saw[2]      1.044       986.004
+rgbled_flash_r.rvcntnum_saw[3]      pwm_rgbled|iclk     FD1S3DX     Q       rvcntnum_saw[3]      1.044       986.004
+rgbled_flash_r.rvcntnum_saw[4]      pwm_rgbled|iclk     FD1S3DX     Q       rvcntnum_saw[4]      1.044       986.004
+rgbled_flash_r.rvcntnum_saw[7]      pwm_rgbled|iclk     FD1S3DX     Q       rvcntnum_saw[7]      1.044       986.004
+rgbled_flash_r.rvcntnum_saw[5]      pwm_rgbled|iclk     FD1S3DX     Q       rvcntnum_saw[5]      1.044       987.021
+rgbled_flash_r.rvcntnum_saw[6]      pwm_rgbled|iclk     FD1S3DX     Q       rvcntnum_saw[6]      1.044       987.021
+rgbled_flash_r.rvcntnum_saw[11]     pwm_rgbled|iclk     FD1S3DX     Q       rvcntnum_saw[11]     1.108       987.973
+rgbled_flash_r.rvcntnum_saw[12]     pwm_rgbled|iclk     FD1S3DX     Q       rvcntnum_saw[12]     1.108       987.973
+====================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                    Starting                                                       Required            
+Instance                            Reference           Type        Pin     Net                    Time         Slack  
+                                    Clock                                                                              
+-----------------------------------------------------------------------------------------------------------------------
+rgbled_flash_r.rvcntnum_tri[31]     pwm_rgbled|iclk     FD1P3DX     D       rvcntnum_tri_s[31]     999.894      985.940
+rgbled_flash_r.rvcntnum_tri[29]     pwm_rgbled|iclk     FD1P3DX     D       rvcntnum_tri_s[29]     999.894      986.083
+rgbled_flash_r.rvcntnum_tri[30]     pwm_rgbled|iclk     FD1P3DX     D       rvcntnum_tri_s[30]     999.894      986.083
+rgbled_flash_r.rvcntnum_tri[27]     pwm_rgbled|iclk     FD1P3DX     D       rvcntnum_tri_s[27]     999.894      986.226
+rgbled_flash_r.rvcntnum_tri[28]     pwm_rgbled|iclk     FD1P3DX     D       rvcntnum_tri_s[28]     999.894      986.226
+rgbled_flash_r.rvcntnum_tri[25]     pwm_rgbled|iclk     FD1P3DX     D       rvcntnum_tri_s[25]     999.894      986.368
+rgbled_flash_r.rvcntnum_tri[26]     pwm_rgbled|iclk     FD1P3DX     D       rvcntnum_tri_s[26]     999.894      986.368
+rgbled_flash_r.rvcntnum_tri[23]     pwm_rgbled|iclk     FD1P3DX     D       rvcntnum_tri_s[23]     999.894      986.511
+rgbled_flash_r.rvcntnum_tri[24]     pwm_rgbled|iclk     FD1P3DX     D       rvcntnum_tri_s[24]     999.894      986.511
+rgbled_flash_r.rvcntnum_tri[21]     pwm_rgbled|iclk     FD1P3DX     D       rvcntnum_tri_s[21]     999.894      986.654
+=======================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         999.894
+
+    - Propagation time:                      13.954
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     985.940
+
+    Number of logic level(s):                24
+    Starting point:                          rgbled_flash_r.rvcntnum_saw[0] / Q
+    Ending point:                            rgbled_flash_r.rvcntnum_tri[31] / D
+    The start point is clocked by            pwm_rgbled|iclk [rising] on pin CK
+    The end   point is clocked by            pwm_rgbled|iclk [rising] on pin CK
+
+Instance / Net                                                Pin      Pin               Arrival     No. of    
+Name                                             Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------
+rgbled_flash_r.rvcntnum_saw[0]                   FD1S3DX      Q        Out     1.108     1.108       -         
+rvcntnum_saw[0]                                  Net          -        -       -         -           3         
+rgbled_flash_r.un1_rvcntnum_sawlto8_i_a2_7_3     ORCALUT4     A        In      0.000     1.108       -         
+rgbled_flash_r.un1_rvcntnum_sawlto8_i_a2_7_3     ORCALUT4     Z        Out     1.017     2.125       -         
+un1_rvcntnum_sawlto8_i_a2_7_3                    Net          -        -       -         -           1         
+rgbled_flash_r.un1_rvcntnum_sawlto8_i_a2_7       ORCALUT4     C        In      0.000     2.125       -         
+rgbled_flash_r.un1_rvcntnum_sawlto8_i_a2_7       ORCALUT4     Z        Out     1.089     3.213       -         
+N_15_7                                           Net          -        -       -         -           2         
+rgbled_flash_r.rvcntnum_tri27lto10               ORCALUT4     A        In      0.000     3.213       -         
+rgbled_flash_r.rvcntnum_tri27lto10               ORCALUT4     Z        Out     1.017     4.230       -         
+rvcntnum_tri27lt14                               Net          -        -       -         -           1         
+rgbled_flash_r.rvcntnum_tri27lto19               ORCALUT4     A        In      0.000     4.230       -         
+rgbled_flash_r.rvcntnum_tri27lto19               ORCALUT4     Z        Out     1.017     5.247       -         
+rvcntnum_tri27lt20                               Net          -        -       -         -           1         
+rgbled_flash_r.rvcntnum_tri27lto22               ORCALUT4     D        In      0.000     5.247       -         
+rgbled_flash_r.rvcntnum_tri27lto22               ORCALUT4     Z        Out     1.017     6.264       -         
+rvcntnum_tri27lt25                               Net          -        -       -         -           1         
+rgbled_flash_r.rvcntnum_tri27lto25               ORCALUT4     D        In      0.000     6.264       -         
+rgbled_flash_r.rvcntnum_tri27lto25               ORCALUT4     Z        Out     1.366     7.630       -         
+rvcntnum_tri27lt26                               Net          -        -       -         -           33        
+rgbled_flash_r.rvcntnum_tri27lto26               ORCALUT4     B        In      0.000     7.630       -         
+rgbled_flash_r.rvcntnum_tri27lto26               ORCALUT4     Z        Out     1.089     8.719       -         
+rvcntnum_tri                                     Net          -        -       -         -           2         
+rgbled_flash_r.rvcntnum_tri_cry_0[0]             CCU2D        B0       In      0.000     8.719       -         
+rgbled_flash_r.rvcntnum_tri_cry_0[0]             CCU2D        COUT     Out     1.544     10.264      -         
+rvcntnum_tri_cry[0]                              Net          -        -       -         -           1         
+rgbled_flash_r.rvcntnum_tri_cry_0[1]             CCU2D        CIN      In      0.000     10.264      -         
+rgbled_flash_r.rvcntnum_tri_cry_0[1]             CCU2D        COUT     Out     0.143     10.406      -         
+rvcntnum_tri_cry[2]                              Net          -        -       -         -           1         
+rgbled_flash_r.rvcntnum_tri_cry_0[3]             CCU2D        CIN      In      0.000     10.406      -         
+rgbled_flash_r.rvcntnum_tri_cry_0[3]             CCU2D        COUT     Out     0.143     10.549      -         
+rvcntnum_tri_cry[4]                              Net          -        -       -         -           1         
+rgbled_flash_r.rvcntnum_tri_cry_0[5]             CCU2D        CIN      In      0.000     10.549      -         
+rgbled_flash_r.rvcntnum_tri_cry_0[5]             CCU2D        COUT     Out     0.143     10.692      -         
+rvcntnum_tri_cry[6]                              Net          -        -       -         -           1         
+rgbled_flash_r.rvcntnum_tri_cry_0[7]             CCU2D        CIN      In      0.000     10.692      -         
+rgbled_flash_r.rvcntnum_tri_cry_0[7]             CCU2D        COUT     Out     0.143     10.835      -         
+rvcntnum_tri_cry[8]                              Net          -        -       -         -           1         
+rgbled_flash_r.rvcntnum_tri_cry_0[9]             CCU2D        CIN      In      0.000     10.835      -         
+rgbled_flash_r.rvcntnum_tri_cry_0[9]             CCU2D        COUT     Out     0.143     10.977      -         
+rvcntnum_tri_cry[10]                             Net          -        -       -         -           1         
+rgbled_flash_r.rvcntnum_tri_cry_0[11]            CCU2D        CIN      In      0.000     10.977      -         
+rgbled_flash_r.rvcntnum_tri_cry_0[11]            CCU2D        COUT     Out     0.143     11.120      -         
+rvcntnum_tri_cry[12]                             Net          -        -       -         -           1         
+rgbled_flash_r.rvcntnum_tri_cry_0[13]            CCU2D        CIN      In      0.000     11.120      -         
+rgbled_flash_r.rvcntnum_tri_cry_0[13]            CCU2D        COUT     Out     0.143     11.263      -         
+rvcntnum_tri_cry[14]                             Net          -        -       -         -           1         
+rgbled_flash_r.rvcntnum_tri_cry_0[15]            CCU2D        CIN      In      0.000     11.263      -         
+rgbled_flash_r.rvcntnum_tri_cry_0[15]            CCU2D        COUT     Out     0.143     11.406      -         
+rvcntnum_tri_cry[16]                             Net          -        -       -         -           1         
+rgbled_flash_r.rvcntnum_tri_cry_0[17]            CCU2D        CIN      In      0.000     11.406      -         
+rgbled_flash_r.rvcntnum_tri_cry_0[17]            CCU2D        COUT     Out     0.143     11.549      -         
+rvcntnum_tri_cry[18]                             Net          -        -       -         -           1         
+rgbled_flash_r.rvcntnum_tri_cry_0[19]            CCU2D        CIN      In      0.000     11.549      -         
+rgbled_flash_r.rvcntnum_tri_cry_0[19]            CCU2D        COUT     Out     0.143     11.691      -         
+rvcntnum_tri_cry[20]                             Net          -        -       -         -           1         
+rgbled_flash_r.rvcntnum_tri_cry_0[21]            CCU2D        CIN      In      0.000     11.691      -         
+rgbled_flash_r.rvcntnum_tri_cry_0[21]            CCU2D        COUT     Out     0.143     11.834      -         
+rvcntnum_tri_cry[22]                             Net          -        -       -         -           1         
+rgbled_flash_r.rvcntnum_tri_cry_0[23]            CCU2D        CIN      In      0.000     11.834      -         
+rgbled_flash_r.rvcntnum_tri_cry_0[23]            CCU2D        COUT     Out     0.143     11.977      -         
+rvcntnum_tri_cry[24]                             Net          -        -       -         -           1         
+rgbled_flash_r.rvcntnum_tri_cry_0[25]            CCU2D        CIN      In      0.000     11.977      -         
+rgbled_flash_r.rvcntnum_tri_cry_0[25]            CCU2D        COUT     Out     0.143     12.120      -         
+rvcntnum_tri_cry[26]                             Net          -        -       -         -           1         
+rgbled_flash_r.rvcntnum_tri_cry_0[27]            CCU2D        CIN      In      0.000     12.120      -         
+rgbled_flash_r.rvcntnum_tri_cry_0[27]            CCU2D        COUT     Out     0.143     12.263      -         
+rvcntnum_tri_cry[28]                             Net          -        -       -         -           1         
+rgbled_flash_r.rvcntnum_tri_cry_0[29]            CCU2D        CIN      In      0.000     12.263      -         
+rgbled_flash_r.rvcntnum_tri_cry_0[29]            CCU2D        COUT     Out     0.143     12.405      -         
+rvcntnum_tri_cry[30]                             Net          -        -       -         -           1         
+rgbled_flash_r.rvcntnum_tri_s_0[31]              CCU2D        CIN      In      0.000     12.405      -         
+rgbled_flash_r.rvcntnum_tri_s_0[31]              CCU2D        S0       Out     1.549     13.954      -         
+rvcntnum_tri_s[31]                               Net          -        -       -         -           1         
+rgbled_flash_r.rvcntnum_tri[31]                  FD1P3DX      D        In      0.000     13.954      -         
+===============================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 148MB peak: 149MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 148MB peak: 149MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_4000hc-4
+
+Register bits: 205 of 4320 (5%)
+PIC Latch:       0
+I/O cells:       16
+
+
+Details:
+CCU2D:          145
+FD1P3DX:        32
+FD1S3BX:        32
+FD1S3DX:        141
+GSR:            1
+IB:             2
+INV:            4
+OB:             14
+ORCALUT4:       148
+PUR:            1
+VHI:            5
+VLO:            5
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 32MB peak: 149MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Fri Nov 15 11:02:54 2019
+
+###########################################################]
+
+
+Synthesis exit by 0.
+
+edif2ngd  -l "MachXO2" -d LCMXO2-4000HC -path "D:/Project/Verilog/STEP/series_courses/02_PWM/impl_pwm" -path "D:/Project/Verilog/STEP/series_courses/02_PWM"   "D:/Project/Verilog/STEP/series_courses/02_PWM/impl_pwm/pwm_impl_pwm.edi" "pwm_impl_pwm.ngo"   
+edif2ngd:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="STEP"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="COUNTER_NUM"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="MODE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="STEP"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="COUNTER_NUM"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="MODE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="STEP"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="COUNTER_NUM"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="MODE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="STEP"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="COUNTER_NUM"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="MODE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="MODE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="COUNTER_NUM"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="STEP"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="MODE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="COUNTER_NUM"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="STEP"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="MODE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="COUNTER_NUM"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="STEP"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="MODE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="COUNTER_NUM"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="STEP"  />
+Writing the design to pwm_impl_pwm.ngo...
+
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+ngdbuild  -a "MachXO2" -d LCMXO2-4000HC  -p "C:/Program Files/lscc/diamond/3.10_x64/ispfpga/xo2c00/data"  -p "D:/Project/Verilog/STEP/series_courses/02_PWM/impl_pwm" -p "D:/Project/Verilog/STEP/series_courses/02_PWM"  "pwm_impl_pwm.ngo" "pwm_impl_pwm.ngd"  	
+ngdbuild:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Reading 'pwm_impl_pwm.ngo' ...
+Loading NGL library 'C:/Program Files/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+    529 blocks expanded
+Complete the first expansion.
+Writing 'pwm_impl_pwm.ngd' ...
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+map -a "MachXO2" -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial   "pwm_impl_pwm.ngd" -o "pwm_impl_pwm_map.ncd" -pr "pwm_impl_pwm.prf" -mp "pwm_impl_pwm.mrp" -lpf "D:/Project/Verilog/STEP/series_courses/02_PWM/impl_pwm/pwm_impl_pwm_synplify.lpf" -lpf "D:/Project/Verilog/STEP/series_courses/02_PWM/pwm.lpf" -c 0            
+map:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: pwm_impl_pwm.ngd
+   Picdevice="LCMXO2-4000HC"
+
+   Pictype="CSBGA132"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-4000HCCSBGA132, Performance used: 4.
+
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+3 CCU2 constant inputs absorbed.
+
+    <postMsg mid="51001030" type="Warning" dynamic="1" navigation="0" arg0="irst_n_c"  />
+
+
+
+Design Summary:
+   Number of registers:    205 out of  4635 (4%)
+      PFU registers:          205 out of  4320 (5%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:       221 out of  2160 (10%)
+      SLICEs as Logic/ROM:    221 out of  2160 (10%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:        145 out of  2160 (7%)
+   Number of LUT4s:        442 out of  4320 (10%)
+      Number used as logic LUTs:        152
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      290
+      Number used as shift registers:     0
+   Number of PIO sites used: 16 + 4(JTAG) out of 105 (19%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  1
+     Net iclk_c: 117 loads, 117 rising, 0 falling (Driver: PIO iclk )
+   Number of Clock Enables:  1
+     Net rgbled_flash_r/N_6_i: 17 loads, 17 LSLICEs
+   Number of local set/reset loads for net irst_n_c merged into GSR:  205
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net rgbled_flash_r/rvcntnum_saw[26]: 36 loads
+     Net rgbled_flash_r/rvcntnum_tri27lt26: 33 loads
+     Net rgbled_flash_b/un1_rvcntnum_tri60f[1]: 31 loads
+     Net rgbled_flash_g/un1_rvcntnum_tri44f[1]: 31 loads
+     Net rgbled_flash_r/N_6_i: 17 loads
+     Net pwm/un1_rvcntnum_sawlto25: 16 loads
+     Net rgbled_flash_b/un1_rvcntnum_saw: 11 loads
+     Net rgbled_flash_g/un1_rvcntnum_saw: 11 loads
+     Net rgbled_flash_r/un1_rvcntnum_saw: 11 loads
+     Net VCC: 8 loads
+ 
+
+   Number of warnings:  1
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 52 MB
+
+Dumping design to file pwm_impl_pwm_map.ncd.
+
+trce -f "pwm_impl_pwm.mt" -o "pwm_impl_pwm.tw1" "pwm_impl_pwm_map.ncd" "pwm_impl_pwm.prf"
+trce:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file pwm_impl_pwm_map.ncd.
+Design name: pwm_rgbled
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: C:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Fri Nov 15 11:02:56 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o pwm_impl_pwm.tw1 -gui -msgset D:/Project/Verilog/STEP/series_courses/02_PWM/promote.xml pwm_impl_pwm_map.ncd pwm_impl_pwm.prf 
+Design file:     pwm_impl_pwm_map.ncd
+Preference file: pwm_impl_pwm.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 1874  Score: 1260428
+Cumulative negative slack: 1260428
+
+Constraints cover 21702 paths, 1 nets, and 1058 connections (73.83% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Fri Nov 15 11:02:56 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o pwm_impl_pwm.tw1 -gui -msgset D:/Project/Verilog/STEP/series_courses/02_PWM/promote.xml pwm_impl_pwm_map.ncd pwm_impl_pwm.prf 
+Design file:     pwm_impl_pwm_map.ncd
+Preference file: pwm_impl_pwm.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 21702 paths, 1 nets, and 1131 connections (78.93% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 1874 (setup), 0 (hold)
+Score: 1260428 (setup), 0 (hold)
+Cumulative negative slack: 1260428 (1260428+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 0 secs 
+
+ldbanno "pwm_impl_pwm_map.ncd" -n Verilog -o "pwm_impl_pwm_mapvo.vo" -w -neg
+ldbanno: version Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the pwm_impl_pwm_map design file.
+
+
+Loading design for application ldbanno from file pwm_impl_pwm_map.ncd.
+Design name: pwm_rgbled
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: C:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design pwm_impl_pwm_map.ncd into .ldb format.
+Writing Verilog netlist to file pwm_impl_pwm_mapvo.vo
+Writing SDF timing to file pwm_impl_pwm_mapvo.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+
+mpartrce -p "pwm_impl_pwm.p2t" -f "pwm_impl_pwm.p3t" -tf "pwm_impl_pwm.pt" "pwm_impl_pwm_map.ncd" "pwm_impl_pwm.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "pwm_impl_pwm_map.ncd"
+Fri Nov 15 11:02:58 2019
+
+PAR: Place And Route Diamond (64-bit) 3.10.0.111.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset D:/Project/Verilog/STEP/series_courses/02_PWM/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF pwm_impl_pwm_map.ncd pwm_impl_pwm.dir/5_1.ncd pwm_impl_pwm.prf
+Preference file: pwm_impl_pwm.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file pwm_impl_pwm_map.ncd.
+Design name: pwm_rgbled
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application par from file 'xo2c4000.nph' in environment: C:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   16+4(JTAG)/280     7% used
+                  16+4(JTAG)/105     19% bonded
+
+   SLICE            221/2160         10% used
+
+   GSR                1/1           100% used
+
+
+Number of Signals: 692
+Number of Connections: 1433
+
+Pin Constraint Summary:
+   16 out of 16 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    iclk_c (driver: iclk, clk load #: 117)
+
+    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="iclk_c" arg1="Primary" arg2="iclk" arg3="C1" arg4="Primary"  />
+
+The following 1 signal is selected to use the secondary clock routing resources:
+    rgbled_flash_r/N_6_i (driver: rgbled_flash_r/SLICE_188, clk load #: 0, sr load #: 0, ce load #: 17)
+
+Signal irst_n_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+.............
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+..................
+Placer score = 59252.
+Finished Placer Phase 1.  REAL time: 5 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  58881
+Finished Placer Phase 2.  REAL time: 6 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  General PIO: 1 out of 280 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "iclk_c" from comp "iclk" on PIO site "C1 (PL4A)", clk load = 117
+  SECONDARY "rgbled_flash_r/N_6_i" from F0 on comp "rgbled_flash_r/SLICE_188" on site "R12C15D", clk load = 0, ce load = 17, sr load = 0
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 1 out of 8 (12%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   16 + 4(JTAG) out of 280 (7.1%) PIO sites used.
+   16 + 4(JTAG) out of 105 (19.0%) bonded PIO sites used.
+   Number of PIO comps: 16; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+----------------+------------+-----------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref |
++----------+----------------+------------+-----------+
+| 0        | 0 / 26 (  0%)  | -          | -         |
+| 1        | 3 / 26 ( 11%)  | 3.3V       | -         |
+| 2        | 11 / 28 ( 39%) | 3.3V       | -         |
+| 3        | 1 / 7 ( 14%)   | 3.3V       | -         |
+| 4        | 0 / 8 (  0%)   | -          | -         |
+| 5        | 1 / 10 ( 10%)  | 3.3V       | -         |
++----------+----------------+------------+-----------+
+
+Total placer CPU time: 5 secs 
+
+Dumping design to file pwm_impl_pwm.dir/5_1.ncd.
+
+0 connections routed; 1433 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 7 secs 
+
+Start NBR router at 11:03:05 11/15/19
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 11:03:05 11/15/19
+
+Start NBR section for initial routing at 11:03:05 11/15/19
+Level 1, iteration 1
+3(0.00%) conflicts; 946(66.02%) untouched conns; 4173 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.158ns/-4.174ns; real time: 7 secs 
+Level 2, iteration 1
+9(0.00%) conflicts; 903(63.01%) untouched conns; 3587 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.132ns/-3.587ns; real time: 7 secs 
+Level 3, iteration 1
+9(0.00%) conflicts; 771(53.80%) untouched conns; 3711 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.132ns/-3.711ns; real time: 7 secs 
+Level 4, iteration 1
+50(0.02%) conflicts; 0(0.00%) untouched conn; 4077 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.145ns/-4.077ns; real time: 7 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 11:03:05 11/15/19
+Level 1, iteration 1
+12(0.00%) conflicts; 47(3.28%) untouched conns; 2808 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.112ns/-2.808ns; real time: 7 secs 
+Level 2, iteration 1
+7(0.00%) conflicts; 47(3.28%) untouched conns; 4077 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.145ns/-4.077ns; real time: 7 secs 
+Level 3, iteration 1
+6(0.00%) conflicts; 47(3.28%) untouched conns; 4077 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.145ns/-4.077ns; real time: 8 secs 
+Level 4, iteration 1
+32(0.01%) conflicts; 0(0.00%) untouched conn; 4077 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.145ns/-4.077ns; real time: 8 secs 
+Level 4, iteration 2
+18(0.01%) conflicts; 0(0.00%) untouched conn; 5696 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.198ns/-5.696ns; real time: 8 secs 
+Level 4, iteration 3
+4(0.00%) conflicts; 0(0.00%) untouched conn; 5696 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.198ns/-5.696ns; real time: 8 secs 
+Level 4, iteration 4
+4(0.00%) conflicts; 0(0.00%) untouched conn; 5696 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.198ns/-5.696ns; real time: 8 secs 
+Level 4, iteration 5
+3(0.00%) conflicts; 0(0.00%) untouched conn; 11387 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.396ns/-11.387ns; real time: 8 secs 
+Level 4, iteration 6
+2(0.00%) conflicts; 0(0.00%) untouched conn; 11387 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.396ns/-11.387ns; real time: 8 secs 
+Level 4, iteration 7
+2(0.00%) conflicts; 0(0.00%) untouched conn; 11387 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.396ns/-11.387ns; real time: 8 secs 
+Level 4, iteration 8
+2(0.00%) conflicts; 0(0.00%) untouched conn; 11387 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.396ns/-11.387ns; real time: 8 secs 
+Level 4, iteration 9
+0(0.00%) conflict; 0(0.00%) untouched conn; 14007 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.455ns/-14.007ns; real time: 8 secs 
+Level 4, iteration 10
+0(0.00%) conflict; 0(0.00%) untouched conn; 14007 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.455ns/-14.007ns; real time: 8 secs 
+Level 4, iteration 11
+0(0.00%) conflict; 0(0.00%) untouched conn; 14007 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.455ns/-14.007ns; real time: 8 secs 
+
+Start NBR section for performance tuning (iteration 1) at 11:03:06 11/15/19
+Level 4, iteration 1
+3(0.00%) conflicts; 0(0.00%) untouched conn; 9124 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.329ns/-9.124ns; real time: 8 secs 
+Level 4, iteration 2
+1(0.00%) conflict; 0(0.00%) untouched conn; 14007 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.455ns/-14.007ns; real time: 8 secs 
+Level 4, iteration 3
+1(0.00%) conflict; 0(0.00%) untouched conn; 14919 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.474ns/-14.919ns; real time: 8 secs 
+
+Start NBR section for re-routing at 11:03:06 11/15/19
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 14007 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.455ns/-14.007ns; real time: 8 secs 
+
+Start NBR section for post-routing at 11:03:06 11/15/19
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 54 (3.77%)
+  Estimated worst slack<setup> : -0.455ns
+  Timing score<setup> : 3803
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 8 secs 
+Total REAL time: 9 secs 
+Completely routed.
+End of route.  1433 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 3803 
+
+Dumping design to file pwm_impl_pwm.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Success
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -0.455
+PAR_SUMMARY::Timing score<setup/<ns>> = 3.803
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.379
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 8 secs 
+Total REAL time to completion: 9 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "pwm_impl_pwm.pt" -o "pwm_impl_pwm.twr" "pwm_impl_pwm.ncd" "pwm_impl_pwm.prf"
+trce:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file pwm_impl_pwm.ncd.
+Design name: pwm_rgbled
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: C:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Fri Nov 15 11:03:07 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o pwm_impl_pwm.twr -gui -msgset D:/Project/Verilog/STEP/series_courses/02_PWM/promote.xml pwm_impl_pwm.ncd pwm_impl_pwm.prf 
+Design file:     pwm_impl_pwm.ncd
+Preference file: pwm_impl_pwm.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 35  Score: 3803
+Cumulative negative slack: 3803
+
+Constraints cover 21702 paths, 1 nets, and 1131 connections (78.93% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Fri Nov 15 11:03:08 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o pwm_impl_pwm.twr -gui -msgset D:/Project/Verilog/STEP/series_courses/02_PWM/promote.xml pwm_impl_pwm.ncd pwm_impl_pwm.prf 
+Design file:     pwm_impl_pwm.ncd
+Preference file: pwm_impl_pwm.prf
+Device,speed:    LCMXO2-4000HC,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 21702 paths, 1 nets, and 1131 connections (78.93% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 35 (setup), 0 (hold)
+Score: 3803 (setup), 0 (hold)
+Cumulative negative slack: 3803 (3803+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 0 secs 
+
+iotiming  "pwm_impl_pwm.ncd" "pwm_impl_pwm.prf"
+I/O Timing Report:
+:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application iotiming from file pwm_impl_pwm.ncd.
+Design name: pwm_rgbled
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application iotiming from file 'xo2c4000.nph' in environment: C:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 4
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file pwm_impl_pwm.ncd.
+Design name: pwm_rgbled
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 5
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file pwm_impl_pwm.ncd.
+Design name: pwm_rgbled
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 6
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file pwm_impl_pwm.ncd.
+Design name: pwm_rgbled
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: M
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+Done.
+
+bitgen -f "pwm_impl_pwm.t2b" -w "pwm_impl_pwm.ncd" "pwm_impl_pwm.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file pwm_impl_pwm.ncd.
+Design name: pwm_rgbled
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: C:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from pwm_impl_pwm.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "pwm_impl_pwm.bit".

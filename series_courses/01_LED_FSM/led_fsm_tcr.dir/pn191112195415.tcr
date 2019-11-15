@@ -1,0 +1,8 @@
+#Start recording tcl command: 11/12/2019 18:13:58
+#Project Location: D:/Project/Verilog/STEP/series_courses/01_LED_FSM; Project name: led_fsm
+prj_project new -name "led_fsm" -impl "impl_led_fsm" -dev LCMXO2-4000HC-6MG132C -synthesis "synplify"
+prj_project save
+prj_src add "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm_top.v"
+prj_run Synthesis -impl impl_led_fsm
+prj_run Synthesis -impl impl_led_fsm -task Synplify_Synthesis
+#Stop recording: 11/12/2019 19:54:15

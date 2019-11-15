@@ -1,0 +1,318 @@
+<HTML>
+<HEAD><TITLE>Lattice Map TRACE Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Map TRACE Report</big></U></B>
+
+Loading design for application trce from file led_fsm_impl_led_fsm_map.ncd.
+Design name: led_fsm_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Loading device for application trce from file 'xo2c4000.nph' in environment: C:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2</big></U></B>
+Thu Nov 14 11:34:25 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_set_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o led_fsm_impl_led_fsm.tw1 -gui -msgset D:/Project/Verilog/STEP/series_courses/01_LED_FSM/promote.xml led_fsm_impl_led_fsm_map.ncd led_fsm_impl_led_fsm.prf 
+Design file:     led_fsm_impl_led_fsm_map.ncd
+Preference file: led_fsm_impl_led_fsm.prf
+Device,speed:    LCMXO2-4000HC,6
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_set_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<FONT COLOR=red><LI><A href='#map_twr_pref_0_0' Target='right'><FONT COLOR=red>FREQUENCY NET "iclk_c" 290.107000 MHz (638 errors)</FONT></A></LI>
+</FONT>            992 items scored, 638 timing errors detected.
+Warning: 174.917MHz is the maximum frequency for this preference.
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_0_0"></A>Preference: FREQUENCY NET "iclk_c" 290.107000 MHz ;
+            992 items scored, 638 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 2.270ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              condition_judge/rvcounter[25]  (from iclk_c +)
+   Destination:    FF         Data in        impl_state_controller/rvstate[1]  (to iclk_c +)
+
+   Delay:               5.584ns  (35.8% logic, 64.2% route), 5 logic levels.
+
+ Constraint Details:
+
+      5.584ns physical path delay condition_judge/SLICE_4 to impl_state_controller/SLICE_23 exceeds
+      3.447ns delay constraint less
+      0.133ns DIN_SET requirement (totaling 3.314ns) by 2.270ns
+
+ Physical Path Details:
+
+      Data path condition_judge/SLICE_4 to impl_state_controller/SLICE_23:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.367 *e/SLICE_4.CLK to *ge/SLICE_4.Q0 condition_judge/SLICE_4 (from iclk_c)
+ROUTE         2   e 0.896 *ge/SLICE_4.Q0 to *e/SLICE_31.C0 condition_judge/rvcounter[25]
+CTOF_DEL    ---     0.408 *e/SLICE_31.C0 to *e/SLICE_31.F0 condition_judge/SLICE_31
+ROUTE         1   e 0.896 *e/SLICE_31.F0 to *e/SLICE_25.C0 condition_judge/owcondition_21
+CTOF_DEL    ---     0.408 *e/SLICE_25.C0 to *e/SLICE_25.F0 condition_judge/SLICE_25
+ROUTE         1   e 0.896 *e/SLICE_25.F0 to    SLICE_24.D1 condition_judge/owcondition_28
+CTOF_DEL    ---     0.408    SLICE_24.D1 to    SLICE_24.F1 SLICE_24
+ROUTE        14   e 0.896    SLICE_24.F1 to *r/SLICE_23.A1 wcondition
+CTOF_DEL    ---     0.408 *r/SLICE_23.A1 to *r/SLICE_23.F1 impl_state_controller/SLICE_23
+ROUTE         1   e 0.001 *r/SLICE_23.F1 to */SLICE_23.DI1 impl_state_controller/rvstate_3[1] (to iclk_c)
+                  --------
+                    5.584   (35.8% logic, 64.2% route), 5 logic levels.
+
+Warning: 174.917MHz is the maximum frequency for this preference.
+
+<A name="mtw1_set_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "iclk_c" 290.107000 MHz ; |  290.107 MHz|  174.917 MHz|   5 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+wcondition                              |      14|     434|     68.03%
+                                        |        |        |
+condition_judge/owcondition_28          |       1|     224|     35.11%
+                                        |        |        |
+condition_judge/un3_rvcounter_1_cry_14  |       1|     153|     23.98%
+                                        |        |        |
+condition_judge/un3_rvcounter_1_cry_16  |       1|     148|     23.20%
+                                        |        |        |
+condition_judge/un3_rvcounter_1_cry_12  |       1|     144|     22.57%
+                                        |        |        |
+condition_judge/un3_rvcounter_1_cry_10  |       1|     141|     22.10%
+                                        |        |        |
+condition_judge/un3_rvcounter_1_cry_8   |       1|     126|     19.75%
+                                        |        |        |
+condition_judge/un3_rvcounter_1_cry_18  |       1|     123|     19.28%
+                                        |        |        |
+condition_judge/un3_rvcounter_1_cry_20  |       1|     106|     16.61%
+                                        |        |        |
+condition_judge/un3_rvcounter_1_cry_6   |       1|     105|     16.46%
+                                        |        |        |
+condition_judge/owcondition_23          |       1|      98|     15.36%
+                                        |        |        |
+condition_judge/un3_rvcounter_1_cry_22  |       1|      86|     13.48%
+                                        |        |        |
+condition_judge/un3_rvcounter_1_cry_4   |       1|      83|     13.01%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+<A name="mtw1_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: iclk_c   Source: iclk.PAD   Loads: 30
+   Covered under: FREQUENCY NET "iclk_c" 290.107000 MHz ;
+
+
+<A name="mtw1_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
+---------------
+
+Timing errors: 638  Score: 813829
+Cumulative negative slack: 813829
+
+Constraints cover 992 paths, 1 nets, and 223 connections (96.54% coverage)
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2</big></U></B>
+Thu Nov 14 11:34:26 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_hold_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o led_fsm_impl_led_fsm.tw1 -gui -msgset D:/Project/Verilog/STEP/series_courses/01_LED_FSM/promote.xml led_fsm_impl_led_fsm_map.ncd led_fsm_impl_led_fsm.prf 
+Design file:     led_fsm_impl_led_fsm_map.ncd
+Preference file: led_fsm_impl_led_fsm.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#map_twr_pref_1_0' Target='right'>FREQUENCY NET "iclk_c" 290.107000 MHz (0 errors)</A></LI>            992 items scored, 0 timing errors detected.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_1_0"></A>Preference: FREQUENCY NET "iclk_c" 290.107000 MHz ;
+            992 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.447ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              impl_state_controller/rvstate[2]  (from iclk_c +)
+   Destination:    FF         Data in        impl_state_controller/rvstate[2]  (to iclk_c +)
+
+   Delay:               0.434ns  (53.9% logic, 46.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.434ns physical path delay SLICE_24 to SLICE_24 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.447ns
+
+ Physical Path Details:
+
+      Data path SLICE_24 to SLICE_24:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133   SLICE_24.CLK to    SLICE_24.Q0 SLICE_24 (from iclk_c)
+ROUTE         9   e 0.199    SLICE_24.Q0 to    SLICE_24.D0 wvstate[2]
+CTOF_DEL    ---     0.101    SLICE_24.D0 to    SLICE_24.F0 SLICE_24
+ROUTE         1   e 0.001    SLICE_24.F0 to   SLICE_24.DI0 impl_state_controller/rvstate_3[2] (to iclk_c)
+                  --------
+                    0.434   (53.9% logic, 46.1% route), 2 logic levels.
+
+<A name="mtw1_hold_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "iclk_c" 290.107000 MHz ; |     0.000 ns|     0.447 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="mtw1_hold_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: iclk_c   Source: iclk.PAD   Loads: 30
+   Covered under: FREQUENCY NET "iclk_c" 290.107000 MHz ;
+
+
+<A name="mtw1_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 992 paths, 1 nets, and 223 connections (96.54% coverage)
+
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
+---------------
+
+Timing errors: 638 (setup), 0 (hold)
+Score: 813829 (setup), 0 (hold)
+Cumulative negative slack: 813829 (813829+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

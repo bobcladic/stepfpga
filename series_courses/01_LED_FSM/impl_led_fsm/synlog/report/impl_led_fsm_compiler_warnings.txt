@@ -1,0 +1,6 @@
+@W: CG730 :"D:\Project\Verilog\STEP\series_courses\01_LED_FSM\led_fsm_top.v":148:7:148:16|Top-level module led_fsm_tb has no ports
+@W: CG532 :"D:\Project\Verilog\STEP\series_courses\01_LED_FSM\led_fsm_top.v":152:0:152:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@W: CG294 :"D:\Project\Verilog\STEP\series_courses\01_LED_FSM\led_fsm_top.v":157:0:157:5|always block should contain at least one event control
+@W: CG133 :"D:\Project\Verilog\STEP\series_courses\01_LED_FSM\led_fsm_top.v":150:4:150:8|Object rst_n is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL168 :"D:\Project\Verilog\STEP\series_courses\01_LED_FSM\led_fsm_top.v":159:12:159:22|Removing instance led_fsm_top because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+

@@ -1,0 +1,319 @@
+
+Loading design for application trce from file pwm_impl_pwm_map.ncd.
+Design name: pwm_rgbled
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: C:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Fri Nov 15 11:02:56 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o pwm_impl_pwm.tw1 -gui -msgset D:/Project/Verilog/STEP/series_courses/02_PWM/promote.xml pwm_impl_pwm_map.ncd pwm_impl_pwm.prf 
+Design file:     pwm_impl_pwm_map.ncd
+Preference file: pwm_impl_pwm.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "iclk_c" 72.908000 MHz ;
+            4096 items scored, 1874 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 2.786ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[0]  (from iclk_c +)
+   Destination:    FF         Data in        rgbled_flash_r/rvcntnum_tri[31]  (to iclk_c +)
+
+   Delay:              16.336ns  (48.7% logic, 51.3% route), 25 logic levels.
+
+ Constraint Details:
+
+     16.336ns physical path delay rgbled_flash_r/SLICE_161 to rgbled_flash_r/SLICE_77 exceeds
+     13.716ns delay constraint less
+      0.166ns DIN_SET requirement (totaling 13.550ns) by 2.786ns
+
+ Physical Path Details:
+
+      Data path rgbled_flash_r/SLICE_161 to rgbled_flash_r/SLICE_77:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452 *SLICE_161.CLK to */SLICE_161.Q0 rgbled_flash_r/SLICE_161 (from iclk_c)
+ROUTE         3   e 1.234 */SLICE_161.Q0 to */SLICE_219.A0 rgbled_flash_r/rvcntnum_saw[0]
+CTOF_DEL    ---     0.495 */SLICE_219.A0 to */SLICE_219.F0 rgbled_flash_r/SLICE_219
+ROUTE         1   e 1.234 */SLICE_219.F0 to */SLICE_194.C1 rgbled_flash_r/un1_rvcntnum_sawlto8_i_a2_7_3
+CTOF_DEL    ---     0.495 */SLICE_194.C1 to */SLICE_194.F1 rgbled_flash_r/SLICE_194
+ROUTE         2   e 1.234 */SLICE_194.F1 to */SLICE_219.A1 rgbled_flash_r/N_15_7
+CTOF_DEL    ---     0.495 */SLICE_219.A1 to */SLICE_219.F1 rgbled_flash_r/SLICE_219
+ROUTE         1   e 1.234 */SLICE_219.F1 to */SLICE_191.A1 rgbled_flash_r/rvcntnum_tri27lt14
+CTOF_DEL    ---     0.495 */SLICE_191.A1 to */SLICE_191.F1 rgbled_flash_r/SLICE_191
+ROUTE         1   e 0.480 */SLICE_191.F1 to */SLICE_191.D0 rgbled_flash_r/rvcntnum_tri27lt20
+CTOF_DEL    ---     0.495 */SLICE_191.D0 to */SLICE_191.F0 rgbled_flash_r/SLICE_191
+ROUTE         1   e 1.234 */SLICE_191.F0 to */SLICE_189.D1 rgbled_flash_r/rvcntnum_tri27lt25
+CTOF_DEL    ---     0.495 */SLICE_189.D1 to */SLICE_189.F1 rgbled_flash_r/SLICE_189
+ROUTE        33   e 0.480 */SLICE_189.F1 to */SLICE_189.B0 rgbled_flash_r/rvcntnum_tri27lt26
+CTOF_DEL    ---     0.495 */SLICE_189.B0 to */SLICE_189.F0 rgbled_flash_r/SLICE_189
+ROUTE         2   e 1.234 */SLICE_189.F0 to *r/SLICE_93.B0 rgbled_flash_r/rvcntnum_tri
+C0TOFCO_DE  ---     1.023 *r/SLICE_93.B0 to */SLICE_93.FCO rgbled_flash_r/SLICE_93
+ROUTE         1   e 0.001 */SLICE_93.FCO to */SLICE_92.FCI rgbled_flash_r/rvcntnum_tri_cry[0]
+FCITOFCO_D  ---     0.162 */SLICE_92.FCI to */SLICE_92.FCO rgbled_flash_r/SLICE_92
+ROUTE         1   e 0.001 */SLICE_92.FCO to */SLICE_91.FCI rgbled_flash_r/rvcntnum_tri_cry[2]
+FCITOFCO_D  ---     0.162 */SLICE_91.FCI to */SLICE_91.FCO rgbled_flash_r/SLICE_91
+ROUTE         1   e 0.001 */SLICE_91.FCO to */SLICE_90.FCI rgbled_flash_r/rvcntnum_tri_cry[4]
+FCITOFCO_D  ---     0.162 */SLICE_90.FCI to */SLICE_90.FCO rgbled_flash_r/SLICE_90
+ROUTE         1   e 0.001 */SLICE_90.FCO to */SLICE_89.FCI rgbled_flash_r/rvcntnum_tri_cry[6]
+FCITOFCO_D  ---     0.162 */SLICE_89.FCI to */SLICE_89.FCO rgbled_flash_r/SLICE_89
+ROUTE         1   e 0.001 */SLICE_89.FCO to */SLICE_88.FCI rgbled_flash_r/rvcntnum_tri_cry[8]
+FCITOFCO_D  ---     0.162 */SLICE_88.FCI to */SLICE_88.FCO rgbled_flash_r/SLICE_88
+ROUTE         1   e 0.001 */SLICE_88.FCO to */SLICE_87.FCI rgbled_flash_r/rvcntnum_tri_cry[10]
+FCITOFCO_D  ---     0.162 */SLICE_87.FCI to */SLICE_87.FCO rgbled_flash_r/SLICE_87
+ROUTE         1   e 0.001 */SLICE_87.FCO to */SLICE_86.FCI rgbled_flash_r/rvcntnum_tri_cry[12]
+FCITOFCO_D  ---     0.162 */SLICE_86.FCI to */SLICE_86.FCO rgbled_flash_r/SLICE_86
+ROUTE         1   e 0.001 */SLICE_86.FCO to */SLICE_85.FCI rgbled_flash_r/rvcntnum_tri_cry[14]
+FCITOFCO_D  ---     0.162 */SLICE_85.FCI to */SLICE_85.FCO rgbled_flash_r/SLICE_85
+ROUTE         1   e 0.001 */SLICE_85.FCO to */SLICE_84.FCI rgbled_flash_r/rvcntnum_tri_cry[16]
+FCITOFCO_D  ---     0.162 */SLICE_84.FCI to */SLICE_84.FCO rgbled_flash_r/SLICE_84
+ROUTE         1   e 0.001 */SLICE_84.FCO to */SLICE_83.FCI rgbled_flash_r/rvcntnum_tri_cry[18]
+FCITOFCO_D  ---     0.162 */SLICE_83.FCI to */SLICE_83.FCO rgbled_flash_r/SLICE_83
+ROUTE         1   e 0.001 */SLICE_83.FCO to */SLICE_82.FCI rgbled_flash_r/rvcntnum_tri_cry[20]
+FCITOFCO_D  ---     0.162 */SLICE_82.FCI to */SLICE_82.FCO rgbled_flash_r/SLICE_82
+ROUTE         1   e 0.001 */SLICE_82.FCO to */SLICE_81.FCI rgbled_flash_r/rvcntnum_tri_cry[22]
+FCITOFCO_D  ---     0.162 */SLICE_81.FCI to */SLICE_81.FCO rgbled_flash_r/SLICE_81
+ROUTE         1   e 0.001 */SLICE_81.FCO to */SLICE_80.FCI rgbled_flash_r/rvcntnum_tri_cry[24]
+FCITOFCO_D  ---     0.162 */SLICE_80.FCI to */SLICE_80.FCO rgbled_flash_r/SLICE_80
+ROUTE         1   e 0.001 */SLICE_80.FCO to */SLICE_79.FCI rgbled_flash_r/rvcntnum_tri_cry[26]
+FCITOFCO_D  ---     0.162 */SLICE_79.FCI to */SLICE_79.FCO rgbled_flash_r/SLICE_79
+ROUTE         1   e 0.001 */SLICE_79.FCO to */SLICE_78.FCI rgbled_flash_r/rvcntnum_tri_cry[28]
+FCITOFCO_D  ---     0.162 */SLICE_78.FCI to */SLICE_78.FCO rgbled_flash_r/SLICE_78
+ROUTE         1   e 0.001 */SLICE_78.FCO to */SLICE_77.FCI rgbled_flash_r/rvcntnum_tri_cry[30]
+FCITOF0_DE  ---     0.585 */SLICE_77.FCI to *r/SLICE_77.F0 rgbled_flash_r/SLICE_77
+ROUTE         1   e 0.001 *r/SLICE_77.F0 to */SLICE_77.DI0 rgbled_flash_r/rvcntnum_tri_s[31] (to iclk_c)
+                  --------
+                   16.336   (48.7% logic, 51.3% route), 25 logic levels.
+
+Warning:  60.599MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "iclk_c" 72.908000 MHz ;  |   72.908 MHz|   60.599 MHz|  25 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+rgbled_flash_r/N_15_7                   |       2|    1868|     99.68%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_tri27lt14       |       1|    1766|     94.24%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_tri27lt20       |       1|    1766|     94.24%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_tri27lt25       |       1|    1766|     94.24%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_tri27lt26       |      33|    1766|     94.24%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_tri_cry[14]     |       1|    1358|     72.47%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_tri_cry[16]     |       1|    1346|     71.82%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_tri_cry[12]     |       1|    1322|     70.54%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_tri_cry[18]     |       1|    1286|     68.62%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_tri_cry[10]     |       1|    1238|     66.06%
+                                        |        |        |
+rgbled_flash_r/un1_rvcntnum_sawlto8_i_a2|        |        |
+_7_4                                    |       1|    1228|     65.53%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_tri_cry[20]     |       1|    1174|     62.65%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_tri_cry[8]      |       1|    1106|     59.02%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_tri_cry[22]     |       1|    1020|     54.43%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_tri_cry[6]      |       1|     950|     50.69%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_tri_cry[24]     |       1|     836|     44.61%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_tri_cry[4]      |       1|     770|     41.09%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_tri_cry[26]     |       1|     628|     33.51%
+                                        |        |        |
+rgbled_flash_r/un1_rvcntnum_sawlto8_i_a2|        |        |
+_7_3                                    |       1|     614|     32.76%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_tri_cry[2]      |       1|     566|     30.20%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_tri_cry[28]     |       1|     396|     21.13%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_tri_cry[0]      |       1|     338|     18.04%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_tri             |       2|     314|     16.76%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_saw[7]          |       2|     307|     16.38%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_saw[4]          |       2|     307|     16.38%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_saw[3]          |       2|     307|     16.38%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_saw[2]          |       2|     307|     16.38%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_saw[1]          |       2|     307|     16.38%
+                                        |        |        |
+rgbled_flash_r/rvcntnum_saw[0]          |       3|     307|     16.38%
+                                        |        |        |
+rgbled_flash_r/N_6_i                    |      17|     204|     10.89%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: iclk_c   Source: iclk.PAD   Loads: 117
+   Covered under: FREQUENCY NET "iclk_c" 72.908000 MHz ;
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 1874  Score: 1260428
+Cumulative negative slack: 1260428
+
+Constraints cover 21702 paths, 1 nets, and 1058 connections (73.83% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Fri Nov 15 11:02:56 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o pwm_impl_pwm.tw1 -gui -msgset D:/Project/Verilog/STEP/series_courses/02_PWM/promote.xml pwm_impl_pwm_map.ncd pwm_impl_pwm.prf 
+Design file:     pwm_impl_pwm_map.ncd
+Preference file: pwm_impl_pwm.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "iclk_c" 72.908000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.447ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              rgbled_flash_b/rvcntnum_tri_pipe  (from iclk_c +)
+   Destination:    FF         Data in        rgbled_flash_b/rvcntnum_tri_pipe  (to iclk_c +)
+
+   Delay:               0.434ns  (53.9% logic, 46.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.434ns physical path delay SLICE_175 to SLICE_175 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.447ns
+
+ Physical Path Details:
+
+      Data path SLICE_175 to SLICE_175:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133  SLICE_175.CLK to   SLICE_175.Q0 SLICE_175 (from iclk_c)
+ROUTE         3   e 0.199   SLICE_175.Q0 to   SLICE_175.B0 wvrgbled_pwm_bf[0]
+CTOF_DEL    ---     0.101   SLICE_175.B0 to   SLICE_175.F0 SLICE_175
+ROUTE         1   e 0.001   SLICE_175.F0 to  SLICE_175.DI0 rgbled_flash_b/wvrgbled_pwm_b[0] (to iclk_c)
+                  --------
+                    0.434   (53.9% logic, 46.1% route), 2 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "iclk_c" 72.908000 MHz ;  |     0.000 ns|     0.447 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: iclk_c   Source: iclk.PAD   Loads: 117
+   Covered under: FREQUENCY NET "iclk_c" 72.908000 MHz ;
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 21702 paths, 1 nets, and 1131 connections (78.93% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 1874 (setup), 0 (hold)
+Score: 1260428 (setup), 0 (hold)
+Cumulative negative slack: 1260428 (1260428+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

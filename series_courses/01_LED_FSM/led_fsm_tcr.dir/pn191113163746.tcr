@@ -1,0 +1,7 @@
+#Start recording tcl command: 11/13/2019 16:21:56
+#Project Location: D:/Project/Verilog/STEP/series_courses/01_LED_FSM; Project name: led_fsm
+prj_project open "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm.ldf"
+prj_run Synthesis -impl impl_led_fsm -task Synplify_Synthesis -forceOne
+launch_synplify_prj impl_led_fsm
+prj_src add "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm_tb/led_fsm_tb.spf"
+#Stop recording: 11/13/2019 16:37:46

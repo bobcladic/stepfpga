@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="MapVerilogSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>51001030</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>irst_n_c</Dynamic>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61001101</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>iclk_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>iclk</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>COUNTER_NUM</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;d:\project\verilog\step\series_courses\01_led_fsm\led_fsm_top.v&quot;:88:4:88:9|Found inferred clock led_fsm_top|iclk which controls 43 sequential elements including impl_led_controller.rvled[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>d:\project\verilog\step\series_courses\01_led_fsm\led_fsm_top.v</Navigation>
+            <Navigation>88</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>88</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Found inferred clock led_fsm_top|iclk which controls 43 sequential elements including impl_led_controller.rvled[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock led_fsm_top|iclk with period 1000.00ns. Please declare a user-defined clock on object &quot;p:iclk&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock led_fsm_top|iclk with period 1000.00ns. Please declare a user-defined clock on object &quot;p:iclk&quot;</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

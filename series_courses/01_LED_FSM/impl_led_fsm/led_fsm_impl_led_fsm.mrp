@@ -1,0 +1,270 @@
+
+         Lattice Mapping Report File for Design Module 'led_fsm_top'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 6 -oc Commercial
+     led_fsm_impl_led_fsm.ngd -o led_fsm_impl_led_fsm_map.ncd -pr
+     led_fsm_impl_led_fsm.prf -mp led_fsm_impl_led_fsm.mrp -lpf D:/Project/Veril
+     og/STEP/series_courses/01_LED_FSM/impl_led_fsm/led_fsm_impl_led_fsm_synplif
+     y.lpf -lpf D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm.lpf -c
+     0 -gui -msgset
+     D:/Project/Verilog/STEP/series_courses/01_LED_FSM/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   6
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.0.111.2
+Mapped on:  11/14/19  11:34:24
+
+Design Summary
+--------------
+
+   Number of registers:     43 out of  4635 (1%)
+      PFU registers:           35 out of  4320 (1%)
+      PIO registers:            8 out of   315 (3%)
+   Number of SLICEs:        34 out of  2160 (2%)
+      SLICEs as Logic/ROM:     34 out of  2160 (2%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         17 out of  2160 (1%)
+   Number of LUT4s:         67 out of  4320 (2%)
+      Number used as logic LUTs:         33
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       34
+      Number used as shift registers:     0
+   Number of PIO sites used: 16 + 4(JTAG) out of 105 (19%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net iclk_c: 30 loads, 30 rising, 0 falling (Driver: PIO iclk )
+
+                                    Page 1
+
+
+
+
+Design:  led_fsm_top                                   Date:  11/14/19  11:34:24
+
+Design Summary (cont)
+---------------------
+   Number of Clock Enables:  0
+   Number of local set/reset loads for net irst_n_c merged into GSR:  43
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net wcondition: 14 loads
+     Net wvstate[0]: 11 loads
+     Net wvstate[1]: 10 loads
+     Net wvstate[2]: 9 loads
+     Net VCC: 6 loads
+     Net condition_judge/rvcounter[0]: 2 loads
+     Net condition_judge/rvcounter[1]: 2 loads
+     Net condition_judge/rvcounter[2]: 2 loads
+     Net condition_judge/rvcounter[3]: 2 loads
+     Net condition_judge/rvcounter[4]: 2 loads
+
+
+
+
+   Number of warnings:  1
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: Using local reset signal 'irst_n_c' to infer global GSR net.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| owvled[0]           | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| iclk                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| owvrgbled2[2]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| owvrgbled2[1]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| owvrgbled2[0]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| owvrgbled1[2]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| owvrgbled1[1]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| owvrgbled1[0]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| owvled[7]           | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| owvled[6]           | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| owvled[5]           | OUTPUT    | LVCMOS33  | OUT        |
+
+                                    Page 2
+
+
+
+
+Design:  led_fsm_top                                   Date:  11/14/19  11:34:24
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| owvled[4]           | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| owvled[3]           | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| owvled[2]           | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| owvled[1]           | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| irst_n              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block GND undriven or does not drive anything - clipped.
+Block impl_led_controller/VCC undriven or does not drive anything - clipped.
+Block impl_led_controller/GND undriven or does not drive anything - clipped.
+Block impl_state_controller/GND undriven or does not drive anything - clipped.
+Block impl_state_controller/VCC undriven or does not drive anything - clipped.
+Signal irst_n_c_i was merged into signal irst_n_c
+Signal condition_judge/GND undriven or does not drive anything - clipped.
+Signal condition_judge/un3_rvcounter_1_s_31_0_S1 undriven or does not drive
+     anything - clipped.
+Signal condition_judge/un3_rvcounter_1_s_31_0_COUT undriven or does not drive
+     anything - clipped.
+Signal condition_judge/un3_rvcounter_1_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal condition_judge/un3_rvcounter_1_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal condition_judge/N_1 undriven or does not drive anything - clipped.
+Block irst_n_pad_RNI3G79 was optimized away.
+Block condition_judge/GND was optimized away.
+
+Memory Usage
+------------
+
+
+     
+
+GSR Usage
+---------
+
+GSR Component:
+   The local reset signal 'irst_n_c' of the design has been inferred as Global
+        Set Reset (GSR). The reset signal used for GSR control is 'irst_n_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+
+
+
+                                    Page 3
+
+
+
+
+Design:  led_fsm_top                                   Date:  11/14/19  11:34:24
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 49 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 4
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

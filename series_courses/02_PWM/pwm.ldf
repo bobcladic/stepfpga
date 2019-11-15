@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="pwm" device="LCMXO2-4000HC-4MG132C" default_implementation="impl_pwm">
+    <Options/>
+    <Implementation title="impl_pwm" dir="impl_pwm" description="impl_pwm" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="pwm_rgbled"/>
+        <Source name="pwm_rgbled.v" type="Verilog" type_short="Verilog">
+            <Options top_module="pwm_rgbled"/>
+        </Source>
+        <Source name="pwm_rgbled_tb.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="impl_pwm/impl_pwm.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="pwm.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="pwm_rgbled_tb/pwm_rgbled_tb.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="pwm1.sty"/>
+</BaliProject>

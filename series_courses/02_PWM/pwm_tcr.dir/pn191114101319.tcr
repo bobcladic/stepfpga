@@ -1,0 +1,5 @@
+#Start recording tcl command: 11/14/2019 09:55:12
+#Project Location: D:/Project/Verilog/STEP/series_courses/02_PWM; Project name: pwm
+prj_project new -name "pwm" -impl "impl_pwm" -dev LCMXO2-4000HC-5MG132C -synthesis "synplify"
+prj_project save
+#Stop recording: 11/14/2019 10:13:19

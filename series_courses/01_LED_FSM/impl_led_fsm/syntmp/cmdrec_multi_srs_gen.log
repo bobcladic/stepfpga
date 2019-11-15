@@ -1,0 +1,7 @@
+C:\Program Files\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  led_fsm_top  -multisrs  D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\synwork\led_fsm_impl_led_fsm_comp.srs  -osyn  D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\synwork\led_fsm_impl_led_fsm_mult.srs  -log  D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\synlog\led_fsm_impl_led_fsm_multi_srs_gen.srr 
+relcom:C:\Program Files\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe -link -top led_fsm_top -multisrs ..\synwork\led_fsm_impl_led_fsm_comp.srs -osyn ..\synwork\led_fsm_impl_led_fsm_mult.srs -log ..\synlog\led_fsm_impl_led_fsm_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\led_fsm_impl_led_fsm_comp.srs|io:i|time:1573702457|size:5416|exec:0|csum:D1A2E30E72C51FDAA8A1E74860B1DE2E
+file:..\synwork\led_fsm_impl_led_fsm_mult.srs|io:o|time:1573702458|size:2693|exec:0|csum:
+file:..\synlog\led_fsm_impl_led_fsm_multi_srs_gen.srr|io:o|time:1573702458|size:538|exec:0|csum:
+file:C:\Program Files\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe|io:i|time:1501863390|size:8865280|exec:1|csum:B37FCE9CF34F30C81898D8440E6E88C7

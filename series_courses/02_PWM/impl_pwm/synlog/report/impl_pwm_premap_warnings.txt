@@ -1,0 +1,1 @@
+@W: MT529 :"d:\project\verilog\step\series_courses\02_pwm\pwm_rgbled.v":123:4:123:9|Found inferred clock pwm_rgbled|iclk which controls 201 sequential elements including pwm.rvcntnum_saw[25:2]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

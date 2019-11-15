@@ -1,0 +1,134 @@
+(edif comp
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2019 11 14 15 54 50)
+      (program "SCUBA" (version "Diamond (64-bit) 3.10.0.111.2"))))
+      (comment "C:\Program Files\lscc\diamond\3.10_x64\ispfpga\bin\nt64\scuba.exe -w -n comp -lang verilog -synth synplify -bus_exp 7 -bb -arch xo2c00 -type comp -width 1 -unsigned -port aeqb -pfu ")
+  (library ORCLIB
+    (edifLevel 0)
+    (technology
+      (numberDefinition))
+    (cell FADD2B
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port A0
+            (direction INPUT))
+          (port A1
+            (direction INPUT))
+          (port B0
+            (direction INPUT))
+          (port B1
+            (direction INPUT))
+          (port CI
+            (direction INPUT))
+          (port COUT
+            (direction OUTPUT))
+          (port S0
+            (direction OUTPUT))
+          (port S1
+            (direction OUTPUT)))))
+    (cell ROM16X1A
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port AD3
+            (direction INPUT))
+          (port AD2
+            (direction INPUT))
+          (port AD1
+            (direction INPUT))
+          (port AD0
+            (direction INPUT))
+          (port DO0
+            (direction OUTPUT)))))
+    (cell VHI
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port Z
+            (direction OUTPUT)))))
+    (cell VLO
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port Z
+            (direction OUTPUT)))))
+    (cell comp
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port (array (rename DataA "DataA(0:0)") 1)
+            (direction INPUT))
+          (port (array (rename DataB "DataB(0:0)") 1)
+            (direction INPUT))
+          (port AEQB
+            (direction OUTPUT)))
+        (property NGD_DRC_MASK (integer 1))
+        (contents
+          (instance LUT4_1
+            (viewRef view1 
+              (cellRef ROM16X1A))
+            (property initval
+              (string "0x9009")))
+          (instance scuba_vhi_inst
+            (viewRef view1 
+              (cellRef VHI)))
+          (instance LUT4_0
+            (viewRef view1 
+              (cellRef ROM16X1A))
+            (property initval
+              (string "0x8000")))
+          (instance scuba_vlo_inst
+            (viewRef view1 
+              (cellRef VLO)))
+          (instance cmp_ci_a
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (net scuba_vhi
+            (joined
+              (portRef Z (instanceRef scuba_vhi_inst))
+              (portRef AD0 (instanceRef LUT4_0))
+              (portRef AD1 (instanceRef LUT4_0))
+              (portRef AD2 (instanceRef LUT4_0))))
+          (net cmp_inet_0
+            (joined
+              (portRef AD3 (instanceRef LUT4_0))
+              (portRef DO0 (instanceRef LUT4_1))))
+          (net cmp_ci
+            (joined
+              (portRef COUT (instanceRef cmp_ci_a))))
+          (net scuba_vlo
+            (joined
+              (portRef Z (instanceRef scuba_vlo_inst))
+              (portRef AD2 (instanceRef LUT4_1))
+              (portRef AD3 (instanceRef LUT4_1))
+              (portRef CI (instanceRef cmp_ci_a))
+              (portRef B0 (instanceRef cmp_ci_a))
+              (portRef B1 (instanceRef cmp_ci_a))
+              (portRef A0 (instanceRef cmp_ci_a))
+              (portRef A1 (instanceRef cmp_ci_a))))
+          (net aeqb_out
+            (joined
+              (portRef AEQB)
+              (portRef DO0 (instanceRef LUT4_0))))
+          (net b0
+            (joined
+              (portRef (member DataB 0))
+              (portRef AD0 (instanceRef LUT4_1))))
+          (net a0
+            (joined
+              (portRef (member DataA 0))
+              (portRef AD1 (instanceRef LUT4_1))))))))
+  (design comp
+    (cellRef comp
+      (libraryRef ORCLIB)))
+)

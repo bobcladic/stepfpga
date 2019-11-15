@@ -1,0 +1,1 @@
+C:/Program Files/lscc/diamond/3.10_x64/bin/nt64/moduleparser.exe -PROJ led_fsm_tb -pf C:/Program Files/lscc/diamond/3.10_x64/cae_library/synthesis/vhdl/machxo2.vhd -lib machxo2 -pkg C:/Program Files/lscc/diamond/3.10_x64/cae_library/vhdl_packages/vdbs -lst D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm_tb/source_files.lst

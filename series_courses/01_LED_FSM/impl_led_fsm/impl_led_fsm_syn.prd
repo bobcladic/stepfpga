@@ -1,0 +1,13 @@
+#--  Synopsys, Inc.
+#--  Version M-2017.03L-SP1-1
+#--  Project file D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\impl_led_fsm_syn.prd
+#--  Written on Thu Nov 14 11:03:15 2019
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

@@ -1,0 +1,1361 @@
+
+synpwrap -msg -prj "led_fsm_impl_led_fsm_synplify.tcl" -log "led_fsm_impl_led_fsm.srf"
+Copyright (C) 1992-2017 Lattice Semiconductor Corporation. All rights reserved.
+Lattice Diamond Version 3.10.0.111.2
+    <postMsg mid="2011000" type="Info"    dynamic="0" navigation="0"  />
+
+==contents of led_fsm_impl_led_fsm.srf
+#Build: Synplify Pro (R) M-2017.03L-SP1-1, Build 086R, Aug  4 2017
+#install: C:\Program Files\lscc\diamond\3.10_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-HAL5TRF
+
+# Thu Nov 14 11:34:16 2019
+
+#Implementation: impl_led_fsm
+
+Synopsys HDL Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\Program Files\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\Program Files\lscc\diamond\3.10_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\Program Files\lscc\diamond\3.10_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Program Files\lscc\diamond\3.10_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Program Files\lscc\diamond\3.10_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Program Files\lscc\diamond\3.10_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"D:\Project\Verilog\STEP\series_courses\01_LED_FSM\led_fsm_top.v" (library work)
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module led_fsm_top
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\01_LED_FSM\led_fsm_top.v":80:7:80:20|Synthesizing module led_controller in library work.
+@N: CG793 :"D:\Project\Verilog\STEP\series_courses\01_LED_FSM\led_fsm_top.v":107:8:107:15|Ignoring system task $display
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\01_LED_FSM\led_fsm_top.v":111:7:111:22|Synthesizing module state_controller in library work.
+@N: CG179 :"D:\Project\Verilog\STEP\series_courses\01_LED_FSM\led_fsm_top.v":127:23:127:29|Removing redundant assignment.
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\01_LED_FSM\led_fsm_top.v":139:7:139:21|Synthesizing module condition_judge in library work.
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\01_LED_FSM\led_fsm_top.v":28:7:28:17|Synthesizing module led_fsm_top in library work.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 14 11:34:16 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+File D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 14 11:34:17 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 14 11:34:17 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+File D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\synwork\led_fsm_impl_led_fsm_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Nov 14 11:34:18 2019
+
+###########################################################]
+Pre-mapping Report
+
+# Thu Nov 14 11:34:18 2019
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version M-2017.03L-SP1-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\led_fsm_impl_led_fsm_scck.rpt 
+Printing clock  summary report in "D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\led_fsm_impl_led_fsm_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=10  set on top level netlist led_fsm_top
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+
+Clock Summary
+******************
+
+          Start                Requested     Requested     Clock        Clock                   Clock
+Level     Clock                Frequency     Period        Type         Group                   Load 
+-----------------------------------------------------------------------------------------------------
+0 -       led_fsm_top|iclk     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0     43   
+=====================================================================================================
+
+@W: MT529 :"d:\project\verilog\step\series_courses\01_led_fsm\led_fsm_top.v":88:4:88:9|Found inferred clock led_fsm_top|iclk which controls 43 sequential elements including impl_led_controller.rvled[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Nov 14 11:34:19 2019
+
+###########################################################]
+Map & Optimize Report
+
+# Thu Nov 14 11:34:19 2019
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version M-2017.03L-SP1-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		   994.18ns		  33 /        43
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 43 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=================================== Non-Gated/Non-Generated Clocks ===================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance               
+------------------------------------------------------------------------------------------------------
+@K:CKID0001       iclk                port                   43         impl_led_controller_rvledio[0]
+======================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 141MB)
+
+Writing Analyst data base D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\synwork\led_fsm_impl_led_fsm_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\led_fsm_impl_led_fsm.edi
+M-2017.03L-SP1-1
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 145MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 145MB)
+
+@W: MT420 |Found inferred clock led_fsm_top|iclk with period 1000.00ns. Please declare a user-defined clock on object "p:iclk"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Nov 14 11:34:21 2019
+#
+
+
+Top view:               led_fsm_top
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 993.615
+
+                     Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock       Frequency     Frequency     Period        Period        Slack       Type         Group              
+-------------------------------------------------------------------------------------------------------------------------
+led_fsm_top|iclk     1.0 MHz       156.6 MHz     1000.000      6.385         993.615     inferred     Inferred_clkgroup_0
+=========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                              |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------
+Starting          Ending            |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------
+led_fsm_top|iclk  led_fsm_top|iclk  |  1000.000    993.615  |  No paths    -      |  No paths    -      |  No paths    -    
+============================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: led_fsm_top|iclk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                 Starting                                                  Arrival            
+Instance                         Reference            Type        Pin     Net              Time        Slack  
+                                 Clock                                                                        
+--------------------------------------------------------------------------------------------------------------
+condition_judge.rvcounter[0]     led_fsm_top|iclk     FD1S3DX     Q       rvcounter[0]     1.044       993.615
+condition_judge.rvcounter[1]     led_fsm_top|iclk     FD1S3DX     Q       rvcounter[1]     1.044       993.758
+condition_judge.rvcounter[2]     led_fsm_top|iclk     FD1S3DX     Q       rvcounter[2]     1.044       993.758
+condition_judge.rvcounter[3]     led_fsm_top|iclk     FD1S3DX     Q       rvcounter[3]     1.044       993.901
+condition_judge.rvcounter[4]     led_fsm_top|iclk     FD1S3DX     Q       rvcounter[4]     1.044       993.901
+condition_judge.rvcounter[5]     led_fsm_top|iclk     FD1S3DX     Q       rvcounter[5]     1.044       994.043
+condition_judge.rvcounter[6]     led_fsm_top|iclk     FD1S3DX     Q       rvcounter[6]     1.044       994.043
+condition_judge.rvcounter[7]     led_fsm_top|iclk     FD1S3DX     Q       rvcounter[7]     1.044       994.186
+condition_judge.rvcounter[8]     led_fsm_top|iclk     FD1S3DX     Q       rvcounter[8]     1.044       994.186
+condition_judge.rvcounter[9]     led_fsm_top|iclk     FD1S3DX     Q       rvcounter[9]     1.044       994.329
+==============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                  Starting                                                         Required            
+Instance                          Reference            Type        Pin     Net                     Time         Slack  
+                                  Clock                                                                                
+-----------------------------------------------------------------------------------------------------------------------
+condition_judge.rvcounter[31]     led_fsm_top|iclk     FD1S3DX     D       un3_rvcounter_1[31]     999.894      993.615
+condition_judge.rvcounter[29]     led_fsm_top|iclk     FD1S3DX     D       un3_rvcounter_1[29]     999.894      993.758
+condition_judge.rvcounter[30]     led_fsm_top|iclk     FD1S3DX     D       un3_rvcounter_1[30]     999.894      993.758
+condition_judge.rvcounter[23]     led_fsm_top|iclk     FD1S3DX     D       rvcounter_3[23]         1000.089     993.764
+condition_judge.rvcounter[27]     led_fsm_top|iclk     FD1S3DX     D       un3_rvcounter_1[27]     999.894      993.901
+condition_judge.rvcounter[28]     led_fsm_top|iclk     FD1S3DX     D       un3_rvcounter_1[28]     999.894      993.901
+condition_judge.rvcounter[21]     led_fsm_top|iclk     FD1S3DX     D       rvcounter_3[21]         1000.089     993.907
+condition_judge.rvcounter[25]     led_fsm_top|iclk     FD1S3DX     D       un3_rvcounter_1[25]     999.894      994.043
+condition_judge.rvcounter[26]     led_fsm_top|iclk     FD1S3DX     D       un3_rvcounter_1[26]     999.894      994.043
+condition_judge.rvcounter[20]     led_fsm_top|iclk     FD1S3DX     D       rvcounter_3[20]         1000.089     994.049
+=======================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         999.894
+
+    - Propagation time:                      6.279
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     993.615
+
+    Number of logic level(s):                17
+    Starting point:                          condition_judge.rvcounter[0] / Q
+    Ending point:                            condition_judge.rvcounter[31] / D
+    The start point is clocked by            led_fsm_top|iclk [rising] on pin CK
+    The end   point is clocked by            led_fsm_top|iclk [rising] on pin CK
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                         Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+condition_judge.rvcounter[0]                 FD1S3DX     Q        Out     1.044     1.044       -         
+rvcounter[0]                                 Net         -        -       -         -           2         
+condition_judge.un3_rvcounter_1_cry_0_0      CCU2D       A1       In      0.000     1.044       -         
+condition_judge.un3_rvcounter_1_cry_0_0      CCU2D       COUT     Out     1.544     2.588       -         
+un3_rvcounter_1_cry_0                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_1_0      CCU2D       CIN      In      0.000     2.588       -         
+condition_judge.un3_rvcounter_1_cry_1_0      CCU2D       COUT     Out     0.143     2.731       -         
+un3_rvcounter_1_cry_2                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_3_0      CCU2D       CIN      In      0.000     2.731       -         
+condition_judge.un3_rvcounter_1_cry_3_0      CCU2D       COUT     Out     0.143     2.874       -         
+un3_rvcounter_1_cry_4                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_5_0      CCU2D       CIN      In      0.000     2.874       -         
+condition_judge.un3_rvcounter_1_cry_5_0      CCU2D       COUT     Out     0.143     3.017       -         
+un3_rvcounter_1_cry_6                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_7_0      CCU2D       CIN      In      0.000     3.017       -         
+condition_judge.un3_rvcounter_1_cry_7_0      CCU2D       COUT     Out     0.143     3.159       -         
+un3_rvcounter_1_cry_8                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_9_0      CCU2D       CIN      In      0.000     3.159       -         
+condition_judge.un3_rvcounter_1_cry_9_0      CCU2D       COUT     Out     0.143     3.302       -         
+un3_rvcounter_1_cry_10                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_11_0     CCU2D       CIN      In      0.000     3.302       -         
+condition_judge.un3_rvcounter_1_cry_11_0     CCU2D       COUT     Out     0.143     3.445       -         
+un3_rvcounter_1_cry_12                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_13_0     CCU2D       CIN      In      0.000     3.445       -         
+condition_judge.un3_rvcounter_1_cry_13_0     CCU2D       COUT     Out     0.143     3.588       -         
+un3_rvcounter_1_cry_14                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_15_0     CCU2D       CIN      In      0.000     3.588       -         
+condition_judge.un3_rvcounter_1_cry_15_0     CCU2D       COUT     Out     0.143     3.731       -         
+un3_rvcounter_1_cry_16                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_17_0     CCU2D       CIN      In      0.000     3.731       -         
+condition_judge.un3_rvcounter_1_cry_17_0     CCU2D       COUT     Out     0.143     3.873       -         
+un3_rvcounter_1_cry_18                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_19_0     CCU2D       CIN      In      0.000     3.873       -         
+condition_judge.un3_rvcounter_1_cry_19_0     CCU2D       COUT     Out     0.143     4.016       -         
+un3_rvcounter_1_cry_20                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_21_0     CCU2D       CIN      In      0.000     4.016       -         
+condition_judge.un3_rvcounter_1_cry_21_0     CCU2D       COUT     Out     0.143     4.159       -         
+un3_rvcounter_1_cry_22                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_23_0     CCU2D       CIN      In      0.000     4.159       -         
+condition_judge.un3_rvcounter_1_cry_23_0     CCU2D       COUT     Out     0.143     4.302       -         
+un3_rvcounter_1_cry_24                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_25_0     CCU2D       CIN      In      0.000     4.302       -         
+condition_judge.un3_rvcounter_1_cry_25_0     CCU2D       COUT     Out     0.143     4.445       -         
+un3_rvcounter_1_cry_26                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_27_0     CCU2D       CIN      In      0.000     4.445       -         
+condition_judge.un3_rvcounter_1_cry_27_0     CCU2D       COUT     Out     0.143     4.588       -         
+un3_rvcounter_1_cry_28                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_29_0     CCU2D       CIN      In      0.000     4.588       -         
+condition_judge.un3_rvcounter_1_cry_29_0     CCU2D       COUT     Out     0.143     4.730       -         
+un3_rvcounter_1_cry_30                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_s_31_0       CCU2D       CIN      In      0.000     4.730       -         
+condition_judge.un3_rvcounter_1_s_31_0       CCU2D       S0       Out     1.549     6.279       -         
+un3_rvcounter_1[31]                          Net         -        -       -         -           1         
+condition_judge.rvcounter[31]                FD1S3DX     D        In      0.000     6.279       -         
+==========================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_4000hc-6
+
+Register bits: 43 of 4320 (1%)
+PIC Latch:       0
+I/O cells:       16
+
+
+Details:
+CCU2D:          17
+FD1S3DX:        35
+GSR:            1
+IB:             2
+INV:            1
+OB:             14
+OFS1P3BX:       7
+OFS1P3DX:       1
+ORCALUT4:       32
+PUR:            1
+VHI:            4
+VLO:            4
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 31MB peak: 145MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Nov 14 11:34:21 2019
+
+###########################################################]
+
+
+Synthesis exit by 0.
+
+edif2ngd  -l "MachXO2" -d LCMXO2-4000HC -path "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/impl_led_fsm" -path "D:/Project/Verilog/STEP/series_courses/01_LED_FSM"   "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/impl_led_fsm/led_fsm_impl_led_fsm.edi" "led_fsm_impl_led_fsm.ngo"   
+edif2ngd:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="COUNTER_NUM"  />
+Writing the design to led_fsm_impl_led_fsm.ngo...
+
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+ngdbuild  -a "MachXO2" -d LCMXO2-4000HC  -p "C:/Program Files/lscc/diamond/3.10_x64/ispfpga/xo2c00/data"  -p "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/impl_led_fsm" -p "D:/Project/Verilog/STEP/series_courses/01_LED_FSM"  "led_fsm_impl_led_fsm.ngo" "led_fsm_impl_led_fsm.ngd"  	
+ngdbuild:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Reading 'led_fsm_impl_led_fsm.ngo' ...
+Loading NGL library 'C:/Program Files/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+    118 blocks expanded
+Complete the first expansion.
+Writing 'led_fsm_impl_led_fsm.ngd' ...
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+map -a "MachXO2" -p LCMXO2-4000HC -t CSBGA132 -s 6 -oc Commercial   "led_fsm_impl_led_fsm.ngd" -o "led_fsm_impl_led_fsm_map.ncd" -pr "led_fsm_impl_led_fsm.prf" -mp "led_fsm_impl_led_fsm.mrp" -lpf "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/impl_led_fsm/led_fsm_impl_led_fsm_synplify.lpf" -lpf "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm.lpf" -c 0            
+map:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: led_fsm_impl_led_fsm.ngd
+   Picdevice="LCMXO2-4000HC"
+
+   Pictype="CSBGA132"
+
+   Picspeed=6
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-4000HCCSBGA132, Performance used: 6.
+
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+1 CCU2 constant inputs absorbed.
+
+    <postMsg mid="51001030" type="Warning" dynamic="1" navigation="0" arg0="irst_n_c"  />
+
+
+
+Design Summary:
+   Number of registers:     43 out of  4635 (1%)
+      PFU registers:           35 out of  4320 (1%)
+      PIO registers:            8 out of   315 (3%)
+   Number of SLICEs:        34 out of  2160 (2%)
+      SLICEs as Logic/ROM:     34 out of  2160 (2%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         17 out of  2160 (1%)
+   Number of LUT4s:         67 out of  4320 (2%)
+      Number used as logic LUTs:         33
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       34
+      Number used as shift registers:     0
+   Number of PIO sites used: 16 + 4(JTAG) out of 105 (19%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  1
+     Net iclk_c: 30 loads, 30 rising, 0 falling (Driver: PIO iclk )
+   Number of Clock Enables:  0
+   Number of local set/reset loads for net irst_n_c merged into GSR:  43
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net wcondition: 14 loads
+     Net wvstate[0]: 11 loads
+     Net wvstate[1]: 10 loads
+     Net wvstate[2]: 9 loads
+     Net VCC: 6 loads
+     Net condition_judge/rvcounter[0]: 2 loads
+     Net condition_judge/rvcounter[1]: 2 loads
+     Net condition_judge/rvcounter[2]: 2 loads
+     Net condition_judge/rvcounter[3]: 2 loads
+     Net condition_judge/rvcounter[4]: 2 loads
+ 
+
+   Number of warnings:  1
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 49 MB
+
+Dumping design to file led_fsm_impl_led_fsm_map.ncd.
+
+trce -f "led_fsm_impl_led_fsm.mt" -o "led_fsm_impl_led_fsm.tw1" "led_fsm_impl_led_fsm_map.ncd" "led_fsm_impl_led_fsm.prf"
+trce:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file led_fsm_impl_led_fsm_map.ncd.
+Design name: led_fsm_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Loading device for application trce from file 'xo2c4000.nph' in environment: C:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Thu Nov 14 11:34:25 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o led_fsm_impl_led_fsm.tw1 -gui -msgset D:/Project/Verilog/STEP/series_courses/01_LED_FSM/promote.xml led_fsm_impl_led_fsm_map.ncd led_fsm_impl_led_fsm.prf 
+Design file:     led_fsm_impl_led_fsm_map.ncd
+Preference file: led_fsm_impl_led_fsm.prf
+Device,speed:    LCMXO2-4000HC,6
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 638  Score: 813829
+Cumulative negative slack: 813829
+
+Constraints cover 992 paths, 1 nets, and 223 connections (96.54% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Thu Nov 14 11:34:26 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o led_fsm_impl_led_fsm.tw1 -gui -msgset D:/Project/Verilog/STEP/series_courses/01_LED_FSM/promote.xml led_fsm_impl_led_fsm_map.ncd led_fsm_impl_led_fsm.prf 
+Design file:     led_fsm_impl_led_fsm_map.ncd
+Preference file: led_fsm_impl_led_fsm.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 992 paths, 1 nets, and 223 connections (96.54% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 638 (setup), 0 (hold)
+Score: 813829 (setup), 0 (hold)
+Cumulative negative slack: 813829 (813829+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 0 secs 
+
+ldbanno "led_fsm_impl_led_fsm_map.ncd" -n Verilog -o "led_fsm_impl_led_fsm_mapvo.vo" -w -neg
+ldbanno: version Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the led_fsm_impl_led_fsm_map design file.
+
+
+Loading design for application ldbanno from file led_fsm_impl_led_fsm_map.ncd.
+Design name: led_fsm_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: C:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design led_fsm_impl_led_fsm_map.ncd into .ldb format.
+Writing Verilog netlist to file led_fsm_impl_led_fsm_mapvo.vo
+Writing SDF timing to file led_fsm_impl_led_fsm_mapvo.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+
+mpartrce -p "led_fsm_impl_led_fsm.p2t" -f "led_fsm_impl_led_fsm.p3t" -tf "led_fsm_impl_led_fsm.pt" "led_fsm_impl_led_fsm_map.ncd" "led_fsm_impl_led_fsm.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "led_fsm_impl_led_fsm_map.ncd"
+Thu Nov 14 11:34:28 2019
+
+PAR: Place And Route Diamond (64-bit) 3.10.0.111.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset D:/Project/Verilog/STEP/series_courses/01_LED_FSM/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF led_fsm_impl_led_fsm_map.ncd led_fsm_impl_led_fsm.dir/5_1.ncd led_fsm_impl_led_fsm.prf
+Preference file: led_fsm_impl_led_fsm.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file led_fsm_impl_led_fsm_map.ncd.
+Design name: led_fsm_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Loading device for application par from file 'xo2c4000.nph' in environment: C:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   16+4(JTAG)/280     7% used
+                  16+4(JTAG)/105     19% bonded
+   IOLOGIC            8/280           2% used
+
+   SLICE             34/2160          1% used
+
+   GSR                1/1           100% used
+
+
+Number of Signals: 125
+Number of Connections: 231
+    <postMsg mid="61001101" type="Warning" dynamic="0" navigation="0"  />
+
+Pin Constraint Summary:
+   16 out of 16 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    iclk_c (driver: iclk, clk load #: 30)
+
+    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="iclk_c" arg1="Primary" arg2="iclk" arg3="C1" arg4="Primary"  />
+
+No signal is selected as secondary clock.
+
+Signal irst_n_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+................
+Placer score = 42750.
+Finished Placer Phase 1.  REAL time: 2 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  42621
+Finished Placer Phase 2.  REAL time: 2 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  General PIO: 1 out of 280 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "iclk_c" from comp "iclk" on PIO site "C1 (PL4A)", clk load = 30
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 0 out of 8 (0%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   16 + 4(JTAG) out of 280 (7.1%) PIO sites used.
+   16 + 4(JTAG) out of 105 (19.0%) bonded PIO sites used.
+   Number of PIO comps: 16; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+----------------+------------+-----------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref |
++----------+----------------+------------+-----------+
+| 0        | 0 / 26 (  0%)  | -          | -         |
+| 1        | 3 / 26 ( 11%)  | 3.3V       | -         |
+| 2        | 11 / 28 ( 39%) | 3.3V       | -         |
+| 3        | 1 / 7 ( 14%)   | 3.3V       | -         |
+| 4        | 0 / 8 (  0%)   | -          | -         |
+| 5        | 1 / 10 ( 10%)  | 3.3V       | -         |
++----------+----------------+------------+-----------+
+
+Total placer CPU time: 2 secs 
+
+Dumping design to file led_fsm_impl_led_fsm.dir/5_1.ncd.
+
+0 connections routed; 231 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 4 secs 
+
+Start NBR router at 11:34:32 11/14/19
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 11:34:32 11/14/19
+
+Start NBR section for initial routing at 11:34:32 11/14/19
+Level 1, iteration 1
+4(0.00%) conflicts; 127(54.98%) untouched conns; 146250 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.584ns/-146.251ns; real time: 4 secs 
+Level 2, iteration 1
+15(0.01%) conflicts; 109(47.19%) untouched conns; 145120 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.892ns/-145.121ns; real time: 4 secs 
+Level 3, iteration 1
+22(0.01%) conflicts; 7(3.03%) untouched conns; 145991 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.637ns/-145.991ns; real time: 4 secs 
+Level 4, iteration 1
+7(0.00%) conflicts; 0(0.00%) untouched conn; 157951 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.924ns/-157.952ns; real time: 4 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 11:34:32 11/14/19
+Level 1, iteration 1
+10(0.00%) conflicts; 0(0.00%) untouched conn; 150795 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.789ns/-150.795ns; real time: 4 secs 
+Level 2, iteration 1
+17(0.01%) conflicts; 1(0.43%) untouched conn; 150631 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.882ns/-150.632ns; real time: 4 secs 
+Level 3, iteration 1
+6(0.00%) conflicts; 0(0.00%) untouched conn; 163659 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -2.155ns/-163.660ns; real time: 4 secs 
+Level 3, iteration 2
+6(0.00%) conflicts; 0(0.00%) untouched conn; 160266 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-160.267ns; real time: 4 secs 
+Level 4, iteration 1
+5(0.00%) conflicts; 0(0.00%) untouched conn; 164546 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-164.547ns; real time: 4 secs 
+Level 4, iteration 2
+2(0.00%) conflicts; 0(0.00%) untouched conn; 160830 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-160.831ns; real time: 4 secs 
+Level 4, iteration 3
+4(0.00%) conflicts; 0(0.00%) untouched conn; 165105 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-165.106ns; real time: 4 secs 
+Level 4, iteration 4
+2(0.00%) conflicts; 0(0.00%) untouched conn; 165105 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-165.106ns; real time: 4 secs 
+Level 4, iteration 5
+2(0.00%) conflicts; 0(0.00%) untouched conn; 161441 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-161.442ns; real time: 4 secs 
+Level 4, iteration 6
+3(0.00%) conflicts; 0(0.00%) untouched conn; 161441 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-161.442ns; real time: 4 secs 
+Level 4, iteration 7
+4(0.00%) conflicts; 0(0.00%) untouched conn; 174724 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-174.725ns; real time: 4 secs 
+Level 4, iteration 8
+2(0.00%) conflicts; 0(0.00%) untouched conn; 174724 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-174.725ns; real time: 4 secs 
+Level 4, iteration 9
+2(0.00%) conflicts; 0(0.00%) untouched conn; 161630 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-161.631ns; real time: 4 secs 
+Level 4, iteration 10
+5(0.00%) conflicts; 0(0.00%) untouched conn; 161630 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-161.631ns; real time: 4 secs 
+Level 4, iteration 11
+3(0.00%) conflicts; 0(0.00%) untouched conn; 175869 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-175.870ns; real time: 4 secs 
+Level 4, iteration 12
+2(0.00%) conflicts; 0(0.00%) untouched conn; 175869 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-175.870ns; real time: 4 secs 
+Level 4, iteration 13
+3(0.00%) conflicts; 0(0.00%) untouched conn; 162087 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-162.088ns; real time: 4 secs 
+Level 4, iteration 14
+4(0.00%) conflicts; 0(0.00%) untouched conn; 162087 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-162.088ns; real time: 4 secs 
+Level 4, iteration 15
+3(0.00%) conflicts; 0(0.00%) untouched conn; 176156 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-176.157ns; real time: 4 secs 
+Level 4, iteration 16
+2(0.00%) conflicts; 0(0.00%) untouched conn; 176156 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-176.157ns; real time: 4 secs 
+Level 4, iteration 17
+1(0.00%) conflict; 0(0.00%) untouched conn; 161823 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-161.824ns; real time: 4 secs 
+Level 4, iteration 18
+1(0.00%) conflict; 0(0.00%) untouched conn; 161823 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-161.824ns; real time: 4 secs 
+Level 4, iteration 19
+1(0.00%) conflict; 0(0.00%) untouched conn; 176656 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-176.656ns; real time: 4 secs 
+Level 4, iteration 20
+1(0.00%) conflict; 0(0.00%) untouched conn; 176656 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.984ns/-176.656ns; real time: 4 secs 
+Level 4, iteration 21
+0(0.00%) conflict; 0(0.00%) untouched conn; 163233 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -2.003ns/-163.234ns; real time: 4 secs 
+
+Start NBR section for performance tuning (iteration 1) at 11:34:32 11/14/19
+Level 4, iteration 1
+9(0.00%) conflicts; 0(0.00%) untouched conn; 148744 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.680ns/-148.745ns; real time: 4 secs 
+Level 4, iteration 2
+9(0.00%) conflicts; 0(0.00%) untouched conn; 173026 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.972ns/-173.027ns; real time: 4 secs 
+Level 4, iteration 3
+1(0.00%) conflict; 0(0.00%) untouched conn; 159328 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.960ns/-159.329ns; real time: 4 secs 
+Level 4, iteration 4
+0(0.00%) conflict; 0(0.00%) untouched conn; 159328 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -1.960ns/-159.329ns; real time: 4 secs 
+
+Start NBR section for re-routing at 11:34:32 11/14/19
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 163232 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -2.008ns/-163.233ns; real time: 4 secs 
+
+Start NBR section for post-routing at 11:34:32 11/14/19
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 145 (62.77%)
+  Estimated worst slack<setup> : -2.008ns
+  Timing score<setup> : 604944
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 4 secs 
+Total REAL time: 5 secs 
+Completely routed.
+End of route.  231 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 604944 
+
+Dumping design to file led_fsm_impl_led_fsm.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Success
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -2.008
+PAR_SUMMARY::Timing score<setup/<ns>> = 604.944
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.379
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 4 secs 
+Total REAL time to completion: 5 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "led_fsm_impl_led_fsm.pt" -o "led_fsm_impl_led_fsm.twr" "led_fsm_impl_led_fsm.ncd" "led_fsm_impl_led_fsm.prf"
+trce:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file led_fsm_impl_led_fsm.ncd.
+Design name: led_fsm_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Loading device for application trce from file 'xo2c4000.nph' in environment: C:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Thu Nov 14 11:34:34 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o led_fsm_impl_led_fsm.twr -gui -msgset D:/Project/Verilog/STEP/series_courses/01_LED_FSM/promote.xml led_fsm_impl_led_fsm.ncd led_fsm_impl_led_fsm.prf 
+Design file:     led_fsm_impl_led_fsm.ncd
+Preference file: led_fsm_impl_led_fsm.prf
+Device,speed:    LCMXO2-4000HC,6
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 684  Score: 604944
+Cumulative negative slack: 604944
+
+Constraints cover 992 paths, 1 nets, and 223 connections (96.54% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Thu Nov 14 11:34:34 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o led_fsm_impl_led_fsm.twr -gui -msgset D:/Project/Verilog/STEP/series_courses/01_LED_FSM/promote.xml led_fsm_impl_led_fsm.ncd led_fsm_impl_led_fsm.prf 
+Design file:     led_fsm_impl_led_fsm.ncd
+Preference file: led_fsm_impl_led_fsm.prf
+Device,speed:    LCMXO2-4000HC,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 992 paths, 1 nets, and 223 connections (96.54% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 684 (setup), 0 (hold)
+Score: 604944 (setup), 0 (hold)
+Cumulative negative slack: 604944 (604944+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 0 secs 
+
+iotiming  "led_fsm_impl_led_fsm.ncd" "led_fsm_impl_led_fsm.prf"
+I/O Timing Report:
+:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application iotiming from file led_fsm_impl_led_fsm.ncd.
+Design name: led_fsm_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Loading device for application iotiming from file 'xo2c4000.nph' in environment: C:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 6
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file led_fsm_impl_led_fsm.ncd.
+Design name: led_fsm_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: M
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+Done.
+
+bitgen -f "led_fsm_impl_led_fsm.t2b" -w "led_fsm_impl_led_fsm.ncd" "led_fsm_impl_led_fsm.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file led_fsm_impl_led_fsm.ncd.
+Design name: led_fsm_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: C:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from led_fsm_impl_led_fsm.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "led_fsm_impl_led_fsm.bit".
+
+bitgen -f "led_fsm_impl_led_fsm.t2b" -w "led_fsm_impl_led_fsm.ncd" -jedec "led_fsm_impl_led_fsm.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file led_fsm_impl_led_fsm.ncd.
+Design name: led_fsm_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: C:/Program Files/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from led_fsm_impl_led_fsm.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "led_fsm_impl_led_fsm.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        767 Pages (128*767 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  767 Pages (Page 0 to Page 766).
+Initialized UFM Pages:                     0 Page.
+ 

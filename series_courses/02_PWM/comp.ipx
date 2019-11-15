@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="comp" module="comp" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2019 11 14 15:54:51.776" version="3.6" type="Module" synthesis="synplify" source_format="Verilog HDL">
+  <Package>
+		<File name="comp.lpc" type="lpc" modified="2019 11 14 15:54:50.489"/>
+		<File name="comp.v" type="top_level_verilog" modified="2019 11 14 15:54:50.573"/>
+		<File name="comp_tmpl.v" type="template_verilog" modified="2019 11 14 15:54:50.577"/>
+		<File name="tb_comp_tmpl.v" type="testbench_verilog" modified="2019 11 14 15:54:50.584"/>
+  </Package>
+</DiamondModule>

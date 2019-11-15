@@ -1,0 +1,66 @@
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/bwidget-1.9.5/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/bwidget-1.9.5/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/tcllib-1.12/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/tcllib-1.12/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/bwidget-1.9.5/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/bwidget-1.9.5/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/tcllib-1.12/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/tcllib-1.12/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+Running in Lattice mode
+
+Starting:    C:\Program Files\lscc\diamond\3.10_x64\synpbase\bin64\mbin\synplify.exe
+Install:     C:\Program Files\lscc\diamond\3.10_x64\synpbase
+Hostname:    DESKTOP-HAL5TRF
+Date:        Thu Nov 14 11:27:05 2019
+Version:     M-2017.03L-SP1-1
+
+Arguments:   -product synplify_pro -tcl D:/Project/Verilog/STEP/series_courses/01_LED_FSM/impl_led_fsm/launch_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+
+No project opened.
+auto_infer_blackbox is not supported in current product.
+Removed file: D:\Project\Verilog\STEP\series_courses\01_LED_FSM\led_fsm_top.v
+TCL script complete: "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/impl_led_fsm/launch_synplify.tcl"
+log file: "D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\impl_led_fsm.srr"
+Running: impl_led_fsm in foreground
+
+Running impl_led_fsm_syn|impl_led_fsm
+
+Running: compile (Compile) on impl_led_fsm_syn|impl_led_fsm
+# Thu Nov 14 11:27:12 2019
+
+Running: compile_flow (Compile Process) on impl_led_fsm_syn|impl_led_fsm
+# Thu Nov 14 11:27:12 2019
+
+Running: compiler (Compile Input) on impl_led_fsm_syn|impl_led_fsm
+# Thu Nov 14 11:27:12 2019
+
+compiler completed
+# Thu Nov 14 11:27:13 2019
+
+Return Code: 0
+Run Time:00h:00m:01s
+
+Running: multi_srs_gen (Multi-srs Generator) on impl_led_fsm_syn|impl_led_fsm
+# Thu Nov 14 11:27:13 2019
+Up-To-Date: multi_srs_gen. No run necessary
+Complete: Compile Process on impl_led_fsm_syn|impl_led_fsm
+
+Running: premap (Pre-mapping) on impl_led_fsm_syn|impl_led_fsm
+# Thu Nov 14 11:27:13 2019
+Up-To-Date: premap. No run necessary
+Complete: Compile on impl_led_fsm_syn|impl_led_fsm
+
+Running: map (Map) on impl_led_fsm_syn|impl_led_fsm
+# Thu Nov 14 11:27:13 2019
+
+Running: fpga_mapper (Map & Optimize) on impl_led_fsm_syn|impl_led_fsm
+# Thu Nov 14 11:27:13 2019
+Up-To-Date: fpga_mapper. No run necessary
+Complete: Map on impl_led_fsm_syn|impl_led_fsm
+Complete: Logic Synthesis on impl_led_fsm_syn|impl_led_fsm
+0exit status=0

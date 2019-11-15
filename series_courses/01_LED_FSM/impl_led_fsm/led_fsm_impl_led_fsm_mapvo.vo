@@ -1,0 +1,1748 @@
+
+// Verilog netlist produced by program ldbanno, Version Diamond (64-bit) 3.10.0.111.2
+
+// ldbanno -n Verilog -o led_fsm_impl_led_fsm_mapvo.vo -w -neg -gui -msgset D:/Project/Verilog/STEP/series_courses/01_LED_FSM/promote.xml led_fsm_impl_led_fsm_map.ncd 
+// Netlist created on Thu Nov 14 11:34:24 2019
+// Netlist written on Thu Nov 14 11:34:27 2019
+// Design is for device LCMXO2-4000HC
+// Design is for package CSBGA132
+// Design is for performance grade 6
+
+`timescale 1 ns / 1 ps
+
+module led_fsm_top ( iclk, irst_n, owvled, owvrgbled1, owvrgbled2 );
+  input  iclk, irst_n;
+  output [7:0] owvled;
+  output [2:0] owvrgbled1;
+  output [2:0] owvrgbled2;
+  wire   \condition_judge/rvcounter[0] , 
+         \condition_judge/un3_rvcounter_1_cry_0 , 
+         \condition_judge/rvcounter[31] , 
+         \condition_judge/un3_rvcounter_1[31] , iclk_c, 
+         \condition_judge/un3_rvcounter_1_cry_30 , 
+         \condition_judge/rvcounter[30] , \condition_judge/rvcounter[29] , 
+         \condition_judge/un3_rvcounter_1[30] , 
+         \condition_judge/un3_rvcounter_1[29] , 
+         \condition_judge/un3_rvcounter_1_cry_28 , 
+         \condition_judge/rvcounter[28] , \condition_judge/rvcounter[27] , 
+         \condition_judge/un3_rvcounter_1[28] , 
+         \condition_judge/un3_rvcounter_1[27] , 
+         \condition_judge/un3_rvcounter_1_cry_26 , 
+         \condition_judge/rvcounter[26] , \condition_judge/rvcounter[25] , 
+         \condition_judge/un3_rvcounter_1[26] , 
+         \condition_judge/un3_rvcounter_1[25] , 
+         \condition_judge/un3_rvcounter_1_cry_24 , 
+         \condition_judge/rvcounter[24] , \condition_judge/rvcounter[23] , 
+         \condition_judge/un3_rvcounter_1[24] , 
+         \condition_judge/un3_rvcounter_1_cry_22 , 
+         \condition_judge/un3_rvcounter_1_cry_23_0_S0 , 
+         \condition_judge/rvcounter[22] , \condition_judge/rvcounter[21] , 
+         \condition_judge/un3_rvcounter_1[22] , 
+         \condition_judge/un3_rvcounter_1_cry_20 , 
+         \condition_judge/un3_rvcounter_1_cry_21_0_S0 , 
+         \condition_judge/rvcounter[20] , \condition_judge/rvcounter[19] , 
+         \condition_judge/un3_rvcounter_1[19] , 
+         \condition_judge/un3_rvcounter_1_cry_18 , 
+         \condition_judge/un3_rvcounter_1_cry_19_0_S1 , 
+         \condition_judge/rvcounter[18] , \condition_judge/rvcounter[17] , 
+         \condition_judge/un3_rvcounter_1_cry_16 , 
+         \condition_judge/un3_rvcounter_1_cry_17_0_S0 , 
+         \condition_judge/un3_rvcounter_1_cry_17_0_S1 , 
+         \condition_judge/rvcounter[16] , \condition_judge/rvcounter[15] , 
+         \condition_judge/un3_rvcounter_1[15] , 
+         \condition_judge/un3_rvcounter_1_cry_14 , 
+         \condition_judge/un3_rvcounter_1_cry_15_0_S1 , 
+         \condition_judge/rvcounter[14] , \condition_judge/rvcounter[13] , 
+         \condition_judge/un3_rvcounter_1[14] , 
+         \condition_judge/un3_rvcounter_1[13] , 
+         \condition_judge/un3_rvcounter_1_cry_12 , 
+         \condition_judge/rvcounter[12] , \condition_judge/rvcounter[11] , 
+         \condition_judge/un3_rvcounter_1_cry_10 , 
+         \condition_judge/un3_rvcounter_1_cry_11_0_S0 , 
+         \condition_judge/un3_rvcounter_1_cry_11_0_S1 , 
+         \condition_judge/rvcounter[10] , \condition_judge/rvcounter[9] , 
+         \condition_judge/un3_rvcounter_1[10] , 
+         \condition_judge/un3_rvcounter_1_cry_8 , 
+         \condition_judge/un3_rvcounter_1_cry_9_0_S0 , 
+         \condition_judge/rvcounter[8] , \condition_judge/rvcounter[7] , 
+         \condition_judge/un3_rvcounter_1[7] , 
+         \condition_judge/un3_rvcounter_1_cry_6 , 
+         \condition_judge/un3_rvcounter_1_cry_7_0_S1 , 
+         \condition_judge/rvcounter[6] , \condition_judge/rvcounter[5] , 
+         \condition_judge/un3_rvcounter_1[6] , 
+         \condition_judge/un3_rvcounter_1[5] , 
+         \condition_judge/un3_rvcounter_1_cry_4 , 
+         \condition_judge/rvcounter[4] , \condition_judge/rvcounter[3] , 
+         \condition_judge/un3_rvcounter_1[4] , 
+         \condition_judge/un3_rvcounter_1[3] , 
+         \condition_judge/un3_rvcounter_1_cry_2 , 
+         \condition_judge/rvcounter[2] , \condition_judge/rvcounter[1] , 
+         \condition_judge/un3_rvcounter_1[2] , 
+         \condition_judge/un3_rvcounter_1[1] , wcondition, 
+         \condition_judge/rvcounter_3[8] , \condition_judge/rvcounter_3[0] , 
+         \condition_judge/rvcounter_3[11] , \condition_judge/rvcounter_3[9] , 
+         \condition_judge/rvcounter_3[16] , \condition_judge/rvcounter_3[12] , 
+         \condition_judge/rvcounter_3[18] , \condition_judge/rvcounter_3[17] , 
+         \condition_judge/rvcounter_3[21] , \condition_judge/rvcounter_3[20] , 
+         \condition_judge/rvcounter_3[23] , \condition_judge/owcondition_18 , 
+         \wvstate[1] , \wvstate[0] , \impl_state_controller/rvstate_3[1] , 
+         \impl_state_controller/rvstate_3[0] , 
+         \condition_judge/owcondition_28 , \condition_judge/owcondition_23 , 
+         \condition_judge/owcondition_17 , \wvstate[2] , 
+         \impl_state_controller/rvstate_3[2] , 
+         \condition_judge/owcondition_22 , \condition_judge/owcondition_21 , 
+         \condition_judge/owcondition_20 , \condition_judge/owcondition_19 , 
+         \condition_judge/owcondition_16 , \impl_led_controller.rvled21_i , 
+         \impl_led_controller.rvled20_i , \impl_led_controller.rvled22_i , 
+         \impl_led_controller.rvled27_i , \impl_led_controller.rvled23_i , 
+         \impl_led_controller.rvled26_i , \impl_led_controller.rvled24_i , 
+         \impl_led_controller.rvled25_i , VCC, \owvled_c[0] , \owvled_c[7] , 
+         \owvled_c[6] , \owvled_c[5] , \owvled_c[4] , \owvled_c[3] , 
+         \owvled_c[2] , \owvled_c[1] , irst_n_c, VCCI;
+
+  condition_judge_SLICE_0 \condition_judge/SLICE_0 ( 
+    .A1(\condition_judge/rvcounter[0] ), 
+    .FCO(\condition_judge/un3_rvcounter_1_cry_0 ));
+  condition_judge_SLICE_1 \condition_judge/SLICE_1 ( 
+    .A0(\condition_judge/rvcounter[31] ), 
+    .DI0(\condition_judge/un3_rvcounter_1[31] ), .CLK(iclk_c), 
+    .FCI(\condition_judge/un3_rvcounter_1_cry_30 ), 
+    .F0(\condition_judge/un3_rvcounter_1[31] ), 
+    .Q0(\condition_judge/rvcounter[31] ));
+  condition_judge_SLICE_2 \condition_judge/SLICE_2 ( 
+    .A1(\condition_judge/rvcounter[30] ), .A0(\condition_judge/rvcounter[29] ), 
+    .DI1(\condition_judge/un3_rvcounter_1[30] ), 
+    .DI0(\condition_judge/un3_rvcounter_1[29] ), .CLK(iclk_c), 
+    .FCI(\condition_judge/un3_rvcounter_1_cry_28 ), 
+    .F0(\condition_judge/un3_rvcounter_1[29] ), 
+    .Q0(\condition_judge/rvcounter[29] ), 
+    .F1(\condition_judge/un3_rvcounter_1[30] ), 
+    .Q1(\condition_judge/rvcounter[30] ), 
+    .FCO(\condition_judge/un3_rvcounter_1_cry_30 ));
+  condition_judge_SLICE_3 \condition_judge/SLICE_3 ( 
+    .A1(\condition_judge/rvcounter[28] ), .A0(\condition_judge/rvcounter[27] ), 
+    .DI1(\condition_judge/un3_rvcounter_1[28] ), 
+    .DI0(\condition_judge/un3_rvcounter_1[27] ), .CLK(iclk_c), 
+    .FCI(\condition_judge/un3_rvcounter_1_cry_26 ), 
+    .F0(\condition_judge/un3_rvcounter_1[27] ), 
+    .Q0(\condition_judge/rvcounter[27] ), 
+    .F1(\condition_judge/un3_rvcounter_1[28] ), 
+    .Q1(\condition_judge/rvcounter[28] ), 
+    .FCO(\condition_judge/un3_rvcounter_1_cry_28 ));
+  condition_judge_SLICE_4 \condition_judge/SLICE_4 ( 
+    .A1(\condition_judge/rvcounter[26] ), .A0(\condition_judge/rvcounter[25] ), 
+    .DI1(\condition_judge/un3_rvcounter_1[26] ), 
+    .DI0(\condition_judge/un3_rvcounter_1[25] ), .CLK(iclk_c), 
+    .FCI(\condition_judge/un3_rvcounter_1_cry_24 ), 
+    .F0(\condition_judge/un3_rvcounter_1[25] ), 
+    .Q0(\condition_judge/rvcounter[25] ), 
+    .F1(\condition_judge/un3_rvcounter_1[26] ), 
+    .Q1(\condition_judge/rvcounter[26] ), 
+    .FCO(\condition_judge/un3_rvcounter_1_cry_26 ));
+  condition_judge_SLICE_5 \condition_judge/SLICE_5 ( 
+    .A1(\condition_judge/rvcounter[24] ), .A0(\condition_judge/rvcounter[23] ), 
+    .DI1(\condition_judge/un3_rvcounter_1[24] ), .CLK(iclk_c), 
+    .FCI(\condition_judge/un3_rvcounter_1_cry_22 ), 
+    .F0(\condition_judge/un3_rvcounter_1_cry_23_0_S0 ), 
+    .F1(\condition_judge/un3_rvcounter_1[24] ), 
+    .Q1(\condition_judge/rvcounter[24] ), 
+    .FCO(\condition_judge/un3_rvcounter_1_cry_24 ));
+  condition_judge_SLICE_6 \condition_judge/SLICE_6 ( 
+    .A1(\condition_judge/rvcounter[22] ), .A0(\condition_judge/rvcounter[21] ), 
+    .DI1(\condition_judge/un3_rvcounter_1[22] ), .CLK(iclk_c), 
+    .FCI(\condition_judge/un3_rvcounter_1_cry_20 ), 
+    .F0(\condition_judge/un3_rvcounter_1_cry_21_0_S0 ), 
+    .F1(\condition_judge/un3_rvcounter_1[22] ), 
+    .Q1(\condition_judge/rvcounter[22] ), 
+    .FCO(\condition_judge/un3_rvcounter_1_cry_22 ));
+  condition_judge_SLICE_7 \condition_judge/SLICE_7 ( 
+    .A1(\condition_judge/rvcounter[20] ), .A0(\condition_judge/rvcounter[19] ), 
+    .DI0(\condition_judge/un3_rvcounter_1[19] ), .CLK(iclk_c), 
+    .FCI(\condition_judge/un3_rvcounter_1_cry_18 ), 
+    .F0(\condition_judge/un3_rvcounter_1[19] ), 
+    .Q0(\condition_judge/rvcounter[19] ), 
+    .F1(\condition_judge/un3_rvcounter_1_cry_19_0_S1 ), 
+    .FCO(\condition_judge/un3_rvcounter_1_cry_20 ));
+  condition_judge_SLICE_8 \condition_judge/SLICE_8 ( 
+    .A1(\condition_judge/rvcounter[18] ), .A0(\condition_judge/rvcounter[17] ), 
+    .FCI(\condition_judge/un3_rvcounter_1_cry_16 ), 
+    .F0(\condition_judge/un3_rvcounter_1_cry_17_0_S0 ), 
+    .F1(\condition_judge/un3_rvcounter_1_cry_17_0_S1 ), 
+    .FCO(\condition_judge/un3_rvcounter_1_cry_18 ));
+  condition_judge_SLICE_9 \condition_judge/SLICE_9 ( 
+    .A1(\condition_judge/rvcounter[16] ), .A0(\condition_judge/rvcounter[15] ), 
+    .DI0(\condition_judge/un3_rvcounter_1[15] ), .CLK(iclk_c), 
+    .FCI(\condition_judge/un3_rvcounter_1_cry_14 ), 
+    .F0(\condition_judge/un3_rvcounter_1[15] ), 
+    .Q0(\condition_judge/rvcounter[15] ), 
+    .F1(\condition_judge/un3_rvcounter_1_cry_15_0_S1 ), 
+    .FCO(\condition_judge/un3_rvcounter_1_cry_16 ));
+  condition_judge_SLICE_10 \condition_judge/SLICE_10 ( 
+    .A1(\condition_judge/rvcounter[14] ), .A0(\condition_judge/rvcounter[13] ), 
+    .DI1(\condition_judge/un3_rvcounter_1[14] ), 
+    .DI0(\condition_judge/un3_rvcounter_1[13] ), .CLK(iclk_c), 
+    .FCI(\condition_judge/un3_rvcounter_1_cry_12 ), 
+    .F0(\condition_judge/un3_rvcounter_1[13] ), 
+    .Q0(\condition_judge/rvcounter[13] ), 
+    .F1(\condition_judge/un3_rvcounter_1[14] ), 
+    .Q1(\condition_judge/rvcounter[14] ), 
+    .FCO(\condition_judge/un3_rvcounter_1_cry_14 ));
+  condition_judge_SLICE_11 \condition_judge/SLICE_11 ( 
+    .A1(\condition_judge/rvcounter[12] ), .A0(\condition_judge/rvcounter[11] ), 
+    .FCI(\condition_judge/un3_rvcounter_1_cry_10 ), 
+    .F0(\condition_judge/un3_rvcounter_1_cry_11_0_S0 ), 
+    .F1(\condition_judge/un3_rvcounter_1_cry_11_0_S1 ), 
+    .FCO(\condition_judge/un3_rvcounter_1_cry_12 ));
+  condition_judge_SLICE_12 \condition_judge/SLICE_12 ( 
+    .A1(\condition_judge/rvcounter[10] ), .A0(\condition_judge/rvcounter[9] ), 
+    .DI1(\condition_judge/un3_rvcounter_1[10] ), .CLK(iclk_c), 
+    .FCI(\condition_judge/un3_rvcounter_1_cry_8 ), 
+    .F0(\condition_judge/un3_rvcounter_1_cry_9_0_S0 ), 
+    .F1(\condition_judge/un3_rvcounter_1[10] ), 
+    .Q1(\condition_judge/rvcounter[10] ), 
+    .FCO(\condition_judge/un3_rvcounter_1_cry_10 ));
+  condition_judge_SLICE_13 \condition_judge/SLICE_13 ( 
+    .A1(\condition_judge/rvcounter[8] ), .A0(\condition_judge/rvcounter[7] ), 
+    .DI0(\condition_judge/un3_rvcounter_1[7] ), .CLK(iclk_c), 
+    .FCI(\condition_judge/un3_rvcounter_1_cry_6 ), 
+    .F0(\condition_judge/un3_rvcounter_1[7] ), 
+    .Q0(\condition_judge/rvcounter[7] ), 
+    .F1(\condition_judge/un3_rvcounter_1_cry_7_0_S1 ), 
+    .FCO(\condition_judge/un3_rvcounter_1_cry_8 ));
+  condition_judge_SLICE_14 \condition_judge/SLICE_14 ( 
+    .A1(\condition_judge/rvcounter[6] ), .A0(\condition_judge/rvcounter[5] ), 
+    .DI1(\condition_judge/un3_rvcounter_1[6] ), 
+    .DI0(\condition_judge/un3_rvcounter_1[5] ), .CLK(iclk_c), 
+    .FCI(\condition_judge/un3_rvcounter_1_cry_4 ), 
+    .F0(\condition_judge/un3_rvcounter_1[5] ), 
+    .Q0(\condition_judge/rvcounter[5] ), 
+    .F1(\condition_judge/un3_rvcounter_1[6] ), 
+    .Q1(\condition_judge/rvcounter[6] ), 
+    .FCO(\condition_judge/un3_rvcounter_1_cry_6 ));
+  condition_judge_SLICE_15 \condition_judge/SLICE_15 ( 
+    .A1(\condition_judge/rvcounter[4] ), .A0(\condition_judge/rvcounter[3] ), 
+    .DI1(\condition_judge/un3_rvcounter_1[4] ), 
+    .DI0(\condition_judge/un3_rvcounter_1[3] ), .CLK(iclk_c), 
+    .FCI(\condition_judge/un3_rvcounter_1_cry_2 ), 
+    .F0(\condition_judge/un3_rvcounter_1[3] ), 
+    .Q0(\condition_judge/rvcounter[3] ), 
+    .F1(\condition_judge/un3_rvcounter_1[4] ), 
+    .Q1(\condition_judge/rvcounter[4] ), 
+    .FCO(\condition_judge/un3_rvcounter_1_cry_4 ));
+  condition_judge_SLICE_16 \condition_judge/SLICE_16 ( 
+    .A1(\condition_judge/rvcounter[2] ), .A0(\condition_judge/rvcounter[1] ), 
+    .DI1(\condition_judge/un3_rvcounter_1[2] ), 
+    .DI0(\condition_judge/un3_rvcounter_1[1] ), .CLK(iclk_c), 
+    .FCI(\condition_judge/un3_rvcounter_1_cry_0 ), 
+    .F0(\condition_judge/un3_rvcounter_1[1] ), 
+    .Q0(\condition_judge/rvcounter[1] ), 
+    .F1(\condition_judge/un3_rvcounter_1[2] ), 
+    .Q1(\condition_judge/rvcounter[2] ), 
+    .FCO(\condition_judge/un3_rvcounter_1_cry_2 ));
+  condition_judge_SLICE_17 \condition_judge/SLICE_17 ( .B1(wcondition), 
+    .A1(\condition_judge/un3_rvcounter_1_cry_7_0_S1 ), .B0(wcondition), 
+    .A0(\condition_judge/rvcounter[0] ), 
+    .DI1(\condition_judge/rvcounter_3[8] ), 
+    .DI0(\condition_judge/rvcounter_3[0] ), .CLK(iclk_c), 
+    .F0(\condition_judge/rvcounter_3[0] ), .Q0(\condition_judge/rvcounter[0] ), 
+    .F1(\condition_judge/rvcounter_3[8] ), .Q1(\condition_judge/rvcounter[8] ));
+  condition_judge_SLICE_18 \condition_judge/SLICE_18 ( .B1(wcondition), 
+    .A1(\condition_judge/un3_rvcounter_1_cry_11_0_S0 ), .B0(wcondition), 
+    .A0(\condition_judge/un3_rvcounter_1_cry_9_0_S0 ), 
+    .DI1(\condition_judge/rvcounter_3[11] ), 
+    .DI0(\condition_judge/rvcounter_3[9] ), .CLK(iclk_c), 
+    .F0(\condition_judge/rvcounter_3[9] ), .Q0(\condition_judge/rvcounter[9] ), 
+    .F1(\condition_judge/rvcounter_3[11] ), 
+    .Q1(\condition_judge/rvcounter[11] ));
+  condition_judge_SLICE_19 \condition_judge/SLICE_19 ( .B1(wcondition), 
+    .A1(\condition_judge/un3_rvcounter_1_cry_15_0_S1 ), .B0(wcondition), 
+    .A0(\condition_judge/un3_rvcounter_1_cry_11_0_S1 ), 
+    .DI1(\condition_judge/rvcounter_3[16] ), 
+    .DI0(\condition_judge/rvcounter_3[12] ), .CLK(iclk_c), 
+    .F0(\condition_judge/rvcounter_3[12] ), 
+    .Q0(\condition_judge/rvcounter[12] ), 
+    .F1(\condition_judge/rvcounter_3[16] ), 
+    .Q1(\condition_judge/rvcounter[16] ));
+  condition_judge_SLICE_20 \condition_judge/SLICE_20 ( .B1(wcondition), 
+    .A1(\condition_judge/un3_rvcounter_1_cry_17_0_S1 ), .B0(wcondition), 
+    .A0(\condition_judge/un3_rvcounter_1_cry_17_0_S0 ), 
+    .DI1(\condition_judge/rvcounter_3[18] ), 
+    .DI0(\condition_judge/rvcounter_3[17] ), .CLK(iclk_c), 
+    .F0(\condition_judge/rvcounter_3[17] ), 
+    .Q0(\condition_judge/rvcounter[17] ), 
+    .F1(\condition_judge/rvcounter_3[18] ), 
+    .Q1(\condition_judge/rvcounter[18] ));
+  condition_judge_SLICE_21 \condition_judge/SLICE_21 ( .B1(wcondition), 
+    .A1(\condition_judge/un3_rvcounter_1_cry_21_0_S0 ), .B0(wcondition), 
+    .A0(\condition_judge/un3_rvcounter_1_cry_19_0_S1 ), 
+    .DI1(\condition_judge/rvcounter_3[21] ), 
+    .DI0(\condition_judge/rvcounter_3[20] ), .CLK(iclk_c), 
+    .F0(\condition_judge/rvcounter_3[20] ), 
+    .Q0(\condition_judge/rvcounter[20] ), 
+    .F1(\condition_judge/rvcounter_3[21] ), 
+    .Q1(\condition_judge/rvcounter[21] ));
+  condition_judge_SLICE_22 \condition_judge/SLICE_22 ( 
+    .D1(\condition_judge/rvcounter[4] ), .C1(\condition_judge/rvcounter[3] ), 
+    .B1(\condition_judge/rvcounter[2] ), .A1(\condition_judge/rvcounter[1] ), 
+    .B0(wcondition), .A0(\condition_judge/un3_rvcounter_1_cry_23_0_S0 ), 
+    .DI0(\condition_judge/rvcounter_3[23] ), .CLK(iclk_c), 
+    .F0(\condition_judge/rvcounter_3[23] ), 
+    .Q0(\condition_judge/rvcounter[23] ), 
+    .F1(\condition_judge/owcondition_18 ));
+  impl_state_controller_SLICE_23 \impl_state_controller/SLICE_23 ( 
+    .C1(\wvstate[1] ), .B1(\wvstate[0] ), .A1(wcondition), .B0(\wvstate[0] ), 
+    .A0(wcondition), .DI1(\impl_state_controller/rvstate_3[1] ), 
+    .DI0(\impl_state_controller/rvstate_3[0] ), .CLK(iclk_c), 
+    .F0(\impl_state_controller/rvstate_3[0] ), .Q0(\wvstate[0] ), 
+    .F1(\impl_state_controller/rvstate_3[1] ), .Q1(\wvstate[1] ));
+  SLICE_24 SLICE_24( .D1(\condition_judge/owcondition_28 ), 
+    .C1(\condition_judge/owcondition_23 ), 
+    .B1(\condition_judge/owcondition_18 ), 
+    .A1(\condition_judge/owcondition_17 ), .D0(\wvstate[2] ), 
+    .C0(\wvstate[1] ), .B0(\wvstate[0] ), .A0(wcondition), 
+    .DI0(\impl_state_controller/rvstate_3[2] ), .CLK(iclk_c), 
+    .F0(\impl_state_controller/rvstate_3[2] ), .Q0(\wvstate[2] ), 
+    .F1(wcondition));
+  condition_judge_SLICE_25 \condition_judge/SLICE_25 ( 
+    .D1(\condition_judge/rvcounter[30] ), .C1(\condition_judge/rvcounter[29] ), 
+    .B1(\condition_judge/rvcounter[28] ), .A1(\condition_judge/rvcounter[27] ), 
+    .D0(\condition_judge/owcondition_22 ), 
+    .C0(\condition_judge/owcondition_21 ), 
+    .B0(\condition_judge/owcondition_20 ), 
+    .A0(\condition_judge/owcondition_19 ), 
+    .F0(\condition_judge/owcondition_28 ), 
+    .F1(\condition_judge/owcondition_22 ));
+  condition_judge_SLICE_26 \condition_judge/SLICE_26 ( 
+    .D1(\condition_judge/rvcounter[17] ), .C1(\condition_judge/rvcounter[16] ), 
+    .B1(\condition_judge/rvcounter[12] ), .A1(\condition_judge/rvcounter[11] ), 
+    .D0(\condition_judge/rvcounter[31] ), .C0(\condition_judge/rvcounter[9] ), 
+    .B0(\condition_judge/rvcounter[8] ), .A0(\condition_judge/owcondition_16 ), 
+    .F0(\condition_judge/owcondition_23 ), 
+    .F1(\condition_judge/owcondition_16 ));
+  impl_led_controller_SLICE_27 \impl_led_controller/SLICE_27 ( 
+    .C1(\wvstate[2] ), .B1(\wvstate[1] ), .A1(\wvstate[0] ), .C0(\wvstate[2] ), 
+    .B0(\wvstate[1] ), .A0(\wvstate[0] ), .F0(\impl_led_controller.rvled21_i ), 
+    .F1(\impl_led_controller.rvled20_i ));
+  impl_led_controller_SLICE_28 \impl_led_controller/SLICE_28 ( 
+    .C1(\wvstate[2] ), .B1(\wvstate[1] ), .A1(\wvstate[0] ), .C0(\wvstate[2] ), 
+    .B0(\wvstate[1] ), .A0(\wvstate[0] ), .F0(\impl_led_controller.rvled22_i ), 
+    .F1(\impl_led_controller.rvled27_i ));
+  impl_led_controller_SLICE_29 \impl_led_controller/SLICE_29 ( 
+    .C1(\wvstate[2] ), .B1(\wvstate[1] ), .A1(\wvstate[0] ), .C0(\wvstate[2] ), 
+    .B0(\wvstate[1] ), .A0(\wvstate[0] ), .F0(\impl_led_controller.rvled23_i ), 
+    .F1(\impl_led_controller.rvled26_i ));
+  impl_led_controller_SLICE_30 \impl_led_controller/SLICE_30 ( 
+    .C1(\wvstate[2] ), .B1(\wvstate[1] ), .A1(\wvstate[0] ), .C0(\wvstate[2] ), 
+    .B0(\wvstate[1] ), .A0(\wvstate[0] ), .F0(\impl_led_controller.rvled24_i ), 
+    .F1(\impl_led_controller.rvled25_i ));
+  condition_judge_SLICE_31 \condition_judge/SLICE_31 ( 
+    .D1(\condition_judge/rvcounter[19] ), .C1(\condition_judge/rvcounter[15] ), 
+    .B1(\condition_judge/rvcounter[14] ), .A1(\condition_judge/rvcounter[13] ), 
+    .D0(\condition_judge/rvcounter[26] ), .C0(\condition_judge/rvcounter[25] ), 
+    .B0(\condition_judge/rvcounter[24] ), .A0(\condition_judge/rvcounter[22] ), 
+    .F0(\condition_judge/owcondition_21 ), 
+    .F1(\condition_judge/owcondition_20 ));
+  condition_judge_SLICE_32 \condition_judge/SLICE_32 ( 
+    .D1(\condition_judge/rvcounter[10] ), .C1(\condition_judge/rvcounter[7] ), 
+    .B1(\condition_judge/rvcounter[6] ), .A1(\condition_judge/rvcounter[5] ), 
+    .D0(\condition_judge/rvcounter[23] ), .C0(\condition_judge/rvcounter[21] ), 
+    .B0(\condition_judge/rvcounter[20] ), .A0(\condition_judge/rvcounter[18] ), 
+    .F0(\condition_judge/owcondition_17 ), 
+    .F1(\condition_judge/owcondition_19 ));
+  SLICE_33 SLICE_33( .F0(VCC));
+  owvled_0_ \owvled[0]_I ( .IOLDO(\owvled_c[0] ), .owvled0(owvled[0]));
+  owvled_0__MGIOL \owvled[0]_MGIOL ( .IOLDO(\owvled_c[0] ), 
+    .OPOS(\impl_led_controller.rvled20_i ), .CLK(iclk_c));
+  iclk iclk_I( .PADDI(iclk_c), .iclk(iclk));
+  owvrgbled2_2_ \owvrgbled2[2]_I ( .PADDO(VCC), .owvrgbled22(owvrgbled2[2]));
+  owvrgbled2_1_ \owvrgbled2[1]_I ( .PADDO(VCC), .owvrgbled21(owvrgbled2[1]));
+  owvrgbled2_0_ \owvrgbled2[0]_I ( .PADDO(VCC), .owvrgbled20(owvrgbled2[0]));
+  owvrgbled1_2_ \owvrgbled1[2]_I ( .PADDO(VCC), .owvrgbled12(owvrgbled1[2]));
+  owvrgbled1_1_ \owvrgbled1[1]_I ( .PADDO(VCC), .owvrgbled11(owvrgbled1[1]));
+  owvrgbled1_0_ \owvrgbled1[0]_I ( .PADDO(VCC), .owvrgbled10(owvrgbled1[0]));
+  owvled_7_ \owvled[7]_I ( .IOLDO(\owvled_c[7] ), .owvled7(owvled[7]));
+  owvled_7__MGIOL \owvled[7]_MGIOL ( .IOLDO(\owvled_c[7] ), 
+    .OPOS(\impl_led_controller.rvled27_i ), .CLK(iclk_c));
+  owvled_6_ \owvled[6]_I ( .IOLDO(\owvled_c[6] ), .owvled6(owvled[6]));
+  owvled_6__MGIOL \owvled[6]_MGIOL ( .IOLDO(\owvled_c[6] ), 
+    .OPOS(\impl_led_controller.rvled26_i ), .CLK(iclk_c));
+  owvled_5_ \owvled[5]_I ( .IOLDO(\owvled_c[5] ), .owvled5(owvled[5]));
+  owvled_5__MGIOL \owvled[5]_MGIOL ( .IOLDO(\owvled_c[5] ), 
+    .OPOS(\impl_led_controller.rvled25_i ), .CLK(iclk_c));
+  owvled_4_ \owvled[4]_I ( .IOLDO(\owvled_c[4] ), .owvled4(owvled[4]));
+  owvled_4__MGIOL \owvled[4]_MGIOL ( .IOLDO(\owvled_c[4] ), 
+    .OPOS(\impl_led_controller.rvled24_i ), .CLK(iclk_c));
+  owvled_3_ \owvled[3]_I ( .IOLDO(\owvled_c[3] ), .owvled3(owvled[3]));
+  owvled_3__MGIOL \owvled[3]_MGIOL ( .IOLDO(\owvled_c[3] ), 
+    .OPOS(\impl_led_controller.rvled23_i ), .CLK(iclk_c));
+  owvled_2_ \owvled[2]_I ( .IOLDO(\owvled_c[2] ), .owvled2(owvled[2]));
+  owvled_2__MGIOL \owvled[2]_MGIOL ( .IOLDO(\owvled_c[2] ), 
+    .OPOS(\impl_led_controller.rvled22_i ), .CLK(iclk_c));
+  owvled_1_ \owvled[1]_I ( .IOLDO(\owvled_c[1] ), .owvled1(owvled[1]));
+  owvled_1__MGIOL \owvled[1]_MGIOL ( .IOLDO(\owvled_c[1] ), 
+    .OPOS(\impl_led_controller.rvled21_i ), .CLK(iclk_c));
+  irst_n irst_n_I( .PADDI(irst_n_c), .irst_n(irst_n));
+  GSR_INST GSR_INST( .GSRNET(irst_n_c));
+  VHI VHI_INST( .Z(VCCI));
+  PUR PUR_INST( .PUR(VCCI));
+endmodule
+
+module condition_judge_SLICE_0 ( input A1, output FCO );
+  wire   GNDI;
+
+  ccu2 \condition_judge/un3_rvcounter_1_cry_0_0 ( .A0(GNDI), .B0(GNDI), 
+    .C0(GNDI), .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(GNDI), 
+    .S0(), .S1(), .CO1(FCO));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A1 => FCO) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module ccu2 ( input A0, B0, C0, D0, A1, B1, C1, D1, CI, output S0, S1, CO1 );
+
+  CCU2D inst1( .CIN(CI), .A0(A0), .B0(B0), .C0(C0), .D0(D0), .A1(A1), .B1(B1), 
+    .C1(C1), .D1(D1), .S0(S0), .S1(S1), .COUT(CO1));
+  defparam inst1.INIT0 = 16'h000A;
+  defparam inst1.INIT1 = 16'h300A;
+  defparam inst1.INJECT1_0 = "NO";
+  defparam inst1.INJECT1_1 = "NO";
+endmodule
+
+module gnd ( output PWR0 );
+
+  VLO INST1( .Z(PWR0));
+endmodule
+
+module condition_judge_SLICE_1 ( input A0, DI0, CLK, FCI, output F0, Q0 );
+  wire   VCCI, GNDI, DI0_dly, CLK_dly;
+
+  vmuxregsre \condition_judge/rvcounter[31] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ccu20001 \condition_judge/un3_rvcounter_1_s_31_0 ( .A0(A0), .B0(GNDI), 
+    .C0(GNDI), .D0(GNDI), .A1(GNDI), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), 
+    .S0(F0), .S1(), .CO1());
+
+  specify
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module vmuxregsre ( input D0, D1, SD, SP, CK, LSR, output Q );
+
+  FL1P3DX INST01( .D0(D0), .D1(D1), .SP(SP), .CK(CK), .SD(SD), .CD(LSR), .Q(Q));
+  defparam INST01.GSR = "ENABLED";
+endmodule
+
+module vcc ( output PWR1 );
+
+  VHI INST1( .Z(PWR1));
+endmodule
+
+module ccu20001 ( input A0, B0, C0, D0, A1, B1, C1, D1, CI, output S0, S1, CO1 );
+
+  CCU2D inst1( .CIN(CI), .A0(A0), .B0(B0), .C0(C0), .D0(D0), .A1(A1), .B1(B1), 
+    .C1(C1), .D1(D1), .S0(S0), .S1(S1), .COUT(CO1));
+  defparam inst1.INIT0 = 16'h300A;
+  defparam inst1.INIT1 = 16'h300A;
+  defparam inst1.INJECT1_0 = "NO";
+  defparam inst1.INJECT1_1 = "NO";
+endmodule
+
+module condition_judge_SLICE_2 ( input A1, A0, DI1, DI0, CLK, FCI, output F0, 
+    Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly;
+
+  vmuxregsre \condition_judge/rvcounter[30] ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre \condition_judge/rvcounter[29] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  ccu20001 \condition_judge/un3_rvcounter_1_cry_29_0 ( .A0(A0), .B0(GNDI), 
+    .C0(GNDI), .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), 
+    .S0(F0), .S1(F1), .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_3 ( input A1, A0, DI1, DI0, CLK, FCI, output F0, 
+    Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly;
+
+  vmuxregsre \condition_judge/rvcounter[28] ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre \condition_judge/rvcounter[27] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  ccu20001 \condition_judge/un3_rvcounter_1_cry_27_0 ( .A0(A0), .B0(GNDI), 
+    .C0(GNDI), .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), 
+    .S0(F0), .S1(F1), .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_4 ( input A1, A0, DI1, DI0, CLK, FCI, output F0, 
+    Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly;
+
+  vmuxregsre \condition_judge/rvcounter[26] ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre \condition_judge/rvcounter[25] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  ccu20001 \condition_judge/un3_rvcounter_1_cry_25_0 ( .A0(A0), .B0(GNDI), 
+    .C0(GNDI), .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), 
+    .S0(F0), .S1(F1), .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_5 ( input A1, A0, DI1, CLK, FCI, output F0, F1, 
+    Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly;
+
+  vmuxregsre \condition_judge/rvcounter[24] ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ccu20001 \condition_judge/un3_rvcounter_1_cry_23_0 ( .A0(A0), .B0(GNDI), 
+    .C0(GNDI), .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), 
+    .S0(F0), .S1(F1), .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_6 ( input A1, A0, DI1, CLK, FCI, output F0, F1, 
+    Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly;
+
+  vmuxregsre \condition_judge/rvcounter[22] ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ccu20001 \condition_judge/un3_rvcounter_1_cry_21_0 ( .A0(A0), .B0(GNDI), 
+    .C0(GNDI), .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), 
+    .S0(F0), .S1(F1), .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_7 ( input A1, A0, DI0, CLK, FCI, output F0, Q0, 
+    F1, FCO );
+  wire   VCCI, GNDI, DI0_dly, CLK_dly;
+
+  vmuxregsre \condition_judge/rvcounter[19] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ccu20001 \condition_judge/un3_rvcounter_1_cry_19_0 ( .A0(A0), .B0(GNDI), 
+    .C0(GNDI), .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), 
+    .S0(F0), .S1(F1), .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_8 ( input A1, A0, FCI, output F0, F1, FCO );
+  wire   GNDI;
+
+  ccu20001 \condition_judge/un3_rvcounter_1_cry_17_0 ( .A0(A0), .B0(GNDI), 
+    .C0(GNDI), .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), 
+    .S0(F0), .S1(F1), .CO1(FCO));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_9 ( input A1, A0, DI0, CLK, FCI, output F0, Q0, 
+    F1, FCO );
+  wire   VCCI, GNDI, DI0_dly, CLK_dly;
+
+  vmuxregsre \condition_judge/rvcounter[15] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ccu20001 \condition_judge/un3_rvcounter_1_cry_15_0 ( .A0(A0), .B0(GNDI), 
+    .C0(GNDI), .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), 
+    .S0(F0), .S1(F1), .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_10 ( input A1, A0, DI1, DI0, CLK, FCI, output F0, 
+    Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly;
+
+  vmuxregsre \condition_judge/rvcounter[14] ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre \condition_judge/rvcounter[13] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  ccu20001 \condition_judge/un3_rvcounter_1_cry_13_0 ( .A0(A0), .B0(GNDI), 
+    .C0(GNDI), .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), 
+    .S0(F0), .S1(F1), .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_11 ( input A1, A0, FCI, output F0, F1, FCO );
+  wire   GNDI;
+
+  ccu20001 \condition_judge/un3_rvcounter_1_cry_11_0 ( .A0(A0), .B0(GNDI), 
+    .C0(GNDI), .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), 
+    .S0(F0), .S1(F1), .CO1(FCO));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_12 ( input A1, A0, DI1, CLK, FCI, output F0, F1, 
+    Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly;
+
+  vmuxregsre \condition_judge/rvcounter[10] ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ccu20001 \condition_judge/un3_rvcounter_1_cry_9_0 ( .A0(A0), .B0(GNDI), 
+    .C0(GNDI), .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), 
+    .S0(F0), .S1(F1), .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_13 ( input A1, A0, DI0, CLK, FCI, output F0, Q0, 
+    F1, FCO );
+  wire   VCCI, GNDI, DI0_dly, CLK_dly;
+
+  vmuxregsre \condition_judge/rvcounter[7] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ccu20001 \condition_judge/un3_rvcounter_1_cry_7_0 ( .A0(A0), .B0(GNDI), 
+    .C0(GNDI), .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), 
+    .S0(F0), .S1(F1), .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_14 ( input A1, A0, DI1, DI0, CLK, FCI, output F0, 
+    Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly;
+
+  vmuxregsre \condition_judge/rvcounter[6] ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre \condition_judge/rvcounter[5] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  ccu20001 \condition_judge/un3_rvcounter_1_cry_5_0 ( .A0(A0), .B0(GNDI), 
+    .C0(GNDI), .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), 
+    .S0(F0), .S1(F1), .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_15 ( input A1, A0, DI1, DI0, CLK, FCI, output F0, 
+    Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly;
+
+  vmuxregsre \condition_judge/rvcounter[4] ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre \condition_judge/rvcounter[3] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  ccu20001 \condition_judge/un3_rvcounter_1_cry_3_0 ( .A0(A0), .B0(GNDI), 
+    .C0(GNDI), .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), 
+    .S0(F0), .S1(F1), .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_16 ( input A1, A0, DI1, DI0, CLK, FCI, output F0, 
+    Q0, F1, Q1, FCO );
+  wire   VCCI, GNDI, DI1_dly, CLK_dly, DI0_dly;
+
+  vmuxregsre \condition_judge/rvcounter[2] ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre \condition_judge/rvcounter[1] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  ccu20001 \condition_judge/un3_rvcounter_1_cry_1_0 ( .A0(A0), .B0(GNDI), 
+    .C0(GNDI), .D0(GNDI), .A1(A1), .B1(GNDI), .C1(GNDI), .D1(GNDI), .CI(FCI), 
+    .S0(F0), .S1(F1), .CO1(FCO));
+
+  specify
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A1 => FCO) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (A0 => F1) = (0:0:0,0:0:0);
+    (A0 => FCO) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (FCI => F0) = (0:0:0,0:0:0);
+    (FCI => F1) = (0:0:0,0:0:0);
+    (FCI => FCO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_17 ( input B1, A1, B0, A0, DI1, DI0, CLK, output 
+    F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly;
+
+  lut4 \condition_judge/rvcounter_3[8] ( .A(A1), .B(B1), .C(GNDI), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40002 \condition_judge/rvcounter_3[0] ( .A(A0), .B(B0), .C(GNDI), 
+    .D(GNDI), .Z(F0));
+  vmuxregsre \condition_judge/rvcounter[8] ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre \condition_judge/rvcounter[0] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut4 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h2222) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40002 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h1111) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module condition_judge_SLICE_18 ( input B1, A1, B0, A0, DI1, DI0, CLK, output 
+    F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly;
+
+  lut4 \condition_judge/rvcounter_3[11] ( .A(A1), .B(B1), .C(GNDI), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut4 \condition_judge/rvcounter_3[9] ( .A(A0), .B(B0), .C(GNDI), .D(GNDI), 
+    .Z(F0));
+  vmuxregsre \condition_judge/rvcounter[11] ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre \condition_judge/rvcounter[9] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_19 ( input B1, A1, B0, A0, DI1, DI0, CLK, output 
+    F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly;
+
+  lut4 \condition_judge/rvcounter_3[16] ( .A(A1), .B(B1), .C(GNDI), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut4 \condition_judge/rvcounter_3[12] ( .A(A0), .B(B0), .C(GNDI), .D(GNDI), 
+    .Z(F0));
+  vmuxregsre \condition_judge/rvcounter[16] ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre \condition_judge/rvcounter[12] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_20 ( input B1, A1, B0, A0, DI1, DI0, CLK, output 
+    F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly;
+
+  lut4 \condition_judge/rvcounter_3[18] ( .A(A1), .B(B1), .C(GNDI), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut4 \condition_judge/rvcounter_3[17] ( .A(A0), .B(B0), .C(GNDI), .D(GNDI), 
+    .Z(F0));
+  vmuxregsre \condition_judge/rvcounter[18] ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre \condition_judge/rvcounter[17] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_21 ( input B1, A1, B0, A0, DI1, DI0, CLK, output 
+    F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly;
+
+  lut4 \condition_judge/rvcounter_3[21] ( .A(A1), .B(B1), .C(GNDI), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut4 \condition_judge/rvcounter_3[20] ( .A(A0), .B(B0), .C(GNDI), .D(GNDI), 
+    .Z(F0));
+  vmuxregsre \condition_judge/rvcounter[21] ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre \condition_judge/rvcounter[20] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_22 ( input D1, C1, B1, A1, B0, A0, DI0, CLK, 
+    output F0, Q0, F1 );
+  wire   GNDI, VCCI, DI0_dly, CLK_dly;
+
+  lut40003 \condition_judge/owcondition_18 ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut4 \condition_judge/rvcounter_3[23] ( .A(A0), .B(B0), .C(GNDI), .D(GNDI), 
+    .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vmuxregsre \condition_judge/rvcounter[23] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40003 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0001) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module impl_state_controller_SLICE_23 ( input C1, B1, A1, B0, A0, DI1, DI0, 
+    CLK, output F0, Q0, F1, Q1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly;
+
+  lut40004 \impl_state_controller/rvstate_RNO[1] ( .A(A1), .B(B1), .C(C1), 
+    .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40005 \impl_state_controller/rvstate_RNO[0] ( .A(A0), .B(B0), .C(GNDI), 
+    .D(GNDI), .Z(F0));
+  vmuxregsre \impl_state_controller/rvstate[1] ( .D0(VCCI), .D1(DI1_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  vmuxregsre \impl_state_controller/rvstate[0] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40004 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h7878) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40005 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h6666) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_24 ( input D1, C1, B1, A1, D0, C0, B0, A0, DI0, CLK, output F0, 
+    Q0, F1 );
+  wire   VCCI, GNDI, DI0_dly, CLK_dly;
+
+  lut40006 \condition_judge/owcondition ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40007 \impl_state_controller/rvstate_RNO[2] ( .A(A0), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+  vmuxregsre \impl_state_controller/rvstate[2] ( .D0(VCCI), .D1(DI0_dly), 
+    .SD(VCCI), .SP(VCCI), .CK(CLK_dly), .LSR(GNDI), .Q(Q0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module lut40006 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h8000) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40007 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h7F80) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module condition_judge_SLICE_25 ( input D1, C1, B1, A1, D0, C0, B0, A0, 
+    output F0, F1 );
+
+  lut40003 \condition_judge/owcondition_22 ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40006 \condition_judge/owcondition_28 ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_26 ( input D1, C1, B1, A1, D0, C0, B0, A0, 
+    output F0, F1 );
+
+  lut40006 \condition_judge/owcondition_16 ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40008 \condition_judge/owcondition_23 ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40008 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0080) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module impl_led_controller_SLICE_27 ( input C1, B1, A1, C0, B0, A0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40009 \impl_led_controller/rvled20_i ( .A(A1), .B(B1), .C(C1), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40010 \impl_led_controller/rvled21_i ( .A(A0), .B(B0), .C(C0), .D(GNDI), 
+    .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40009 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFEFE) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40010 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFDFD) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module impl_led_controller_SLICE_28 ( input C1, B1, A1, C0, B0, A0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40011 \impl_led_controller/rvled27_i ( .A(A1), .B(B1), .C(C1), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40012 \impl_led_controller/rvled22_i ( .A(A0), .B(B0), .C(C0), .D(GNDI), 
+    .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40011 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h7F7F) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40012 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFBFB) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module impl_led_controller_SLICE_29 ( input C1, B1, A1, C0, B0, A0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40013 \impl_led_controller/rvled26_i ( .A(A1), .B(B1), .C(C1), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40014 \impl_led_controller/rvled23_i ( .A(A0), .B(B0), .C(C0), .D(GNDI), 
+    .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40013 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hBFBF) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40014 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hF7F7) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module impl_led_controller_SLICE_30 ( input C1, B1, A1, C0, B0, A0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40015 \impl_led_controller/rvled25_i ( .A(A1), .B(B1), .C(C1), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40016 \impl_led_controller/rvled24_i ( .A(A0), .B(B0), .C(C0), .D(GNDI), 
+    .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40015 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hDFDF) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40016 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hEFEF) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module condition_judge_SLICE_31 ( input D1, C1, B1, A1, D0, C0, B0, A0, 
+    output F0, F1 );
+
+  lut40003 \condition_judge/owcondition_20 ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40003 \condition_judge/owcondition_21 ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module condition_judge_SLICE_32 ( input D1, C1, B1, A1, D0, C0, B0, A0, 
+    output F0, F1 );
+
+  lut40003 \condition_judge/owcondition_19 ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40006 \condition_judge/owcondition_17 ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module SLICE_33 ( output F0 );
+  wire   GNDI;
+
+  lut40017 VCC( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module lut40017 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFFFF) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module owvled_0_ ( input IOLDO, output owvled0 );
+
+  xo2iobuf \owvled_pad[0] ( .I(IOLDO), .PAD(owvled0));
+
+  specify
+    (IOLDO => owvled0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module xo2iobuf ( input I, output PAD );
+
+  OB INST5( .I(I), .O(PAD));
+endmodule
+
+module owvled_0__MGIOL ( output IOLDO, input OPOS, CLK );
+  wire   VCCI, GNDI, OPOS_dly, CLK_dly;
+
+  mfflsre \impl_led_controller_rvledio[0] ( .D0(OPOS_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(IOLDO));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (CLK => IOLDO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, OPOS, 0:0:0, 0:0:0,,,, CLK_dly, OPOS_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module mfflsre ( input D0, SP, CK, LSR, output Q );
+
+  FD1P3DX INST01( .D(D0), .SP(SP), .CK(CK), .CD(LSR), .Q(Q));
+  defparam INST01.GSR = "ENABLED";
+endmodule
+
+module iclk ( output PADDI, input iclk );
+
+  xo2iobuf0018 iclk_pad( .Z(PADDI), .PAD(iclk));
+
+  specify
+    (iclk => PADDI) = (0:0:0,0:0:0);
+    $width (posedge iclk, 0:0:0);
+    $width (negedge iclk, 0:0:0);
+  endspecify
+
+endmodule
+
+module xo2iobuf0018 ( output Z, input PAD );
+
+  IB INST1( .I(PAD), .O(Z));
+endmodule
+
+module owvrgbled2_2_ ( input PADDO, output owvrgbled22 );
+
+  xo2iobuf \owvrgbled2_pad[2] ( .I(PADDO), .PAD(owvrgbled22));
+
+  specify
+    (PADDO => owvrgbled22) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module owvrgbled2_1_ ( input PADDO, output owvrgbled21 );
+
+  xo2iobuf \owvrgbled2_pad[1] ( .I(PADDO), .PAD(owvrgbled21));
+
+  specify
+    (PADDO => owvrgbled21) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module owvrgbled2_0_ ( input PADDO, output owvrgbled20 );
+
+  xo2iobuf \owvrgbled2_pad[0] ( .I(PADDO), .PAD(owvrgbled20));
+
+  specify
+    (PADDO => owvrgbled20) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module owvrgbled1_2_ ( input PADDO, output owvrgbled12 );
+
+  xo2iobuf \owvrgbled1_pad[2] ( .I(PADDO), .PAD(owvrgbled12));
+
+  specify
+    (PADDO => owvrgbled12) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module owvrgbled1_1_ ( input PADDO, output owvrgbled11 );
+
+  xo2iobuf \owvrgbled1_pad[1] ( .I(PADDO), .PAD(owvrgbled11));
+
+  specify
+    (PADDO => owvrgbled11) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module owvrgbled1_0_ ( input PADDO, output owvrgbled10 );
+
+  xo2iobuf \owvrgbled1_pad[0] ( .I(PADDO), .PAD(owvrgbled10));
+
+  specify
+    (PADDO => owvrgbled10) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module owvled_7_ ( input IOLDO, output owvled7 );
+
+  xo2iobuf \owvled_pad[7] ( .I(IOLDO), .PAD(owvled7));
+
+  specify
+    (IOLDO => owvled7) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module owvled_7__MGIOL ( output IOLDO, input OPOS, CLK );
+  wire   VCCI, GNDI, OPOS_dly, CLK_dly;
+
+  mfflsre0019 \impl_led_controller_rvledio[7] ( .D0(OPOS_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(IOLDO));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (CLK => IOLDO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, OPOS, 0:0:0, 0:0:0,,,, CLK_dly, OPOS_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module mfflsre0019 ( input D0, SP, CK, LSR, output Q );
+
+  FD1P3BX INST01( .D(D0), .SP(SP), .CK(CK), .PD(LSR), .Q(Q));
+  defparam INST01.GSR = "ENABLED";
+endmodule
+
+module owvled_6_ ( input IOLDO, output owvled6 );
+
+  xo2iobuf \owvled_pad[6] ( .I(IOLDO), .PAD(owvled6));
+
+  specify
+    (IOLDO => owvled6) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module owvled_6__MGIOL ( output IOLDO, input OPOS, CLK );
+  wire   VCCI, GNDI, OPOS_dly, CLK_dly;
+
+  mfflsre0019 \impl_led_controller_rvledio[6] ( .D0(OPOS_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(IOLDO));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (CLK => IOLDO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, OPOS, 0:0:0, 0:0:0,,,, CLK_dly, OPOS_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module owvled_5_ ( input IOLDO, output owvled5 );
+
+  xo2iobuf \owvled_pad[5] ( .I(IOLDO), .PAD(owvled5));
+
+  specify
+    (IOLDO => owvled5) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module owvled_5__MGIOL ( output IOLDO, input OPOS, CLK );
+  wire   VCCI, GNDI, OPOS_dly, CLK_dly;
+
+  mfflsre0019 \impl_led_controller_rvledio[5] ( .D0(OPOS_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(IOLDO));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (CLK => IOLDO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, OPOS, 0:0:0, 0:0:0,,,, CLK_dly, OPOS_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module owvled_4_ ( input IOLDO, output owvled4 );
+
+  xo2iobuf \owvled_pad[4] ( .I(IOLDO), .PAD(owvled4));
+
+  specify
+    (IOLDO => owvled4) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module owvled_4__MGIOL ( output IOLDO, input OPOS, CLK );
+  wire   VCCI, GNDI, OPOS_dly, CLK_dly;
+
+  mfflsre0019 \impl_led_controller_rvledio[4] ( .D0(OPOS_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(IOLDO));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (CLK => IOLDO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, OPOS, 0:0:0, 0:0:0,,,, CLK_dly, OPOS_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module owvled_3_ ( input IOLDO, output owvled3 );
+
+  xo2iobuf \owvled_pad[3] ( .I(IOLDO), .PAD(owvled3));
+
+  specify
+    (IOLDO => owvled3) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module owvled_3__MGIOL ( output IOLDO, input OPOS, CLK );
+  wire   VCCI, GNDI, OPOS_dly, CLK_dly;
+
+  mfflsre0019 \impl_led_controller_rvledio[3] ( .D0(OPOS_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(IOLDO));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (CLK => IOLDO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, OPOS, 0:0:0, 0:0:0,,,, CLK_dly, OPOS_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module owvled_2_ ( input IOLDO, output owvled2 );
+
+  xo2iobuf \owvled_pad[2] ( .I(IOLDO), .PAD(owvled2));
+
+  specify
+    (IOLDO => owvled2) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module owvled_2__MGIOL ( output IOLDO, input OPOS, CLK );
+  wire   VCCI, GNDI, OPOS_dly, CLK_dly;
+
+  mfflsre0019 \impl_led_controller_rvledio[2] ( .D0(OPOS_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(IOLDO));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (CLK => IOLDO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, OPOS, 0:0:0, 0:0:0,,,, CLK_dly, OPOS_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module owvled_1_ ( input IOLDO, output owvled1 );
+
+  xo2iobuf \owvled_pad[1] ( .I(IOLDO), .PAD(owvled1));
+
+  specify
+    (IOLDO => owvled1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module owvled_1__MGIOL ( output IOLDO, input OPOS, CLK );
+  wire   VCCI, GNDI, OPOS_dly, CLK_dly;
+
+  mfflsre0019 \impl_led_controller_rvledio[1] ( .D0(OPOS_dly), .SP(VCCI), 
+    .CK(CLK_dly), .LSR(GNDI), .Q(IOLDO));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (CLK => IOLDO) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, OPOS, 0:0:0, 0:0:0,,,, CLK_dly, OPOS_dly);
+    $width (posedge CLK, 0:0:0);
+    $width (negedge CLK, 0:0:0);
+  endspecify
+
+endmodule
+
+module irst_n ( output PADDI, input irst_n );
+
+  xo2iobuf0018 irst_n_pad( .Z(PADDI), .PAD(irst_n));
+
+  specify
+    (irst_n => PADDI) = (0:0:0,0:0:0);
+    $width (posedge irst_n, 0:0:0);
+    $width (negedge irst_n, 0:0:0);
+  endspecify
+
+endmodule
+
+module GSR_INST ( input GSRNET );
+
+  GSR5MODE GSR_INST_GSRMODE( .GSR(GSRNET));
+
+  specify
+  endspecify
+
+endmodule
+
+module GSR5MODE ( input GSR );
+  wire   GSRMODE;
+
+  BUFBA INST10( .A(GSR), .Z(GSRMODE));
+  GSR INST20( .GSR(GSRMODE));
+endmodule

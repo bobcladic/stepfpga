@@ -1,0 +1,143 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn191112195415"></A><B><U><big>pn191112195415</big></U></B>
+#Start recording tcl command: 11/12/2019 18:13:58
+#Project Location: D:/Project/Verilog/STEP/series_courses/01_LED_FSM; Project name: led_fsm
+prj_project new -name "led_fsm" -impl "impl_led_fsm" -dev LCMXO2-4000HC-6MG132C -synthesis "synplify"
+prj_project save
+prj_src add "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm_top.v"
+prj_run Synthesis -impl impl_led_fsm
+prj_run Synthesis -impl impl_led_fsm -task Synplify_Synthesis
+#Stop recording: 11/12/2019 19:54:15
+
+
+
+<A name="pn191113101339"></A><B><U><big>pn191113101339</big></U></B>
+#Start recording tcl command: 11/13/2019 09:54:07
+#Project Location: D:/Project/Verilog/STEP/series_courses/01_LED_FSM; Project name: led_fsm
+prj_project open "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm.ldf"
+prj_src add "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm_tb/led_fsm_tb.spf"
+prj_src add "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm_tb/led_fsm_tb.spf"
+launch_synplify_prj impl_led_fsm
+prj_run Synthesis -impl impl_led_fsm -task Synplify_Synthesis
+prj_run Synthesis -impl impl_led_fsm -task Synplify_Synthesis
+prj_run Synthesis -impl impl_led_fsm -task Synplify_Synthesis
+prj_run Synthesis -impl impl_led_fsm -task Synplify_Synthesis
+prj_run Synthesis -impl impl_led_fsm -task Synplify_Synthesis
+#Stop recording: 11/13/2019 10:13:39
+
+
+
+<A name="pn191113134647"></A><B><U><big>pn191113134647</big></U></B>
+#Start recording tcl command: 11/13/2019 10:13:54
+#Project Location: D:/Project/Verilog/STEP/series_courses/01_LED_FSM; Project name: led_fsm
+prj_project open "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm.ldf"
+prj_run Synthesis -impl impl_led_fsm
+launch_synplify_prj impl_led_fsm
+prj_src add "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm_tb/led_fsm_tb.spf"
+prj_src add "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm_tb.v"
+prj_src syn_sim -src "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm_tb.v" SimulateOnly
+prj_src add "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm_tb/led_fsm_tb.spf"
+prj_src remove "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm_tb.v"
+prj_src add "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm_tb/led_fsm_tb.spf"
+prj_src add "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm_tb.v"
+prj_src syn_sim -src "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm_tb.v" SimulateOnly
+prj_src add "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm_tb/led_fsm_tb.spf"
+prj_run Synthesis -impl impl_led_fsm -task Synplify_Synthesis
+launch_synplify_prj impl_led_fsm
+prj_project save
+prj_project close
+#Stop recording: 11/13/2019 13:46:47
+
+
+
+<A name="pn191113163746"></A><B><U><big>pn191113163746</big></U></B>
+#Start recording tcl command: 11/13/2019 16:21:56
+#Project Location: D:/Project/Verilog/STEP/series_courses/01_LED_FSM; Project name: led_fsm
+prj_project open "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm.ldf"
+prj_run Synthesis -impl impl_led_fsm -task Synplify_Synthesis -forceOne
+launch_synplify_prj impl_led_fsm
+prj_src add "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm_tb/led_fsm_tb.spf"
+#Stop recording: 11/13/2019 16:37:46
+
+
+
+<A name="pn191113164825"></A><B><U><big>pn191113164825</big></U></B>
+#Start recording tcl command: 11/13/2019 16:46:53
+#Project Location: D:/Project/Verilog/STEP/series_courses/01_LED_FSM; Project name: led_fsm
+prj_project open "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm.ldf"
+prj_run Synthesis -impl impl_led_fsm -task Synplify_Synthesis
+#Stop recording: 11/13/2019 16:48:25
+
+
+
+<A name="pn191114110402"></A><B><U><big>pn191114110402</big></U></B>
+#Start recording tcl command: 11/14/2019 11:00:49
+#Project Location: D:/Project/Verilog/STEP/series_courses/01_LED_FSM; Project name: led_fsm
+prj_project open "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm.ldf"
+prj_run Synthesis -impl impl_led_fsm -task Synplify_Synthesis
+launch_synplify_prj impl_led_fsm
+prj_project close
+#Stop recording: 11/14/2019 11:04:02
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

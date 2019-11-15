@@ -1,0 +1,87 @@
+Running in Lattice mode
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/bwidget-1.9.5/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/bwidget-1.9.5/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/tcllib-1.12/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/tcllib-1.12/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/bwidget-1.9.5/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/bwidget-1.9.5/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/tcllib-1.12/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/tcllib-1.12/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+
+Starting:    C:\Program Files\lscc\diamond\3.10_x64\synpbase\bin64\mbin\synbatch.exe
+Install:     C:\Program Files\lscc\diamond\3.10_x64\synpbase
+Hostname:    DESKTOP-HAL5TRF
+Date:        Fri Nov 15 10:05:05 2019
+Version:     M-2017.03L-SP1-1
+
+Arguments:   -product synplify_pro -batch pwm_impl_pwm_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+log file: "D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\pwm_impl_pwm.srr"
+Running: impl_pwm in foreground
+
+Running proj_1|impl_pwm
+
+Running: compile (Compile) on proj_1|impl_pwm
+# Fri Nov 15 10:05:05 2019
+
+Running: compile_flow (Compile Process) on proj_1|impl_pwm
+# Fri Nov 15 10:05:05 2019
+
+Running: compiler (Compile Input) on proj_1|impl_pwm
+# Fri Nov 15 10:05:05 2019
+Copied D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\synwork\pwm_impl_pwm_comp.srs to D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\pwm_impl_pwm.srs
+
+compiler completed
+# Fri Nov 15 10:05:07 2019
+
+Return Code: 0
+Run Time:00h:00m:02s
+
+Running: multi_srs_gen (Multi-srs Generator) on proj_1|impl_pwm
+# Fri Nov 15 10:05:07 2019
+
+multi_srs_gen completed
+# Fri Nov 15 10:05:07 2019
+
+Return Code: 0
+Run Time:00h:00m:00s
+Copied D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\synwork\pwm_impl_pwm_mult.srs to D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\pwm_impl_pwm.srs
+Copied D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\pwm_impl_pwm.srr to D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\pwm_impl_pwm.srf
+Complete: Compile Process on proj_1|impl_pwm
+
+Running: premap (Pre-mapping) on proj_1|impl_pwm
+# Fri Nov 15 10:05:07 2019
+
+premap completed with warnings
+# Fri Nov 15 10:05:08 2019
+
+Return Code: 1
+Run Time:00h:00m:01s
+Complete: Compile on proj_1|impl_pwm
+
+Running: map (Map) on proj_1|impl_pwm
+# Fri Nov 15 10:05:08 2019
+License granted for 4 parallel jobs
+
+Running: fpga_mapper (Map & Optimize) on proj_1|impl_pwm
+# Fri Nov 15 10:05:08 2019
+Copied D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\synwork\pwm_impl_pwm_m.srm to D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\pwm_impl_pwm.srm
+
+fpga_mapper completed with warnings
+# Fri Nov 15 10:05:10 2019
+
+Return Code: 1
+Run Time:00h:00m:02s
+Complete: Map on proj_1|impl_pwm
+Copied D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\pwm_impl_pwm.srr to D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\pwm_impl_pwm.srf
+Complete: Logic Synthesis on proj_1|impl_pwm
+TCL script complete: "pwm_impl_pwm_synplify.tcl"
+exit status=0
+exit status=0
+Save changes for project:
+D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\proj_1.prj
+batch mode default:no

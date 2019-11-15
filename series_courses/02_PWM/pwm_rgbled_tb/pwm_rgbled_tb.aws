@@ -1,0 +1,14 @@
+[Version]
+Version=10.3
+[Designs]
+pwm_rgbled_tb=pwm_rgbled_tb.adf
+[Settings]
+Active=pwm_rgbled_tb
+[Expand]
+pwm_rgbled_tb=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

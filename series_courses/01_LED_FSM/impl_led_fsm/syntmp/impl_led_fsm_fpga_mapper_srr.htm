@@ -1,0 +1,637 @@
+<html><body><samp><pre>
+<!@TC:1573700503>
+# Thu Nov 14 11:01:41 2019
+
+<a name=mapperReport7></a>Synopsys Lattice Technology Mapper, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16</a>
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version M-2017.03L-SP1-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1573700503> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1573700503> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N:<a href="@N:MT206:@XP_HELP">MT206</a> : <!@TM:1573700503> | Auto Constrain mode is enabled 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -2.04ns		  26 /        43
+   2		0h:00m:00s		    -2.04ns		  26 /        43
+
+   3		0h:00m:00s		    -2.04ns		  26 /        43
+
+   4		0h:00m:00s		    -2.04ns		  26 /        43
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+@N:<a href="@N:FX164:@XP_HELP">FX164</a> : <!@TM:1573700503> | The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.   
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+<a name=clockReport8></a>#### START OF CLOCK OPTIMIZATION REPORT #####[</a>
+
+1 non-gated/non-generated clock tree(s) driving 43 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=================================== Non-Gated/Non-Generated Clocks ===================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance               
+------------------------------------------------------------------------------------------------------
+<a href="@|S:iclk@|E:impl_led_controller_rvledio[0]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001  @XP_NAMES_BY_PROP">ClockId0001 </a>       iclk                port                   43         impl_led_controller_rvledio[0]
+======================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 141MB)
+
+Writing Analyst data base D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\synwork\impl_led_fsm_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Writing EDIF Netlist and constraint files
+@N:<a href="@N:FX1056:@XP_HELP">FX1056</a> : <!@TM:1573700503> | Writing EDF file: D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\impl_led_fsm.edi 
+M-2017.03L-SP1-1
+@N:<a href="@N:BW106:@XP_HELP">BW106</a> : <!@TM:1573700503> | Synplicity Constraint File capacitance units using default value of 1pF  
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 145MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+
+<font color=#A52A2A>@W:<a href="@W:MT420:@XP_HELP">MT420</a> : <!@TM:1573700503> | Found inferred clock led_fsm_top|iclk with period 5.43ns. Please declare a user-defined clock on object "p:iclk"</font> 
+
+
+<a name=timingReport9></a>##### START OF TIMING REPORT #####[</a>
+# Timing Report written on Thu Nov 14 11:01:43 2019
+#
+
+
+Top view:               led_fsm_top
+Requested Frequency:    184.3 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N:<a href="@N:MT320:@XP_HELP">MT320</a> : <!@TM:1573700503> | This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report. 
+
+@N:<a href="@N:MT322:@XP_HELP">MT322</a> : <!@TM:1573700503> | Clock constraints include only register-to-register paths associated with each individual clock. 
+
+
+
+<a name=performanceSummary10></a>Performance Summary</a>
+*******************
+
+
+Worst slack in design: -0.958
+
+                     Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock       Frequency     Frequency     Period        Period        Slack      Type         Group                
+--------------------------------------------------------------------------------------------------------------------------
+led_fsm_top|iclk     184.3 MHz     156.6 MHz     5.427         6.385         -0.958     inferred     Autoconstr_clkgroup_0
+==========================================================================================================================
+
+
+
+
+
+<a name=clockRelationships11></a>Clock Relationships</a>
+*******************
+
+Clocks                              |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------------------
+Starting          Ending            |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------------------
+led_fsm_top|iclk  led_fsm_top|iclk  |  5.427       -0.958  |  No paths    -      |  No paths    -      |  No paths    -    
+===========================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+<a name=interfaceInfo12></a>Interface Information </a>
+*********************
+
+No IO constraint found
+
+
+
+====================================
+<a name=clockReport13></a>Detailed Report for Clock: led_fsm_top|iclk</a>
+====================================
+
+
+
+<a name=startingSlack14></a>Starting Points with Worst Slack</a>
+********************************
+
+                                 Starting                                                  Arrival           
+Instance                         Reference            Type        Pin     Net              Time        Slack 
+                                 Clock                                                                       
+-------------------------------------------------------------------------------------------------------------
+condition_judge.rvcounter[0]     led_fsm_top|iclk     FD1S3DX     Q       rvcounter[0]     1.044       -0.958
+condition_judge.rvcounter[1]     led_fsm_top|iclk     FD1S3DX     Q       rvcounter[1]     1.044       -0.815
+condition_judge.rvcounter[2]     led_fsm_top|iclk     FD1S3DX     Q       rvcounter[2]     1.044       -0.815
+condition_judge.rvcounter[3]     led_fsm_top|iclk     FD1S3DX     Q       rvcounter[3]     1.044       -0.672
+condition_judge.rvcounter[4]     led_fsm_top|iclk     FD1S3DX     Q       rvcounter[4]     1.044       -0.672
+condition_judge.rvcounter[5]     led_fsm_top|iclk     FD1S3DX     Q       rvcounter[5]     1.044       -0.529
+condition_judge.rvcounter[6]     led_fsm_top|iclk     FD1S3DX     Q       rvcounter[6]     1.044       -0.529
+condition_judge.rvcounter[7]     led_fsm_top|iclk     FD1S3DX     Q       rvcounter[7]     1.044       -0.387
+condition_judge.rvcounter[8]     led_fsm_top|iclk     FD1S3DX     Q       rvcounter[8]     1.044       -0.387
+condition_judge.rvcounter[9]     led_fsm_top|iclk     FD1S3DX     Q       rvcounter[9]     1.044       -0.244
+=============================================================================================================
+
+
+<a name=endingSlack15></a>Ending Points with Worst Slack</a>
+******************************
+
+                                  Starting                                                         Required           
+Instance                          Reference            Type        Pin     Net                     Time         Slack 
+                                  Clock                                                                               
+----------------------------------------------------------------------------------------------------------------------
+condition_judge.rvcounter[31]     led_fsm_top|iclk     FD1S3DX     D       un3_rvcounter_1[31]     5.322        -0.958
+condition_judge.rvcounter[29]     led_fsm_top|iclk     FD1S3DX     D       un3_rvcounter_1[29]     5.322        -0.815
+condition_judge.rvcounter[30]     led_fsm_top|iclk     FD1S3DX     D       un3_rvcounter_1[30]     5.322        -0.815
+condition_judge.rvcounter[27]     led_fsm_top|iclk     FD1S3DX     D       un3_rvcounter_1[27]     5.322        -0.672
+condition_judge.rvcounter[28]     led_fsm_top|iclk     FD1S3DX     D       un3_rvcounter_1[28]     5.322        -0.672
+condition_judge.rvcounter[25]     led_fsm_top|iclk     FD1S3DX     D       un3_rvcounter_1[25]     5.322        -0.529
+condition_judge.rvcounter[26]     led_fsm_top|iclk     FD1S3DX     D       un3_rvcounter_1[26]     5.322        -0.529
+condition_judge.rvcounter[23]     led_fsm_top|iclk     FD1S3DX     D       un3_rvcounter_1[23]     5.322        -0.387
+condition_judge.rvcounter[24]     led_fsm_top|iclk     FD1S3DX     D       un3_rvcounter_1[24]     5.322        -0.387
+condition_judge.rvcounter[21]     led_fsm_top|iclk     FD1S3DX     D       un3_rvcounter_1[21]     5.322        -0.244
+======================================================================================================================
+
+
+
+<a name=worstPaths16></a>Worst Path Information</a>
+<a href="D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\synlog\impl_led_fsm_fpga_mapper.srr:srsfD:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\impl_led_fsm.srs:fp:13070:18902:@XP_NAMES_GATE">View Worst Path in Analyst</a>
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.427
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.322
+
+    - Propagation time:                      6.279
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.958
+
+    Number of logic level(s):                17
+    Starting point:                          condition_judge.rvcounter[0] / Q
+    Ending point:                            condition_judge.rvcounter[31] / D
+    The start point is clocked by            led_fsm_top|iclk [rising] on pin CK
+    The end   point is clocked by            led_fsm_top|iclk [rising] on pin CK
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                         Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+condition_judge.rvcounter[0]                 FD1S3DX     Q        Out     1.044     1.044       -         
+rvcounter[0]                                 Net         -        -       -         -           2         
+condition_judge.un3_rvcounter_1_cry_0_0      CCU2D       A1       In      0.000     1.044       -         
+condition_judge.un3_rvcounter_1_cry_0_0      CCU2D       COUT     Out     1.544     2.588       -         
+un3_rvcounter_1_cry_0                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_1_0      CCU2D       CIN      In      0.000     2.588       -         
+condition_judge.un3_rvcounter_1_cry_1_0      CCU2D       COUT     Out     0.143     2.731       -         
+un3_rvcounter_1_cry_2                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_3_0      CCU2D       CIN      In      0.000     2.731       -         
+condition_judge.un3_rvcounter_1_cry_3_0      CCU2D       COUT     Out     0.143     2.874       -         
+un3_rvcounter_1_cry_4                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_5_0      CCU2D       CIN      In      0.000     2.874       -         
+condition_judge.un3_rvcounter_1_cry_5_0      CCU2D       COUT     Out     0.143     3.017       -         
+un3_rvcounter_1_cry_6                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_7_0      CCU2D       CIN      In      0.000     3.017       -         
+condition_judge.un3_rvcounter_1_cry_7_0      CCU2D       COUT     Out     0.143     3.159       -         
+un3_rvcounter_1_cry_8                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_9_0      CCU2D       CIN      In      0.000     3.159       -         
+condition_judge.un3_rvcounter_1_cry_9_0      CCU2D       COUT     Out     0.143     3.302       -         
+un3_rvcounter_1_cry_10                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_11_0     CCU2D       CIN      In      0.000     3.302       -         
+condition_judge.un3_rvcounter_1_cry_11_0     CCU2D       COUT     Out     0.143     3.445       -         
+un3_rvcounter_1_cry_12                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_13_0     CCU2D       CIN      In      0.000     3.445       -         
+condition_judge.un3_rvcounter_1_cry_13_0     CCU2D       COUT     Out     0.143     3.588       -         
+un3_rvcounter_1_cry_14                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_15_0     CCU2D       CIN      In      0.000     3.588       -         
+condition_judge.un3_rvcounter_1_cry_15_0     CCU2D       COUT     Out     0.143     3.731       -         
+un3_rvcounter_1_cry_16                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_17_0     CCU2D       CIN      In      0.000     3.731       -         
+condition_judge.un3_rvcounter_1_cry_17_0     CCU2D       COUT     Out     0.143     3.873       -         
+un3_rvcounter_1_cry_18                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_19_0     CCU2D       CIN      In      0.000     3.873       -         
+condition_judge.un3_rvcounter_1_cry_19_0     CCU2D       COUT     Out     0.143     4.016       -         
+un3_rvcounter_1_cry_20                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_21_0     CCU2D       CIN      In      0.000     4.016       -         
+condition_judge.un3_rvcounter_1_cry_21_0     CCU2D       COUT     Out     0.143     4.159       -         
+un3_rvcounter_1_cry_22                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_23_0     CCU2D       CIN      In      0.000     4.159       -         
+condition_judge.un3_rvcounter_1_cry_23_0     CCU2D       COUT     Out     0.143     4.302       -         
+un3_rvcounter_1_cry_24                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_25_0     CCU2D       CIN      In      0.000     4.302       -         
+condition_judge.un3_rvcounter_1_cry_25_0     CCU2D       COUT     Out     0.143     4.445       -         
+un3_rvcounter_1_cry_26                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_27_0     CCU2D       CIN      In      0.000     4.445       -         
+condition_judge.un3_rvcounter_1_cry_27_0     CCU2D       COUT     Out     0.143     4.588       -         
+un3_rvcounter_1_cry_28                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_29_0     CCU2D       CIN      In      0.000     4.588       -         
+condition_judge.un3_rvcounter_1_cry_29_0     CCU2D       COUT     Out     0.143     4.730       -         
+un3_rvcounter_1_cry_30                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_s_31_0       CCU2D       CIN      In      0.000     4.730       -         
+condition_judge.un3_rvcounter_1_s_31_0       CCU2D       S0       Out     1.549     6.279       -         
+un3_rvcounter_1[31]                          Net         -        -       -         -           1         
+condition_judge.rvcounter[31]                FD1S3DX     D        In      0.000     6.279       -         
+==========================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      5.427
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.322
+
+    - Propagation time:                      6.136
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.815
+
+    Number of logic level(s):                16
+    Starting point:                          condition_judge.rvcounter[1] / Q
+    Ending point:                            condition_judge.rvcounter[31] / D
+    The start point is clocked by            led_fsm_top|iclk [rising] on pin CK
+    The end   point is clocked by            led_fsm_top|iclk [rising] on pin CK
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                         Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+condition_judge.rvcounter[1]                 FD1S3DX     Q        Out     1.044     1.044       -         
+rvcounter[1]                                 Net         -        -       -         -           2         
+condition_judge.un3_rvcounter_1_cry_1_0      CCU2D       A0       In      0.000     1.044       -         
+condition_judge.un3_rvcounter_1_cry_1_0      CCU2D       COUT     Out     1.544     2.588       -         
+un3_rvcounter_1_cry_2                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_3_0      CCU2D       CIN      In      0.000     2.588       -         
+condition_judge.un3_rvcounter_1_cry_3_0      CCU2D       COUT     Out     0.143     2.731       -         
+un3_rvcounter_1_cry_4                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_5_0      CCU2D       CIN      In      0.000     2.731       -         
+condition_judge.un3_rvcounter_1_cry_5_0      CCU2D       COUT     Out     0.143     2.874       -         
+un3_rvcounter_1_cry_6                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_7_0      CCU2D       CIN      In      0.000     2.874       -         
+condition_judge.un3_rvcounter_1_cry_7_0      CCU2D       COUT     Out     0.143     3.017       -         
+un3_rvcounter_1_cry_8                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_9_0      CCU2D       CIN      In      0.000     3.017       -         
+condition_judge.un3_rvcounter_1_cry_9_0      CCU2D       COUT     Out     0.143     3.159       -         
+un3_rvcounter_1_cry_10                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_11_0     CCU2D       CIN      In      0.000     3.159       -         
+condition_judge.un3_rvcounter_1_cry_11_0     CCU2D       COUT     Out     0.143     3.302       -         
+un3_rvcounter_1_cry_12                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_13_0     CCU2D       CIN      In      0.000     3.302       -         
+condition_judge.un3_rvcounter_1_cry_13_0     CCU2D       COUT     Out     0.143     3.445       -         
+un3_rvcounter_1_cry_14                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_15_0     CCU2D       CIN      In      0.000     3.445       -         
+condition_judge.un3_rvcounter_1_cry_15_0     CCU2D       COUT     Out     0.143     3.588       -         
+un3_rvcounter_1_cry_16                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_17_0     CCU2D       CIN      In      0.000     3.588       -         
+condition_judge.un3_rvcounter_1_cry_17_0     CCU2D       COUT     Out     0.143     3.731       -         
+un3_rvcounter_1_cry_18                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_19_0     CCU2D       CIN      In      0.000     3.731       -         
+condition_judge.un3_rvcounter_1_cry_19_0     CCU2D       COUT     Out     0.143     3.873       -         
+un3_rvcounter_1_cry_20                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_21_0     CCU2D       CIN      In      0.000     3.873       -         
+condition_judge.un3_rvcounter_1_cry_21_0     CCU2D       COUT     Out     0.143     4.016       -         
+un3_rvcounter_1_cry_22                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_23_0     CCU2D       CIN      In      0.000     4.016       -         
+condition_judge.un3_rvcounter_1_cry_23_0     CCU2D       COUT     Out     0.143     4.159       -         
+un3_rvcounter_1_cry_24                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_25_0     CCU2D       CIN      In      0.000     4.159       -         
+condition_judge.un3_rvcounter_1_cry_25_0     CCU2D       COUT     Out     0.143     4.302       -         
+un3_rvcounter_1_cry_26                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_27_0     CCU2D       CIN      In      0.000     4.302       -         
+condition_judge.un3_rvcounter_1_cry_27_0     CCU2D       COUT     Out     0.143     4.445       -         
+un3_rvcounter_1_cry_28                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_29_0     CCU2D       CIN      In      0.000     4.445       -         
+condition_judge.un3_rvcounter_1_cry_29_0     CCU2D       COUT     Out     0.143     4.588       -         
+un3_rvcounter_1_cry_30                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_s_31_0       CCU2D       CIN      In      0.000     4.588       -         
+condition_judge.un3_rvcounter_1_s_31_0       CCU2D       S0       Out     1.549     6.136       -         
+un3_rvcounter_1[31]                          Net         -        -       -         -           1         
+condition_judge.rvcounter[31]                FD1S3DX     D        In      0.000     6.136       -         
+==========================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      5.427
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.322
+
+    - Propagation time:                      6.136
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.815
+
+    Number of logic level(s):                16
+    Starting point:                          condition_judge.rvcounter[2] / Q
+    Ending point:                            condition_judge.rvcounter[31] / D
+    The start point is clocked by            led_fsm_top|iclk [rising] on pin CK
+    The end   point is clocked by            led_fsm_top|iclk [rising] on pin CK
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                         Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+condition_judge.rvcounter[2]                 FD1S3DX     Q        Out     1.044     1.044       -         
+rvcounter[2]                                 Net         -        -       -         -           2         
+condition_judge.un3_rvcounter_1_cry_1_0      CCU2D       A1       In      0.000     1.044       -         
+condition_judge.un3_rvcounter_1_cry_1_0      CCU2D       COUT     Out     1.544     2.588       -         
+un3_rvcounter_1_cry_2                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_3_0      CCU2D       CIN      In      0.000     2.588       -         
+condition_judge.un3_rvcounter_1_cry_3_0      CCU2D       COUT     Out     0.143     2.731       -         
+un3_rvcounter_1_cry_4                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_5_0      CCU2D       CIN      In      0.000     2.731       -         
+condition_judge.un3_rvcounter_1_cry_5_0      CCU2D       COUT     Out     0.143     2.874       -         
+un3_rvcounter_1_cry_6                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_7_0      CCU2D       CIN      In      0.000     2.874       -         
+condition_judge.un3_rvcounter_1_cry_7_0      CCU2D       COUT     Out     0.143     3.017       -         
+un3_rvcounter_1_cry_8                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_9_0      CCU2D       CIN      In      0.000     3.017       -         
+condition_judge.un3_rvcounter_1_cry_9_0      CCU2D       COUT     Out     0.143     3.159       -         
+un3_rvcounter_1_cry_10                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_11_0     CCU2D       CIN      In      0.000     3.159       -         
+condition_judge.un3_rvcounter_1_cry_11_0     CCU2D       COUT     Out     0.143     3.302       -         
+un3_rvcounter_1_cry_12                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_13_0     CCU2D       CIN      In      0.000     3.302       -         
+condition_judge.un3_rvcounter_1_cry_13_0     CCU2D       COUT     Out     0.143     3.445       -         
+un3_rvcounter_1_cry_14                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_15_0     CCU2D       CIN      In      0.000     3.445       -         
+condition_judge.un3_rvcounter_1_cry_15_0     CCU2D       COUT     Out     0.143     3.588       -         
+un3_rvcounter_1_cry_16                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_17_0     CCU2D       CIN      In      0.000     3.588       -         
+condition_judge.un3_rvcounter_1_cry_17_0     CCU2D       COUT     Out     0.143     3.731       -         
+un3_rvcounter_1_cry_18                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_19_0     CCU2D       CIN      In      0.000     3.731       -         
+condition_judge.un3_rvcounter_1_cry_19_0     CCU2D       COUT     Out     0.143     3.873       -         
+un3_rvcounter_1_cry_20                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_21_0     CCU2D       CIN      In      0.000     3.873       -         
+condition_judge.un3_rvcounter_1_cry_21_0     CCU2D       COUT     Out     0.143     4.016       -         
+un3_rvcounter_1_cry_22                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_23_0     CCU2D       CIN      In      0.000     4.016       -         
+condition_judge.un3_rvcounter_1_cry_23_0     CCU2D       COUT     Out     0.143     4.159       -         
+un3_rvcounter_1_cry_24                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_25_0     CCU2D       CIN      In      0.000     4.159       -         
+condition_judge.un3_rvcounter_1_cry_25_0     CCU2D       COUT     Out     0.143     4.302       -         
+un3_rvcounter_1_cry_26                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_27_0     CCU2D       CIN      In      0.000     4.302       -         
+condition_judge.un3_rvcounter_1_cry_27_0     CCU2D       COUT     Out     0.143     4.445       -         
+un3_rvcounter_1_cry_28                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_29_0     CCU2D       CIN      In      0.000     4.445       -         
+condition_judge.un3_rvcounter_1_cry_29_0     CCU2D       COUT     Out     0.143     4.588       -         
+un3_rvcounter_1_cry_30                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_s_31_0       CCU2D       CIN      In      0.000     4.588       -         
+condition_judge.un3_rvcounter_1_s_31_0       CCU2D       S0       Out     1.549     6.136       -         
+un3_rvcounter_1[31]                          Net         -        -       -         -           1         
+condition_judge.rvcounter[31]                FD1S3DX     D        In      0.000     6.136       -         
+==========================================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      5.427
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.322
+
+    - Propagation time:                      6.136
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.815
+
+    Number of logic level(s):                16
+    Starting point:                          condition_judge.rvcounter[0] / Q
+    Ending point:                            condition_judge.rvcounter[29] / D
+    The start point is clocked by            led_fsm_top|iclk [rising] on pin CK
+    The end   point is clocked by            led_fsm_top|iclk [rising] on pin CK
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                         Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+condition_judge.rvcounter[0]                 FD1S3DX     Q        Out     1.044     1.044       -         
+rvcounter[0]                                 Net         -        -       -         -           2         
+condition_judge.un3_rvcounter_1_cry_0_0      CCU2D       A1       In      0.000     1.044       -         
+condition_judge.un3_rvcounter_1_cry_0_0      CCU2D       COUT     Out     1.544     2.588       -         
+un3_rvcounter_1_cry_0                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_1_0      CCU2D       CIN      In      0.000     2.588       -         
+condition_judge.un3_rvcounter_1_cry_1_0      CCU2D       COUT     Out     0.143     2.731       -         
+un3_rvcounter_1_cry_2                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_3_0      CCU2D       CIN      In      0.000     2.731       -         
+condition_judge.un3_rvcounter_1_cry_3_0      CCU2D       COUT     Out     0.143     2.874       -         
+un3_rvcounter_1_cry_4                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_5_0      CCU2D       CIN      In      0.000     2.874       -         
+condition_judge.un3_rvcounter_1_cry_5_0      CCU2D       COUT     Out     0.143     3.017       -         
+un3_rvcounter_1_cry_6                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_7_0      CCU2D       CIN      In      0.000     3.017       -         
+condition_judge.un3_rvcounter_1_cry_7_0      CCU2D       COUT     Out     0.143     3.159       -         
+un3_rvcounter_1_cry_8                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_9_0      CCU2D       CIN      In      0.000     3.159       -         
+condition_judge.un3_rvcounter_1_cry_9_0      CCU2D       COUT     Out     0.143     3.302       -         
+un3_rvcounter_1_cry_10                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_11_0     CCU2D       CIN      In      0.000     3.302       -         
+condition_judge.un3_rvcounter_1_cry_11_0     CCU2D       COUT     Out     0.143     3.445       -         
+un3_rvcounter_1_cry_12                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_13_0     CCU2D       CIN      In      0.000     3.445       -         
+condition_judge.un3_rvcounter_1_cry_13_0     CCU2D       COUT     Out     0.143     3.588       -         
+un3_rvcounter_1_cry_14                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_15_0     CCU2D       CIN      In      0.000     3.588       -         
+condition_judge.un3_rvcounter_1_cry_15_0     CCU2D       COUT     Out     0.143     3.731       -         
+un3_rvcounter_1_cry_16                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_17_0     CCU2D       CIN      In      0.000     3.731       -         
+condition_judge.un3_rvcounter_1_cry_17_0     CCU2D       COUT     Out     0.143     3.873       -         
+un3_rvcounter_1_cry_18                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_19_0     CCU2D       CIN      In      0.000     3.873       -         
+condition_judge.un3_rvcounter_1_cry_19_0     CCU2D       COUT     Out     0.143     4.016       -         
+un3_rvcounter_1_cry_20                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_21_0     CCU2D       CIN      In      0.000     4.016       -         
+condition_judge.un3_rvcounter_1_cry_21_0     CCU2D       COUT     Out     0.143     4.159       -         
+un3_rvcounter_1_cry_22                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_23_0     CCU2D       CIN      In      0.000     4.159       -         
+condition_judge.un3_rvcounter_1_cry_23_0     CCU2D       COUT     Out     0.143     4.302       -         
+un3_rvcounter_1_cry_24                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_25_0     CCU2D       CIN      In      0.000     4.302       -         
+condition_judge.un3_rvcounter_1_cry_25_0     CCU2D       COUT     Out     0.143     4.445       -         
+un3_rvcounter_1_cry_26                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_27_0     CCU2D       CIN      In      0.000     4.445       -         
+condition_judge.un3_rvcounter_1_cry_27_0     CCU2D       COUT     Out     0.143     4.588       -         
+un3_rvcounter_1_cry_28                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_29_0     CCU2D       CIN      In      0.000     4.588       -         
+condition_judge.un3_rvcounter_1_cry_29_0     CCU2D       S0       Out     1.549     6.136       -         
+un3_rvcounter_1[29]                          Net         -        -       -         -           1         
+condition_judge.rvcounter[29]                FD1S3DX     D        In      0.000     6.136       -         
+==========================================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      5.427
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.322
+
+    - Propagation time:                      6.136
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.815
+
+    Number of logic level(s):                16
+    Starting point:                          condition_judge.rvcounter[0] / Q
+    Ending point:                            condition_judge.rvcounter[30] / D
+    The start point is clocked by            led_fsm_top|iclk [rising] on pin CK
+    The end   point is clocked by            led_fsm_top|iclk [rising] on pin CK
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                         Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+condition_judge.rvcounter[0]                 FD1S3DX     Q        Out     1.044     1.044       -         
+rvcounter[0]                                 Net         -        -       -         -           2         
+condition_judge.un3_rvcounter_1_cry_0_0      CCU2D       A1       In      0.000     1.044       -         
+condition_judge.un3_rvcounter_1_cry_0_0      CCU2D       COUT     Out     1.544     2.588       -         
+un3_rvcounter_1_cry_0                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_1_0      CCU2D       CIN      In      0.000     2.588       -         
+condition_judge.un3_rvcounter_1_cry_1_0      CCU2D       COUT     Out     0.143     2.731       -         
+un3_rvcounter_1_cry_2                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_3_0      CCU2D       CIN      In      0.000     2.731       -         
+condition_judge.un3_rvcounter_1_cry_3_0      CCU2D       COUT     Out     0.143     2.874       -         
+un3_rvcounter_1_cry_4                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_5_0      CCU2D       CIN      In      0.000     2.874       -         
+condition_judge.un3_rvcounter_1_cry_5_0      CCU2D       COUT     Out     0.143     3.017       -         
+un3_rvcounter_1_cry_6                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_7_0      CCU2D       CIN      In      0.000     3.017       -         
+condition_judge.un3_rvcounter_1_cry_7_0      CCU2D       COUT     Out     0.143     3.159       -         
+un3_rvcounter_1_cry_8                        Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_9_0      CCU2D       CIN      In      0.000     3.159       -         
+condition_judge.un3_rvcounter_1_cry_9_0      CCU2D       COUT     Out     0.143     3.302       -         
+un3_rvcounter_1_cry_10                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_11_0     CCU2D       CIN      In      0.000     3.302       -         
+condition_judge.un3_rvcounter_1_cry_11_0     CCU2D       COUT     Out     0.143     3.445       -         
+un3_rvcounter_1_cry_12                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_13_0     CCU2D       CIN      In      0.000     3.445       -         
+condition_judge.un3_rvcounter_1_cry_13_0     CCU2D       COUT     Out     0.143     3.588       -         
+un3_rvcounter_1_cry_14                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_15_0     CCU2D       CIN      In      0.000     3.588       -         
+condition_judge.un3_rvcounter_1_cry_15_0     CCU2D       COUT     Out     0.143     3.731       -         
+un3_rvcounter_1_cry_16                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_17_0     CCU2D       CIN      In      0.000     3.731       -         
+condition_judge.un3_rvcounter_1_cry_17_0     CCU2D       COUT     Out     0.143     3.873       -         
+un3_rvcounter_1_cry_18                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_19_0     CCU2D       CIN      In      0.000     3.873       -         
+condition_judge.un3_rvcounter_1_cry_19_0     CCU2D       COUT     Out     0.143     4.016       -         
+un3_rvcounter_1_cry_20                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_21_0     CCU2D       CIN      In      0.000     4.016       -         
+condition_judge.un3_rvcounter_1_cry_21_0     CCU2D       COUT     Out     0.143     4.159       -         
+un3_rvcounter_1_cry_22                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_23_0     CCU2D       CIN      In      0.000     4.159       -         
+condition_judge.un3_rvcounter_1_cry_23_0     CCU2D       COUT     Out     0.143     4.302       -         
+un3_rvcounter_1_cry_24                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_25_0     CCU2D       CIN      In      0.000     4.302       -         
+condition_judge.un3_rvcounter_1_cry_25_0     CCU2D       COUT     Out     0.143     4.445       -         
+un3_rvcounter_1_cry_26                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_27_0     CCU2D       CIN      In      0.000     4.445       -         
+condition_judge.un3_rvcounter_1_cry_27_0     CCU2D       COUT     Out     0.143     4.588       -         
+un3_rvcounter_1_cry_28                       Net         -        -       -         -           1         
+condition_judge.un3_rvcounter_1_cry_29_0     CCU2D       CIN      In      0.000     4.588       -         
+condition_judge.un3_rvcounter_1_cry_29_0     CCU2D       S1       Out     1.549     6.136       -         
+un3_rvcounter_1[30]                          Net         -        -       -         -           1         
+condition_judge.rvcounter[30]                FD1S3DX     D        In      0.000     6.136       -         
+==========================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+
+---------------------------------------
+<a name=resourceUsage17></a>Resource Usage Report</a>
+Part: lcmxo2_4000hc-6
+
+Register bits: 43 of 4320 (1%)
+PIC Latch:       0
+I/O cells:       16
+
+
+Details:
+CCU2D:          17
+FD1S3DX:        35
+GSR:            1
+IB:             2
+INV:            1
+OB:             14
+OFS1P3BX:       7
+OFS1P3DX:       1
+ORCALUT4:       25
+PUR:            1
+VHI:            4
+VLO:            4
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 31MB peak: 145MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Nov 14 11:01:43 2019
+
+###########################################################]
+
+</pre></samp></body></html>

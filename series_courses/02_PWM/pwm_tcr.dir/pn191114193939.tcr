@@ -1,0 +1,18 @@
+#Start recording tcl command: 11/14/2019 19:09:22
+#Project Location: D:/Project/Verilog/STEP/series_courses/02_PWM; Project name: pwm
+prj_project open "D:/Project/Verilog/STEP/series_courses/02_PWM/pwm.ldf"
+prj_run Synthesis -impl impl_pwm -task Synplify_Synthesis
+prj_run Synthesis -impl impl_pwm -task Synplify_Synthesis
+prj_run Synthesis -impl impl_pwm -task Synplify_Synthesis
+prj_run Synthesis -impl impl_pwm -task Synplify_Synthesis
+prj_run PAR -impl impl_pwm
+prj_run Synthesis -impl impl_pwm -task Synplify_Synthesis
+prj_run Synthesis -impl impl_pwm
+prj_run Synthesis -impl impl_pwm -task Synplify_Synthesis
+prj_run Synthesis -impl impl_pwm
+prj_run Synthesis -impl impl_pwm -task Synplify_Synthesis
+prj_run Synthesis -impl impl_pwm -task Synplify_Synthesis
+prj_dev set -part LCMXO2-4000HC-4MG132C
+prj_run Synthesis -impl impl_pwm -forceOne
+launch_synplify_prj impl_pwm
+#Stop recording: 11/14/2019 19:39:39

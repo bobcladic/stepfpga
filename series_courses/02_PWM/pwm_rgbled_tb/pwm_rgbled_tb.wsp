@@ -1,0 +1,26 @@
+[COMPILESTATUS|.\..\pwm_rgbled.v]
+FileTimeLow=30776161
+Status=Modified
+
+[COMPILESTATUS|.\..\pwm_rgbled_tb.v]
+FileTimeLow=30776158
+Status=Compiled
+
+[General]
+CurrentVersion=103
+
+[CACHEDOC|Aldec.Project.Generic.7|.\pwm_rgbled_tb.adf|]
+Path=/pwm_rgbled_tb
+
+[Gui config]
+RunFor=0.5s
+
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\pwm_rgbled.v|]
+CurrentLine=0
+CurrentColumn=0
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-13
+Frame=0
+WindowWorkspaceInfo="LAAAAAAAAAABAAAA/////////////////////38BAAB6AAAAgAcAAAgDAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA="
+

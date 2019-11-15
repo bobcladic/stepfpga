@@ -1,0 +1,56 @@
+Loading design for application iotiming from file pwm_impl_pwm.ncd.
+Design name: pwm_rgbled
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file pwm_impl_pwm.ncd.
+Design name: pwm_rgbled
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file pwm_impl_pwm.ncd.
+Design name: pwm_rgbled
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+// Design: pwm_rgbled
+// Package: CSBGA132
+// ncd File: pwm_impl_pwm.ncd
+// Version: Diamond (64-bit) 3.10.0.111.2
+// Written on Fri Nov 15 11:03:10 2019
+// M: Minimum Performance Grade
+// iotiming pwm_impl_pwm.ncd pwm_impl_pwm.prf -gui -msgset D:/Project/Verilog/STEP/series_courses/02_PWM/promote.xml
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5, 4):
+
+// Input Setup and Hold Times
+
+Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+(no input setup/hold data)
+
+
+// Clock to Output Delay
+
+Port          Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+owvrgbled1[0] iclk  R    17.078         4        3.788          M
+owvrgbled1[1] iclk  R    21.918         4        4.083          M
+owvrgbled1[2] iclk  R    22.207         4        4.010          M
+owvrgbled2[0] iclk  R    17.089         4        3.794          M
+owvrgbled2[1] iclk  R    21.064         4        3.872          M
+owvrgbled2[2] iclk  R    21.277         4        3.773          M

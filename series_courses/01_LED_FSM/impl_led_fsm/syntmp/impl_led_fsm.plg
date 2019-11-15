@@ -1,0 +1,11 @@
+@P:  Worst Slack : -0.958
+@P:  led_fsm_top|iclk - Estimated Frequency : 156.6 MHz
+@P:  led_fsm_top|iclk - Requested Frequency : 184.3 MHz
+@P:  led_fsm_top|iclk - Estimated Period : 6.385
+@P:  led_fsm_top|iclk - Requested Period : 5.427
+@P:  led_fsm_top|iclk - Slack : -0.958
+@P:  Total Area : 26.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  CPU Time : 0h:00m:01s

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="MapVerilogSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>51001030</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>irst_n_c</Dynamic>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>iclk_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>iclk</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>STEP</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>COUNTER_NUM</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MODE</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>STEP</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>COUNTER_NUM</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MODE</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>STEP</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>COUNTER_NUM</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MODE</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>STEP</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>COUNTER_NUM</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MODE</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MODE</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>COUNTER_NUM</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>STEP</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MODE</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>COUNTER_NUM</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>STEP</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MODE</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>COUNTER_NUM</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>STEP</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MODE</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>COUNTER_NUM</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>STEP</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v&quot;:135:4:135:9|Pruning unused register rvcntnum_tri[31:0]. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Navigation>CL169</Navigation>
+            <Navigation>D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v</Navigation>
+            <Navigation>135</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>135</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning unused register rvcntnum_tri[31:0]. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v&quot;:123:4:123:9|Pruning register bits 31 to 27 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning register bits 31 to 27 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v&quot;:123:4:123:9|Pruning register bits 31 to 27 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning register bits 31 to 27 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v&quot;:123:4:123:9|Optimizing register bit rvcntnum_saw[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit rvcntnum_saw[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v&quot;:123:4:123:9|Optimizing register bit rvcntnum_saw[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit rvcntnum_saw[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v&quot;:123:4:123:9|Optimizing register bit rvcntnum_saw[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit rvcntnum_saw[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v&quot;:123:4:123:9|Optimizing register bit rvcntnum_saw[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit rvcntnum_saw[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v&quot;:123:4:123:9|Optimizing register bit rvcntnum_saw[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit rvcntnum_saw[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v&quot;:123:4:123:9|Pruning register bits 31 to 27 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning register bits 31 to 27 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v&quot;:123:4:123:9|Optimizing register bit rvcntnum_saw[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit rvcntnum_saw[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v&quot;:123:4:123:9|Optimizing register bit rvcntnum_saw[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit rvcntnum_saw[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v&quot;:123:4:123:9|Optimizing register bit rvcntnum_saw[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit rvcntnum_saw[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v&quot;:123:4:123:9|Optimizing register bit rvcntnum_saw[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit rvcntnum_saw[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v&quot;:123:4:123:9|Optimizing register bit rvcntnum_saw[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit rvcntnum_saw[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v&quot;:123:4:123:9|Optimizing register bit rvcntnum_saw[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit rvcntnum_saw[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v&quot;:123:4:123:9|Optimizing register bit rvcntnum_saw[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit rvcntnum_saw[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v&quot;:123:4:123:9|Optimizing register bit rvcntnum_saw[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit rvcntnum_saw[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v&quot;:123:4:123:9|Pruning register bits 31 to 26 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning register bits 31 to 26 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v&quot;:123:4:123:9|Pruning register bits 1 to 0 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning register bits 1 to 0 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;d:\project\verilog\step\series_courses\02_pwm\pwm_rgbled.v&quot;:123:4:123:9|Found inferred clock pwm_rgbled|iclk which controls 201 sequential elements including pwm.rvcntnum_saw[25:2]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>d:\project\verilog\step\series_courses\02_pwm\pwm_rgbled.v</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>123</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Found inferred clock pwm_rgbled|iclk which controls 201 sequential elements including pwm.rvcntnum_saw[25:2]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock pwm_rgbled|iclk with period 1000.00ns. Please declare a user-defined clock on object &quot;p:iclk&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock pwm_rgbled|iclk with period 1000.00ns. Please declare a user-defined clock on object &quot;p:iclk&quot;</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

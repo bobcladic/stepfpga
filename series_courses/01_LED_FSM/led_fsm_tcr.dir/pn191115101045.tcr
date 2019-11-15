@@ -1,0 +1,4 @@
+#Start recording tcl command: 11/15/2019 10:01:09
+#Project Location: D:/Project/Verilog/STEP/series_courses/01_LED_FSM; Project name: led_fsm
+prj_project open "D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm.ldf"
+#Stop recording: 11/15/2019 10:10:45

@@ -1,0 +1,62 @@
+timestamp=1573702225462
+
+[~A]
+D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm_tb.v=0*3416*3950
+D:/Project/Verilog/STEP/series_courses/01_LED_FSM/led_fsm_top.v=0*1166*2470
+LastVerilogToplevel=led_fsm_tb
+ModifyID=2
+Version=74
+
+[$root]
+A/$root=22|||1*6899
+BinI32/$root=3*4454
+SLP=3*4558
+Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|c73a565f2ade592f8ac1c68f484c92169204ef7133cffcf43af49de070935c83
+
+[condition_judge]
+A/condition_judge=22|./../../led_fsm_top.v|139|1*5481
+BinI32/condition_judge=3*3293
+R=./../../led_fsm_top.v|139
+SLP=3*4088
+Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|7e90d3fc89cc609ca365640f7e4160dc00ee4fffeb0d35799d90c54ca2777523b982edcd97e923f8f749c620195578ea
+
+[led_controller]
+A/led_controller=22|./../../led_fsm_top.v|80|1*2536
+BinI32/led_controller=3*872
+R=./../../led_fsm_top.v|80
+SLP=3*1773
+Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|a2eb0038db94864c119340f9e5686037450a4c9b66e53d75f8d9a04c5d02a77afb8772b90d51b5ca7fcaf164529cd734
+
+[led_fsm_tb]
+A/led_fsm_tb=22|./../../led_fsm_tb.v|17|1*7273
+BinI32/led_fsm_tb=3*4626
+R=./../../led_fsm_tb.v|17
+SLP=3*5120
+Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|837d31d1f1317ac7d91515e820d5821b0b4211316cee2ec95d77c286e48e020f49520162a2fcc98a8e12137b08c31e14
+
+[led_fsm_top]
+A/led_fsm_top=22|./../../led_fsm_top.v|28|1*374
+BinI32/led_fsm_top=3*172
+R=./../../led_fsm_top.v|28
+SLP=3*649
+Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|2474d39bf584dac013f36097dd4ca073c5c3f5bc8a12ec1b7bbeba7da2eb09363756d6e37139963159bf4ec83bd1e0b6
+
+[state_controller]
+A/state_controller=22|./../../led_fsm_top.v|111|1*4075
+BinI32/state_controller=3*2359
+R=./../../led_fsm_top.v|111
+SLP=3*2964
+Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|0270a7eae25b0a83b6347108de4419bb4dd29f8516d56a70634eecabe72c83813cdd4e9bb4e7752759a1869662270b6b
+
+[~MFT]
+0=4|0work.mgf|3950|0
+1=3|1work.mgf|7273|374
+3=6|3work.mgf|5120|172
+
+[~U]
+$root=12|0*3046|
+condition_judge=12|0*931|
+led_controller=12|0*472|
+led_fsm_tb=12|0*3260||0x10
+led_fsm_top=12|0*198||0x10
+state_controller=12|0*700|

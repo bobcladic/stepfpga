@@ -1,0 +1,59 @@
+----------------------------------------------------------------------
+Report for cell led_fsm_top.verilog
+
+Register bits: 43 of 4320 (1%)
+PIC Latch:       0
+I/O cells:       16
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       17       100.0
+                            FD1S3DX       35       100.0
+                                GSR        1       100.0
+                                 IB        2       100.0
+                                INV        1       100.0
+                                 OB       14       100.0
+                           OFS1P3BX        7       100.0
+                           OFS1P3DX        1       100.0
+                           ORCALUT4       25       100.0
+                                PUR        1       100.0
+                                VHI        4       100.0
+                                VLO        4       100.0
+SUB MODULES 
+                    condition_judge        1       100.0
+                     led_controller        1       100.0
+                   state_controller        1       100.0
+                            
+                         TOTAL           115           
+----------------------------------------------------------------------
+Report for cell condition_judge.netlist
+     Instance path:  condition_judge
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       17       100.0
+                            FD1S3DX       32        91.4
+                           ORCALUT4       13        52.0
+                                VHI        1        25.0
+                                VLO        1        25.0
+                            
+                         TOTAL            64           
+----------------------------------------------------------------------
+Report for cell state_controller.netlist
+     Instance path:  impl_state_controller
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3DX        3         8.6
+                           ORCALUT4        4        16.0
+                                VHI        1        25.0
+                                VLO        1        25.0
+                            
+                         TOTAL             9           
+----------------------------------------------------------------------
+Report for cell led_controller.netlist
+     Instance path:  impl_led_controller
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                           ORCALUT4        8        32.0
+                                VHI        1        25.0
+                                VLO        1        25.0
+                            
+                         TOTAL            10           

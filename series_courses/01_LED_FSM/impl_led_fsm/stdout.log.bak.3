@@ -1,0 +1,88 @@
+Running in Lattice mode
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/bwidget-1.9.5/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/bwidget-1.9.5/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/tcllib-1.12/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/tcllib-1.12/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/bwidget-1.9.5/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/bwidget-1.9.5/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/tcllib-1.12/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/tcllib-1.12/pkgIndex.tcl}": no such file or directory
+error reading package index file C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl: couldn't read file "{C:/Program Files/lscc/diamond/3.10_x64/synpbase/lib/pkgIndex.tcl}": no such file or directory
+
+Starting:    C:\Program Files\lscc\diamond\3.10_x64\synpbase\bin64\mbin\synbatch.exe
+Install:     C:\Program Files\lscc\diamond\3.10_x64\synpbase
+Hostname:    DESKTOP-HAL5TRF
+Date:        Wed Nov 13 17:14:57 2019
+Version:     M-2017.03L-SP1-1
+
+Arguments:   -product synplify_pro -batch led_fsm_impl_led_fsm_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+log file: "D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\led_fsm_impl_led_fsm.srr"
+Running: impl_led_fsm in foreground
+
+Running proj_1|impl_led_fsm
+
+Running: compile (Compile) on proj_1|impl_led_fsm
+# Wed Nov 13 17:14:57 2019
+
+Running: compile_flow (Compile Process) on proj_1|impl_led_fsm
+# Wed Nov 13 17:14:57 2019
+
+Running: compiler (Compile Input) on proj_1|impl_led_fsm
+# Wed Nov 13 17:14:57 2019
+Copied D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\synwork\led_fsm_impl_led_fsm_comp.srs to D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\led_fsm_impl_led_fsm.srs
+
+compiler completed
+# Wed Nov 13 17:14:59 2019
+
+Return Code: 0
+Run Time:00h:00m:02s
+
+Running: multi_srs_gen (Multi-srs Generator) on proj_1|impl_led_fsm
+# Wed Nov 13 17:14:59 2019
+
+multi_srs_gen completed
+# Wed Nov 13 17:14:59 2019
+
+Return Code: 0
+Run Time:00h:00m:00s
+Copied D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\synwork\led_fsm_impl_led_fsm_mult.srs to D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\led_fsm_impl_led_fsm.srs
+Copied D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\led_fsm_impl_led_fsm.srr to D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\led_fsm_impl_led_fsm.srf
+Complete: Compile Process on proj_1|impl_led_fsm
+
+Running: premap (Pre-mapping) on proj_1|impl_led_fsm
+# Wed Nov 13 17:14:59 2019
+
+premap completed with warnings
+# Wed Nov 13 17:15:00 2019
+
+Return Code: 1
+Run Time:00h:00m:01s
+Complete: Compile on proj_1|impl_led_fsm
+
+Running: map (Map) on proj_1|impl_led_fsm
+# Wed Nov 13 17:15:00 2019
+License granted for 4 parallel jobs
+
+Running: fpga_mapper (Map & Optimize) on proj_1|impl_led_fsm
+# Wed Nov 13 17:15:00 2019
+Copied D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\synwork\led_fsm_impl_led_fsm_m.srm to D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\led_fsm_impl_led_fsm.srm
+
+fpga_mapper completed with warnings
+# Wed Nov 13 17:15:03 2019
+
+Return Code: 1
+Run Time:00h:00m:03s
+Complete: Map on proj_1|impl_led_fsm
+Copied D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\led_fsm_impl_led_fsm.srr to D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\led_fsm_impl_led_fsm.srf
+Complete: Logic 0exit status=0
+j_1|impl_led_fsm
+TCL script complete: "led_fsm_impl_led_fsm_synplify.tcl"
+exit status=0
+exit status=0
+Save changes for project:
+D:\Project\Verilog\STEP\series_courses\01_LED_FSM\impl_led_fsm\proj_1.prj
+batch mode default:no

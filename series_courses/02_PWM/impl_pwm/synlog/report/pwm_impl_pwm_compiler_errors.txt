@@ -1,0 +1,4 @@
+@E: CS110 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":62:12:62:14|Expecting terminal list
+@E: CS110 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":77:12:77:25|Expecting terminal list
+@E: CS187 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":124:0:124:8|Expecting endmodule
+

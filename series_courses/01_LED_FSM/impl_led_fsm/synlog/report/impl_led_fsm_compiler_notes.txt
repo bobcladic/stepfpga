@@ -1,0 +1,12 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\01_LED_FSM\led_fsm_top.v":80:7:80:20|Synthesizing module led_controller in library work.
+@N: CG793 :"D:\Project\Verilog\STEP\series_courses\01_LED_FSM\led_fsm_top.v":107:8:107:15|Ignoring system task $display
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\01_LED_FSM\led_fsm_top.v":111:7:111:22|Synthesizing module state_controller in library work.
+@N: CG179 :"D:\Project\Verilog\STEP\series_courses\01_LED_FSM\led_fsm_top.v":127:23:127:29|Removing redundant assignment.
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\01_LED_FSM\led_fsm_top.v":139:7:139:21|Synthesizing module condition_judge in library work.
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\01_LED_FSM\led_fsm_top.v":28:7:28:17|Synthesizing module led_fsm_top in library work.
+@N|Running in 64-bit mode
+

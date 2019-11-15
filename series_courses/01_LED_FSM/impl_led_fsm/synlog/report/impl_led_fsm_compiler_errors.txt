@@ -1,0 +1,2 @@
+@E: CL123 :"D:\Project\Verilog\STEP\series_courses\01_LED_FSM\led_fsm_top.v":107:4:107:9|Logic for rvstate[2:0] does not match a standard flip-flop
+

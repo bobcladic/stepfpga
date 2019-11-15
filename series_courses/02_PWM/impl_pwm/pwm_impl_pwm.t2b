@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "D:/Project/Verilog/STEP/series_courses/02_PWM"  
