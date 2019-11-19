@@ -21,7 +21,8 @@ reg rst_n;
 wire [7:0] wvled;
 wire [2:0] wvrgbled1;
 wire [2:0] wvrgbled2;
-initial begin
+
+initial begin
 	rst_n <= 0;
 	clk <= 0;
 	#20 rst_n <= 1;
@@ -29,7 +30,8 @@ end
 
 always #10 clk =~clk;
 
-pwm_rgbled pwm_rgbled(
+
+ pwm_rgbled(
     .iclk(clk),
     .irst_n(rst_n),
     .owvled(wvled),

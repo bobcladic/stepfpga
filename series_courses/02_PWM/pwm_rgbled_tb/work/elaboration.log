@@ -1,4 +1,4 @@
-Active-HDL 10.3.3558.6081  2019-11-15 11:00:55
+Active-HDL 10.3.3558.6081  2019-11-19 10:26:32
 
 Elaboration top modules:
 Verilog Module                pwm_rgbled_tb
@@ -7,9 +7,9 @@ Verilog Module                pwm_rgbled_tb
 -------------------------------------------------------------------------------------------
 Verilog Module          | Library | Info | Compiler Version          | Compilation Options
 -------------------------------------------------------------------------------------------
-pwm_rgbled_tb           | work    |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
-pwm_rgbled              | work    |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
-counter                 | work    |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+pwm_rgbled_tb           | work    |      | 10.3.3558.6081  (Windows) | -dbg
+pwm_rgbled              | work    |      | 10.3.3558.6081  (Windows) | -dbg
+counter                 | work    |      | 10.3.3558.6081  (Windows) | -dbg
 -------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------

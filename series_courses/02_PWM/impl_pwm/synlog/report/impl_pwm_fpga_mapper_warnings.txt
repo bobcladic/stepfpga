@@ -1,1 +1,1 @@
-@W: MT420 |Found inferred clock pwm_rgbled|iclk with period 8.95ns. Please declare a user-defined clock on object "p:iclk"
+@W: MT420 |Found inferred clock pwm_rgbled|iclk with period 9.03ns. Please declare a user-defined clock on object "p:iclk"

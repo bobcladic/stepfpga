@@ -1,48 +1,46 @@
-timestamp=1573786855299
+timestamp=1574130385590
 
 [~A]
-D:/Project/Verilog/STEP/series_courses/02_PWM/pwm_rgbled.v=0*697*1868
-D:/Project/Verilog/STEP/series_courses/02_PWM/pwm_rgbled_tb.v=0*2765*3330
-D:/Project/Verilog/STEP/series_courses/02_PWM/pwm_rgbled_tb/../pwm_rgbled.v=0*17801*18989
-D:/Project/Verilog/STEP/series_courses/02_PWM/pwm_rgbled_tb/../pwm_rgbled.v_pwm_rgbled_tb.v=0*7632*9012
+D:/Project/Verilog/STEP/series_courses/02_PWM/pwm_rgbled.v=0*702*1873
+D:/Project/Verilog/STEP/series_courses/02_PWM/pwm_rgbled_tb.v=0*2770*3319
 LastVerilogToplevel=pwm_rgbled_tb
-ModifyID=8
+ModifyID=2
 Version=74
 
 [$root]
-A/$root=22|||1*38284
-BinI32/$root=3*27654
-SLP=3*27758
-Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c9216b55957ceedbd44dab59285a6a37d5a99
+A/$root=22|||1*5673
+BinI32/$root=3*4651
+SLP=3*4755
+Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|c73a565f2ade592f8ac1c68f484c9216e40e7f2265a92744c0c508bfdc4e52fb
 
 [counter]
-A/counter=22|./../../pwm_rgbled.v|109|1*41909
-BinI32/counter=3*29171
-R=./../../pwm_rgbled.v|109
-SLP=3*31151
-Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|ec8a9ceecd40c97da6d5687ce01e262f26527262ddaa47cb266f3a3c4d9b973adf2fcc68179250e873ab7fb4059e8f3e
+A/counter=22|./../../pwm_rgbled.v|108|1*3628
+BinI32/counter=3*1696
+R=./../../pwm_rgbled.v|108
+SLP=3*4010
+Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|ec8a9ceecd40c97da6d5687ce01e262f26527262ddaa47cb266f3a3c4d9b973aec1af6fe7047bd3ea8743782a7ad3786
 
 [pwm_rgbled]
-A/pwm_rgbled=22|./../../pwm_rgbled.v|31|1*38658
-BinI32/pwm_rgbled=3*27826
-R=./../../pwm_rgbled.v|31
-SLP=3*28791
-Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|f37c443efe23863c741568508facb70d0dbce35a97d42d8a2353bf95b7780326cea46d82f7dea53d00f1ebddc5df52a2
+A/pwm_rgbled=22|./../../pwm_rgbled.v|30|1*374
+BinI32/pwm_rgbled=3*172
+R=./../../pwm_rgbled.v|30
+SLP=3*1317
+Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|f37c443efe23863c741568508facb70d0dbce35a97d42d8a2353bf95b7780326691f976653613f275783143a41d19039
 
 [pwm_rgbled_tb]
-A/pwm_rgbled_tb=22|./../../pwm_rgbled_tb.v|17|1*20092
-BinI32/pwm_rgbled_tb=3*14526
+A/pwm_rgbled_tb=22|./../../pwm_rgbled_tb.v|17|1*6047
+BinI32/pwm_rgbled_tb=3*4823
 R=./../../pwm_rgbled_tb.v|17
-SLP=3*14987
-Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|61caff63ba57d0e97007030d263a45684adaf99faf96751fb940f8b58ec699033def3babf2473e2ceb0650d789b7ac97
+SLP=3*5322
+Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|61caff63ba57d0e97007030d263a45684adaf99faf96751fb940f8b58ec6990301973fedf169ff26b65dadb2698c792a
 
 [~MFT]
-0=7|0work.mgf|18989|7376
-1=6|1work.mgf|41909|36853
-3=12|3work.mgf|31151|26963
+0=4|0work.mgf|3319|0
+1=3|1work.mgf|6047|374
+3=6|3work.mgf|5322|172
 
 [~U]
-$root=12|0*17099|
-counter=12|0*17537|
-pwm_rgbled=12|0*17281|
-pwm_rgbled_tb=12|0*7457||0x10
+$root=12|0*2428|
+counter=12|0*438|
+pwm_rgbled=12|0*182||0x10
+pwm_rgbled_tb=12|0*2610||0x10

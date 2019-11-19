@@ -3,50 +3,50 @@ Report for cell pwm_rgbled
    Instance path: pwm_rgbled
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     221.00        100.0
-                                  LUT4	     152.00        100.0
+                                  SLIC	     223.00        100.0
+                                  LUT4	     165.00        100.0
                                  IOBUF	         16        100.0
-                                PFUREG	        205        100.0
-                                RIPPLE	        145        100.0
+                                PFUREG	        197        100.0
+                                RIPPLE	        140        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-   counter_tri_120000000s_40000000s_1s	          1        21.6
-   counter_tri_120000000s_80000000s_1s	          1        21.6
-         counter_saw_60000000s_0s_500s	          1        10.9
-          counter_tri_120000000s_0s_1s	          1        21.4
+    counter_tri_24000000s_16000000s_1s	          1        21.1
+     counter_tri_24000000s_8000000s_1s	          1        21.1
+        counter_saw_12000000s_0s_1000s	          1         9.9
+           counter_tri_24000000s_0s_1s	          1        24.7
 ---------------------------------------------------
-Report for cell counter_tri_120000000s_80000000s_1s
+Report for cell counter_tri_24000000s_16000000s_1s
    Instance path: pwm_rgbled/rgbled_flash_b
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      47.67        21.6
-                                  LUT4	      33.00        21.7
-                                PFUREG	         61        29.8
-                                RIPPLE	         31        21.4
+                                  SLIC	      47.00        21.1
+                                  LUT4	      34.00        20.6
+                                PFUREG	         59        29.9
+                                RIPPLE	         30        21.4
 ---------------------------------------------------
-Report for cell counter_tri_120000000s_40000000s_1s
+Report for cell counter_tri_24000000s_8000000s_1s
    Instance path: pwm_rgbled/rgbled_flash_g
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      47.67        21.6
-                                  LUT4	      33.00        21.7
-                                PFUREG	         61        29.8
-                                RIPPLE	         31        21.4
+                                  SLIC	      47.00        21.1
+                                  LUT4	      34.00        20.6
+                                PFUREG	         59        29.9
+                                RIPPLE	         30        21.4
 ---------------------------------------------------
-Report for cell counter_tri_120000000s_0s_1s
+Report for cell counter_tri_24000000s_0s_1s
    Instance path: pwm_rgbled/rgbled_flash_r
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      47.33        21.4
-                                  LUT4	      33.00        21.7
-                                PFUREG	         59        28.8
-                                RIPPLE	         31        21.4
+                                  SLIC	      55.00        24.7
+                                  LUT4	      50.00        30.3
+                                PFUREG	         58        29.4
+                                RIPPLE	         30        21.4
 ---------------------------------------------------
-Report for cell counter_saw_60000000s_0s_500s
+Report for cell counter_saw_12000000s_0s_1000s
    Instance path: pwm_rgbled/pwm
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      24.00        10.9
-                                  LUT4	      22.00        14.5
-                                PFUREG	         24        11.7
-                                RIPPLE	         13         9.0
+                                  SLIC	      22.00         9.9
+                                  LUT4	      22.00        13.3
+                                PFUREG	         21        10.7
+                                RIPPLE	         11         7.9

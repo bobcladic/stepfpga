@@ -19,9 +19,10 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>D:/Project/Verilog/STEP/series_courses/02_PWM/impl_pwm/pwm_impl_pwm.bit</File>
-			<FileTime>11/15/19 11:03:13</FileTime>
-			<Operation>SRAM Fast Program</Operation>
+			<File>D:/Project/Verilog/STEP/series_courses/02_PWM/impl_pwm/pwm_impl_pwm.jed</File>
+			<FileTime>11/19/19 10:32:50</FileTime>
+			<JedecChecksum>0xFC2C</JedecChecksum>
+			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
 				<IOState>HighZ</IOState>
@@ -30,7 +31,7 @@
 				<TCKFrequency>1.000000 MHz</TCKFrequency>
 				<SVFProcessor>SVF Processor</SVFProcessor>
 				<Usercode>0x00000000</Usercode>
-				<AccessMode>SRAM</AccessMode>
+				<AccessMode>FLASH</AccessMode>
 			</Option>
 		</Device>
 	</Chain>

@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Nov 15 11:02:58 2019
+Tue Nov 19 10:32:24 2019
 
 C:/Program Files/lscc/diamond/3.10_x64/ispfpga\bin\nt64\par -f pwm_impl_pwm.p2t
 pwm_impl_pwm_map.ncd pwm_impl_pwm.dir pwm_impl_pwm.prf -gui -msgset
@@ -16,10 +16,10 @@ Preference file: pwm_impl_pwm.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            -0.455       3803         0.379        0            09           Success
+5_1   *      0            0.241        0            0.379        0            14           Success
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 9 secs 
+Total (real) run time for 1-seed: 14 secs 
 
 par done!

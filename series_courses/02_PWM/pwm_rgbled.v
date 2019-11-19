@@ -1,7 +1,7 @@
 //=====================================================================
 //
 // Author: Bob.C
-// Latest update: 2019/11/14 31:32:46
+// Latest update: 2019/11/18 21:32:46
 // Description:
 //   PWM generator, rgbled vision effect 
 // Version: 0.01
@@ -19,11 +19,10 @@
     `ifdef SIMULATION
         `define SYS_FREQ 12
     `else
-        `define SYS_FREQ 60_000_000
+        `define SYS_FREQ 12_000_000
     `endif
-    `define PWM_FREQ 12_0000
-    `define SAWTOOTH 2'b01
-    `define TRIANGLE 2'b10
+
+    `define PWM_FREQ 12_000
 
 /*include*/
 
@@ -144,3 +143,9 @@ module counter #(
         end
     end
 endmodule
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+#Start recording tcl command: 11/18/2019 17:02:37
+#Project Location: D:/Project/Verilog/STEP/series_courses/02_PWM; Project name: pwm
+prj_project open "D:/Project/Verilog/STEP/series_courses/02_PWM/pwm.ldf"
+launch_synplify_prj impl_pwm
+#Stop recording: 11/18/2019 17:22:46

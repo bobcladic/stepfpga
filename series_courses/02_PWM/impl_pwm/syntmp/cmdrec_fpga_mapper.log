@@ -1,11 +1,11 @@
 C:\Program Files\lscc\diamond\3.10_x64\synpbase\bin64\m_gen_lattice.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm   -part LCMXO2_4000HC  -package MG132C  -grade -4    -maxfan 1000 -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1 -use_rename_in_edif 1 -Write_declared_clocks_only 1 -summaryfile D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\synlog\report\impl_pwm_fpga_mapper.xml  -flow mapping  -multisrs  -oedif  D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\impl_pwm.edi   -autoconstraint  -freq 1.000   D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\synwork\impl_pwm_prem.srd  -devicelib  "C:\Program Files\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v"  -devicelib  "C:\Program Files\lscc\diamond\3.10_x64\synpbase\lib\lucent\pmi_def.v"  -ologparam  D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\syntmp\impl_pwm.plg  -osyn  D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\impl_pwm.srm  -prjdir  D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\  -prjname  impl_pwm_syn  -log  D:\Project\Verilog\STEP\series_courses\02_PWM\impl_pwm\synlog\impl_pwm_fpga_mapper.srr  -jobname  "fpga_mapper" 
 relcom:C:\Program Files\lscc\diamond\3.10_x64\synpbase\bin64\m_gen_lattice.exe -prodtype synplify_pro -encrypt -pro -rundir ..\..\impl_pwm -part LCMXO2_4000HC -package MG132C -grade -4 -maxfan 1000 -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1 -use_rename_in_edif 1 -Write_declared_clocks_only 1 -summaryfile ..\synlog\report\impl_pwm_fpga_mapper.xml -flow mapping -multisrs -oedif ..\impl_pwm.edi -autoconstraint -freq 1.000 ..\synwork\impl_pwm_prem.srd -devicelib "C:\Program Files\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v" -devicelib "C:\Program Files\lscc\diamond\3.10_x64\synpbase\lib\lucent\pmi_def.v" -ologparam impl_pwm.plg -osyn ..\impl_pwm.srm -prjdir ..\ -prjname impl_pwm_syn -log ..\synlog\impl_pwm_fpga_mapper.srr -jobname "fpga_mapper"
-rc:1 success:1 runtime:4
-file:..\impl_pwm.edi|io:o|time:1573787005|size:417537|exec:0|csum:
-file:..\synwork\impl_pwm_prem.srd|io:i|time:1573787002|size:14237|exec:0|csum:B5188888204F5E0FFB91AA06F01C4169
+rc:0 success:1 runtime:0
+file:..\impl_pwm.edi|io:o|time:1574130062|size:397999|exec:0|csum:
+file:..\synwork\impl_pwm_prem.srd|io:i|time:1574130059|size:14225|exec:0|csum:56998539289EC008B8108F5C1CBAC5B4
 file:C:\Program Files\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v|io:i|time:1501867416|size:54295|exec:0|csum:D5667017EB528EBD3C317EFCC9D2C19B
 file:C:\Program Files\lscc\diamond\3.10_x64\synpbase\lib\lucent\pmi_def.v|io:i|time:1501867416|size:40584|exec:0|csum:530CC5906D70AB3C6A4AA0861AC94BDF
-file:impl_pwm.plg|io:o|time:1573787005|size:421|exec:0|csum:
-file:..\impl_pwm.srm|io:o|time:1573787005|size:12034|exec:0|csum:
-file:..\synlog\impl_pwm_fpga_mapper.srr|io:o|time:1573787005|size:58113|exec:0|csum:
+file:impl_pwm.plg|io:o|time:1574130063|size:421|exec:0|csum:
+file:..\impl_pwm.srm|io:o|time:1574130062|size:12032|exec:0|csum:
+file:..\synlog\impl_pwm_fpga_mapper.srr|io:o|time:1574130063|size:58457|exec:0|csum:
 file:C:\Program Files\lscc\diamond\3.10_x64\synpbase\bin64\m_gen_lattice.exe|io:i|time:1501870314|size:29299200|exec:1|csum:5C77397B47E7811864C32F4FC7D86D2F

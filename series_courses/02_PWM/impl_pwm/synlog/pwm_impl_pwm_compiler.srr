@@ -14,73 +14,82 @@ Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated
 @I::"C:\Program Files\lscc\diamond\3.10_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
 @I::"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v" (library work)
 Verilog syntax check successful!
-File D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v changed - recompiling
+Options changed - recompiling
 Selecting top level module pwm_rgbled
-@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":109:7:109:13|Synthesizing module counter in library work.
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":108:7:108:13|Synthesizing module counter in library work.
 
 	MODE=24'b011100110110000101110111
-	COUNTER_NUM=32'b00000011100100111000011100000000
+	COUNTER_NUM=32'b00000000101101110001101100000000
 	INIT_NUM=32'b00000000000000000000000000000000
-	STEP=32'b00000000000000000000000111110100
-   Generated name = counter_saw_60000000s_0s_500s
-@W: CL169 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":135:4:135:9|Pruning unused register rvcntnum_tri[31:0]. Make sure that there are no unused intermediate registers.
-@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":109:7:109:13|Synthesizing module counter in library work.
+	STEP=32'b00000000000000000000001111101000
+   Generated name = counter_saw_12000000s_0s_1000s
+@W: CL169 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":134:4:134:9|Pruning unused register rvcntnum_tri[31:0]. Make sure that there are no unused intermediate registers.
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":108:7:108:13|Synthesizing module counter in library work.
 
 	MODE=24'b011101000111001001101001
-	COUNTER_NUM=32'b00000111001001110000111000000000
+	COUNTER_NUM=32'b00000001011011100011011000000000
 	INIT_NUM=32'b00000000000000000000000000000000
 	STEP=32'b00000000000000000000000000000001
-   Generated name = counter_tri_120000000s_0s_1s
-@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":109:7:109:13|Synthesizing module counter in library work.
+   Generated name = counter_tri_24000000s_0s_1s
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":108:7:108:13|Synthesizing module counter in library work.
 
 	MODE=24'b011101000111001001101001
-	COUNTER_NUM=32'b00000111001001110000111000000000
-	INIT_NUM=32'b00000010011000100101101000000000
+	COUNTER_NUM=32'b00000001011011100011011000000000
+	INIT_NUM=32'b00000000011110100001001000000000
 	STEP=32'b00000000000000000000000000000001
-   Generated name = counter_tri_120000000s_40000000s_1s
-@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":109:7:109:13|Synthesizing module counter in library work.
+   Generated name = counter_tri_24000000s_8000000s_1s
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":108:7:108:13|Synthesizing module counter in library work.
 
 	MODE=24'b011101000111001001101001
-	COUNTER_NUM=32'b00000111001001110000111000000000
-	INIT_NUM=32'b00000100110001001011010000000000
+	COUNTER_NUM=32'b00000001011011100011011000000000
+	INIT_NUM=32'b00000000111101000010010000000000
 	STEP=32'b00000000000000000000000000000001
-   Generated name = counter_tri_120000000s_80000000s_1s
-@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":31:7:31:16|Synthesizing module pwm_rgbled in library work.
-@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[31] is always 0.
-@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[30] is always 0.
-@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[29] is always 0.
-@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[28] is always 0.
-@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[27] is always 0.
-@W: CL279 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Pruning register bits 31 to 27 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[31] is always 0.
-@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[30] is always 0.
-@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[29] is always 0.
-@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[28] is always 0.
-@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[27] is always 0.
-@W: CL279 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Pruning register bits 31 to 27 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Pruning register bits 31 to 27 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Optimizing register bit rvcntnum_saw[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Pruning register bits 31 to 26 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Pruning register bits 1 to 0 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+   Generated name = counter_tri_24000000s_16000000s_1s
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":30:7:30:16|Synthesizing module pwm_rgbled in library work.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[31] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[30] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[29] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[28] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[27] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[26] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[25] is always 0.
+@W: CL279 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Pruning register bits 31 to 25 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[31] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[30] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[29] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[28] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[27] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[26] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[25] is always 0.
+@W: CL279 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Pruning register bits 31 to 25 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Optimizing register bit rvcntnum_saw[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Optimizing register bit rvcntnum_saw[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Optimizing register bit rvcntnum_saw[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Optimizing register bit rvcntnum_saw[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Optimizing register bit rvcntnum_saw[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Optimizing register bit rvcntnum_saw[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Optimizing register bit rvcntnum_saw[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Pruning register bits 31 to 25 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Optimizing register bit rvcntnum_saw[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Optimizing register bit rvcntnum_saw[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Optimizing register bit rvcntnum_saw[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Optimizing register bit rvcntnum_saw[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Optimizing register bit rvcntnum_saw[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Optimizing register bit rvcntnum_saw[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Optimizing register bit rvcntnum_saw[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Optimizing register bit rvcntnum_saw[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Optimizing register bit rvcntnum_saw[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Optimizing register bit rvcntnum_saw[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Optimizing register bit rvcntnum_saw[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Pruning register bits 31 to 24 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Pruning register bits 2 to 0 of rvcntnum_saw[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 
 At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 73MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Nov 15 11:02:49 2019
+# Tue Nov 19 09:39:17 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
@@ -92,7 +101,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Nov 15 11:02:49 2019
+# Tue Nov 19 09:39:17 2019
 
 ###########################################################]
 @END
@@ -102,6 +111,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Nov 15 11:02:49 2019
+# Tue Nov 19 09:39:17 2019
 
 ###########################################################]

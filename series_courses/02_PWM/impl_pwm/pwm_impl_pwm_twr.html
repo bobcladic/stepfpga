@@ -22,7 +22,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 <A name="Par_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2</big></U></B>
-Fri Nov 15 11:03:07 2019
+Tue Nov 19 10:32:39 2019
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -41,9 +41,8 @@ Report level:    verbose report, limited to 10 items per preference
 
 <A name="ptwr_set_ps"></A><B><U><big>Preference Summary</big></U></B>
 
-<FONT COLOR=red><LI><A href='#par_twr_pref_0_0' Target='right'><FONT COLOR=red>FREQUENCY NET "iclk_c" 72.908000 MHz (35 errors)</FONT></A></LI>
-</FONT>            4096 items scored, 35 timing errors detected.
-Warning:  70.567MHz is the maximum frequency for this preference.
+<LI><A href='#par_twr_pref_0_0' Target='right'>FREQUENCY NET "iclk_c" 89.646000 MHz (0 errors)</A></LI>            4096 items scored, 0 timing errors detected.
+Report:   91.625MHz is the maximum frequency for this preference.
 
 Report Type:     based on TRACE automatically generated preferences
 BLOCK ASYNCPATHS
@@ -53,905 +52,610 @@ BLOCK RESETPATHS
 
 
 ================================================================================
-<A name="par_twr_pref_0_0"></A>Preference: FREQUENCY NET "iclk_c" 72.908000 MHz ;
-            4096 items scored, 35 timing errors detected.
+<A name="par_twr_pref_0_0"></A>Preference: FREQUENCY NET "iclk_c" 89.646000 MHz ;
+            4096 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Error: The following path exceeds requirements by 0.455ns
+Passed: The following path meets requirements by 0.241ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[2]  (from iclk_c +)
+   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[6]  (from iclk_c +)
    Destination:    FF         Data in        rgbled_flash_r/rvcntnum_tri[31]  (to iclk_c +)
 
-   Delay:              14.005ns  (56.8% logic, 43.2% route), 25 logic levels.
+   Delay:              10.748ns  (60.2% logic, 39.8% route), 22 logic levels.
 
  Constraint Details:
 
-     14.005ns physical path delay rgbled_flash_r/SLICE_75 to rgbled_flash_r/SLICE_77 exceeds
-     13.716ns delay constraint less
+     10.748ns physical path delay rgbled_flash_r/SLICE_70 to rgbled_flash_r/SLICE_74 meets
+     11.155ns delay constraint less
       0.000ns skew and
-      0.166ns DIN_SET requirement (totaling 13.550ns) by 0.455ns
+      0.166ns DIN_SET requirement (totaling 10.989ns) by 0.241ns
 
  Physical Path Details:
 
-      Data path rgbled_flash_r/SLICE_75 to rgbled_flash_r/SLICE_77:
+      Data path rgbled_flash_r/SLICE_70 to rgbled_flash_r/SLICE_74:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452    R16C14B.CLK to     R16C14B.Q1 rgbled_flash_r/SLICE_75 (from iclk_c)
-ROUTE         2     1.030     R16C14B.Q1 to     R17C14C.B1 rgbled_flash_r/rvcntnum_saw[2]
-CTOF_DEL    ---     0.495     R17C14C.B1 to     R17C14C.F1 SLICE_159
-ROUTE         1     0.693     R17C14C.F1 to     R17C14D.B1 rgbled_flash_r/un1_rvcntnum_sawlto8_i_a2_7_4
-CTOF_DEL    ---     0.495     R17C14D.B1 to     R17C14D.F1 rgbled_flash_r/SLICE_194
-ROUTE         2     0.654     R17C14D.F1 to     R17C15A.D1 rgbled_flash_r/N_15_7
-CTOF_DEL    ---     0.495     R17C15A.D1 to     R17C15A.F1 rgbled_flash_r/SLICE_219
-ROUTE         1     0.626     R17C15A.F1 to     R17C15C.D1 rgbled_flash_r/rvcntnum_tri27lt14
-CTOF_DEL    ---     0.495     R17C15C.D1 to     R17C15C.F1 rgbled_flash_r/SLICE_191
-ROUTE         1     0.436     R17C15C.F1 to     R17C15C.C0 rgbled_flash_r/rvcntnum_tri27lt20
-CTOF_DEL    ---     0.495     R17C15C.C0 to     R17C15C.F0 rgbled_flash_r/SLICE_191
-ROUTE         1     0.958     R17C15C.F0 to     R15C15A.D1 rgbled_flash_r/rvcntnum_tri27lt25
-CTOF_DEL    ---     0.495     R15C15A.D1 to     R15C15A.F1 rgbled_flash_r/SLICE_189
-ROUTE        33     0.643     R15C15A.F1 to     R15C15A.D0 rgbled_flash_r/rvcntnum_tri27lt26
-CTOF_DEL    ---     0.495     R15C15A.D0 to     R15C15A.F0 rgbled_flash_r/SLICE_189
-ROUTE         2     1.010     R15C15A.F0 to     R15C16A.B0 rgbled_flash_r/rvcntnum_tri
-C0TOFCO_DE  ---     1.023     R15C16A.B0 to    R15C16A.FCO rgbled_flash_r/SLICE_93
-ROUTE         1     0.000    R15C16A.FCO to    R15C16B.FCI rgbled_flash_r/rvcntnum_tri_cry[0]
-FCITOFCO_D  ---     0.162    R15C16B.FCI to    R15C16B.FCO rgbled_flash_r/SLICE_92
-ROUTE         1     0.000    R15C16B.FCO to    R15C16C.FCI rgbled_flash_r/rvcntnum_tri_cry[2]
-FCITOFCO_D  ---     0.162    R15C16C.FCI to    R15C16C.FCO rgbled_flash_r/SLICE_91
-ROUTE         1     0.000    R15C16C.FCO to    R15C16D.FCI rgbled_flash_r/rvcntnum_tri_cry[4]
-FCITOFCO_D  ---     0.162    R15C16D.FCI to    R15C16D.FCO rgbled_flash_r/SLICE_90
-ROUTE         1     0.000    R15C16D.FCO to    R15C17A.FCI rgbled_flash_r/rvcntnum_tri_cry[6]
-FCITOFCO_D  ---     0.162    R15C17A.FCI to    R15C17A.FCO rgbled_flash_r/SLICE_89
-ROUTE         1     0.000    R15C17A.FCO to    R15C17B.FCI rgbled_flash_r/rvcntnum_tri_cry[8]
-FCITOFCO_D  ---     0.162    R15C17B.FCI to    R15C17B.FCO rgbled_flash_r/SLICE_88
-ROUTE         1     0.000    R15C17B.FCO to    R15C17C.FCI rgbled_flash_r/rvcntnum_tri_cry[10]
-FCITOFCO_D  ---     0.162    R15C17C.FCI to    R15C17C.FCO rgbled_flash_r/SLICE_87
-ROUTE         1     0.000    R15C17C.FCO to    R15C17D.FCI rgbled_flash_r/rvcntnum_tri_cry[12]
-FCITOFCO_D  ---     0.162    R15C17D.FCI to    R15C17D.FCO rgbled_flash_r/SLICE_86
-ROUTE         1     0.000    R15C17D.FCO to    R15C18A.FCI rgbled_flash_r/rvcntnum_tri_cry[14]
-FCITOFCO_D  ---     0.162    R15C18A.FCI to    R15C18A.FCO rgbled_flash_r/SLICE_85
-ROUTE         1     0.000    R15C18A.FCO to    R15C18B.FCI rgbled_flash_r/rvcntnum_tri_cry[16]
-FCITOFCO_D  ---     0.162    R15C18B.FCI to    R15C18B.FCO rgbled_flash_r/SLICE_84
-ROUTE         1     0.000    R15C18B.FCO to    R15C18C.FCI rgbled_flash_r/rvcntnum_tri_cry[18]
-FCITOFCO_D  ---     0.162    R15C18C.FCI to    R15C18C.FCO rgbled_flash_r/SLICE_83
-ROUTE         1     0.000    R15C18C.FCO to    R15C18D.FCI rgbled_flash_r/rvcntnum_tri_cry[20]
-FCITOFCO_D  ---     0.162    R15C18D.FCI to    R15C18D.FCO rgbled_flash_r/SLICE_82
-ROUTE         1     0.000    R15C18D.FCO to    R15C19A.FCI rgbled_flash_r/rvcntnum_tri_cry[22]
-FCITOFCO_D  ---     0.162    R15C19A.FCI to    R15C19A.FCO rgbled_flash_r/SLICE_81
-ROUTE         1     0.000    R15C19A.FCO to    R15C19B.FCI rgbled_flash_r/rvcntnum_tri_cry[24]
-FCITOFCO_D  ---     0.162    R15C19B.FCI to    R15C19B.FCO rgbled_flash_r/SLICE_80
-ROUTE         1     0.000    R15C19B.FCO to    R15C19C.FCI rgbled_flash_r/rvcntnum_tri_cry[26]
-FCITOFCO_D  ---     0.162    R15C19C.FCI to    R15C19C.FCO rgbled_flash_r/SLICE_79
-ROUTE         1     0.000    R15C19C.FCO to    R15C19D.FCI rgbled_flash_r/rvcntnum_tri_cry[28]
-FCITOFCO_D  ---     0.162    R15C19D.FCI to    R15C19D.FCO rgbled_flash_r/SLICE_78
-ROUTE         1     0.000    R15C19D.FCO to    R15C20A.FCI rgbled_flash_r/rvcntnum_tri_cry[30]
-FCITOF0_DE  ---     0.585    R15C20A.FCI to     R15C20A.F0 rgbled_flash_r/SLICE_77
-ROUTE         1     0.000     R15C20A.F0 to    R15C20A.DI0 rgbled_flash_r/rvcntnum_tri_s[31] (to iclk_c)
+REG_DEL     ---     0.452    R18C11D.CLK to     R18C11D.Q1 rgbled_flash_r/SLICE_70 (from iclk_c)
+ROUTE         4     1.440     R18C11D.Q1 to     R18C10A.B1 rgbled_flash_r/rvcntnum_saw[6]
+CTOF_DEL    ---     0.495     R18C10A.B1 to     R18C10A.F1 rgbled_flash_r/SLICE_162
+ROUTE         1     0.744     R18C10A.F1 to      R18C9A.C0 rgbled_flash_r/rvcntnum_tri27lto24_0_sx_N_3L3
+CTOF_DEL    ---     0.495      R18C9A.C0 to      R18C9A.F0 rgbled_flash_r/SLICE_197
+ROUTE         1     0.766      R18C9A.F0 to      R20C9A.C1 rgbled_flash_r/rvcntnum_tri27lto24_0_sx_N_4L5
+CTOF_DEL    ---     0.495      R20C9A.C1 to      R20C9A.F1 rgbled_flash_r/SLICE_191
+ROUTE         1     0.626      R20C9A.F1 to      R20C9D.D0 rgbled_flash_r/rvcntnum_tri27lto24_0_sx
+CTOF_DEL    ---     0.495      R20C9D.D0 to      R20C9D.F0 rgbled_flash_r/SLICE_174
+ROUTE         2     0.702      R20C9D.F0 to     R20C10A.B0 rgbled_flash_r/rvcntnum_tri
+C0TOFCO_DE  ---     1.023     R20C10A.B0 to    R20C10A.FCO rgbled_flash_r/SLICE_90
+ROUTE         1     0.000    R20C10A.FCO to    R20C10B.FCI rgbled_flash_r/rvcntnum_tri_cry[0]
+FCITOFCO_D  ---     0.162    R20C10B.FCI to    R20C10B.FCO rgbled_flash_r/SLICE_89
+ROUTE         1     0.000    R20C10B.FCO to    R20C10C.FCI rgbled_flash_r/rvcntnum_tri_cry[2]
+FCITOFCO_D  ---     0.162    R20C10C.FCI to    R20C10C.FCO rgbled_flash_r/SLICE_88
+ROUTE         1     0.000    R20C10C.FCO to    R20C10D.FCI rgbled_flash_r/rvcntnum_tri_cry[4]
+FCITOFCO_D  ---     0.162    R20C10D.FCI to    R20C10D.FCO rgbled_flash_r/SLICE_87
+ROUTE         1     0.000    R20C10D.FCO to    R20C11A.FCI rgbled_flash_r/rvcntnum_tri_cry[6]
+FCITOFCO_D  ---     0.162    R20C11A.FCI to    R20C11A.FCO rgbled_flash_r/SLICE_86
+ROUTE         1     0.000    R20C11A.FCO to    R20C11B.FCI rgbled_flash_r/rvcntnum_tri_cry[8]
+FCITOFCO_D  ---     0.162    R20C11B.FCI to    R20C11B.FCO rgbled_flash_r/SLICE_85
+ROUTE         1     0.000    R20C11B.FCO to    R20C11C.FCI rgbled_flash_r/rvcntnum_tri_cry[10]
+FCITOFCO_D  ---     0.162    R20C11C.FCI to    R20C11C.FCO rgbled_flash_r/SLICE_84
+ROUTE         1     0.000    R20C11C.FCO to    R20C11D.FCI rgbled_flash_r/rvcntnum_tri_cry[12]
+FCITOFCO_D  ---     0.162    R20C11D.FCI to    R20C11D.FCO rgbled_flash_r/SLICE_83
+ROUTE         1     0.000    R20C11D.FCO to    R20C12A.FCI rgbled_flash_r/rvcntnum_tri_cry[14]
+FCITOFCO_D  ---     0.162    R20C12A.FCI to    R20C12A.FCO rgbled_flash_r/SLICE_82
+ROUTE         1     0.000    R20C12A.FCO to    R20C12B.FCI rgbled_flash_r/rvcntnum_tri_cry[16]
+FCITOFCO_D  ---     0.162    R20C12B.FCI to    R20C12B.FCO rgbled_flash_r/SLICE_81
+ROUTE         1     0.000    R20C12B.FCO to    R20C12C.FCI rgbled_flash_r/rvcntnum_tri_cry[18]
+FCITOFCO_D  ---     0.162    R20C12C.FCI to    R20C12C.FCO rgbled_flash_r/SLICE_80
+ROUTE         1     0.000    R20C12C.FCO to    R20C12D.FCI rgbled_flash_r/rvcntnum_tri_cry[20]
+FCITOFCO_D  ---     0.162    R20C12D.FCI to    R20C12D.FCO rgbled_flash_r/SLICE_79
+ROUTE         1     0.000    R20C12D.FCO to    R20C13A.FCI rgbled_flash_r/rvcntnum_tri_cry[22]
+FCITOFCO_D  ---     0.162    R20C13A.FCI to    R20C13A.FCO rgbled_flash_r/SLICE_78
+ROUTE         1     0.000    R20C13A.FCO to    R20C13B.FCI rgbled_flash_r/rvcntnum_tri_cry[24]
+FCITOFCO_D  ---     0.162    R20C13B.FCI to    R20C13B.FCO rgbled_flash_r/SLICE_77
+ROUTE         1     0.000    R20C13B.FCO to    R20C13C.FCI rgbled_flash_r/rvcntnum_tri_cry[26]
+FCITOFCO_D  ---     0.162    R20C13C.FCI to    R20C13C.FCO rgbled_flash_r/SLICE_76
+ROUTE         1     0.000    R20C13C.FCO to    R20C13D.FCI rgbled_flash_r/rvcntnum_tri_cry[28]
+FCITOFCO_D  ---     0.162    R20C13D.FCI to    R20C13D.FCO rgbled_flash_r/SLICE_75
+ROUTE         1     0.000    R20C13D.FCO to    R20C14A.FCI rgbled_flash_r/rvcntnum_tri_cry[30]
+FCITOF0_DE  ---     0.585    R20C14A.FCI to     R20C14A.F0 rgbled_flash_r/SLICE_74
+ROUTE         1     0.000     R20C14A.F0 to    R20C14A.DI0 rgbled_flash_r/rvcntnum_tri_s[31] (to iclk_c)
                   --------
-                   14.005   (56.8% logic, 43.2% route), 25 logic levels.
+                   10.748   (60.2% logic, 39.8% route), 22 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path iclk to rgbled_flash_r/SLICE_75:
+      Source Clock Path iclk to rgbled_flash_r/SLICE_70:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     3.044       C1.PADDI to    R16C14B.CLK iclk_c
+ROUTE       113     3.044       C1.PADDI to    R18C11D.CLK iclk_c
                   --------
                     3.044   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path iclk to rgbled_flash_r/SLICE_77:
+      Destination Clock Path iclk to rgbled_flash_r/SLICE_74:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     3.044       C1.PADDI to    R15C20A.CLK iclk_c
+ROUTE       113     3.044       C1.PADDI to    R20C14A.CLK iclk_c
                   --------
                     3.044   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 0.396ns
+Passed: The following path meets requirements by 0.323ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[4]  (from iclk_c +)
-   Destination:    FF         Data in        rgbled_flash_r/rvcntnum_tri[31]  (to iclk_c +)
+   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[6]  (from iclk_c +)
+   Destination:    FF         Data in        rgbled_flash_r/rvcntnum_tri[12]  (to iclk_c +)
+                   FF                        rgbled_flash_r/rvcntnum_tri[11]
 
-   Delay:              13.946ns  (57.0% logic, 43.0% route), 25 logic levels.
+   Delay:              10.550ns  (27.7% logic, 72.3% route), 6 logic levels.
 
  Constraint Details:
 
-     13.946ns physical path delay rgbled_flash_r/SLICE_74 to rgbled_flash_r/SLICE_77 exceeds
-     13.716ns delay constraint less
+     10.550ns physical path delay rgbled_flash_r/SLICE_70 to rgbled_flash_r/SLICE_84 meets
+     11.155ns delay constraint less
       0.000ns skew and
-      0.166ns DIN_SET requirement (totaling 13.550ns) by 0.396ns
+      0.282ns CE_SET requirement (totaling 10.873ns) by 0.323ns
 
  Physical Path Details:
 
-      Data path rgbled_flash_r/SLICE_74 to rgbled_flash_r/SLICE_77:
+      Data path rgbled_flash_r/SLICE_70 to rgbled_flash_r/SLICE_84:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452    R16C14C.CLK to     R16C14C.Q1 rgbled_flash_r/SLICE_74 (from iclk_c)
-ROUTE         2     0.971     R16C14C.Q1 to     R17C14C.A1 rgbled_flash_r/rvcntnum_saw[4]
-CTOF_DEL    ---     0.495     R17C14C.A1 to     R17C14C.F1 SLICE_159
-ROUTE         1     0.693     R17C14C.F1 to     R17C14D.B1 rgbled_flash_r/un1_rvcntnum_sawlto8_i_a2_7_4
-CTOF_DEL    ---     0.495     R17C14D.B1 to     R17C14D.F1 rgbled_flash_r/SLICE_194
-ROUTE         2     0.654     R17C14D.F1 to     R17C15A.D1 rgbled_flash_r/N_15_7
-CTOF_DEL    ---     0.495     R17C15A.D1 to     R17C15A.F1 rgbled_flash_r/SLICE_219
-ROUTE         1     0.626     R17C15A.F1 to     R17C15C.D1 rgbled_flash_r/rvcntnum_tri27lt14
-CTOF_DEL    ---     0.495     R17C15C.D1 to     R17C15C.F1 rgbled_flash_r/SLICE_191
-ROUTE         1     0.436     R17C15C.F1 to     R17C15C.C0 rgbled_flash_r/rvcntnum_tri27lt20
-CTOF_DEL    ---     0.495     R17C15C.C0 to     R17C15C.F0 rgbled_flash_r/SLICE_191
-ROUTE         1     0.958     R17C15C.F0 to     R15C15A.D1 rgbled_flash_r/rvcntnum_tri27lt25
-CTOF_DEL    ---     0.495     R15C15A.D1 to     R15C15A.F1 rgbled_flash_r/SLICE_189
-ROUTE        33     0.643     R15C15A.F1 to     R15C15A.D0 rgbled_flash_r/rvcntnum_tri27lt26
-CTOF_DEL    ---     0.495     R15C15A.D0 to     R15C15A.F0 rgbled_flash_r/SLICE_189
-ROUTE         2     1.010     R15C15A.F0 to     R15C16A.B0 rgbled_flash_r/rvcntnum_tri
-C0TOFCO_DE  ---     1.023     R15C16A.B0 to    R15C16A.FCO rgbled_flash_r/SLICE_93
-ROUTE         1     0.000    R15C16A.FCO to    R15C16B.FCI rgbled_flash_r/rvcntnum_tri_cry[0]
-FCITOFCO_D  ---     0.162    R15C16B.FCI to    R15C16B.FCO rgbled_flash_r/SLICE_92
-ROUTE         1     0.000    R15C16B.FCO to    R15C16C.FCI rgbled_flash_r/rvcntnum_tri_cry[2]
-FCITOFCO_D  ---     0.162    R15C16C.FCI to    R15C16C.FCO rgbled_flash_r/SLICE_91
-ROUTE         1     0.000    R15C16C.FCO to    R15C16D.FCI rgbled_flash_r/rvcntnum_tri_cry[4]
-FCITOFCO_D  ---     0.162    R15C16D.FCI to    R15C16D.FCO rgbled_flash_r/SLICE_90
-ROUTE         1     0.000    R15C16D.FCO to    R15C17A.FCI rgbled_flash_r/rvcntnum_tri_cry[6]
-FCITOFCO_D  ---     0.162    R15C17A.FCI to    R15C17A.FCO rgbled_flash_r/SLICE_89
-ROUTE         1     0.000    R15C17A.FCO to    R15C17B.FCI rgbled_flash_r/rvcntnum_tri_cry[8]
-FCITOFCO_D  ---     0.162    R15C17B.FCI to    R15C17B.FCO rgbled_flash_r/SLICE_88
-ROUTE         1     0.000    R15C17B.FCO to    R15C17C.FCI rgbled_flash_r/rvcntnum_tri_cry[10]
-FCITOFCO_D  ---     0.162    R15C17C.FCI to    R15C17C.FCO rgbled_flash_r/SLICE_87
-ROUTE         1     0.000    R15C17C.FCO to    R15C17D.FCI rgbled_flash_r/rvcntnum_tri_cry[12]
-FCITOFCO_D  ---     0.162    R15C17D.FCI to    R15C17D.FCO rgbled_flash_r/SLICE_86
-ROUTE         1     0.000    R15C17D.FCO to    R15C18A.FCI rgbled_flash_r/rvcntnum_tri_cry[14]
-FCITOFCO_D  ---     0.162    R15C18A.FCI to    R15C18A.FCO rgbled_flash_r/SLICE_85
-ROUTE         1     0.000    R15C18A.FCO to    R15C18B.FCI rgbled_flash_r/rvcntnum_tri_cry[16]
-FCITOFCO_D  ---     0.162    R15C18B.FCI to    R15C18B.FCO rgbled_flash_r/SLICE_84
-ROUTE         1     0.000    R15C18B.FCO to    R15C18C.FCI rgbled_flash_r/rvcntnum_tri_cry[18]
-FCITOFCO_D  ---     0.162    R15C18C.FCI to    R15C18C.FCO rgbled_flash_r/SLICE_83
-ROUTE         1     0.000    R15C18C.FCO to    R15C18D.FCI rgbled_flash_r/rvcntnum_tri_cry[20]
-FCITOFCO_D  ---     0.162    R15C18D.FCI to    R15C18D.FCO rgbled_flash_r/SLICE_82
-ROUTE         1     0.000    R15C18D.FCO to    R15C19A.FCI rgbled_flash_r/rvcntnum_tri_cry[22]
-FCITOFCO_D  ---     0.162    R15C19A.FCI to    R15C19A.FCO rgbled_flash_r/SLICE_81
-ROUTE         1     0.000    R15C19A.FCO to    R15C19B.FCI rgbled_flash_r/rvcntnum_tri_cry[24]
-FCITOFCO_D  ---     0.162    R15C19B.FCI to    R15C19B.FCO rgbled_flash_r/SLICE_80
-ROUTE         1     0.000    R15C19B.FCO to    R15C19C.FCI rgbled_flash_r/rvcntnum_tri_cry[26]
-FCITOFCO_D  ---     0.162    R15C19C.FCI to    R15C19C.FCO rgbled_flash_r/SLICE_79
-ROUTE         1     0.000    R15C19C.FCO to    R15C19D.FCI rgbled_flash_r/rvcntnum_tri_cry[28]
-FCITOFCO_D  ---     0.162    R15C19D.FCI to    R15C19D.FCO rgbled_flash_r/SLICE_78
-ROUTE         1     0.000    R15C19D.FCO to    R15C20A.FCI rgbled_flash_r/rvcntnum_tri_cry[30]
-FCITOF0_DE  ---     0.585    R15C20A.FCI to     R15C20A.F0 rgbled_flash_r/SLICE_77
-ROUTE         1     0.000     R15C20A.F0 to    R15C20A.DI0 rgbled_flash_r/rvcntnum_tri_s[31] (to iclk_c)
+REG_DEL     ---     0.452    R18C11D.CLK to     R18C11D.Q1 rgbled_flash_r/SLICE_70 (from iclk_c)
+ROUTE         4     1.440     R18C11D.Q1 to     R18C10A.B1 rgbled_flash_r/rvcntnum_saw[6]
+CTOF_DEL    ---     0.495     R18C10A.B1 to     R18C10A.F1 rgbled_flash_r/SLICE_162
+ROUTE         1     0.744     R18C10A.F1 to      R18C9A.C0 rgbled_flash_r/rvcntnum_tri27lto24_0_sx_N_3L3
+CTOF_DEL    ---     0.495      R18C9A.C0 to      R18C9A.F0 rgbled_flash_r/SLICE_197
+ROUTE         1     0.766      R18C9A.F0 to      R20C9A.C1 rgbled_flash_r/rvcntnum_tri27lto24_0_sx_N_4L5
+CTOF_DEL    ---     0.495      R20C9A.C1 to      R20C9A.F1 rgbled_flash_r/SLICE_191
+ROUTE         1     0.626      R20C9A.F1 to      R20C9D.D0 rgbled_flash_r/rvcntnum_tri27lto24_0_sx
+CTOF_DEL    ---     0.495      R20C9D.D0 to      R20C9D.F0 rgbled_flash_r/SLICE_174
+ROUTE         2     2.006      R20C9D.F0 to     R12C15A.A0 rgbled_flash_r/rvcntnum_tri
+CTOF_DEL    ---     0.495     R12C15A.A0 to     R12C15A.F0 rgbled_flash_r/SLICE_187
+ROUTE        17     2.041     R12C15A.F0 to     R20C11C.CE rgbled_flash_r/N_6_i (to iclk_c)
                   --------
-                   13.946   (57.0% logic, 43.0% route), 25 logic levels.
+                   10.550   (27.7% logic, 72.3% route), 6 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path iclk to rgbled_flash_r/SLICE_74:
+      Source Clock Path iclk to rgbled_flash_r/SLICE_70:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     3.044       C1.PADDI to    R16C14C.CLK iclk_c
+ROUTE       113     3.044       C1.PADDI to    R18C11D.CLK iclk_c
                   --------
                     3.044   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path iclk to rgbled_flash_r/SLICE_77:
+      Destination Clock Path iclk to rgbled_flash_r/SLICE_84:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     3.044       C1.PADDI to    R15C20A.CLK iclk_c
+ROUTE       113     3.044       C1.PADDI to    R20C11C.CLK iclk_c
                   --------
                     3.044   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 0.351ns
+Passed: The following path meets requirements by 0.323ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[2]  (from iclk_c +)
+   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[6]  (from iclk_c +)
+   Destination:    FF         Data in        rgbled_flash_r/rvcntnum_tri[8]  (to iclk_c +)
+                   FF                        rgbled_flash_r/rvcntnum_tri[7]
+
+   Delay:              10.550ns  (27.7% logic, 72.3% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.550ns physical path delay rgbled_flash_r/SLICE_70 to rgbled_flash_r/SLICE_86 meets
+     11.155ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 10.873ns) by 0.323ns
+
+ Physical Path Details:
+
+      Data path rgbled_flash_r/SLICE_70 to rgbled_flash_r/SLICE_86:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R18C11D.CLK to     R18C11D.Q1 rgbled_flash_r/SLICE_70 (from iclk_c)
+ROUTE         4     1.440     R18C11D.Q1 to     R18C10A.B1 rgbled_flash_r/rvcntnum_saw[6]
+CTOF_DEL    ---     0.495     R18C10A.B1 to     R18C10A.F1 rgbled_flash_r/SLICE_162
+ROUTE         1     0.744     R18C10A.F1 to      R18C9A.C0 rgbled_flash_r/rvcntnum_tri27lto24_0_sx_N_3L3
+CTOF_DEL    ---     0.495      R18C9A.C0 to      R18C9A.F0 rgbled_flash_r/SLICE_197
+ROUTE         1     0.766      R18C9A.F0 to      R20C9A.C1 rgbled_flash_r/rvcntnum_tri27lto24_0_sx_N_4L5
+CTOF_DEL    ---     0.495      R20C9A.C1 to      R20C9A.F1 rgbled_flash_r/SLICE_191
+ROUTE         1     0.626      R20C9A.F1 to      R20C9D.D0 rgbled_flash_r/rvcntnum_tri27lto24_0_sx
+CTOF_DEL    ---     0.495      R20C9D.D0 to      R20C9D.F0 rgbled_flash_r/SLICE_174
+ROUTE         2     2.006      R20C9D.F0 to     R12C15A.A0 rgbled_flash_r/rvcntnum_tri
+CTOF_DEL    ---     0.495     R12C15A.A0 to     R12C15A.F0 rgbled_flash_r/SLICE_187
+ROUTE        17     2.041     R12C15A.F0 to     R20C11A.CE rgbled_flash_r/N_6_i (to iclk_c)
+                  --------
+                   10.550   (27.7% logic, 72.3% route), 6 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path iclk to rgbled_flash_r/SLICE_70:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       113     3.044       C1.PADDI to    R18C11D.CLK iclk_c
+                  --------
+                    3.044   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path iclk to rgbled_flash_r/SLICE_86:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       113     3.044       C1.PADDI to    R20C11A.CLK iclk_c
+                  --------
+                    3.044   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.323ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[6]  (from iclk_c +)
+   Destination:    FF         Data in        rgbled_flash_r/rvcntnum_tri[14]  (to iclk_c +)
+                   FF                        rgbled_flash_r/rvcntnum_tri[13]
+
+   Delay:              10.550ns  (27.7% logic, 72.3% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.550ns physical path delay rgbled_flash_r/SLICE_70 to rgbled_flash_r/SLICE_83 meets
+     11.155ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 10.873ns) by 0.323ns
+
+ Physical Path Details:
+
+      Data path rgbled_flash_r/SLICE_70 to rgbled_flash_r/SLICE_83:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R18C11D.CLK to     R18C11D.Q1 rgbled_flash_r/SLICE_70 (from iclk_c)
+ROUTE         4     1.440     R18C11D.Q1 to     R18C10A.B1 rgbled_flash_r/rvcntnum_saw[6]
+CTOF_DEL    ---     0.495     R18C10A.B1 to     R18C10A.F1 rgbled_flash_r/SLICE_162
+ROUTE         1     0.744     R18C10A.F1 to      R18C9A.C0 rgbled_flash_r/rvcntnum_tri27lto24_0_sx_N_3L3
+CTOF_DEL    ---     0.495      R18C9A.C0 to      R18C9A.F0 rgbled_flash_r/SLICE_197
+ROUTE         1     0.766      R18C9A.F0 to      R20C9A.C1 rgbled_flash_r/rvcntnum_tri27lto24_0_sx_N_4L5
+CTOF_DEL    ---     0.495      R20C9A.C1 to      R20C9A.F1 rgbled_flash_r/SLICE_191
+ROUTE         1     0.626      R20C9A.F1 to      R20C9D.D0 rgbled_flash_r/rvcntnum_tri27lto24_0_sx
+CTOF_DEL    ---     0.495      R20C9D.D0 to      R20C9D.F0 rgbled_flash_r/SLICE_174
+ROUTE         2     2.006      R20C9D.F0 to     R12C15A.A0 rgbled_flash_r/rvcntnum_tri
+CTOF_DEL    ---     0.495     R12C15A.A0 to     R12C15A.F0 rgbled_flash_r/SLICE_187
+ROUTE        17     2.041     R12C15A.F0 to     R20C11D.CE rgbled_flash_r/N_6_i (to iclk_c)
+                  --------
+                   10.550   (27.7% logic, 72.3% route), 6 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path iclk to rgbled_flash_r/SLICE_70:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       113     3.044       C1.PADDI to    R18C11D.CLK iclk_c
+                  --------
+                    3.044   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path iclk to rgbled_flash_r/SLICE_83:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       113     3.044       C1.PADDI to    R20C11D.CLK iclk_c
+                  --------
+                    3.044   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.323ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[6]  (from iclk_c +)
+   Destination:    FF         Data in        rgbled_flash_r/rvcntnum_tri[10]  (to iclk_c +)
+                   FF                        rgbled_flash_r/rvcntnum_tri[9]
+
+   Delay:              10.550ns  (27.7% logic, 72.3% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.550ns physical path delay rgbled_flash_r/SLICE_70 to rgbled_flash_r/SLICE_85 meets
+     11.155ns delay constraint less
+      0.000ns skew and
+      0.282ns CE_SET requirement (totaling 10.873ns) by 0.323ns
+
+ Physical Path Details:
+
+      Data path rgbled_flash_r/SLICE_70 to rgbled_flash_r/SLICE_85:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452    R18C11D.CLK to     R18C11D.Q1 rgbled_flash_r/SLICE_70 (from iclk_c)
+ROUTE         4     1.440     R18C11D.Q1 to     R18C10A.B1 rgbled_flash_r/rvcntnum_saw[6]
+CTOF_DEL    ---     0.495     R18C10A.B1 to     R18C10A.F1 rgbled_flash_r/SLICE_162
+ROUTE         1     0.744     R18C10A.F1 to      R18C9A.C0 rgbled_flash_r/rvcntnum_tri27lto24_0_sx_N_3L3
+CTOF_DEL    ---     0.495      R18C9A.C0 to      R18C9A.F0 rgbled_flash_r/SLICE_197
+ROUTE         1     0.766      R18C9A.F0 to      R20C9A.C1 rgbled_flash_r/rvcntnum_tri27lto24_0_sx_N_4L5
+CTOF_DEL    ---     0.495      R20C9A.C1 to      R20C9A.F1 rgbled_flash_r/SLICE_191
+ROUTE         1     0.626      R20C9A.F1 to      R20C9D.D0 rgbled_flash_r/rvcntnum_tri27lto24_0_sx
+CTOF_DEL    ---     0.495      R20C9D.D0 to      R20C9D.F0 rgbled_flash_r/SLICE_174
+ROUTE         2     2.006      R20C9D.F0 to     R12C15A.A0 rgbled_flash_r/rvcntnum_tri
+CTOF_DEL    ---     0.495     R12C15A.A0 to     R12C15A.F0 rgbled_flash_r/SLICE_187
+ROUTE        17     2.041     R12C15A.F0 to     R20C11B.CE rgbled_flash_r/N_6_i (to iclk_c)
+                  --------
+                   10.550   (27.7% logic, 72.3% route), 6 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path iclk to rgbled_flash_r/SLICE_70:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       113     3.044       C1.PADDI to    R18C11D.CLK iclk_c
+                  --------
+                    3.044   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path iclk to rgbled_flash_r/SLICE_85:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       113     3.044       C1.PADDI to    R20C11B.CLK iclk_c
+                  --------
+                    3.044   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.345ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[6]  (from iclk_c +)
    Destination:    FF         Data in        rgbled_flash_r/rvcntnum_tri[30]  (to iclk_c +)
 
-   Delay:              13.901ns  (56.5% logic, 43.5% route), 24 logic levels.
+   Delay:              10.644ns  (59.8% logic, 40.2% route), 21 logic levels.
 
  Constraint Details:
 
-     13.901ns physical path delay rgbled_flash_r/SLICE_75 to rgbled_flash_r/SLICE_78 exceeds
-     13.716ns delay constraint less
+     10.644ns physical path delay rgbled_flash_r/SLICE_70 to rgbled_flash_r/SLICE_75 meets
+     11.155ns delay constraint less
       0.000ns skew and
-      0.166ns DIN_SET requirement (totaling 13.550ns) by 0.351ns
+      0.166ns DIN_SET requirement (totaling 10.989ns) by 0.345ns
 
  Physical Path Details:
 
-      Data path rgbled_flash_r/SLICE_75 to rgbled_flash_r/SLICE_78:
+      Data path rgbled_flash_r/SLICE_70 to rgbled_flash_r/SLICE_75:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452    R16C14B.CLK to     R16C14B.Q1 rgbled_flash_r/SLICE_75 (from iclk_c)
-ROUTE         2     1.030     R16C14B.Q1 to     R17C14C.B1 rgbled_flash_r/rvcntnum_saw[2]
-CTOF_DEL    ---     0.495     R17C14C.B1 to     R17C14C.F1 SLICE_159
-ROUTE         1     0.693     R17C14C.F1 to     R17C14D.B1 rgbled_flash_r/un1_rvcntnum_sawlto8_i_a2_7_4
-CTOF_DEL    ---     0.495     R17C14D.B1 to     R17C14D.F1 rgbled_flash_r/SLICE_194
-ROUTE         2     0.654     R17C14D.F1 to     R17C15A.D1 rgbled_flash_r/N_15_7
-CTOF_DEL    ---     0.495     R17C15A.D1 to     R17C15A.F1 rgbled_flash_r/SLICE_219
-ROUTE         1     0.626     R17C15A.F1 to     R17C15C.D1 rgbled_flash_r/rvcntnum_tri27lt14
-CTOF_DEL    ---     0.495     R17C15C.D1 to     R17C15C.F1 rgbled_flash_r/SLICE_191
-ROUTE         1     0.436     R17C15C.F1 to     R17C15C.C0 rgbled_flash_r/rvcntnum_tri27lt20
-CTOF_DEL    ---     0.495     R17C15C.C0 to     R17C15C.F0 rgbled_flash_r/SLICE_191
-ROUTE         1     0.958     R17C15C.F0 to     R15C15A.D1 rgbled_flash_r/rvcntnum_tri27lt25
-CTOF_DEL    ---     0.495     R15C15A.D1 to     R15C15A.F1 rgbled_flash_r/SLICE_189
-ROUTE        33     0.643     R15C15A.F1 to     R15C15A.D0 rgbled_flash_r/rvcntnum_tri27lt26
-CTOF_DEL    ---     0.495     R15C15A.D0 to     R15C15A.F0 rgbled_flash_r/SLICE_189
-ROUTE         2     1.010     R15C15A.F0 to     R15C16A.B0 rgbled_flash_r/rvcntnum_tri
-C0TOFCO_DE  ---     1.023     R15C16A.B0 to    R15C16A.FCO rgbled_flash_r/SLICE_93
-ROUTE         1     0.000    R15C16A.FCO to    R15C16B.FCI rgbled_flash_r/rvcntnum_tri_cry[0]
-FCITOFCO_D  ---     0.162    R15C16B.FCI to    R15C16B.FCO rgbled_flash_r/SLICE_92
-ROUTE         1     0.000    R15C16B.FCO to    R15C16C.FCI rgbled_flash_r/rvcntnum_tri_cry[2]
-FCITOFCO_D  ---     0.162    R15C16C.FCI to    R15C16C.FCO rgbled_flash_r/SLICE_91
-ROUTE         1     0.000    R15C16C.FCO to    R15C16D.FCI rgbled_flash_r/rvcntnum_tri_cry[4]
-FCITOFCO_D  ---     0.162    R15C16D.FCI to    R15C16D.FCO rgbled_flash_r/SLICE_90
-ROUTE         1     0.000    R15C16D.FCO to    R15C17A.FCI rgbled_flash_r/rvcntnum_tri_cry[6]
-FCITOFCO_D  ---     0.162    R15C17A.FCI to    R15C17A.FCO rgbled_flash_r/SLICE_89
-ROUTE         1     0.000    R15C17A.FCO to    R15C17B.FCI rgbled_flash_r/rvcntnum_tri_cry[8]
-FCITOFCO_D  ---     0.162    R15C17B.FCI to    R15C17B.FCO rgbled_flash_r/SLICE_88
-ROUTE         1     0.000    R15C17B.FCO to    R15C17C.FCI rgbled_flash_r/rvcntnum_tri_cry[10]
-FCITOFCO_D  ---     0.162    R15C17C.FCI to    R15C17C.FCO rgbled_flash_r/SLICE_87
-ROUTE         1     0.000    R15C17C.FCO to    R15C17D.FCI rgbled_flash_r/rvcntnum_tri_cry[12]
-FCITOFCO_D  ---     0.162    R15C17D.FCI to    R15C17D.FCO rgbled_flash_r/SLICE_86
-ROUTE         1     0.000    R15C17D.FCO to    R15C18A.FCI rgbled_flash_r/rvcntnum_tri_cry[14]
-FCITOFCO_D  ---     0.162    R15C18A.FCI to    R15C18A.FCO rgbled_flash_r/SLICE_85
-ROUTE         1     0.000    R15C18A.FCO to    R15C18B.FCI rgbled_flash_r/rvcntnum_tri_cry[16]
-FCITOFCO_D  ---     0.162    R15C18B.FCI to    R15C18B.FCO rgbled_flash_r/SLICE_84
-ROUTE         1     0.000    R15C18B.FCO to    R15C18C.FCI rgbled_flash_r/rvcntnum_tri_cry[18]
-FCITOFCO_D  ---     0.162    R15C18C.FCI to    R15C18C.FCO rgbled_flash_r/SLICE_83
-ROUTE         1     0.000    R15C18C.FCO to    R15C18D.FCI rgbled_flash_r/rvcntnum_tri_cry[20]
-FCITOFCO_D  ---     0.162    R15C18D.FCI to    R15C18D.FCO rgbled_flash_r/SLICE_82
-ROUTE         1     0.000    R15C18D.FCO to    R15C19A.FCI rgbled_flash_r/rvcntnum_tri_cry[22]
-FCITOFCO_D  ---     0.162    R15C19A.FCI to    R15C19A.FCO rgbled_flash_r/SLICE_81
-ROUTE         1     0.000    R15C19A.FCO to    R15C19B.FCI rgbled_flash_r/rvcntnum_tri_cry[24]
-FCITOFCO_D  ---     0.162    R15C19B.FCI to    R15C19B.FCO rgbled_flash_r/SLICE_80
-ROUTE         1     0.000    R15C19B.FCO to    R15C19C.FCI rgbled_flash_r/rvcntnum_tri_cry[26]
-FCITOFCO_D  ---     0.162    R15C19C.FCI to    R15C19C.FCO rgbled_flash_r/SLICE_79
-ROUTE         1     0.000    R15C19C.FCO to    R15C19D.FCI rgbled_flash_r/rvcntnum_tri_cry[28]
-FCITOF1_DE  ---     0.643    R15C19D.FCI to     R15C19D.F1 rgbled_flash_r/SLICE_78
-ROUTE         1     0.000     R15C19D.F1 to    R15C19D.DI1 rgbled_flash_r/rvcntnum_tri_s[30] (to iclk_c)
+REG_DEL     ---     0.452    R18C11D.CLK to     R18C11D.Q1 rgbled_flash_r/SLICE_70 (from iclk_c)
+ROUTE         4     1.440     R18C11D.Q1 to     R18C10A.B1 rgbled_flash_r/rvcntnum_saw[6]
+CTOF_DEL    ---     0.495     R18C10A.B1 to     R18C10A.F1 rgbled_flash_r/SLICE_162
+ROUTE         1     0.744     R18C10A.F1 to      R18C9A.C0 rgbled_flash_r/rvcntnum_tri27lto24_0_sx_N_3L3
+CTOF_DEL    ---     0.495      R18C9A.C0 to      R18C9A.F0 rgbled_flash_r/SLICE_197
+ROUTE         1     0.766      R18C9A.F0 to      R20C9A.C1 rgbled_flash_r/rvcntnum_tri27lto24_0_sx_N_4L5
+CTOF_DEL    ---     0.495      R20C9A.C1 to      R20C9A.F1 rgbled_flash_r/SLICE_191
+ROUTE         1     0.626      R20C9A.F1 to      R20C9D.D0 rgbled_flash_r/rvcntnum_tri27lto24_0_sx
+CTOF_DEL    ---     0.495      R20C9D.D0 to      R20C9D.F0 rgbled_flash_r/SLICE_174
+ROUTE         2     0.702      R20C9D.F0 to     R20C10A.B0 rgbled_flash_r/rvcntnum_tri
+C0TOFCO_DE  ---     1.023     R20C10A.B0 to    R20C10A.FCO rgbled_flash_r/SLICE_90
+ROUTE         1     0.000    R20C10A.FCO to    R20C10B.FCI rgbled_flash_r/rvcntnum_tri_cry[0]
+FCITOFCO_D  ---     0.162    R20C10B.FCI to    R20C10B.FCO rgbled_flash_r/SLICE_89
+ROUTE         1     0.000    R20C10B.FCO to    R20C10C.FCI rgbled_flash_r/rvcntnum_tri_cry[2]
+FCITOFCO_D  ---     0.162    R20C10C.FCI to    R20C10C.FCO rgbled_flash_r/SLICE_88
+ROUTE         1     0.000    R20C10C.FCO to    R20C10D.FCI rgbled_flash_r/rvcntnum_tri_cry[4]
+FCITOFCO_D  ---     0.162    R20C10D.FCI to    R20C10D.FCO rgbled_flash_r/SLICE_87
+ROUTE         1     0.000    R20C10D.FCO to    R20C11A.FCI rgbled_flash_r/rvcntnum_tri_cry[6]
+FCITOFCO_D  ---     0.162    R20C11A.FCI to    R20C11A.FCO rgbled_flash_r/SLICE_86
+ROUTE         1     0.000    R20C11A.FCO to    R20C11B.FCI rgbled_flash_r/rvcntnum_tri_cry[8]
+FCITOFCO_D  ---     0.162    R20C11B.FCI to    R20C11B.FCO rgbled_flash_r/SLICE_85
+ROUTE         1     0.000    R20C11B.FCO to    R20C11C.FCI rgbled_flash_r/rvcntnum_tri_cry[10]
+FCITOFCO_D  ---     0.162    R20C11C.FCI to    R20C11C.FCO rgbled_flash_r/SLICE_84
+ROUTE         1     0.000    R20C11C.FCO to    R20C11D.FCI rgbled_flash_r/rvcntnum_tri_cry[12]
+FCITOFCO_D  ---     0.162    R20C11D.FCI to    R20C11D.FCO rgbled_flash_r/SLICE_83
+ROUTE         1     0.000    R20C11D.FCO to    R20C12A.FCI rgbled_flash_r/rvcntnum_tri_cry[14]
+FCITOFCO_D  ---     0.162    R20C12A.FCI to    R20C12A.FCO rgbled_flash_r/SLICE_82
+ROUTE         1     0.000    R20C12A.FCO to    R20C12B.FCI rgbled_flash_r/rvcntnum_tri_cry[16]
+FCITOFCO_D  ---     0.162    R20C12B.FCI to    R20C12B.FCO rgbled_flash_r/SLICE_81
+ROUTE         1     0.000    R20C12B.FCO to    R20C12C.FCI rgbled_flash_r/rvcntnum_tri_cry[18]
+FCITOFCO_D  ---     0.162    R20C12C.FCI to    R20C12C.FCO rgbled_flash_r/SLICE_80
+ROUTE         1     0.000    R20C12C.FCO to    R20C12D.FCI rgbled_flash_r/rvcntnum_tri_cry[20]
+FCITOFCO_D  ---     0.162    R20C12D.FCI to    R20C12D.FCO rgbled_flash_r/SLICE_79
+ROUTE         1     0.000    R20C12D.FCO to    R20C13A.FCI rgbled_flash_r/rvcntnum_tri_cry[22]
+FCITOFCO_D  ---     0.162    R20C13A.FCI to    R20C13A.FCO rgbled_flash_r/SLICE_78
+ROUTE         1     0.000    R20C13A.FCO to    R20C13B.FCI rgbled_flash_r/rvcntnum_tri_cry[24]
+FCITOFCO_D  ---     0.162    R20C13B.FCI to    R20C13B.FCO rgbled_flash_r/SLICE_77
+ROUTE         1     0.000    R20C13B.FCO to    R20C13C.FCI rgbled_flash_r/rvcntnum_tri_cry[26]
+FCITOFCO_D  ---     0.162    R20C13C.FCI to    R20C13C.FCO rgbled_flash_r/SLICE_76
+ROUTE         1     0.000    R20C13C.FCO to    R20C13D.FCI rgbled_flash_r/rvcntnum_tri_cry[28]
+FCITOF1_DE  ---     0.643    R20C13D.FCI to     R20C13D.F1 rgbled_flash_r/SLICE_75
+ROUTE         1     0.000     R20C13D.F1 to    R20C13D.DI1 rgbled_flash_r/rvcntnum_tri_s[30] (to iclk_c)
                   --------
-                   13.901   (56.5% logic, 43.5% route), 24 logic levels.
+                   10.644   (59.8% logic, 40.2% route), 21 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path iclk to rgbled_flash_r/SLICE_75:
+      Source Clock Path iclk to rgbled_flash_r/SLICE_70:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     3.044       C1.PADDI to    R16C14B.CLK iclk_c
+ROUTE       113     3.044       C1.PADDI to    R18C11D.CLK iclk_c
                   --------
                     3.044   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path iclk to rgbled_flash_r/SLICE_78:
+      Destination Clock Path iclk to rgbled_flash_r/SLICE_75:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     3.044       C1.PADDI to    R15C19D.CLK iclk_c
+ROUTE       113     3.044       C1.PADDI to    R20C13D.CLK iclk_c
                   --------
                     3.044   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 0.293ns
+Passed: The following path meets requirements by 0.350ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[2]  (from iclk_c +)
-   Destination:    FF         Data in        rgbled_flash_r/rvcntnum_tri[29]  (to iclk_c +)
+   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[23]  (from iclk_c +)
+   Destination:    FF         Data in        rgbled_flash_r/rvcntnum_tri[14]  (to iclk_c +)
+                   FF                        rgbled_flash_r/rvcntnum_tri[13]
 
-   Delay:              13.843ns  (56.3% logic, 43.7% route), 24 logic levels.
+   Delay:              10.523ns  (27.8% logic, 72.2% route), 6 logic levels.
 
  Constraint Details:
 
-     13.843ns physical path delay rgbled_flash_r/SLICE_75 to rgbled_flash_r/SLICE_78 exceeds
-     13.716ns delay constraint less
+     10.523ns physical path delay rgbled_flash_r/SLICE_61 to rgbled_flash_r/SLICE_83 meets
+     11.155ns delay constraint less
       0.000ns skew and
-      0.166ns DIN_SET requirement (totaling 13.550ns) by 0.293ns
+      0.282ns CE_SET requirement (totaling 10.873ns) by 0.350ns
 
  Physical Path Details:
 
-      Data path rgbled_flash_r/SLICE_75 to rgbled_flash_r/SLICE_78:
+      Data path rgbled_flash_r/SLICE_61 to rgbled_flash_r/SLICE_83:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452    R16C14B.CLK to     R16C14B.Q1 rgbled_flash_r/SLICE_75 (from iclk_c)
-ROUTE         2     1.030     R16C14B.Q1 to     R17C14C.B1 rgbled_flash_r/rvcntnum_saw[2]
-CTOF_DEL    ---     0.495     R17C14C.B1 to     R17C14C.F1 SLICE_159
-ROUTE         1     0.693     R17C14C.F1 to     R17C14D.B1 rgbled_flash_r/un1_rvcntnum_sawlto8_i_a2_7_4
-CTOF_DEL    ---     0.495     R17C14D.B1 to     R17C14D.F1 rgbled_flash_r/SLICE_194
-ROUTE         2     0.654     R17C14D.F1 to     R17C15A.D1 rgbled_flash_r/N_15_7
-CTOF_DEL    ---     0.495     R17C15A.D1 to     R17C15A.F1 rgbled_flash_r/SLICE_219
-ROUTE         1     0.626     R17C15A.F1 to     R17C15C.D1 rgbled_flash_r/rvcntnum_tri27lt14
-CTOF_DEL    ---     0.495     R17C15C.D1 to     R17C15C.F1 rgbled_flash_r/SLICE_191
-ROUTE         1     0.436     R17C15C.F1 to     R17C15C.C0 rgbled_flash_r/rvcntnum_tri27lt20
-CTOF_DEL    ---     0.495     R17C15C.C0 to     R17C15C.F0 rgbled_flash_r/SLICE_191
-ROUTE         1     0.958     R17C15C.F0 to     R15C15A.D1 rgbled_flash_r/rvcntnum_tri27lt25
-CTOF_DEL    ---     0.495     R15C15A.D1 to     R15C15A.F1 rgbled_flash_r/SLICE_189
-ROUTE        33     0.643     R15C15A.F1 to     R15C15A.D0 rgbled_flash_r/rvcntnum_tri27lt26
-CTOF_DEL    ---     0.495     R15C15A.D0 to     R15C15A.F0 rgbled_flash_r/SLICE_189
-ROUTE         2     1.010     R15C15A.F0 to     R15C16A.B0 rgbled_flash_r/rvcntnum_tri
-C0TOFCO_DE  ---     1.023     R15C16A.B0 to    R15C16A.FCO rgbled_flash_r/SLICE_93
-ROUTE         1     0.000    R15C16A.FCO to    R15C16B.FCI rgbled_flash_r/rvcntnum_tri_cry[0]
-FCITOFCO_D  ---     0.162    R15C16B.FCI to    R15C16B.FCO rgbled_flash_r/SLICE_92
-ROUTE         1     0.000    R15C16B.FCO to    R15C16C.FCI rgbled_flash_r/rvcntnum_tri_cry[2]
-FCITOFCO_D  ---     0.162    R15C16C.FCI to    R15C16C.FCO rgbled_flash_r/SLICE_91
-ROUTE         1     0.000    R15C16C.FCO to    R15C16D.FCI rgbled_flash_r/rvcntnum_tri_cry[4]
-FCITOFCO_D  ---     0.162    R15C16D.FCI to    R15C16D.FCO rgbled_flash_r/SLICE_90
-ROUTE         1     0.000    R15C16D.FCO to    R15C17A.FCI rgbled_flash_r/rvcntnum_tri_cry[6]
-FCITOFCO_D  ---     0.162    R15C17A.FCI to    R15C17A.FCO rgbled_flash_r/SLICE_89
-ROUTE         1     0.000    R15C17A.FCO to    R15C17B.FCI rgbled_flash_r/rvcntnum_tri_cry[8]
-FCITOFCO_D  ---     0.162    R15C17B.FCI to    R15C17B.FCO rgbled_flash_r/SLICE_88
-ROUTE         1     0.000    R15C17B.FCO to    R15C17C.FCI rgbled_flash_r/rvcntnum_tri_cry[10]
-FCITOFCO_D  ---     0.162    R15C17C.FCI to    R15C17C.FCO rgbled_flash_r/SLICE_87
-ROUTE         1     0.000    R15C17C.FCO to    R15C17D.FCI rgbled_flash_r/rvcntnum_tri_cry[12]
-FCITOFCO_D  ---     0.162    R15C17D.FCI to    R15C17D.FCO rgbled_flash_r/SLICE_86
-ROUTE         1     0.000    R15C17D.FCO to    R15C18A.FCI rgbled_flash_r/rvcntnum_tri_cry[14]
-FCITOFCO_D  ---     0.162    R15C18A.FCI to    R15C18A.FCO rgbled_flash_r/SLICE_85
-ROUTE         1     0.000    R15C18A.FCO to    R15C18B.FCI rgbled_flash_r/rvcntnum_tri_cry[16]
-FCITOFCO_D  ---     0.162    R15C18B.FCI to    R15C18B.FCO rgbled_flash_r/SLICE_84
-ROUTE         1     0.000    R15C18B.FCO to    R15C18C.FCI rgbled_flash_r/rvcntnum_tri_cry[18]
-FCITOFCO_D  ---     0.162    R15C18C.FCI to    R15C18C.FCO rgbled_flash_r/SLICE_83
-ROUTE         1     0.000    R15C18C.FCO to    R15C18D.FCI rgbled_flash_r/rvcntnum_tri_cry[20]
-FCITOFCO_D  ---     0.162    R15C18D.FCI to    R15C18D.FCO rgbled_flash_r/SLICE_82
-ROUTE         1     0.000    R15C18D.FCO to    R15C19A.FCI rgbled_flash_r/rvcntnum_tri_cry[22]
-FCITOFCO_D  ---     0.162    R15C19A.FCI to    R15C19A.FCO rgbled_flash_r/SLICE_81
-ROUTE         1     0.000    R15C19A.FCO to    R15C19B.FCI rgbled_flash_r/rvcntnum_tri_cry[24]
-FCITOFCO_D  ---     0.162    R15C19B.FCI to    R15C19B.FCO rgbled_flash_r/SLICE_80
-ROUTE         1     0.000    R15C19B.FCO to    R15C19C.FCI rgbled_flash_r/rvcntnum_tri_cry[26]
-FCITOFCO_D  ---     0.162    R15C19C.FCI to    R15C19C.FCO rgbled_flash_r/SLICE_79
-ROUTE         1     0.000    R15C19C.FCO to    R15C19D.FCI rgbled_flash_r/rvcntnum_tri_cry[28]
-FCITOF0_DE  ---     0.585    R15C19D.FCI to     R15C19D.F0 rgbled_flash_r/SLICE_78
-ROUTE         1     0.000     R15C19D.F0 to    R15C19D.DI0 rgbled_flash_r/rvcntnum_tri_s[29] (to iclk_c)
+REG_DEL     ---     0.452    R18C14A.CLK to     R18C14A.Q0 rgbled_flash_r/SLICE_61 (from iclk_c)
+ROUTE         6     1.042     R18C14A.Q0 to     R20C14B.B1 rgbled_flash_r/rvcntnum_saw[23]
+CTOF_DEL    ---     0.495     R20C14B.B1 to     R20C14B.F1 rgbled_flash_r/SLICE_189
+ROUTE         3     1.295     R20C14B.F1 to      R20C9B.C0 rgbled_flash_r/un1_rvcntnum_sawlto23_a0_1
+CTOF_DEL    ---     0.495      R20C9B.C0 to      R20C9B.F0 rgbled_flash_r/SLICE_219
+ROUTE         1     1.278      R20C9B.F0 to     R20C14C.C0 rgbled_flash_r/un1_rvcntnum_sawlto23_a3
+CTOF_DEL    ---     0.495     R20C14C.C0 to     R20C14C.F0 rgbled_flash_r/SLICE_188
+ROUTE         1     0.766     R20C14C.F0 to     R18C14C.C1 rgbled_flash_r/un1_rvcntnum_sawlto24_2
+CTOF_DEL    ---     0.495     R18C14C.C1 to     R18C14C.F1 rgbled_flash_r/SLICE_161
+ROUTE        11     1.174     R18C14C.F1 to     R12C15A.D0 rgbled_flash_r/un1_rvcntnum_saw
+CTOF_DEL    ---     0.495     R12C15A.D0 to     R12C15A.F0 rgbled_flash_r/SLICE_187
+ROUTE        17     2.041     R12C15A.F0 to     R20C11D.CE rgbled_flash_r/N_6_i (to iclk_c)
                   --------
-                   13.843   (56.3% logic, 43.7% route), 24 logic levels.
+                   10.523   (27.8% logic, 72.2% route), 6 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path iclk to rgbled_flash_r/SLICE_75:
+      Source Clock Path iclk to rgbled_flash_r/SLICE_61:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     3.044       C1.PADDI to    R16C14B.CLK iclk_c
+ROUTE       113     3.044       C1.PADDI to    R18C14A.CLK iclk_c
                   --------
                     3.044   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path iclk to rgbled_flash_r/SLICE_78:
+      Destination Clock Path iclk to rgbled_flash_r/SLICE_83:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     3.044       C1.PADDI to    R15C19D.CLK iclk_c
+ROUTE       113     3.044       C1.PADDI to    R20C11D.CLK iclk_c
                   --------
                     3.044   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 0.292ns
+Passed: The following path meets requirements by 0.350ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[4]  (from iclk_c +)
-   Destination:    FF         Data in        rgbled_flash_r/rvcntnum_tri[30]  (to iclk_c +)
+   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[6]  (from iclk_c +)
+   Destination:    FF         Data in        rgbled_flash_r/rvcntnum_tri[4]  (to iclk_c +)
+                   FF                        rgbled_flash_r/rvcntnum_tri[3]
 
-   Delay:              13.842ns  (56.7% logic, 43.3% route), 24 logic levels.
+   Delay:              10.523ns  (27.8% logic, 72.2% route), 6 logic levels.
 
  Constraint Details:
 
-     13.842ns physical path delay rgbled_flash_r/SLICE_74 to rgbled_flash_r/SLICE_78 exceeds
-     13.716ns delay constraint less
+     10.523ns physical path delay rgbled_flash_r/SLICE_70 to rgbled_flash_r/SLICE_88 meets
+     11.155ns delay constraint less
       0.000ns skew and
-      0.166ns DIN_SET requirement (totaling 13.550ns) by 0.292ns
+      0.282ns CE_SET requirement (totaling 10.873ns) by 0.350ns
 
  Physical Path Details:
 
-      Data path rgbled_flash_r/SLICE_74 to rgbled_flash_r/SLICE_78:
+      Data path rgbled_flash_r/SLICE_70 to rgbled_flash_r/SLICE_88:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452    R16C14C.CLK to     R16C14C.Q1 rgbled_flash_r/SLICE_74 (from iclk_c)
-ROUTE         2     0.971     R16C14C.Q1 to     R17C14C.A1 rgbled_flash_r/rvcntnum_saw[4]
-CTOF_DEL    ---     0.495     R17C14C.A1 to     R17C14C.F1 SLICE_159
-ROUTE         1     0.693     R17C14C.F1 to     R17C14D.B1 rgbled_flash_r/un1_rvcntnum_sawlto8_i_a2_7_4
-CTOF_DEL    ---     0.495     R17C14D.B1 to     R17C14D.F1 rgbled_flash_r/SLICE_194
-ROUTE         2     0.654     R17C14D.F1 to     R17C15A.D1 rgbled_flash_r/N_15_7
-CTOF_DEL    ---     0.495     R17C15A.D1 to     R17C15A.F1 rgbled_flash_r/SLICE_219
-ROUTE         1     0.626     R17C15A.F1 to     R17C15C.D1 rgbled_flash_r/rvcntnum_tri27lt14
-CTOF_DEL    ---     0.495     R17C15C.D1 to     R17C15C.F1 rgbled_flash_r/SLICE_191
-ROUTE         1     0.436     R17C15C.F1 to     R17C15C.C0 rgbled_flash_r/rvcntnum_tri27lt20
-CTOF_DEL    ---     0.495     R17C15C.C0 to     R17C15C.F0 rgbled_flash_r/SLICE_191
-ROUTE         1     0.958     R17C15C.F0 to     R15C15A.D1 rgbled_flash_r/rvcntnum_tri27lt25
-CTOF_DEL    ---     0.495     R15C15A.D1 to     R15C15A.F1 rgbled_flash_r/SLICE_189
-ROUTE        33     0.643     R15C15A.F1 to     R15C15A.D0 rgbled_flash_r/rvcntnum_tri27lt26
-CTOF_DEL    ---     0.495     R15C15A.D0 to     R15C15A.F0 rgbled_flash_r/SLICE_189
-ROUTE         2     1.010     R15C15A.F0 to     R15C16A.B0 rgbled_flash_r/rvcntnum_tri
-C0TOFCO_DE  ---     1.023     R15C16A.B0 to    R15C16A.FCO rgbled_flash_r/SLICE_93
-ROUTE         1     0.000    R15C16A.FCO to    R15C16B.FCI rgbled_flash_r/rvcntnum_tri_cry[0]
-FCITOFCO_D  ---     0.162    R15C16B.FCI to    R15C16B.FCO rgbled_flash_r/SLICE_92
-ROUTE         1     0.000    R15C16B.FCO to    R15C16C.FCI rgbled_flash_r/rvcntnum_tri_cry[2]
-FCITOFCO_D  ---     0.162    R15C16C.FCI to    R15C16C.FCO rgbled_flash_r/SLICE_91
-ROUTE         1     0.000    R15C16C.FCO to    R15C16D.FCI rgbled_flash_r/rvcntnum_tri_cry[4]
-FCITOFCO_D  ---     0.162    R15C16D.FCI to    R15C16D.FCO rgbled_flash_r/SLICE_90
-ROUTE         1     0.000    R15C16D.FCO to    R15C17A.FCI rgbled_flash_r/rvcntnum_tri_cry[6]
-FCITOFCO_D  ---     0.162    R15C17A.FCI to    R15C17A.FCO rgbled_flash_r/SLICE_89
-ROUTE         1     0.000    R15C17A.FCO to    R15C17B.FCI rgbled_flash_r/rvcntnum_tri_cry[8]
-FCITOFCO_D  ---     0.162    R15C17B.FCI to    R15C17B.FCO rgbled_flash_r/SLICE_88
-ROUTE         1     0.000    R15C17B.FCO to    R15C17C.FCI rgbled_flash_r/rvcntnum_tri_cry[10]
-FCITOFCO_D  ---     0.162    R15C17C.FCI to    R15C17C.FCO rgbled_flash_r/SLICE_87
-ROUTE         1     0.000    R15C17C.FCO to    R15C17D.FCI rgbled_flash_r/rvcntnum_tri_cry[12]
-FCITOFCO_D  ---     0.162    R15C17D.FCI to    R15C17D.FCO rgbled_flash_r/SLICE_86
-ROUTE         1     0.000    R15C17D.FCO to    R15C18A.FCI rgbled_flash_r/rvcntnum_tri_cry[14]
-FCITOFCO_D  ---     0.162    R15C18A.FCI to    R15C18A.FCO rgbled_flash_r/SLICE_85
-ROUTE         1     0.000    R15C18A.FCO to    R15C18B.FCI rgbled_flash_r/rvcntnum_tri_cry[16]
-FCITOFCO_D  ---     0.162    R15C18B.FCI to    R15C18B.FCO rgbled_flash_r/SLICE_84
-ROUTE         1     0.000    R15C18B.FCO to    R15C18C.FCI rgbled_flash_r/rvcntnum_tri_cry[18]
-FCITOFCO_D  ---     0.162    R15C18C.FCI to    R15C18C.FCO rgbled_flash_r/SLICE_83
-ROUTE         1     0.000    R15C18C.FCO to    R15C18D.FCI rgbled_flash_r/rvcntnum_tri_cry[20]
-FCITOFCO_D  ---     0.162    R15C18D.FCI to    R15C18D.FCO rgbled_flash_r/SLICE_82
-ROUTE         1     0.000    R15C18D.FCO to    R15C19A.FCI rgbled_flash_r/rvcntnum_tri_cry[22]
-FCITOFCO_D  ---     0.162    R15C19A.FCI to    R15C19A.FCO rgbled_flash_r/SLICE_81
-ROUTE         1     0.000    R15C19A.FCO to    R15C19B.FCI rgbled_flash_r/rvcntnum_tri_cry[24]
-FCITOFCO_D  ---     0.162    R15C19B.FCI to    R15C19B.FCO rgbled_flash_r/SLICE_80
-ROUTE         1     0.000    R15C19B.FCO to    R15C19C.FCI rgbled_flash_r/rvcntnum_tri_cry[26]
-FCITOFCO_D  ---     0.162    R15C19C.FCI to    R15C19C.FCO rgbled_flash_r/SLICE_79
-ROUTE         1     0.000    R15C19C.FCO to    R15C19D.FCI rgbled_flash_r/rvcntnum_tri_cry[28]
-FCITOF1_DE  ---     0.643    R15C19D.FCI to     R15C19D.F1 rgbled_flash_r/SLICE_78
-ROUTE         1     0.000     R15C19D.F1 to    R15C19D.DI1 rgbled_flash_r/rvcntnum_tri_s[30] (to iclk_c)
+REG_DEL     ---     0.452    R18C11D.CLK to     R18C11D.Q1 rgbled_flash_r/SLICE_70 (from iclk_c)
+ROUTE         4     1.440     R18C11D.Q1 to     R18C10A.B1 rgbled_flash_r/rvcntnum_saw[6]
+CTOF_DEL    ---     0.495     R18C10A.B1 to     R18C10A.F1 rgbled_flash_r/SLICE_162
+ROUTE         1     0.744     R18C10A.F1 to      R18C9A.C0 rgbled_flash_r/rvcntnum_tri27lto24_0_sx_N_3L3
+CTOF_DEL    ---     0.495      R18C9A.C0 to      R18C9A.F0 rgbled_flash_r/SLICE_197
+ROUTE         1     0.766      R18C9A.F0 to      R20C9A.C1 rgbled_flash_r/rvcntnum_tri27lto24_0_sx_N_4L5
+CTOF_DEL    ---     0.495      R20C9A.C1 to      R20C9A.F1 rgbled_flash_r/SLICE_191
+ROUTE         1     0.626      R20C9A.F1 to      R20C9D.D0 rgbled_flash_r/rvcntnum_tri27lto24_0_sx
+CTOF_DEL    ---     0.495      R20C9D.D0 to      R20C9D.F0 rgbled_flash_r/SLICE_174
+ROUTE         2     2.006      R20C9D.F0 to     R12C15A.A0 rgbled_flash_r/rvcntnum_tri
+CTOF_DEL    ---     0.495     R12C15A.A0 to     R12C15A.F0 rgbled_flash_r/SLICE_187
+ROUTE        17     2.014     R12C15A.F0 to     R20C10C.CE rgbled_flash_r/N_6_i (to iclk_c)
                   --------
-                   13.842   (56.7% logic, 43.3% route), 24 logic levels.
+                   10.523   (27.8% logic, 72.2% route), 6 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path iclk to rgbled_flash_r/SLICE_74:
+      Source Clock Path iclk to rgbled_flash_r/SLICE_70:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     3.044       C1.PADDI to    R16C14C.CLK iclk_c
+ROUTE       113     3.044       C1.PADDI to    R18C11D.CLK iclk_c
                   --------
                     3.044   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path iclk to rgbled_flash_r/SLICE_78:
+      Destination Clock Path iclk to rgbled_flash_r/SLICE_88:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     3.044       C1.PADDI to    R15C19D.CLK iclk_c
+ROUTE       113     3.044       C1.PADDI to    R20C10C.CLK iclk_c
                   --------
                     3.044   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 0.234ns
+Passed: The following path meets requirements by 0.350ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[4]  (from iclk_c +)
-   Destination:    FF         Data in        rgbled_flash_r/rvcntnum_tri[29]  (to iclk_c +)
+   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[23]  (from iclk_c +)
+   Destination:    FF         Data in        rgbled_flash_r/rvcntnum_tri[12]  (to iclk_c +)
+                   FF                        rgbled_flash_r/rvcntnum_tri[11]
 
-   Delay:              13.784ns  (56.5% logic, 43.5% route), 24 logic levels.
+   Delay:              10.523ns  (27.8% logic, 72.2% route), 6 logic levels.
 
  Constraint Details:
 
-     13.784ns physical path delay rgbled_flash_r/SLICE_74 to rgbled_flash_r/SLICE_78 exceeds
-     13.716ns delay constraint less
+     10.523ns physical path delay rgbled_flash_r/SLICE_61 to rgbled_flash_r/SLICE_84 meets
+     11.155ns delay constraint less
       0.000ns skew and
-      0.166ns DIN_SET requirement (totaling 13.550ns) by 0.234ns
+      0.282ns CE_SET requirement (totaling 10.873ns) by 0.350ns
 
  Physical Path Details:
 
-      Data path rgbled_flash_r/SLICE_74 to rgbled_flash_r/SLICE_78:
+      Data path rgbled_flash_r/SLICE_61 to rgbled_flash_r/SLICE_84:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452    R16C14C.CLK to     R16C14C.Q1 rgbled_flash_r/SLICE_74 (from iclk_c)
-ROUTE         2     0.971     R16C14C.Q1 to     R17C14C.A1 rgbled_flash_r/rvcntnum_saw[4]
-CTOF_DEL    ---     0.495     R17C14C.A1 to     R17C14C.F1 SLICE_159
-ROUTE         1     0.693     R17C14C.F1 to     R17C14D.B1 rgbled_flash_r/un1_rvcntnum_sawlto8_i_a2_7_4
-CTOF_DEL    ---     0.495     R17C14D.B1 to     R17C14D.F1 rgbled_flash_r/SLICE_194
-ROUTE         2     0.654     R17C14D.F1 to     R17C15A.D1 rgbled_flash_r/N_15_7
-CTOF_DEL    ---     0.495     R17C15A.D1 to     R17C15A.F1 rgbled_flash_r/SLICE_219
-ROUTE         1     0.626     R17C15A.F1 to     R17C15C.D1 rgbled_flash_r/rvcntnum_tri27lt14
-CTOF_DEL    ---     0.495     R17C15C.D1 to     R17C15C.F1 rgbled_flash_r/SLICE_191
-ROUTE         1     0.436     R17C15C.F1 to     R17C15C.C0 rgbled_flash_r/rvcntnum_tri27lt20
-CTOF_DEL    ---     0.495     R17C15C.C0 to     R17C15C.F0 rgbled_flash_r/SLICE_191
-ROUTE         1     0.958     R17C15C.F0 to     R15C15A.D1 rgbled_flash_r/rvcntnum_tri27lt25
-CTOF_DEL    ---     0.495     R15C15A.D1 to     R15C15A.F1 rgbled_flash_r/SLICE_189
-ROUTE        33     0.643     R15C15A.F1 to     R15C15A.D0 rgbled_flash_r/rvcntnum_tri27lt26
-CTOF_DEL    ---     0.495     R15C15A.D0 to     R15C15A.F0 rgbled_flash_r/SLICE_189
-ROUTE         2     1.010     R15C15A.F0 to     R15C16A.B0 rgbled_flash_r/rvcntnum_tri
-C0TOFCO_DE  ---     1.023     R15C16A.B0 to    R15C16A.FCO rgbled_flash_r/SLICE_93
-ROUTE         1     0.000    R15C16A.FCO to    R15C16B.FCI rgbled_flash_r/rvcntnum_tri_cry[0]
-FCITOFCO_D  ---     0.162    R15C16B.FCI to    R15C16B.FCO rgbled_flash_r/SLICE_92
-ROUTE         1     0.000    R15C16B.FCO to    R15C16C.FCI rgbled_flash_r/rvcntnum_tri_cry[2]
-FCITOFCO_D  ---     0.162    R15C16C.FCI to    R15C16C.FCO rgbled_flash_r/SLICE_91
-ROUTE         1     0.000    R15C16C.FCO to    R15C16D.FCI rgbled_flash_r/rvcntnum_tri_cry[4]
-FCITOFCO_D  ---     0.162    R15C16D.FCI to    R15C16D.FCO rgbled_flash_r/SLICE_90
-ROUTE         1     0.000    R15C16D.FCO to    R15C17A.FCI rgbled_flash_r/rvcntnum_tri_cry[6]
-FCITOFCO_D  ---     0.162    R15C17A.FCI to    R15C17A.FCO rgbled_flash_r/SLICE_89
-ROUTE         1     0.000    R15C17A.FCO to    R15C17B.FCI rgbled_flash_r/rvcntnum_tri_cry[8]
-FCITOFCO_D  ---     0.162    R15C17B.FCI to    R15C17B.FCO rgbled_flash_r/SLICE_88
-ROUTE         1     0.000    R15C17B.FCO to    R15C17C.FCI rgbled_flash_r/rvcntnum_tri_cry[10]
-FCITOFCO_D  ---     0.162    R15C17C.FCI to    R15C17C.FCO rgbled_flash_r/SLICE_87
-ROUTE         1     0.000    R15C17C.FCO to    R15C17D.FCI rgbled_flash_r/rvcntnum_tri_cry[12]
-FCITOFCO_D  ---     0.162    R15C17D.FCI to    R15C17D.FCO rgbled_flash_r/SLICE_86
-ROUTE         1     0.000    R15C17D.FCO to    R15C18A.FCI rgbled_flash_r/rvcntnum_tri_cry[14]
-FCITOFCO_D  ---     0.162    R15C18A.FCI to    R15C18A.FCO rgbled_flash_r/SLICE_85
-ROUTE         1     0.000    R15C18A.FCO to    R15C18B.FCI rgbled_flash_r/rvcntnum_tri_cry[16]
-FCITOFCO_D  ---     0.162    R15C18B.FCI to    R15C18B.FCO rgbled_flash_r/SLICE_84
-ROUTE         1     0.000    R15C18B.FCO to    R15C18C.FCI rgbled_flash_r/rvcntnum_tri_cry[18]
-FCITOFCO_D  ---     0.162    R15C18C.FCI to    R15C18C.FCO rgbled_flash_r/SLICE_83
-ROUTE         1     0.000    R15C18C.FCO to    R15C18D.FCI rgbled_flash_r/rvcntnum_tri_cry[20]
-FCITOFCO_D  ---     0.162    R15C18D.FCI to    R15C18D.FCO rgbled_flash_r/SLICE_82
-ROUTE         1     0.000    R15C18D.FCO to    R15C19A.FCI rgbled_flash_r/rvcntnum_tri_cry[22]
-FCITOFCO_D  ---     0.162    R15C19A.FCI to    R15C19A.FCO rgbled_flash_r/SLICE_81
-ROUTE         1     0.000    R15C19A.FCO to    R15C19B.FCI rgbled_flash_r/rvcntnum_tri_cry[24]
-FCITOFCO_D  ---     0.162    R15C19B.FCI to    R15C19B.FCO rgbled_flash_r/SLICE_80
-ROUTE         1     0.000    R15C19B.FCO to    R15C19C.FCI rgbled_flash_r/rvcntnum_tri_cry[26]
-FCITOFCO_D  ---     0.162    R15C19C.FCI to    R15C19C.FCO rgbled_flash_r/SLICE_79
-ROUTE         1     0.000    R15C19C.FCO to    R15C19D.FCI rgbled_flash_r/rvcntnum_tri_cry[28]
-FCITOF0_DE  ---     0.585    R15C19D.FCI to     R15C19D.F0 rgbled_flash_r/SLICE_78
-ROUTE         1     0.000     R15C19D.F0 to    R15C19D.DI0 rgbled_flash_r/rvcntnum_tri_s[29] (to iclk_c)
+REG_DEL     ---     0.452    R18C14A.CLK to     R18C14A.Q0 rgbled_flash_r/SLICE_61 (from iclk_c)
+ROUTE         6     1.042     R18C14A.Q0 to     R20C14B.B1 rgbled_flash_r/rvcntnum_saw[23]
+CTOF_DEL    ---     0.495     R20C14B.B1 to     R20C14B.F1 rgbled_flash_r/SLICE_189
+ROUTE         3     1.295     R20C14B.F1 to      R20C9B.C0 rgbled_flash_r/un1_rvcntnum_sawlto23_a0_1
+CTOF_DEL    ---     0.495      R20C9B.C0 to      R20C9B.F0 rgbled_flash_r/SLICE_219
+ROUTE         1     1.278      R20C9B.F0 to     R20C14C.C0 rgbled_flash_r/un1_rvcntnum_sawlto23_a3
+CTOF_DEL    ---     0.495     R20C14C.C0 to     R20C14C.F0 rgbled_flash_r/SLICE_188
+ROUTE         1     0.766     R20C14C.F0 to     R18C14C.C1 rgbled_flash_r/un1_rvcntnum_sawlto24_2
+CTOF_DEL    ---     0.495     R18C14C.C1 to     R18C14C.F1 rgbled_flash_r/SLICE_161
+ROUTE        11     1.174     R18C14C.F1 to     R12C15A.D0 rgbled_flash_r/un1_rvcntnum_saw
+CTOF_DEL    ---     0.495     R12C15A.D0 to     R12C15A.F0 rgbled_flash_r/SLICE_187
+ROUTE        17     2.041     R12C15A.F0 to     R20C11C.CE rgbled_flash_r/N_6_i (to iclk_c)
                   --------
-                   13.784   (56.5% logic, 43.5% route), 24 logic levels.
+                   10.523   (27.8% logic, 72.2% route), 6 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path iclk to rgbled_flash_r/SLICE_74:
+      Source Clock Path iclk to rgbled_flash_r/SLICE_61:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     3.044       C1.PADDI to    R16C14C.CLK iclk_c
+ROUTE       113     3.044       C1.PADDI to    R18C14A.CLK iclk_c
                   --------
                     3.044   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path iclk to rgbled_flash_r/SLICE_78:
+      Destination Clock Path iclk to rgbled_flash_r/SLICE_84:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     3.044       C1.PADDI to    R15C19D.CLK iclk_c
+ROUTE       113     3.044       C1.PADDI to    R20C11C.CLK iclk_c
                   --------
                     3.044   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 0.198ns
+Passed: The following path meets requirements by 0.350ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[3]  (from iclk_c +)
-   Destination:    FF         Data in        rgbled_flash_r/rvcntnum_tri[31]  (to iclk_c +)
+   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[6]  (from iclk_c +)
+   Destination:    FF         Data in        rgbled_flash_r/rvcntnum_tri[0]  (to iclk_c +)
 
-   Delay:              13.748ns  (57.9% logic, 42.1% route), 25 logic levels.
-
- Constraint Details:
-
-     13.748ns physical path delay rgbled_flash_r/SLICE_74 to rgbled_flash_r/SLICE_77 exceeds
-     13.716ns delay constraint less
-      0.000ns skew and
-      0.166ns DIN_SET requirement (totaling 13.550ns) by 0.198ns
-
- Physical Path Details:
-
-      Data path rgbled_flash_r/SLICE_74 to rgbled_flash_r/SLICE_77:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452    R16C14C.CLK to     R16C14C.Q0 rgbled_flash_r/SLICE_74 (from iclk_c)
-ROUTE         2     0.773     R16C14C.Q0 to     R17C14C.C1 rgbled_flash_r/rvcntnum_saw[3]
-CTOF_DEL    ---     0.495     R17C14C.C1 to     R17C14C.F1 SLICE_159
-ROUTE         1     0.693     R17C14C.F1 to     R17C14D.B1 rgbled_flash_r/un1_rvcntnum_sawlto8_i_a2_7_4
-CTOF_DEL    ---     0.495     R17C14D.B1 to     R17C14D.F1 rgbled_flash_r/SLICE_194
-ROUTE         2     0.654     R17C14D.F1 to     R17C15A.D1 rgbled_flash_r/N_15_7
-CTOF_DEL    ---     0.495     R17C15A.D1 to     R17C15A.F1 rgbled_flash_r/SLICE_219
-ROUTE         1     0.626     R17C15A.F1 to     R17C15C.D1 rgbled_flash_r/rvcntnum_tri27lt14
-CTOF_DEL    ---     0.495     R17C15C.D1 to     R17C15C.F1 rgbled_flash_r/SLICE_191
-ROUTE         1     0.436     R17C15C.F1 to     R17C15C.C0 rgbled_flash_r/rvcntnum_tri27lt20
-CTOF_DEL    ---     0.495     R17C15C.C0 to     R17C15C.F0 rgbled_flash_r/SLICE_191
-ROUTE         1     0.958     R17C15C.F0 to     R15C15A.D1 rgbled_flash_r/rvcntnum_tri27lt25
-CTOF_DEL    ---     0.495     R15C15A.D1 to     R15C15A.F1 rgbled_flash_r/SLICE_189
-ROUTE        33     0.643     R15C15A.F1 to     R15C15A.D0 rgbled_flash_r/rvcntnum_tri27lt26
-CTOF_DEL    ---     0.495     R15C15A.D0 to     R15C15A.F0 rgbled_flash_r/SLICE_189
-ROUTE         2     1.010     R15C15A.F0 to     R15C16A.B0 rgbled_flash_r/rvcntnum_tri
-C0TOFCO_DE  ---     1.023     R15C16A.B0 to    R15C16A.FCO rgbled_flash_r/SLICE_93
-ROUTE         1     0.000    R15C16A.FCO to    R15C16B.FCI rgbled_flash_r/rvcntnum_tri_cry[0]
-FCITOFCO_D  ---     0.162    R15C16B.FCI to    R15C16B.FCO rgbled_flash_r/SLICE_92
-ROUTE         1     0.000    R15C16B.FCO to    R15C16C.FCI rgbled_flash_r/rvcntnum_tri_cry[2]
-FCITOFCO_D  ---     0.162    R15C16C.FCI to    R15C16C.FCO rgbled_flash_r/SLICE_91
-ROUTE         1     0.000    R15C16C.FCO to    R15C16D.FCI rgbled_flash_r/rvcntnum_tri_cry[4]
-FCITOFCO_D  ---     0.162    R15C16D.FCI to    R15C16D.FCO rgbled_flash_r/SLICE_90
-ROUTE         1     0.000    R15C16D.FCO to    R15C17A.FCI rgbled_flash_r/rvcntnum_tri_cry[6]
-FCITOFCO_D  ---     0.162    R15C17A.FCI to    R15C17A.FCO rgbled_flash_r/SLICE_89
-ROUTE         1     0.000    R15C17A.FCO to    R15C17B.FCI rgbled_flash_r/rvcntnum_tri_cry[8]
-FCITOFCO_D  ---     0.162    R15C17B.FCI to    R15C17B.FCO rgbled_flash_r/SLICE_88
-ROUTE         1     0.000    R15C17B.FCO to    R15C17C.FCI rgbled_flash_r/rvcntnum_tri_cry[10]
-FCITOFCO_D  ---     0.162    R15C17C.FCI to    R15C17C.FCO rgbled_flash_r/SLICE_87
-ROUTE         1     0.000    R15C17C.FCO to    R15C17D.FCI rgbled_flash_r/rvcntnum_tri_cry[12]
-FCITOFCO_D  ---     0.162    R15C17D.FCI to    R15C17D.FCO rgbled_flash_r/SLICE_86
-ROUTE         1     0.000    R15C17D.FCO to    R15C18A.FCI rgbled_flash_r/rvcntnum_tri_cry[14]
-FCITOFCO_D  ---     0.162    R15C18A.FCI to    R15C18A.FCO rgbled_flash_r/SLICE_85
-ROUTE         1     0.000    R15C18A.FCO to    R15C18B.FCI rgbled_flash_r/rvcntnum_tri_cry[16]
-FCITOFCO_D  ---     0.162    R15C18B.FCI to    R15C18B.FCO rgbled_flash_r/SLICE_84
-ROUTE         1     0.000    R15C18B.FCO to    R15C18C.FCI rgbled_flash_r/rvcntnum_tri_cry[18]
-FCITOFCO_D  ---     0.162    R15C18C.FCI to    R15C18C.FCO rgbled_flash_r/SLICE_83
-ROUTE         1     0.000    R15C18C.FCO to    R15C18D.FCI rgbled_flash_r/rvcntnum_tri_cry[20]
-FCITOFCO_D  ---     0.162    R15C18D.FCI to    R15C18D.FCO rgbled_flash_r/SLICE_82
-ROUTE         1     0.000    R15C18D.FCO to    R15C19A.FCI rgbled_flash_r/rvcntnum_tri_cry[22]
-FCITOFCO_D  ---     0.162    R15C19A.FCI to    R15C19A.FCO rgbled_flash_r/SLICE_81
-ROUTE         1     0.000    R15C19A.FCO to    R15C19B.FCI rgbled_flash_r/rvcntnum_tri_cry[24]
-FCITOFCO_D  ---     0.162    R15C19B.FCI to    R15C19B.FCO rgbled_flash_r/SLICE_80
-ROUTE         1     0.000    R15C19B.FCO to    R15C19C.FCI rgbled_flash_r/rvcntnum_tri_cry[26]
-FCITOFCO_D  ---     0.162    R15C19C.FCI to    R15C19C.FCO rgbled_flash_r/SLICE_79
-ROUTE         1     0.000    R15C19C.FCO to    R15C19D.FCI rgbled_flash_r/rvcntnum_tri_cry[28]
-FCITOFCO_D  ---     0.162    R15C19D.FCI to    R15C19D.FCO rgbled_flash_r/SLICE_78
-ROUTE         1     0.000    R15C19D.FCO to    R15C20A.FCI rgbled_flash_r/rvcntnum_tri_cry[30]
-FCITOF0_DE  ---     0.585    R15C20A.FCI to     R15C20A.F0 rgbled_flash_r/SLICE_77
-ROUTE         1     0.000     R15C20A.F0 to    R15C20A.DI0 rgbled_flash_r/rvcntnum_tri_s[31] (to iclk_c)
-                  --------
-                   13.748   (57.9% logic, 42.1% route), 25 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path iclk to rgbled_flash_r/SLICE_74:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     3.044       C1.PADDI to    R16C14C.CLK iclk_c
-                  --------
-                    3.044   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path iclk to rgbled_flash_r/SLICE_77:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     3.044       C1.PADDI to    R15C20A.CLK iclk_c
-                  --------
-                    3.044   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Error: The following path exceeds requirements by 0.189ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[2]  (from iclk_c +)
-   Destination:    FF         Data in        rgbled_flash_r/rvcntnum_tri[28]  (to iclk_c +)
-
-   Delay:              13.739ns  (56.0% logic, 44.0% route), 23 logic levels.
+   Delay:              10.523ns  (27.8% logic, 72.2% route), 6 logic levels.
 
  Constraint Details:
 
-     13.739ns physical path delay rgbled_flash_r/SLICE_75 to rgbled_flash_r/SLICE_79 exceeds
-     13.716ns delay constraint less
+     10.523ns physical path delay rgbled_flash_r/SLICE_70 to rgbled_flash_r/SLICE_90 meets
+     11.155ns delay constraint less
       0.000ns skew and
-      0.166ns DIN_SET requirement (totaling 13.550ns) by 0.189ns
+      0.282ns CE_SET requirement (totaling 10.873ns) by 0.350ns
 
  Physical Path Details:
 
-      Data path rgbled_flash_r/SLICE_75 to rgbled_flash_r/SLICE_79:
+      Data path rgbled_flash_r/SLICE_70 to rgbled_flash_r/SLICE_90:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452    R16C14B.CLK to     R16C14B.Q1 rgbled_flash_r/SLICE_75 (from iclk_c)
-ROUTE         2     1.030     R16C14B.Q1 to     R17C14C.B1 rgbled_flash_r/rvcntnum_saw[2]
-CTOF_DEL    ---     0.495     R17C14C.B1 to     R17C14C.F1 SLICE_159
-ROUTE         1     0.693     R17C14C.F1 to     R17C14D.B1 rgbled_flash_r/un1_rvcntnum_sawlto8_i_a2_7_4
-CTOF_DEL    ---     0.495     R17C14D.B1 to     R17C14D.F1 rgbled_flash_r/SLICE_194
-ROUTE         2     0.654     R17C14D.F1 to     R17C15A.D1 rgbled_flash_r/N_15_7
-CTOF_DEL    ---     0.495     R17C15A.D1 to     R17C15A.F1 rgbled_flash_r/SLICE_219
-ROUTE         1     0.626     R17C15A.F1 to     R17C15C.D1 rgbled_flash_r/rvcntnum_tri27lt14
-CTOF_DEL    ---     0.495     R17C15C.D1 to     R17C15C.F1 rgbled_flash_r/SLICE_191
-ROUTE         1     0.436     R17C15C.F1 to     R17C15C.C0 rgbled_flash_r/rvcntnum_tri27lt20
-CTOF_DEL    ---     0.495     R17C15C.C0 to     R17C15C.F0 rgbled_flash_r/SLICE_191
-ROUTE         1     0.958     R17C15C.F0 to     R15C15A.D1 rgbled_flash_r/rvcntnum_tri27lt25
-CTOF_DEL    ---     0.495     R15C15A.D1 to     R15C15A.F1 rgbled_flash_r/SLICE_189
-ROUTE        33     0.643     R15C15A.F1 to     R15C15A.D0 rgbled_flash_r/rvcntnum_tri27lt26
-CTOF_DEL    ---     0.495     R15C15A.D0 to     R15C15A.F0 rgbled_flash_r/SLICE_189
-ROUTE         2     1.010     R15C15A.F0 to     R15C16A.B0 rgbled_flash_r/rvcntnum_tri
-C0TOFCO_DE  ---     1.023     R15C16A.B0 to    R15C16A.FCO rgbled_flash_r/SLICE_93
-ROUTE         1     0.000    R15C16A.FCO to    R15C16B.FCI rgbled_flash_r/rvcntnum_tri_cry[0]
-FCITOFCO_D  ---     0.162    R15C16B.FCI to    R15C16B.FCO rgbled_flash_r/SLICE_92
-ROUTE         1     0.000    R15C16B.FCO to    R15C16C.FCI rgbled_flash_r/rvcntnum_tri_cry[2]
-FCITOFCO_D  ---     0.162    R15C16C.FCI to    R15C16C.FCO rgbled_flash_r/SLICE_91
-ROUTE         1     0.000    R15C16C.FCO to    R15C16D.FCI rgbled_flash_r/rvcntnum_tri_cry[4]
-FCITOFCO_D  ---     0.162    R15C16D.FCI to    R15C16D.FCO rgbled_flash_r/SLICE_90
-ROUTE         1     0.000    R15C16D.FCO to    R15C17A.FCI rgbled_flash_r/rvcntnum_tri_cry[6]
-FCITOFCO_D  ---     0.162    R15C17A.FCI to    R15C17A.FCO rgbled_flash_r/SLICE_89
-ROUTE         1     0.000    R15C17A.FCO to    R15C17B.FCI rgbled_flash_r/rvcntnum_tri_cry[8]
-FCITOFCO_D  ---     0.162    R15C17B.FCI to    R15C17B.FCO rgbled_flash_r/SLICE_88
-ROUTE         1     0.000    R15C17B.FCO to    R15C17C.FCI rgbled_flash_r/rvcntnum_tri_cry[10]
-FCITOFCO_D  ---     0.162    R15C17C.FCI to    R15C17C.FCO rgbled_flash_r/SLICE_87
-ROUTE         1     0.000    R15C17C.FCO to    R15C17D.FCI rgbled_flash_r/rvcntnum_tri_cry[12]
-FCITOFCO_D  ---     0.162    R15C17D.FCI to    R15C17D.FCO rgbled_flash_r/SLICE_86
-ROUTE         1     0.000    R15C17D.FCO to    R15C18A.FCI rgbled_flash_r/rvcntnum_tri_cry[14]
-FCITOFCO_D  ---     0.162    R15C18A.FCI to    R15C18A.FCO rgbled_flash_r/SLICE_85
-ROUTE         1     0.000    R15C18A.FCO to    R15C18B.FCI rgbled_flash_r/rvcntnum_tri_cry[16]
-FCITOFCO_D  ---     0.162    R15C18B.FCI to    R15C18B.FCO rgbled_flash_r/SLICE_84
-ROUTE         1     0.000    R15C18B.FCO to    R15C18C.FCI rgbled_flash_r/rvcntnum_tri_cry[18]
-FCITOFCO_D  ---     0.162    R15C18C.FCI to    R15C18C.FCO rgbled_flash_r/SLICE_83
-ROUTE         1     0.000    R15C18C.FCO to    R15C18D.FCI rgbled_flash_r/rvcntnum_tri_cry[20]
-FCITOFCO_D  ---     0.162    R15C18D.FCI to    R15C18D.FCO rgbled_flash_r/SLICE_82
-ROUTE         1     0.000    R15C18D.FCO to    R15C19A.FCI rgbled_flash_r/rvcntnum_tri_cry[22]
-FCITOFCO_D  ---     0.162    R15C19A.FCI to    R15C19A.FCO rgbled_flash_r/SLICE_81
-ROUTE         1     0.000    R15C19A.FCO to    R15C19B.FCI rgbled_flash_r/rvcntnum_tri_cry[24]
-FCITOFCO_D  ---     0.162    R15C19B.FCI to    R15C19B.FCO rgbled_flash_r/SLICE_80
-ROUTE         1     0.000    R15C19B.FCO to    R15C19C.FCI rgbled_flash_r/rvcntnum_tri_cry[26]
-FCITOF1_DE  ---     0.643    R15C19C.FCI to     R15C19C.F1 rgbled_flash_r/SLICE_79
-ROUTE         1     0.000     R15C19C.F1 to    R15C19C.DI1 rgbled_flash_r/rvcntnum_tri_s[28] (to iclk_c)
+REG_DEL     ---     0.452    R18C11D.CLK to     R18C11D.Q1 rgbled_flash_r/SLICE_70 (from iclk_c)
+ROUTE         4     1.440     R18C11D.Q1 to     R18C10A.B1 rgbled_flash_r/rvcntnum_saw[6]
+CTOF_DEL    ---     0.495     R18C10A.B1 to     R18C10A.F1 rgbled_flash_r/SLICE_162
+ROUTE         1     0.744     R18C10A.F1 to      R18C9A.C0 rgbled_flash_r/rvcntnum_tri27lto24_0_sx_N_3L3
+CTOF_DEL    ---     0.495      R18C9A.C0 to      R18C9A.F0 rgbled_flash_r/SLICE_197
+ROUTE         1     0.766      R18C9A.F0 to      R20C9A.C1 rgbled_flash_r/rvcntnum_tri27lto24_0_sx_N_4L5
+CTOF_DEL    ---     0.495      R20C9A.C1 to      R20C9A.F1 rgbled_flash_r/SLICE_191
+ROUTE         1     0.626      R20C9A.F1 to      R20C9D.D0 rgbled_flash_r/rvcntnum_tri27lto24_0_sx
+CTOF_DEL    ---     0.495      R20C9D.D0 to      R20C9D.F0 rgbled_flash_r/SLICE_174
+ROUTE         2     2.006      R20C9D.F0 to     R12C15A.A0 rgbled_flash_r/rvcntnum_tri
+CTOF_DEL    ---     0.495     R12C15A.A0 to     R12C15A.F0 rgbled_flash_r/SLICE_187
+ROUTE        17     2.014     R12C15A.F0 to     R20C10A.CE rgbled_flash_r/N_6_i (to iclk_c)
                   --------
-                   13.739   (56.0% logic, 44.0% route), 23 logic levels.
+                   10.523   (27.8% logic, 72.2% route), 6 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path iclk to rgbled_flash_r/SLICE_75:
+      Source Clock Path iclk to rgbled_flash_r/SLICE_70:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     3.044       C1.PADDI to    R16C14B.CLK iclk_c
+ROUTE       113     3.044       C1.PADDI to    R18C11D.CLK iclk_c
                   --------
                     3.044   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path iclk to rgbled_flash_r/SLICE_79:
+      Destination Clock Path iclk to rgbled_flash_r/SLICE_90:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     3.044       C1.PADDI to    R15C19C.CLK iclk_c
+ROUTE       113     3.044       C1.PADDI to    R20C10A.CLK iclk_c
                   --------
                     3.044   (0.0% logic, 100.0% route), 0 logic levels.
 
-
-Error: The following path exceeds requirements by 0.145ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[0]  (from iclk_c +)
-   Destination:    FF         Data in        rgbled_flash_r/rvcntnum_tri[31]  (to iclk_c +)
-
-   Delay:              13.695ns  (58.1% logic, 41.9% route), 25 logic levels.
-
- Constraint Details:
-
-     13.695ns physical path delay rgbled_flash_r/SLICE_161 to rgbled_flash_r/SLICE_77 exceeds
-     13.716ns delay constraint less
-      0.000ns skew and
-      0.166ns DIN_SET requirement (totaling 13.550ns) by 0.145ns
-
- Physical Path Details:
-
-      Data path rgbled_flash_r/SLICE_161 to rgbled_flash_r/SLICE_77:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452    R17C14B.CLK to     R17C14B.Q0 rgbled_flash_r/SLICE_161 (from iclk_c)
-ROUTE         3     0.757     R17C14B.Q0 to     R17C15A.C0 rgbled_flash_r/rvcntnum_saw[0]
-CTOF_DEL    ---     0.495     R17C15A.C0 to     R17C15A.F0 rgbled_flash_r/SLICE_219
-ROUTE         1     0.656     R17C15A.F0 to     R17C14D.A1 rgbled_flash_r/un1_rvcntnum_sawlto8_i_a2_7_3
-CTOF_DEL    ---     0.495     R17C14D.A1 to     R17C14D.F1 rgbled_flash_r/SLICE_194
-ROUTE         2     0.654     R17C14D.F1 to     R17C15A.D1 rgbled_flash_r/N_15_7
-CTOF_DEL    ---     0.495     R17C15A.D1 to     R17C15A.F1 rgbled_flash_r/SLICE_219
-ROUTE         1     0.626     R17C15A.F1 to     R17C15C.D1 rgbled_flash_r/rvcntnum_tri27lt14
-CTOF_DEL    ---     0.495     R17C15C.D1 to     R17C15C.F1 rgbled_flash_r/SLICE_191
-ROUTE         1     0.436     R17C15C.F1 to     R17C15C.C0 rgbled_flash_r/rvcntnum_tri27lt20
-CTOF_DEL    ---     0.495     R17C15C.C0 to     R17C15C.F0 rgbled_flash_r/SLICE_191
-ROUTE         1     0.958     R17C15C.F0 to     R15C15A.D1 rgbled_flash_r/rvcntnum_tri27lt25
-CTOF_DEL    ---     0.495     R15C15A.D1 to     R15C15A.F1 rgbled_flash_r/SLICE_189
-ROUTE        33     0.643     R15C15A.F1 to     R15C15A.D0 rgbled_flash_r/rvcntnum_tri27lt26
-CTOF_DEL    ---     0.495     R15C15A.D0 to     R15C15A.F0 rgbled_flash_r/SLICE_189
-ROUTE         2     1.010     R15C15A.F0 to     R15C16A.B0 rgbled_flash_r/rvcntnum_tri
-C0TOFCO_DE  ---     1.023     R15C16A.B0 to    R15C16A.FCO rgbled_flash_r/SLICE_93
-ROUTE         1     0.000    R15C16A.FCO to    R15C16B.FCI rgbled_flash_r/rvcntnum_tri_cry[0]
-FCITOFCO_D  ---     0.162    R15C16B.FCI to    R15C16B.FCO rgbled_flash_r/SLICE_92
-ROUTE         1     0.000    R15C16B.FCO to    R15C16C.FCI rgbled_flash_r/rvcntnum_tri_cry[2]
-FCITOFCO_D  ---     0.162    R15C16C.FCI to    R15C16C.FCO rgbled_flash_r/SLICE_91
-ROUTE         1     0.000    R15C16C.FCO to    R15C16D.FCI rgbled_flash_r/rvcntnum_tri_cry[4]
-FCITOFCO_D  ---     0.162    R15C16D.FCI to    R15C16D.FCO rgbled_flash_r/SLICE_90
-ROUTE         1     0.000    R15C16D.FCO to    R15C17A.FCI rgbled_flash_r/rvcntnum_tri_cry[6]
-FCITOFCO_D  ---     0.162    R15C17A.FCI to    R15C17A.FCO rgbled_flash_r/SLICE_89
-ROUTE         1     0.000    R15C17A.FCO to    R15C17B.FCI rgbled_flash_r/rvcntnum_tri_cry[8]
-FCITOFCO_D  ---     0.162    R15C17B.FCI to    R15C17B.FCO rgbled_flash_r/SLICE_88
-ROUTE         1     0.000    R15C17B.FCO to    R15C17C.FCI rgbled_flash_r/rvcntnum_tri_cry[10]
-FCITOFCO_D  ---     0.162    R15C17C.FCI to    R15C17C.FCO rgbled_flash_r/SLICE_87
-ROUTE         1     0.000    R15C17C.FCO to    R15C17D.FCI rgbled_flash_r/rvcntnum_tri_cry[12]
-FCITOFCO_D  ---     0.162    R15C17D.FCI to    R15C17D.FCO rgbled_flash_r/SLICE_86
-ROUTE         1     0.000    R15C17D.FCO to    R15C18A.FCI rgbled_flash_r/rvcntnum_tri_cry[14]
-FCITOFCO_D  ---     0.162    R15C18A.FCI to    R15C18A.FCO rgbled_flash_r/SLICE_85
-ROUTE         1     0.000    R15C18A.FCO to    R15C18B.FCI rgbled_flash_r/rvcntnum_tri_cry[16]
-FCITOFCO_D  ---     0.162    R15C18B.FCI to    R15C18B.FCO rgbled_flash_r/SLICE_84
-ROUTE         1     0.000    R15C18B.FCO to    R15C18C.FCI rgbled_flash_r/rvcntnum_tri_cry[18]
-FCITOFCO_D  ---     0.162    R15C18C.FCI to    R15C18C.FCO rgbled_flash_r/SLICE_83
-ROUTE         1     0.000    R15C18C.FCO to    R15C18D.FCI rgbled_flash_r/rvcntnum_tri_cry[20]
-FCITOFCO_D  ---     0.162    R15C18D.FCI to    R15C18D.FCO rgbled_flash_r/SLICE_82
-ROUTE         1     0.000    R15C18D.FCO to    R15C19A.FCI rgbled_flash_r/rvcntnum_tri_cry[22]
-FCITOFCO_D  ---     0.162    R15C19A.FCI to    R15C19A.FCO rgbled_flash_r/SLICE_81
-ROUTE         1     0.000    R15C19A.FCO to    R15C19B.FCI rgbled_flash_r/rvcntnum_tri_cry[24]
-FCITOFCO_D  ---     0.162    R15C19B.FCI to    R15C19B.FCO rgbled_flash_r/SLICE_80
-ROUTE         1     0.000    R15C19B.FCO to    R15C19C.FCI rgbled_flash_r/rvcntnum_tri_cry[26]
-FCITOFCO_D  ---     0.162    R15C19C.FCI to    R15C19C.FCO rgbled_flash_r/SLICE_79
-ROUTE         1     0.000    R15C19C.FCO to    R15C19D.FCI rgbled_flash_r/rvcntnum_tri_cry[28]
-FCITOFCO_D  ---     0.162    R15C19D.FCI to    R15C19D.FCO rgbled_flash_r/SLICE_78
-ROUTE         1     0.000    R15C19D.FCO to    R15C20A.FCI rgbled_flash_r/rvcntnum_tri_cry[30]
-FCITOF0_DE  ---     0.585    R15C20A.FCI to     R15C20A.F0 rgbled_flash_r/SLICE_77
-ROUTE         1     0.000     R15C20A.F0 to    R15C20A.DI0 rgbled_flash_r/rvcntnum_tri_s[31] (to iclk_c)
-                  --------
-                   13.695   (58.1% logic, 41.9% route), 25 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path iclk to rgbled_flash_r/SLICE_161:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     3.044       C1.PADDI to    R17C14B.CLK iclk_c
-                  --------
-                    3.044   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path iclk to rgbled_flash_r/SLICE_77:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     3.044       C1.PADDI to    R15C20A.CLK iclk_c
-                  --------
-                    3.044   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Error: The following path exceeds requirements by 0.131ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              rgbled_flash_r/rvcntnum_saw[2]  (from iclk_c +)
-   Destination:    FF         Data in        rgbled_flash_r/rvcntnum_tri[27]  (to iclk_c +)
-
-   Delay:              13.681ns  (55.8% logic, 44.2% route), 23 logic levels.
-
- Constraint Details:
-
-     13.681ns physical path delay rgbled_flash_r/SLICE_75 to rgbled_flash_r/SLICE_79 exceeds
-     13.716ns delay constraint less
-      0.000ns skew and
-      0.166ns DIN_SET requirement (totaling 13.550ns) by 0.131ns
-
- Physical Path Details:
-
-      Data path rgbled_flash_r/SLICE_75 to rgbled_flash_r/SLICE_79:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452    R16C14B.CLK to     R16C14B.Q1 rgbled_flash_r/SLICE_75 (from iclk_c)
-ROUTE         2     1.030     R16C14B.Q1 to     R17C14C.B1 rgbled_flash_r/rvcntnum_saw[2]
-CTOF_DEL    ---     0.495     R17C14C.B1 to     R17C14C.F1 SLICE_159
-ROUTE         1     0.693     R17C14C.F1 to     R17C14D.B1 rgbled_flash_r/un1_rvcntnum_sawlto8_i_a2_7_4
-CTOF_DEL    ---     0.495     R17C14D.B1 to     R17C14D.F1 rgbled_flash_r/SLICE_194
-ROUTE         2     0.654     R17C14D.F1 to     R17C15A.D1 rgbled_flash_r/N_15_7
-CTOF_DEL    ---     0.495     R17C15A.D1 to     R17C15A.F1 rgbled_flash_r/SLICE_219
-ROUTE         1     0.626     R17C15A.F1 to     R17C15C.D1 rgbled_flash_r/rvcntnum_tri27lt14
-CTOF_DEL    ---     0.495     R17C15C.D1 to     R17C15C.F1 rgbled_flash_r/SLICE_191
-ROUTE         1     0.436     R17C15C.F1 to     R17C15C.C0 rgbled_flash_r/rvcntnum_tri27lt20
-CTOF_DEL    ---     0.495     R17C15C.C0 to     R17C15C.F0 rgbled_flash_r/SLICE_191
-ROUTE         1     0.958     R17C15C.F0 to     R15C15A.D1 rgbled_flash_r/rvcntnum_tri27lt25
-CTOF_DEL    ---     0.495     R15C15A.D1 to     R15C15A.F1 rgbled_flash_r/SLICE_189
-ROUTE        33     0.643     R15C15A.F1 to     R15C15A.D0 rgbled_flash_r/rvcntnum_tri27lt26
-CTOF_DEL    ---     0.495     R15C15A.D0 to     R15C15A.F0 rgbled_flash_r/SLICE_189
-ROUTE         2     1.010     R15C15A.F0 to     R15C16A.B0 rgbled_flash_r/rvcntnum_tri
-C0TOFCO_DE  ---     1.023     R15C16A.B0 to    R15C16A.FCO rgbled_flash_r/SLICE_93
-ROUTE         1     0.000    R15C16A.FCO to    R15C16B.FCI rgbled_flash_r/rvcntnum_tri_cry[0]
-FCITOFCO_D  ---     0.162    R15C16B.FCI to    R15C16B.FCO rgbled_flash_r/SLICE_92
-ROUTE         1     0.000    R15C16B.FCO to    R15C16C.FCI rgbled_flash_r/rvcntnum_tri_cry[2]
-FCITOFCO_D  ---     0.162    R15C16C.FCI to    R15C16C.FCO rgbled_flash_r/SLICE_91
-ROUTE         1     0.000    R15C16C.FCO to    R15C16D.FCI rgbled_flash_r/rvcntnum_tri_cry[4]
-FCITOFCO_D  ---     0.162    R15C16D.FCI to    R15C16D.FCO rgbled_flash_r/SLICE_90
-ROUTE         1     0.000    R15C16D.FCO to    R15C17A.FCI rgbled_flash_r/rvcntnum_tri_cry[6]
-FCITOFCO_D  ---     0.162    R15C17A.FCI to    R15C17A.FCO rgbled_flash_r/SLICE_89
-ROUTE         1     0.000    R15C17A.FCO to    R15C17B.FCI rgbled_flash_r/rvcntnum_tri_cry[8]
-FCITOFCO_D  ---     0.162    R15C17B.FCI to    R15C17B.FCO rgbled_flash_r/SLICE_88
-ROUTE         1     0.000    R15C17B.FCO to    R15C17C.FCI rgbled_flash_r/rvcntnum_tri_cry[10]
-FCITOFCO_D  ---     0.162    R15C17C.FCI to    R15C17C.FCO rgbled_flash_r/SLICE_87
-ROUTE         1     0.000    R15C17C.FCO to    R15C17D.FCI rgbled_flash_r/rvcntnum_tri_cry[12]
-FCITOFCO_D  ---     0.162    R15C17D.FCI to    R15C17D.FCO rgbled_flash_r/SLICE_86
-ROUTE         1     0.000    R15C17D.FCO to    R15C18A.FCI rgbled_flash_r/rvcntnum_tri_cry[14]
-FCITOFCO_D  ---     0.162    R15C18A.FCI to    R15C18A.FCO rgbled_flash_r/SLICE_85
-ROUTE         1     0.000    R15C18A.FCO to    R15C18B.FCI rgbled_flash_r/rvcntnum_tri_cry[16]
-FCITOFCO_D  ---     0.162    R15C18B.FCI to    R15C18B.FCO rgbled_flash_r/SLICE_84
-ROUTE         1     0.000    R15C18B.FCO to    R15C18C.FCI rgbled_flash_r/rvcntnum_tri_cry[18]
-FCITOFCO_D  ---     0.162    R15C18C.FCI to    R15C18C.FCO rgbled_flash_r/SLICE_83
-ROUTE         1     0.000    R15C18C.FCO to    R15C18D.FCI rgbled_flash_r/rvcntnum_tri_cry[20]
-FCITOFCO_D  ---     0.162    R15C18D.FCI to    R15C18D.FCO rgbled_flash_r/SLICE_82
-ROUTE         1     0.000    R15C18D.FCO to    R15C19A.FCI rgbled_flash_r/rvcntnum_tri_cry[22]
-FCITOFCO_D  ---     0.162    R15C19A.FCI to    R15C19A.FCO rgbled_flash_r/SLICE_81
-ROUTE         1     0.000    R15C19A.FCO to    R15C19B.FCI rgbled_flash_r/rvcntnum_tri_cry[24]
-FCITOFCO_D  ---     0.162    R15C19B.FCI to    R15C19B.FCO rgbled_flash_r/SLICE_80
-ROUTE         1     0.000    R15C19B.FCO to    R15C19C.FCI rgbled_flash_r/rvcntnum_tri_cry[26]
-FCITOF0_DE  ---     0.585    R15C19C.FCI to     R15C19C.F0 rgbled_flash_r/SLICE_79
-ROUTE         1     0.000     R15C19C.F0 to    R15C19C.DI0 rgbled_flash_r/rvcntnum_tri_s[27] (to iclk_c)
-                  --------
-                   13.681   (55.8% logic, 44.2% route), 23 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path iclk to rgbled_flash_r/SLICE_75:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     3.044       C1.PADDI to    R16C14B.CLK iclk_c
-                  --------
-                    3.044   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path iclk to rgbled_flash_r/SLICE_79:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     3.044       C1.PADDI to    R15C19C.CLK iclk_c
-                  --------
-                    3.044   (0.0% logic, 100.0% route), 0 logic levels.
-
-Warning:  70.567MHz is the maximum frequency for this preference.
+Report:   91.625MHz is the maximum frequency for this preference.
 
 <A name="ptwr_set_rs"></A><B><U><big>Report Summary</big></U></B>
 --------------
@@ -959,74 +663,12 @@ Warning:  70.567MHz is the maximum frequency for this preference.
 Preference                              |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
-FREQUENCY NET "iclk_c" 72.908000 MHz ;  |   72.908 MHz|   70.567 MHz|  25 *
+FREQUENCY NET "iclk_c" 89.646000 MHz ;  |   89.646 MHz|   91.625 MHz|  22  
                                         |             |             |
 ----------------------------------------------------------------------------
 
 
-1 preference(marked by "*" above) not met.
-
-----------------------------------------------------------------------------
-Critical Nets                           |   Loads|  Errors| % of total
-----------------------------------------------------------------------------
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/N_15_7">rgbled_flash_r/N_15_7</a>                   |       2|      35|    100.00%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri27lt14">rgbled_flash_r/rvcntnum_tri27lt14</a>       |       1|      35|    100.00%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri27lt20">rgbled_flash_r/rvcntnum_tri27lt20</a>       |       1|      35|    100.00%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri27lt25">rgbled_flash_r/rvcntnum_tri27lt25</a>       |       1|      35|    100.00%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri27lt26">rgbled_flash_r/rvcntnum_tri27lt26</a>       |      33|      35|    100.00%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri">rgbled_flash_r/rvcntnum_tri</a>             |       2|      35|    100.00%
-                                        |        |        |
-rgbled_flash_r/un1_rvcntnum_sawlto8_i_a2|        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/un1_rvcntnum_sawlto8_i_a2_7_4">_7_4</a>                                    |       1|      32|     91.43%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_saw[2]">rgbled_flash_r/rvcntnum_saw[2]</a>          |       2|      23|     65.71%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri_cry[0]">rgbled_flash_r/rvcntnum_tri_cry[0]</a>      |       1|      18|     51.43%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri_cry[2]">rgbled_flash_r/rvcntnum_tri_cry[2]</a>      |       1|      18|     51.43%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri_cry[4]">rgbled_flash_r/rvcntnum_tri_cry[4]</a>      |       1|      18|     51.43%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri_cry[6]">rgbled_flash_r/rvcntnum_tri_cry[6]</a>      |       1|      18|     51.43%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri_cry[8]">rgbled_flash_r/rvcntnum_tri_cry[8]</a>      |       1|      18|     51.43%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri_cry[10]">rgbled_flash_r/rvcntnum_tri_cry[10]</a>     |       1|      18|     51.43%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri_cry[12]">rgbled_flash_r/rvcntnum_tri_cry[12]</a>     |       1|      18|     51.43%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri_cry[14]">rgbled_flash_r/rvcntnum_tri_cry[14]</a>     |       1|      18|     51.43%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri_cry[16]">rgbled_flash_r/rvcntnum_tri_cry[16]</a>     |       1|      18|     51.43%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri_cry[18]">rgbled_flash_r/rvcntnum_tri_cry[18]</a>     |       1|      18|     51.43%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri_cry[20]">rgbled_flash_r/rvcntnum_tri_cry[20]</a>     |       1|      18|     51.43%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri_cry[22]">rgbled_flash_r/rvcntnum_tri_cry[22]</a>     |       1|      18|     51.43%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri_cry[24]">rgbled_flash_r/rvcntnum_tri_cry[24]</a>     |       1|      18|     51.43%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri_cry[26]">rgbled_flash_r/rvcntnum_tri_cry[26]</a>     |       1|      17|     48.57%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/N_6_i">rgbled_flash_r/N_6_i</a>                    |      17|      17|     48.57%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri_cry[28]">rgbled_flash_r/rvcntnum_tri_cry[28]</a>     |       1|      13|     37.14%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri_cry[30]">rgbled_flash_r/rvcntnum_tri_cry[30]</a>     |       1|       6|     17.14%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri_s[31]">rgbled_flash_r/rvcntnum_tri_s[31]</a>       |       1|       6|     17.14%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_saw[4]">rgbled_flash_r/rvcntnum_saw[4]</a>          |       2|       5|     14.29%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=rgbled_flash_r/rvcntnum_tri_s[30]">rgbled_flash_r/rvcntnum_tri_s[30]</a>       |       1|       4|     11.43%
-                                        |        |        |
-----------------------------------------------------------------------------
+All preferences were met.
 
 
 <A name="ptwr_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
@@ -1034,21 +676,21 @@ rgbled_flash_r/un1_rvcntnum_sawlto8_i_a2|        |        |
 
 Found 1 clocks:
 
-Clock Domain: iclk_c   Source: iclk.PAD   Loads: 117
-   Covered under: FREQUENCY NET "iclk_c" 72.908000 MHz ;
+Clock Domain: iclk_c   Source: iclk.PAD   Loads: 113
+   Covered under: FREQUENCY NET "iclk_c" 89.646000 MHz ;
 
 
 <A name="ptwr_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
 ---------------
 
-Timing errors: 35  Score: 3803
-Cumulative negative slack: 3803
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
 
-Constraints cover 21702 paths, 1 nets, and 1131 connections (78.93% coverage)
+Constraints cover 25285 paths, 1 nets, and 1200 connections (81.36% coverage)
 
 --------------------------------------------------------------------------------
 <A name="Par_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2</big></U></B>
-Fri Nov 15 11:03:08 2019
+Tue Nov 19 10:32:39 2019
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1067,7 +709,7 @@ Report level:    verbose report, limited to 10 items per preference
 
 <A name="ptwr_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
 
-<LI><A href='#par_twr_pref_1_0' Target='right'>FREQUENCY NET "iclk_c" 72.908000 MHz (0 errors)</A></LI>            4096 items scored, 0 timing errors detected.
+<LI><A href='#par_twr_pref_1_0' Target='right'>FREQUENCY NET "iclk_c" 89.646000 MHz (0 errors)</A></LI>            4096 items scored, 0 timing errors detected.
 
 BLOCK ASYNCPATHS
 BLOCK RESETPATHS
@@ -1076,7 +718,7 @@ BLOCK RESETPATHS
 
 
 ================================================================================
-<A name="par_twr_pref_1_0"></A>Preference: FREQUENCY NET "iclk_c" 72.908000 MHz ;
+<A name="par_twr_pref_1_0"></A>Preference: FREQUENCY NET "iclk_c" 89.646000 MHz ;
             4096 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
@@ -1092,36 +734,36 @@ Passed: The following path meets requirements by 0.379ns
 
  Constraint Details:
 
-      0.366ns physical path delay SLICE_175 to SLICE_175 meets
+      0.366ns physical path delay SLICE_172 to SLICE_172 meets
      -0.013ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.013ns) by 0.379ns
 
  Physical Path Details:
 
-      Data path SLICE_175 to SLICE_175:
+      Data path SLICE_172 to SLICE_172:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R16C22D.CLK to     R16C22D.Q0 SLICE_175 (from iclk_c)
-ROUTE         3     0.132     R16C22D.Q0 to     R16C22D.A0 wvrgbled_pwm_bf[0]
-CTOF_DEL    ---     0.101     R16C22D.A0 to     R16C22D.F0 SLICE_175
-ROUTE         1     0.000     R16C22D.F0 to    R16C22D.DI0 rgbled_flash_b/wvrgbled_pwm_b[0] (to iclk_c)
+REG_DEL     ---     0.133    R13C21C.CLK to     R13C21C.Q0 SLICE_172 (from iclk_c)
+ROUTE         3     0.132     R13C21C.Q0 to     R13C21C.A0 wvrgbled_pwm_bf[0]
+CTOF_DEL    ---     0.101     R13C21C.A0 to     R13C21C.F0 SLICE_172
+ROUTE         1     0.000     R13C21C.F0 to    R13C21C.DI0 rgbled_flash_b/wvrgbled_pwm_b[0] (to iclk_c)
                   --------
                     0.366   (63.9% logic, 36.1% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path iclk to SLICE_175:
+      Source Clock Path iclk to SLICE_172:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     1.116       C1.PADDI to    R16C22D.CLK iclk_c
+ROUTE       113     1.116       C1.PADDI to    R13C21C.CLK iclk_c
                   --------
                     1.116   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path iclk to SLICE_175:
+      Destination Clock Path iclk to SLICE_172:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     1.116       C1.PADDI to    R16C22D.CLK iclk_c
+ROUTE       113     1.116       C1.PADDI to    R13C21C.CLK iclk_c
                   --------
                     1.116   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1137,36 +779,36 @@ Passed: The following path meets requirements by 0.379ns
 
  Constraint Details:
 
-      0.366ns physical path delay SLICE_176 to SLICE_176 meets
+      0.366ns physical path delay SLICE_173 to SLICE_173 meets
      -0.013ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.013ns) by 0.379ns
 
  Physical Path Details:
 
-      Data path SLICE_176 to SLICE_176:
+      Data path SLICE_173 to SLICE_173:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R18C25C.CLK to     R18C25C.Q0 SLICE_176 (from iclk_c)
-ROUTE         3     0.132     R18C25C.Q0 to     R18C25C.A0 wvrgbled_pwm_gf[0]
-CTOF_DEL    ---     0.101     R18C25C.A0 to     R18C25C.F0 SLICE_176
-ROUTE         1     0.000     R18C25C.F0 to    R18C25C.DI0 rgbled_flash_g/wvrgbled_pwm_g[0] (to iclk_c)
+REG_DEL     ---     0.133    R16C22C.CLK to     R16C22C.Q0 SLICE_173 (from iclk_c)
+ROUTE         3     0.132     R16C22C.Q0 to     R16C22C.A0 wvrgbled_pwm_gf[0]
+CTOF_DEL    ---     0.101     R16C22C.A0 to     R16C22C.F0 SLICE_173
+ROUTE         1     0.000     R16C22C.F0 to    R16C22C.DI0 rgbled_flash_g/wvrgbled_pwm_g[0] (to iclk_c)
                   --------
                     0.366   (63.9% logic, 36.1% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path iclk to SLICE_176:
+      Source Clock Path iclk to SLICE_173:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     1.116       C1.PADDI to    R18C25C.CLK iclk_c
+ROUTE       113     1.116       C1.PADDI to    R16C22C.CLK iclk_c
                   --------
                     1.116   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path iclk to SLICE_176:
+      Destination Clock Path iclk to SLICE_173:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     1.116       C1.PADDI to    R18C25C.CLK iclk_c
+ROUTE       113     1.116       C1.PADDI to    R16C22C.CLK iclk_c
                   --------
                     1.116   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1175,43 +817,43 @@ Passed: The following path meets requirements by 0.379ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              rgbled_flash_b/rvcntnum_tri_pipe_23  (from iclk_c +)
-   Destination:    FF         Data in        rgbled_flash_b/rvcntnum_tri_pipe_23  (to iclk_c +)
+   Source:         FF         Q              rgbled_flash_g/rvcntnum_tri_pipe_11  (from iclk_c +)
+   Destination:    FF         Data in        rgbled_flash_g/rvcntnum_tri_pipe_11  (to iclk_c +)
 
    Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
 
  Constraint Details:
 
-      0.366ns physical path delay rgbled_flash_b/SLICE_5 to rgbled_flash_b/SLICE_5 meets
+      0.366ns physical path delay rgbled_flash_g/SLICE_41 to rgbled_flash_g/SLICE_41 meets
      -0.013ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.013ns) by 0.379ns
 
  Physical Path Details:
 
-      Data path rgbled_flash_b/SLICE_5 to rgbled_flash_b/SLICE_5:
+      Data path rgbled_flash_g/SLICE_41 to rgbled_flash_g/SLICE_41:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R17C12A.CLK to     R17C12A.Q0 rgbled_flash_b/SLICE_5 (from iclk_c)
-ROUTE         1     0.130     R17C12A.Q0 to     R17C12A.A0 rgbled_flash_b/wvrgbled_pwm_bf[23]
-CTOF_DEL    ---     0.101     R17C12A.A0 to     R17C12A.F0 rgbled_flash_b/SLICE_5
-ROUTE         3     0.002     R17C12A.F0 to    R17C12A.DI0 wvrgbled_pwm_b[23] (to iclk_c)
+REG_DEL     ---     0.133    R13C17C.CLK to     R13C17C.Q0 rgbled_flash_g/SLICE_41 (from iclk_c)
+ROUTE         1     0.130     R13C17C.Q0 to     R13C17C.A0 rgbled_flash_g/wvrgbled_pwm_gf[11]
+CTOF_DEL    ---     0.101     R13C17C.A0 to     R13C17C.F0 rgbled_flash_g/SLICE_41
+ROUTE         2     0.002     R13C17C.F0 to    R13C17C.DI0 wvrgbled_pwm_g[11] (to iclk_c)
                   --------
                     0.366   (63.9% logic, 36.1% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path iclk to rgbled_flash_b/SLICE_5:
+      Source Clock Path iclk to rgbled_flash_g/SLICE_41:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     1.116       C1.PADDI to    R17C12A.CLK iclk_c
+ROUTE       113     1.116       C1.PADDI to    R13C17C.CLK iclk_c
                   --------
                     1.116   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path iclk to rgbled_flash_b/SLICE_5:
+      Destination Clock Path iclk to rgbled_flash_g/SLICE_41:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     1.116       C1.PADDI to    R17C12A.CLK iclk_c
+ROUTE       113     1.116       C1.PADDI to    R13C17C.CLK iclk_c
                   --------
                     1.116   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1220,43 +862,43 @@ Passed: The following path meets requirements by 0.379ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              rgbled_flash_b/rvcntnum_tri_pipe_25  (from iclk_c +)
-   Destination:    FF         Data in        rgbled_flash_b/rvcntnum_tri_pipe_25  (to iclk_c +)
+   Source:         FF         Q              rgbled_flash_g/rvcntnum_tri_pipe_27  (from iclk_c +)
+   Destination:    FF         Data in        rgbled_flash_g/rvcntnum_tri_pipe_27  (to iclk_c +)
 
    Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
 
  Constraint Details:
 
-      0.366ns physical path delay rgbled_flash_b/SLICE_4 to rgbled_flash_b/SLICE_4 meets
+      0.366ns physical path delay rgbled_flash_g/SLICE_33 to rgbled_flash_g/SLICE_33 meets
      -0.013ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.013ns) by 0.379ns
 
  Physical Path Details:
 
-      Data path rgbled_flash_b/SLICE_4 to rgbled_flash_b/SLICE_4:
+      Data path rgbled_flash_g/SLICE_33 to rgbled_flash_g/SLICE_33:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R17C12B.CLK to     R17C12B.Q0 rgbled_flash_b/SLICE_4 (from iclk_c)
-ROUTE         1     0.130     R17C12B.Q0 to     R17C12B.A0 rgbled_flash_b/wvrgbled_pwm_bf[25]
-CTOF_DEL    ---     0.101     R17C12B.A0 to     R17C12B.F0 rgbled_flash_b/SLICE_4
-ROUTE         3     0.002     R17C12B.F0 to    R17C12B.DI0 wvrgbled_pwm_b[25] (to iclk_c)
+REG_DEL     ---     0.133    R13C19C.CLK to     R13C19C.Q0 rgbled_flash_g/SLICE_33 (from iclk_c)
+ROUTE         1     0.130     R13C19C.Q0 to     R13C19C.A0 rgbled_flash_g/wvrgbled_pwm_gf[27]
+CTOF_DEL    ---     0.101     R13C19C.A0 to     R13C19C.F0 rgbled_flash_g/SLICE_33
+ROUTE         2     0.002     R13C19C.F0 to    R13C19C.DI0 wvrgbled_pwm_g[27] (to iclk_c)
                   --------
                     0.366   (63.9% logic, 36.1% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path iclk to rgbled_flash_b/SLICE_4:
+      Source Clock Path iclk to rgbled_flash_g/SLICE_33:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     1.116       C1.PADDI to    R17C12B.CLK iclk_c
+ROUTE       113     1.116       C1.PADDI to    R13C19C.CLK iclk_c
                   --------
                     1.116   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path iclk to rgbled_flash_b/SLICE_4:
+      Destination Clock Path iclk to rgbled_flash_g/SLICE_33:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     1.116       C1.PADDI to    R17C12B.CLK iclk_c
+ROUTE       113     1.116       C1.PADDI to    R13C19C.CLK iclk_c
                   --------
                     1.116   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1265,8 +907,8 @@ Passed: The following path meets requirements by 0.379ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              rgbled_flash_g/rvcntnum_tri_pipe_25  (from iclk_c +)
-   Destination:    FF         Data in        rgbled_flash_g/rvcntnum_tri_pipe_25  (to iclk_c +)
+   Source:         FF         Q              rgbled_flash_g/rvcntnum_tri_pipe_23  (from iclk_c +)
+   Destination:    FF         Data in        rgbled_flash_g/rvcntnum_tri_pipe_23  (to iclk_c +)
 
    Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
 
@@ -1282,10 +924,10 @@ Passed: The following path meets requirements by 0.379ns
       Data path rgbled_flash_g/SLICE_35 to rgbled_flash_g/SLICE_35:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R19C18B.CLK to     R19C18B.Q0 rgbled_flash_g/SLICE_35 (from iclk_c)
-ROUTE         1     0.130     R19C18B.Q0 to     R19C18B.A0 rgbled_flash_g/wvrgbled_pwm_gf[25]
-CTOF_DEL    ---     0.101     R19C18B.A0 to     R19C18B.F0 rgbled_flash_g/SLICE_35
-ROUTE         3     0.002     R19C18B.F0 to    R19C18B.DI0 wvrgbled_pwm_g[25] (to iclk_c)
+REG_DEL     ---     0.133    R13C19A.CLK to     R13C19A.Q0 rgbled_flash_g/SLICE_35 (from iclk_c)
+ROUTE         1     0.130     R13C19A.Q0 to     R13C19A.A0 rgbled_flash_g/wvrgbled_pwm_gf[23]
+CTOF_DEL    ---     0.101     R13C19A.A0 to     R13C19A.F0 rgbled_flash_g/SLICE_35
+ROUTE         3     0.002     R13C19A.F0 to    R13C19A.DI0 wvrgbled_pwm_g[23] (to iclk_c)
                   --------
                     0.366   (63.9% logic, 36.1% route), 2 logic levels.
 
@@ -1294,14 +936,14 @@ ROUTE         3     0.002     R19C18B.F0 to    R19C18B.DI0 wvrgbled_pwm_g[25] (t
       Source Clock Path iclk to rgbled_flash_g/SLICE_35:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     1.116       C1.PADDI to    R19C18B.CLK iclk_c
+ROUTE       113     1.116       C1.PADDI to    R13C19A.CLK iclk_c
                   --------
                     1.116   (0.0% logic, 100.0% route), 0 logic levels.
 
       Destination Clock Path iclk to rgbled_flash_g/SLICE_35:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     1.116       C1.PADDI to    R19C18B.CLK iclk_c
+ROUTE       113     1.116       C1.PADDI to    R13C19A.CLK iclk_c
                   --------
                     1.116   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1310,43 +952,43 @@ Passed: The following path meets requirements by 0.379ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              rgbled_flash_b/rvcntnum_tri_pipe_21  (from iclk_c +)
-   Destination:    FF         Data in        rgbled_flash_b/rvcntnum_tri_pipe_21  (to iclk_c +)
+   Source:         FF         Q              rgbled_flash_b/rvcntnum_tri_pipe_5  (from iclk_c +)
+   Destination:    FF         Data in        rgbled_flash_b/rvcntnum_tri_pipe_5  (to iclk_c +)
 
    Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
 
  Constraint Details:
 
-      0.366ns physical path delay rgbled_flash_b/SLICE_6 to rgbled_flash_b/SLICE_6 meets
+      0.366ns physical path delay rgbled_flash_b/SLICE_14 to rgbled_flash_b/SLICE_14 meets
      -0.013ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.013ns) by 0.379ns
 
  Physical Path Details:
 
-      Data path rgbled_flash_b/SLICE_6 to rgbled_flash_b/SLICE_6:
+      Data path rgbled_flash_b/SLICE_14 to rgbled_flash_b/SLICE_14:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R17C11D.CLK to     R17C11D.Q0 rgbled_flash_b/SLICE_6 (from iclk_c)
-ROUTE         1     0.130     R17C11D.Q0 to     R17C11D.A0 rgbled_flash_b/wvrgbled_pwm_bf[21]
-CTOF_DEL    ---     0.101     R17C11D.A0 to     R17C11D.F0 rgbled_flash_b/SLICE_6
-ROUTE         3     0.002     R17C11D.F0 to    R17C11D.DI0 wvrgbled_pwm_b[21] (to iclk_c)
+REG_DEL     ---     0.133    R13C11D.CLK to     R13C11D.Q0 rgbled_flash_b/SLICE_14 (from iclk_c)
+ROUTE         1     0.130     R13C11D.Q0 to     R13C11D.A0 rgbled_flash_b/wvrgbled_pwm_bf[5]
+CTOF_DEL    ---     0.101     R13C11D.A0 to     R13C11D.F0 rgbled_flash_b/SLICE_14
+ROUTE         2     0.002     R13C11D.F0 to    R13C11D.DI0 wvrgbled_pwm_b[5] (to iclk_c)
                   --------
                     0.366   (63.9% logic, 36.1% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path iclk to rgbled_flash_b/SLICE_6:
+      Source Clock Path iclk to rgbled_flash_b/SLICE_14:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     1.116       C1.PADDI to    R17C11D.CLK iclk_c
+ROUTE       113     1.116       C1.PADDI to    R13C11D.CLK iclk_c
                   --------
                     1.116   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path iclk to rgbled_flash_b/SLICE_6:
+      Destination Clock Path iclk to rgbled_flash_b/SLICE_14:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     1.116       C1.PADDI to    R17C11D.CLK iclk_c
+ROUTE       113     1.116       C1.PADDI to    R13C11D.CLK iclk_c
                   --------
                     1.116   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1355,43 +997,43 @@ Passed: The following path meets requirements by 0.379ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              rgbled_flash_b/rvcntnum_tri_pipe_27  (from iclk_c +)
-   Destination:    FF         Data in        rgbled_flash_b/rvcntnum_tri_pipe_27  (to iclk_c +)
+   Source:         FF         Q              rgbled_flash_g/rvcntnum_tri_pipe_25  (from iclk_c +)
+   Destination:    FF         Data in        rgbled_flash_g/rvcntnum_tri_pipe_25  (to iclk_c +)
 
    Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
 
  Constraint Details:
 
-      0.366ns physical path delay rgbled_flash_b/SLICE_3 to rgbled_flash_b/SLICE_3 meets
+      0.366ns physical path delay rgbled_flash_g/SLICE_34 to rgbled_flash_g/SLICE_34 meets
      -0.013ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.013ns) by 0.379ns
 
  Physical Path Details:
 
-      Data path rgbled_flash_b/SLICE_3 to rgbled_flash_b/SLICE_3:
+      Data path rgbled_flash_g/SLICE_34 to rgbled_flash_g/SLICE_34:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R17C12C.CLK to     R17C12C.Q0 rgbled_flash_b/SLICE_3 (from iclk_c)
-ROUTE         1     0.130     R17C12C.Q0 to     R17C12C.A0 rgbled_flash_b/wvrgbled_pwm_bf[27]
-CTOF_DEL    ---     0.101     R17C12C.A0 to     R17C12C.F0 rgbled_flash_b/SLICE_3
-ROUTE         2     0.002     R17C12C.F0 to    R17C12C.DI0 wvrgbled_pwm_b[27] (to iclk_c)
+REG_DEL     ---     0.133    R13C19B.CLK to     R13C19B.Q0 rgbled_flash_g/SLICE_34 (from iclk_c)
+ROUTE         1     0.130     R13C19B.Q0 to     R13C19B.A0 rgbled_flash_g/wvrgbled_pwm_gf[25]
+CTOF_DEL    ---     0.101     R13C19B.A0 to     R13C19B.F0 rgbled_flash_g/SLICE_34
+ROUTE         2     0.002     R13C19B.F0 to    R13C19B.DI0 wvrgbled_pwm_g[25] (to iclk_c)
                   --------
                     0.366   (63.9% logic, 36.1% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path iclk to rgbled_flash_b/SLICE_3:
+      Source Clock Path iclk to rgbled_flash_g/SLICE_34:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     1.116       C1.PADDI to    R17C12C.CLK iclk_c
+ROUTE       113     1.116       C1.PADDI to    R13C19B.CLK iclk_c
                   --------
                     1.116   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path iclk to rgbled_flash_b/SLICE_3:
+      Destination Clock Path iclk to rgbled_flash_g/SLICE_34:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     1.116       C1.PADDI to    R17C12C.CLK iclk_c
+ROUTE       113     1.116       C1.PADDI to    R13C19B.CLK iclk_c
                   --------
                     1.116   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1400,43 +1042,43 @@ Passed: The following path meets requirements by 0.379ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              rgbled_flash_b/rvcntnum_tri_pipe_17  (from iclk_c +)
-   Destination:    FF         Data in        rgbled_flash_b/rvcntnum_tri_pipe_17  (to iclk_c +)
+   Source:         FF         Q              rgbled_flash_g/rvcntnum_tri_pipe_29  (from iclk_c +)
+   Destination:    FF         Data in        rgbled_flash_g/rvcntnum_tri_pipe_29  (to iclk_c +)
 
    Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
 
  Constraint Details:
 
-      0.366ns physical path delay rgbled_flash_b/SLICE_8 to rgbled_flash_b/SLICE_8 meets
+      0.366ns physical path delay rgbled_flash_g/SLICE_32 to rgbled_flash_g/SLICE_32 meets
      -0.013ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.013ns) by 0.379ns
 
  Physical Path Details:
 
-      Data path rgbled_flash_b/SLICE_8 to rgbled_flash_b/SLICE_8:
+      Data path rgbled_flash_g/SLICE_32 to rgbled_flash_g/SLICE_32:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R17C11B.CLK to     R17C11B.Q0 rgbled_flash_b/SLICE_8 (from iclk_c)
-ROUTE         1     0.130     R17C11B.Q0 to     R17C11B.A0 rgbled_flash_b/wvrgbled_pwm_bf[17]
-CTOF_DEL    ---     0.101     R17C11B.A0 to     R17C11B.F0 rgbled_flash_b/SLICE_8
-ROUTE         3     0.002     R17C11B.F0 to    R17C11B.DI0 wvrgbled_pwm_b[17] (to iclk_c)
+REG_DEL     ---     0.133    R13C19D.CLK to     R13C19D.Q0 rgbled_flash_g/SLICE_32 (from iclk_c)
+ROUTE         1     0.130     R13C19D.Q0 to     R13C19D.A0 rgbled_flash_g/wvrgbled_pwm_gf[29]
+CTOF_DEL    ---     0.101     R13C19D.A0 to     R13C19D.F0 rgbled_flash_g/SLICE_32
+ROUTE         2     0.002     R13C19D.F0 to    R13C19D.DI0 wvrgbled_pwm_g[29] (to iclk_c)
                   --------
                     0.366   (63.9% logic, 36.1% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path iclk to rgbled_flash_b/SLICE_8:
+      Source Clock Path iclk to rgbled_flash_g/SLICE_32:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     1.116       C1.PADDI to    R17C11B.CLK iclk_c
+ROUTE       113     1.116       C1.PADDI to    R13C19D.CLK iclk_c
                   --------
                     1.116   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path iclk to rgbled_flash_b/SLICE_8:
+      Destination Clock Path iclk to rgbled_flash_g/SLICE_32:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     1.116       C1.PADDI to    R17C11B.CLK iclk_c
+ROUTE       113     1.116       C1.PADDI to    R13C19D.CLK iclk_c
                   --------
                     1.116   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1445,43 +1087,43 @@ Passed: The following path meets requirements by 0.379ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              rgbled_flash_b/rvcntnum_tri_pipe_13  (from iclk_c +)
-   Destination:    FF         Data in        rgbled_flash_b/rvcntnum_tri_pipe_13  (to iclk_c +)
+   Source:         FF         Q              rgbled_flash_g/rvcntnum_tri_pipe_9  (from iclk_c +)
+   Destination:    FF         Data in        rgbled_flash_g/rvcntnum_tri_pipe_9  (to iclk_c +)
 
    Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
 
  Constraint Details:
 
-      0.366ns physical path delay rgbled_flash_b/SLICE_10 to rgbled_flash_b/SLICE_10 meets
+      0.366ns physical path delay rgbled_flash_g/SLICE_42 to rgbled_flash_g/SLICE_42 meets
      -0.013ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.013ns) by 0.379ns
 
  Physical Path Details:
 
-      Data path rgbled_flash_b/SLICE_10 to rgbled_flash_b/SLICE_10:
+      Data path rgbled_flash_g/SLICE_42 to rgbled_flash_g/SLICE_42:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R17C10D.CLK to     R17C10D.Q0 rgbled_flash_b/SLICE_10 (from iclk_c)
-ROUTE         1     0.130     R17C10D.Q0 to     R17C10D.A0 rgbled_flash_b/wvrgbled_pwm_bf[13]
-CTOF_DEL    ---     0.101     R17C10D.A0 to     R17C10D.F0 rgbled_flash_b/SLICE_10
-ROUTE         2     0.002     R17C10D.F0 to    R17C10D.DI0 wvrgbled_pwm_b[13] (to iclk_c)
+REG_DEL     ---     0.133    R13C17B.CLK to     R13C17B.Q0 rgbled_flash_g/SLICE_42 (from iclk_c)
+ROUTE         1     0.130     R13C17B.Q0 to     R13C17B.A0 rgbled_flash_g/wvrgbled_pwm_gf[9]
+CTOF_DEL    ---     0.101     R13C17B.A0 to     R13C17B.F0 rgbled_flash_g/SLICE_42
+ROUTE         2     0.002     R13C17B.F0 to    R13C17B.DI0 wvrgbled_pwm_g[9] (to iclk_c)
                   --------
                     0.366   (63.9% logic, 36.1% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path iclk to rgbled_flash_b/SLICE_10:
+      Source Clock Path iclk to rgbled_flash_g/SLICE_42:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     1.116       C1.PADDI to    R17C10D.CLK iclk_c
+ROUTE       113     1.116       C1.PADDI to    R13C17B.CLK iclk_c
                   --------
                     1.116   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path iclk to rgbled_flash_b/SLICE_10:
+      Destination Clock Path iclk to rgbled_flash_g/SLICE_42:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     1.116       C1.PADDI to    R17C10D.CLK iclk_c
+ROUTE       113     1.116       C1.PADDI to    R13C17B.CLK iclk_c
                   --------
                     1.116   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1490,43 +1132,43 @@ Passed: The following path meets requirements by 0.379ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              rgbled_flash_b/rvcntnum_tri_pipe_29  (from iclk_c +)
-   Destination:    FF         Data in        rgbled_flash_b/rvcntnum_tri_pipe_29  (to iclk_c +)
+   Source:         FF         Q              rgbled_flash_g/rvcntnum_tri_pipe_13  (from iclk_c +)
+   Destination:    FF         Data in        rgbled_flash_g/rvcntnum_tri_pipe_13  (to iclk_c +)
 
    Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
 
  Constraint Details:
 
-      0.366ns physical path delay rgbled_flash_b/SLICE_2 to rgbled_flash_b/SLICE_2 meets
+      0.366ns physical path delay rgbled_flash_g/SLICE_40 to rgbled_flash_g/SLICE_40 meets
      -0.013ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.013ns) by 0.379ns
 
  Physical Path Details:
 
-      Data path rgbled_flash_b/SLICE_2 to rgbled_flash_b/SLICE_2:
+      Data path rgbled_flash_g/SLICE_40 to rgbled_flash_g/SLICE_40:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R17C12D.CLK to     R17C12D.Q0 rgbled_flash_b/SLICE_2 (from iclk_c)
-ROUTE         1     0.130     R17C12D.Q0 to     R17C12D.A0 rgbled_flash_b/wvrgbled_pwm_bf[29]
-CTOF_DEL    ---     0.101     R17C12D.A0 to     R17C12D.F0 rgbled_flash_b/SLICE_2
-ROUTE         2     0.002     R17C12D.F0 to    R17C12D.DI0 wvrgbled_pwm_b[29] (to iclk_c)
+REG_DEL     ---     0.133    R13C17D.CLK to     R13C17D.Q0 rgbled_flash_g/SLICE_40 (from iclk_c)
+ROUTE         1     0.130     R13C17D.Q0 to     R13C17D.A0 rgbled_flash_g/wvrgbled_pwm_gf[13]
+CTOF_DEL    ---     0.101     R13C17D.A0 to     R13C17D.F0 rgbled_flash_g/SLICE_40
+ROUTE         2     0.002     R13C17D.F0 to    R13C17D.DI0 wvrgbled_pwm_g[13] (to iclk_c)
                   --------
                     0.366   (63.9% logic, 36.1% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path iclk to rgbled_flash_b/SLICE_2:
+      Source Clock Path iclk to rgbled_flash_g/SLICE_40:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     1.116       C1.PADDI to    R17C12D.CLK iclk_c
+ROUTE       113     1.116       C1.PADDI to    R13C17D.CLK iclk_c
                   --------
                     1.116   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path iclk to rgbled_flash_b/SLICE_2:
+      Destination Clock Path iclk to rgbled_flash_g/SLICE_40:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       117     1.116       C1.PADDI to    R17C12D.CLK iclk_c
+ROUTE       113     1.116       C1.PADDI to    R13C17D.CLK iclk_c
                   --------
                     1.116   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -1536,7 +1178,7 @@ ROUTE       117     1.116       C1.PADDI to    R17C12D.CLK iclk_c
 Preference(MIN Delays)                  |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
-FREQUENCY NET "iclk_c" 72.908000 MHz ;  |     0.000 ns|     0.379 ns|   2  
+FREQUENCY NET "iclk_c" 89.646000 MHz ;  |     0.000 ns|     0.379 ns|   2  
                                         |             |             |
 ----------------------------------------------------------------------------
 
@@ -1549,8 +1191,8 @@ All preferences were met.
 
 Found 1 clocks:
 
-Clock Domain: iclk_c   Source: iclk.PAD   Loads: 117
-   Covered under: FREQUENCY NET "iclk_c" 72.908000 MHz ;
+Clock Domain: iclk_c   Source: iclk.PAD   Loads: 113
+   Covered under: FREQUENCY NET "iclk_c" 89.646000 MHz ;
 
 
 <A name="ptwr_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
@@ -1559,16 +1201,16 @@ Clock Domain: iclk_c   Source: iclk.PAD   Loads: 117
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 21702 paths, 1 nets, and 1131 connections (78.93% coverage)
+Constraints cover 25285 paths, 1 nets, and 1200 connections (81.36% coverage)
 
 
 
 <A name="ptwr_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
 ---------------
 
-Timing errors: 35 (setup), 0 (hold)
-Score: 3803 (setup), 0 (hold)
-Cumulative negative slack: 3803 (3803+0)
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------

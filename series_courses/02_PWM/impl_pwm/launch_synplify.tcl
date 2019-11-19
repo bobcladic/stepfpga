@@ -1,6 +1,6 @@
 #-- Lattice Semiconductor Corporation Ltd.
 #-- Synplify OEM project file D:/Project/Verilog/STEP/series_courses/02_PWM/impl_pwm/launch_synplify.tcl
-#-- Written on Fri Nov 15 11:03:13 2019
+#-- Written on Tue Nov 19 10:21:15 2019
 
 project -close
 set filename "D:/Project/Verilog/STEP/series_courses/02_PWM/impl_pwm/impl_pwm_syn.prj"

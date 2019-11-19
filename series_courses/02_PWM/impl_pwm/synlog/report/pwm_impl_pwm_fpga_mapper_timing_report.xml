@@ -17,7 +17,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>pwm_rgbled|iclk</data>
 <data>1.0 MHz</data>
-<data>71.1 MHz</data>
-<data>985.940</data>
+<data>76.7 MHz</data>
+<data>986.959</data>
 </row>
 </report_table>

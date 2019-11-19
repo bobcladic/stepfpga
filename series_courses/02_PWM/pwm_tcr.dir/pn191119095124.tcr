@@ -1,0 +1,9 @@
+#Start recording tcl command: 11/19/2019 09:39:12
+#Project Location: D:/Project/Verilog/STEP/series_courses/02_PWM; Project name: pwm
+prj_project open "D:/Project/Verilog/STEP/series_courses/02_PWM/pwm.ldf"
+prj_run Export -impl impl_pwm
+pgr_project open "D:/Project/Verilog/STEP/series_courses/02_PWM/impl_pwm/impl_pwm.xcf"
+pgr_program run
+prj_src add "D:/Project/Verilog/STEP/series_courses/02_PWM/pwm_rgbled_tb/pwm_rgbled_tb.spf"
+prj_project close
+#Stop recording: 11/19/2019 09:51:24

@@ -1,4 +1,4 @@
-# Fri Nov 15 11:03:22 2019
+# Tue Nov 19 10:20:58 2019
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -12,10 +12,10 @@ Printing clock  summary report in "D:\Project\Verilog\STEP\series_courses\02_PWM
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
 
 
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
@@ -38,10 +38,10 @@ Clock Summary
           Start               Requested     Requested     Clock        Clock                     Clock
 Level     Clock               Frequency     Period        Type         Group                     Load 
 ------------------------------------------------------------------------------------------------------
-0 -       pwm_rgbled|iclk     181.1 MHz     5.522         inferred     Autoconstr_clkgroup_0     201  
+0 -       pwm_rgbled|iclk     183.2 MHz     5.458         inferred     Autoconstr_clkgroup_0     192  
 ======================================================================================================
 
-@W: MT529 :"d:\project\verilog\step\series_courses\02_pwm\pwm_rgbled.v":123:4:123:9|Found inferred clock pwm_rgbled|iclk which controls 201 sequential elements including pwm.rvcntnum_saw[25:2]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"d:\project\verilog\step\series_courses\02_pwm\pwm_rgbled.v":122:4:122:9|Found inferred clock pwm_rgbled|iclk which controls 192 sequential elements including pwm.rvcntnum_saw[23:3]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 
@@ -60,6 +60,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Nov 15 11:03:22 2019
+# Tue Nov 19 10:20:59 2019
 
 ###########################################################]

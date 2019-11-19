@@ -3,7 +3,7 @@
 #
 
 # Period Constraints 
-#FREQUENCY PORT "iclk" 111.8 MHz;
+#FREQUENCY PORT "iclk" 110.7 MHz;
 
 
 # Output Constraints 

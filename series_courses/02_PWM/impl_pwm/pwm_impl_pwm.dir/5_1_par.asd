@@ -4,7 +4,7 @@ GLOBAL_PRIMARY_USED = 1;
 ; Global primary clock #0
 GLOBAL_PRIMARY_0_SIGNALNAME = iclk_c;
 GLOBAL_PRIMARY_0_DRIVERTYPE = PIO;
-GLOBAL_PRIMARY_0_LOADNUM = 117;
+GLOBAL_PRIMARY_0_LOADNUM = 113;
 ; # of global secondary clocks
 GLOBAL_SECONDARY_USED = 1;
 ; Global secondary clock #0

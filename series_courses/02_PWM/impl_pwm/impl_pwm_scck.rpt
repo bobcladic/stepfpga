@@ -1,7 +1,7 @@
 # Synopsys Constraint Checker(syntax only), version maplat, Build 1796R, built Aug  4 2017
 # Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 
-# Written on Fri Nov 15 11:03:22 2019
+# Written on Tue Nov 19 10:20:58 2019
 
 
 ##### DESIGN INFO #######################################################
@@ -24,5 +24,5 @@ Clock Summary
           Start               Requested     Requested     Clock        Clock                     Clock
 Level     Clock               Frequency     Period        Type         Group                     Load 
 ------------------------------------------------------------------------------------------------------
-0 -       pwm_rgbled|iclk     181.1 MHz     5.522         inferred     Autoconstr_clkgroup_0     201  
+0 -       pwm_rgbled|iclk     183.2 MHz     5.458         inferred     Autoconstr_clkgroup_0     192  
 ======================================================================================================

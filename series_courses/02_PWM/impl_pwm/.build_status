@@ -5,44 +5,44 @@
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1573786993"/>
-            <Task name="Jedecgen" build_result="0" update_result="2" update_time="1573783533"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1574130766"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1574130770"/>
         </Milestone>
-        <Milestone name="Map" build_result="0" build_time="1573786976">
-            <Task name="Map" build_result="0" update_result="2" update_time="1573786976"/>
-            <Task name="MapTrace" build_result="0" update_result="2" update_time="1573786977"/>
-            <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="1573786978"/>
+        <Milestone name="Map" build_result="2" build_time="1574130741">
+            <Task name="Map" build_result="2" update_result="0" update_time="1574130741"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1574130742"/>
+            <Task name="MapVerilogSimFile" build_result="2" update_result="0" update_time="1574130744"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="0" build_time="1573786987">
-            <Task name="PAR" build_result="0" update_result="2" update_time="1573786987"/>
-            <Task name="PARTrace" build_result="0" update_result="2" update_time="1573786988"/>
-            <Task name="IOTiming" build_result="0" update_result="2" update_time="1573786990"/>
+        <Milestone name="PAR" build_result="2" build_time="1574130759">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1574130759"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1574130760"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1574130762"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1573787005">
-            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1573787005"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1574130062">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1574130062"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1573786966"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1574130028"/>
             <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
             <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Milestone name="Translate" build_result="0" build_time="1573786975">
-            <Task name="Translate" build_result="0" update_result="2" update_time="1573786975"/>
+        <Milestone name="Translate" build_result="2" build_time="1574130740">
+            <Task name="Translate" build_result="2" update_result="0" update_time="1574130740"/>
         </Milestone>
-        <Report name="pwm_impl_pwm.bgn" last_build_time="1573786993" last_build_size="3990"/>
-        <Report name="pwm_impl_pwm.bit" last_build_time="1573786993" last_build_size="19830"/>
-        <Report name="pwm_impl_pwm.edi" last_build_time="1573787005" last_build_size="417537"/>
-        <Report name="pwm_impl_pwm.ior" last_build_time="1573786990" last_build_size="2208"/>
-        <Report name="pwm_impl_pwm.jed" last_build_time="1573783533" last_build_size="849538"/>
-        <Report name="pwm_impl_pwm.ncd" last_build_time="1573786987" last_build_size="392843"/>
-        <Report name="pwm_impl_pwm.ngd" last_build_time="1573786975" last_build_size="351945"/>
-        <Report name="pwm_impl_pwm.tw1" last_build_time="1573786976" last_build_size="16735"/>
-        <Report name="pwm_impl_pwm.twr" last_build_time="1573786988" last_build_size="87822"/>
-        <Report name="pwm_impl_pwm_map.ncd" last_build_time="1573786976" last_build_size="289350"/>
-        <Report name="pwm_impl_pwm_mapvo.sdf" last_build_time="1573786978" last_build_size="299421"/>
-        <Report name="pwm_impl_pwm_mapvo.vo" last_build_time="1573786978" last_build_size="342464"/>
+        <Report name="pwm_impl_pwm.bgn" last_build_time="1574130770" last_build_size="4264"/>
+        <Report name="pwm_impl_pwm.bit" last_build_time="1574130766" last_build_size="20073"/>
+        <Report name="pwm_impl_pwm.edi" last_build_time="1574130062" last_build_size="397999"/>
+        <Report name="pwm_impl_pwm.ior" last_build_time="1574130762" last_build_size="2208"/>
+        <Report name="pwm_impl_pwm.jed" last_build_time="1574130770" last_build_size="849538"/>
+        <Report name="pwm_impl_pwm.ncd" last_build_time="1574130759" last_build_size="399822"/>
+        <Report name="pwm_impl_pwm.ngd" last_build_time="1574130740" last_build_size="349569"/>
+        <Report name="pwm_impl_pwm.tw1" last_build_time="1574130742" last_build_size="15476"/>
+        <Report name="pwm_impl_pwm.twr" last_build_time="1574130760" last_build_size="57445"/>
+        <Report name="pwm_impl_pwm_map.ncd" last_build_time="1574130741" last_build_size="291053"/>
+        <Report name="pwm_impl_pwm_mapvo.sdf" last_build_time="1574130744" last_build_size="305261"/>
+        <Report name="pwm_impl_pwm_mapvo.vo" last_build_time="1574130744" last_build_size="346203"/>
     </Strategy>
 </BuildStatus>

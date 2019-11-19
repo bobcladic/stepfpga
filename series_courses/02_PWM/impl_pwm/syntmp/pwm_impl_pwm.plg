@@ -1,12 +1,12 @@
-@P:  Worst Slack : 985.940
-@P:  pwm_rgbled|iclk - Estimated Frequency : 71.1 MHz
+@P:  Worst Slack : 986.959
+@P:  pwm_rgbled|iclk - Estimated Frequency : 76.7 MHz
 @P:  pwm_rgbled|iclk - Requested Frequency : 1.0 MHz
-@P:  pwm_rgbled|iclk - Estimated Period : 14.060
+@P:  pwm_rgbled|iclk - Estimated Period : 13.041
 @P:  pwm_rgbled|iclk - Requested Period : 1000.000
-@P:  pwm_rgbled|iclk - Slack : 985.940
-@P:  Total Area : 152.0
+@P:  pwm_rgbled|iclk - Slack : 986.959
+@P:  Total Area : 139.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
-@P:  CPU Time : 0h:00m:02s
+@P:  CPU Time : 0h:00m:01s

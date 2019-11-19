@@ -88,8 +88,7 @@ owvrgbled1_1_cry_0_COUT[30]
 pwm/un5_rvcntnum_saw_1_cry_0_0_S1
 pwm/un5_rvcntnum_saw_1_cry_0_0_S0
 pwm/N_1
-pwm/un5_rvcntnum_saw_1_s_23_0_S1
-pwm/un5_rvcntnum_saw_1_s_23_0_COUT
+pwm/un5_rvcntnum_saw_1_cry_19_0_COUT
 rgbled_flash_r/rvcntnum_tri_cry_0_S0[0]
 rgbled_flash_r/N_1
 rgbled_flash_r/rvcntnum_tri_s_0_S1[31]
@@ -97,11 +96,11 @@ rgbled_flash_r/rvcntnum_tri_s_0_COUT[31]
 rgbled_flash_r/un20_rvcntnum_saw_cry_0_0_S1
 rgbled_flash_r/un20_rvcntnum_saw_cry_0_0_S0
 rgbled_flash_r/N_2
-rgbled_flash_r/un20_rvcntnum_saw_cry_25_0_COUT
+rgbled_flash_r/un20_rvcntnum_saw_cry_23_0_COUT
 rgbled_flash_g/un35_rvcntnum_saw_cry_0_0_S1
 rgbled_flash_g/un35_rvcntnum_saw_cry_0_0_S0
 rgbled_flash_g/N_1
-rgbled_flash_g/un35_rvcntnum_saw_cry_25_0_COUT
+rgbled_flash_g/un35_rvcntnum_saw_cry_23_0_COUT
 rgbled_flash_g/un1_rvcntnum_tri_cry_0_0_S1_0
 rgbled_flash_g/un1_rvcntnum_tri_cry_0_0_S0_0
 rgbled_flash_g/N_2
@@ -110,7 +109,7 @@ rgbled_flash_g/un1_rvcntnum_tri_s_31_0_COUT_0
 rgbled_flash_b/un50_rvcntnum_saw_cry_0_0_S1
 rgbled_flash_b/un50_rvcntnum_saw_cry_0_0_S0
 rgbled_flash_b/N_1
-rgbled_flash_b/un50_rvcntnum_saw_cry_25_0_COUT
+rgbled_flash_b/un50_rvcntnum_saw_cry_23_0_COUT
 rgbled_flash_b/un1_rvcntnum_tri_cry_0_0_S1
 rgbled_flash_b/un1_rvcntnum_tri_cry_0_0_S0
 rgbled_flash_b/N_2
@@ -122,7 +121,7 @@ N_1
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.10.0.111.2 -- WARNING: Map write only section -- Fri Nov 15 11:02:55 2019
+# map:  version Diamond (64-bit) 3.10.0.111.2 -- WARNING: Map write only section -- Tue Nov 19 10:32:21 2019
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
 LOCATE COMP "owvled[0]" SITE "N13" ;

@@ -15,22 +15,22 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-4000HCCSBGA132
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.0.111.2
-Mapped on:  11/15/19  11:02:55
+Mapped on:  11/19/19  10:32:20
 
 Design Summary
 --------------
 
-   Number of registers:    205 out of  4635 (4%)
-      PFU registers:          205 out of  4320 (5%)
+   Number of registers:    197 out of  4635 (4%)
+      PFU registers:          197 out of  4320 (5%)
       PIO registers:            0 out of   315 (0%)
-   Number of SLICEs:       221 out of  2160 (10%)
-      SLICEs as Logic/ROM:    221 out of  2160 (10%)
+   Number of SLICEs:       223 out of  2160 (10%)
+      SLICEs as Logic/ROM:    223 out of  2160 (10%)
       SLICEs as RAM:            0 out of  1620 (0%)
-      SLICEs as Carry:        145 out of  2160 (7%)
-   Number of LUT4s:        442 out of  4320 (10%)
-      Number used as logic LUTs:        152
+      SLICEs as Carry:        140 out of  2160 (6%)
+   Number of LUT4s:        445 out of  4320 (10%)
+      Number used as logic LUTs:        165
       Number used as distributed RAM:     0
-      Number used as ripple logic:      290
+      Number used as ripple logic:      280
       Number used as shift registers:     0
    Number of PIO sites used: 16 + 4(JTAG) out of 105 (19%)
    Number of block RAMs:  0 out of 10 (0%)
@@ -58,7 +58,7 @@ Design Summary
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  1
-     Net iclk_c: 117 loads, 117 rising, 0 falling (Driver: PIO iclk )
+     Net iclk_c: 113 loads, 113 rising, 0 falling (Driver: PIO iclk )
    Number of Clock Enables:  1
 
                                     Page 1
@@ -66,25 +66,25 @@ Design Summary
 
 
 
-Design:  pwm_rgbled                                    Date:  11/15/19  11:02:55
+Design:  pwm_rgbled                                    Date:  11/19/19  10:32:20
 
 Design Summary (cont)
 ---------------------
      Net rgbled_flash_r/N_6_i: 17 loads, 17 LSLICEs
-   Number of local set/reset loads for net irst_n_c merged into GSR:  205
+   Number of local set/reset loads for net irst_n_c merged into GSR:  197
    Number of LSRs:  0
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net rgbled_flash_r/rvcntnum_saw[26]: 36 loads
-     Net rgbled_flash_r/rvcntnum_tri27lt26: 33 loads
+     Net rgbled_flash_r/rvcntnum_tri27lto24_0_2: 32 loads
+     Net rgbled_flash_r/rvcntnum_tri27lto9_0: 32 loads
      Net rgbled_flash_b/un1_rvcntnum_tri60f[1]: 31 loads
      Net rgbled_flash_g/un1_rvcntnum_tri44f[1]: 31 loads
+     Net wvpwm[22]: 24 loads
+     Net wvpwm[23]: 24 loads
+     Net pwm/un1_rvcntnum_sawlt22: 17 loads
      Net rgbled_flash_r/N_6_i: 17 loads
-     Net pwm/un1_rvcntnum_sawlto25: 16 loads
      Net rgbled_flash_b/un1_rvcntnum_saw: 11 loads
      Net rgbled_flash_g/un1_rvcntnum_saw: 11 loads
-     Net rgbled_flash_r/un1_rvcntnum_saw: 11 loads
-     Net VCC: 8 loads
 
 
 
@@ -132,7 +132,7 @@ IO (PIO) Attributes
 
 
 
-Design:  pwm_rgbled                                    Date:  11/15/19  11:02:55
+Design:  pwm_rgbled                                    Date:  11/19/19  10:32:20
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -198,7 +198,7 @@ Signal un15_owvrgbled1_cry_0_S1[18] undriven or does not drive anything -
 
 
 
-Design:  pwm_rgbled                                    Date:  11/15/19  11:02:55
+Design:  pwm_rgbled                                    Date:  11/19/19  10:32:20
 
 Removed logic (cont)
 --------------------
@@ -264,7 +264,7 @@ Signal un7_owvrgbled1_cry_0_S1[22] undriven or does not drive anything -
 
 
 
-Design:  pwm_rgbled                                    Date:  11/15/19  11:02:55
+Design:  pwm_rgbled                                    Date:  11/19/19  10:32:20
 
 Removed logic (cont)
 --------------------
@@ -312,10 +312,8 @@ Signal pwm/un5_rvcntnum_saw_1_cry_0_0_S1 undriven or does not drive anything -
 Signal pwm/un5_rvcntnum_saw_1_cry_0_0_S0 undriven or does not drive anything -
      clipped.
 Signal pwm/N_1 undriven or does not drive anything - clipped.
-Signal pwm/un5_rvcntnum_saw_1_s_23_0_S1 undriven or does not drive anything -
-     clipped.
-Signal pwm/un5_rvcntnum_saw_1_s_23_0_COUT undriven or does not drive anything -
-     clipped.
+Signal pwm/un5_rvcntnum_saw_1_cry_19_0_COUT undriven or does not drive anything
+     - clipped.
 Signal rgbled_flash_r/rvcntnum_tri_cry_0_S0[0] undriven or does not drive
      anything - clipped.
 Signal rgbled_flash_r/N_1 undriven or does not drive anything - clipped.
@@ -324,28 +322,28 @@ Signal rgbled_flash_r/rvcntnum_tri_s_0_S1[31] undriven or does not drive
 Signal rgbled_flash_r/rvcntnum_tri_s_0_COUT[31] undriven or does not drive
      anything - clipped.
 Signal rgbled_flash_r/un20_rvcntnum_saw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal rgbled_flash_r/un20_rvcntnum_saw_cry_0_0_S0 undriven or does not drive
 
                                     Page 5
 
 
 
 
-Design:  pwm_rgbled                                    Date:  11/15/19  11:02:55
+Design:  pwm_rgbled                                    Date:  11/19/19  10:32:20
 
 Removed logic (cont)
 --------------------
      anything - clipped.
-Signal rgbled_flash_r/un20_rvcntnum_saw_cry_0_0_S0 undriven or does not drive
-     anything - clipped.
 Signal rgbled_flash_r/N_2 undriven or does not drive anything - clipped.
-Signal rgbled_flash_r/un20_rvcntnum_saw_cry_25_0_COUT undriven or does not drive
+Signal rgbled_flash_r/un20_rvcntnum_saw_cry_23_0_COUT undriven or does not drive
      anything - clipped.
 Signal rgbled_flash_g/un35_rvcntnum_saw_cry_0_0_S1 undriven or does not drive
      anything - clipped.
 Signal rgbled_flash_g/un35_rvcntnum_saw_cry_0_0_S0 undriven or does not drive
      anything - clipped.
 Signal rgbled_flash_g/N_1 undriven or does not drive anything - clipped.
-Signal rgbled_flash_g/un35_rvcntnum_saw_cry_25_0_COUT undriven or does not drive
+Signal rgbled_flash_g/un35_rvcntnum_saw_cry_23_0_COUT undriven or does not drive
      anything - clipped.
 Signal rgbled_flash_g/un1_rvcntnum_tri_cry_0_0_S1_0 undriven or does not drive
      anything - clipped.
@@ -361,7 +359,7 @@ Signal rgbled_flash_b/un50_rvcntnum_saw_cry_0_0_S1 undriven or does not drive
 Signal rgbled_flash_b/un50_rvcntnum_saw_cry_0_0_S0 undriven or does not drive
      anything - clipped.
 Signal rgbled_flash_b/N_1 undriven or does not drive anything - clipped.
-Signal rgbled_flash_b/un50_rvcntnum_saw_cry_25_0_COUT undriven or does not drive
+Signal rgbled_flash_b/un50_rvcntnum_saw_cry_23_0_COUT undriven or does not drive
      anything - clipped.
 Signal rgbled_flash_b/un1_rvcntnum_tri_cry_0_0_S1 undriven or does not drive
      anything - clipped.
@@ -391,12 +389,14 @@ Memory Usage
      
 
 
+
+
                                     Page 6
 
 
 
 
-Design:  pwm_rgbled                                    Date:  11/15/19  11:02:55
+Design:  pwm_rgbled                                    Date:  11/19/19  10:32:20
 
 GSR Usage
 ---------

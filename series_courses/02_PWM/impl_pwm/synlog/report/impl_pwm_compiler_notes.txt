@@ -2,22 +2,24 @@
 @N|Running in 64-bit mode
 @N:: Running Verilog Compiler in System Verilog mode
 @N:: Running Verilog Compiler in Multiple File Compilation Unit mode
-@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":109:7:109:13|Synthesizing module counter in library work.
-@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":109:7:109:13|Synthesizing module counter in library work.
-@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":109:7:109:13|Synthesizing module counter in library work.
-@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":109:7:109:13|Synthesizing module counter in library work.
-@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":31:7:31:16|Synthesizing module pwm_rgbled in library work.
-@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[31] is always 0.
-@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[30] is always 0.
-@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[29] is always 0.
-@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[28] is always 0.
-@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[27] is always 0.
-@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[31] is always 0.
-@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[30] is always 0.
-@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[29] is always 0.
-@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[28] is always 0.
-@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":123:4:123:9|Register bit rvcntnum_saw[27] is always 0.
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":108:7:108:13|Synthesizing module counter in library work.
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":108:7:108:13|Synthesizing module counter in library work.
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":108:7:108:13|Synthesizing module counter in library work.
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":108:7:108:13|Synthesizing module counter in library work.
+@N: CG364 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":30:7:30:16|Synthesizing module pwm_rgbled in library work.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[31] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[30] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[29] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[28] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[27] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[26] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[25] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[31] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[30] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[29] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[28] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[27] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[26] is always 0.
+@N: CL189 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":122:4:122:9|Register bit rvcntnum_saw[25] is always 0.
 @N|Running in 64-bit mode
-@N: NF107 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":31:7:31:16|Selected library: work cell: pwm_rgbled view verilog as top level
-@N: NF107 :"D:\Project\Verilog\STEP\series_courses\02_PWM\pwm_rgbled.v":31:7:31:16|Selected library: work cell: pwm_rgbled view verilog as top level
 
